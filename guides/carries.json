@@ -1,1 +1,2477 @@
-
+{
+    "name": "July 2024 (Carries)",
+    "version": 2,
+    "data": {
+        "goalIndex": 0,
+        "goals": [
+            {
+                "name": "The Basics",
+                "shown": false,
+                "stepIndex": 11,
+                "steps": [
+                    {
+                        "type": "buy",
+                        "instruction": "Buy Red Mushrooms&r &b%1&r\nBuy Rookie Hoe &b%2",
+                        "items": {
+                            "RED_MUSHROOM": {
+                                "count": 0,
+                                "target": 24,
+                                "done": false
+                            },
+                            "ROOKIE_HOE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Farm Merchant",
+                                    "position": [
+                                        15,
+                                        70,
+                                        -72.35
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #7",
+                                    "position": [
+                                        26,
+                                        80,
+                                        -65
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp hub",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy Oak Log &b%1&r\nBuy Sticks&r &b%2",
+                        "items": {
+                            "OAK_WOOD": {
+                                "count": 0,
+                                "target": 8,
+                                "done": false
+                            },
+                            "STICK": {
+                                "count": 0,
+                                "target": 32,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Lumber Merchant",
+                                    "position": [
+                                        -50,
+                                        70,
+                                        -69
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #8",
+                                    "position": [
+                                        -53,
+                                        70,
+                                        -100
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Talk to Librarian",
+                        "criteria": "&e[NPC] Librarian&f: &r&fGreetings! Welcome to the &bLibrary&f!&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Librarian",
+                                    "position": [
+                                        -36,
+                                        69,
+                                        -113
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Talk to Blacksmith",
+                        "criteria": "&e[NPC] Blacksmith&f: &r&fI'm the town Blacksmith! I can &areforge &fitems for you, for a price.&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Blacksmith",
+                                    "position": [
+                                        -29,
+                                        69,
+                                        -126
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy End Sword &b%1",
+                        "items": {
+                            "END_SWORD": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Weaponsmith",
+                                    "position": [
+                                        -10.5,
+                                        68,
+                                        -130.5
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy Coal &b%1&r\nBuy Iron Ingot &b%2&r\nBuy Gold Ingot &b%3&r\n&fBuy Promising Pickaxe&r &b%4&r\nBuy Black Diamond &b%5&r",
+                        "items": {
+                            "COAL": {
+                                "count": 0,
+                                "target": 10,
+                                "done": false
+                            },
+                            "IRON_INGOT": {
+                                "count": 0,
+                                "target": 2,
+                                "done": false
+                            },
+                            "GOLD_INGOT": {
+                                "count": 0,
+                                "target": 4,
+                                "done": false
+                            },
+                            "PROMISING_PICKAXE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "ONYX": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Mine Merchant",
+                                    "position": [
+                                        -9.5,
+                                        68,
+                                        -125.5
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Mine Coal &b%1&r",
+                        "items": {
+                            "COAL": {
+                                "count": 0,
+                                "target": 11,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Coal Ore",
+                                    "position": [
+                                        -6,
+                                        69,
+                                        -120
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Golden Axe &b%1&r\n&fCraft Golden Shovel &b%2&r\n&fCraft Shears &b%3&r",
+                        "items": {
+                            "GOLD_AXE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "GOLD_SPADE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "SHEARS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy Experience Bottle &b%1&r",
+                        "items": {
+                            "EXPERIENCE_BOTTLE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Librarian",
+                                    "position": [
+                                        -36,
+                                        69,
+                                        -113
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "enchant",
+                        "instruction": "Enchant items",
+                        "items": {
+                            "GOLD_AXE": {
+                                "enchants": [
+                                    "Efficiency V",
+                                    "Silk Touch I"
+                                ],
+                                "done": false
+                            },
+                            "PROMISING_PICKAXE": {
+                                "enchants": [
+                                    "Efficiency V",
+                                    "Fortune III"
+                                ],
+                                "done": false
+                            },
+                            "ROOKIE_HOE": {
+                                "enchants": [
+                                    "Harvesting V"
+                                ],
+                                "done": false
+                            },
+                            "FARM_SUIT_BOOTS": {
+                                "enchants": [
+                                    "Depth Strider III"
+                                ],
+                                "done": false
+                            },
+                            "FISHING_ROD": {
+                                "enchants": [
+                                    "Lure V",
+                                    "Angler V",
+                                    "Piscary V"
+                                ],
+                                "done": false
+                            },
+                            "END_SWORD": {
+                                "enchants": [
+                                    "Sharpness V",
+                                    "Fire Aspect II",
+                                    "Looting III",
+                                    "Luck V",
+                                    "Life Steal III",
+                                    "Giant Killer V",
+                                    "Critical V",
+                                    "First Strike IV",
+                                    "Ender Slayer V"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Enchanting Table",
+                                    "position": [
+                                        -37,
+                                        69,
+                                        -111
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Experimentation Table &b%1",
+                        "items": {
+                            "EXPERIMENTATION_TABLE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "coins",
+                        "instruction": "Get coins from enchanting &6%1",
+                        "criteria": "&r&cYou have reached the daily cap of 500,000 Enchanting EXP. Keep in mind EXP from experiments bypasses this cap!&r",
+                        "target": 50000,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Enchanting Table",
+                                    "position": [
+                                        -37,
+                                        69,
+                                        -111
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #9",
+                                    "position": [
+                                        -16,
+                                        66,
+                                        -110
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp hub",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy All Skills Exp Boost &b%1",
+                        "items": {
+                            "PET_ITEM_ALL_SKILLS_BOOST_COMMON": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Zog",
+                                    "position": [
+                                        34,
+                                        71,
+                                        -97
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Give pet item",
+                        "criteria": "&r&aYour pet is now holding &r&fAll Skills Exp Boost&r&a.&r"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #10",
+                                    "position": [
+                                        30,
+                                        79,
+                                        -94
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp hub",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Finish daily enchanting xp",
+                        "criteria": "&r&cYou have reached the daily cap of 500,000 Enchanting EXP. Keep in mind EXP from experiments bypasses this cap!&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Enchanting Table",
+                                    "position": [
+                                        -37,
+                                        69,
+                                        -111
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp hub",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Obtain Cheese &b%1&r",
+                        "items": {
+                            "CHEESE_FUEL": {
+                                "count": 0,
+                                "target": 6,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "In/Around Community Center",
+                                    "position": [
+                                        4,
+                                        73,
+                                        -106
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "Farm Stalls",
+                                    "position": [
+                                        43,
+                                        72,
+                                        -159
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "In/Behind Thaumaturgist",
+                                    "position": [
+                                        46,
+                                        69,
+                                        -38
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "Food Court Behind Taylor",
+                                    "position": [
+                                        26,
+                                        68,
+                                        -28
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "Carpenter Basement/Hole",
+                                    "position": [
+                                        19,
+                                        61,
+                                        -9
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "Mountain Shack Hole/Cauldron",
+                                    "position": [
+                                        -4,
+                                        69,
+                                        4
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "Auction House Basement",
+                                    "position": [
+                                        -41,
+                                        57,
+                                        -97
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "Hexatorum Stairs/Basement",
+                                    "position": [
+                                        -57,
+                                        64,
+                                        -118
+                                    ],
+                                    "radius": 10
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp hub",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #11",
+                                    "position": [
+                                        -49,
+                                        90,
+                                        -72
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #12",
+                                    "position": [
+                                        -81,
+                                        70,
+                                        -88
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #13",
+                                    "position": [
+                                        -94,
+                                        72,
+                                        -129
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #14",
+                                    "position": [
+                                        -142,
+                                        77,
+                                        -31
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Shear Oak Leaves &b%1",
+                        "items": {
+                            "LEAVES": {
+                                "count": 0,
+                                "target": 24,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Oak Leaves",
+                                    "position": [
+                                        -146,
+                                        76,
+                                        -33
+                                    ],
+                                    "radius": 40
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Oak Collection 3",
+                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eOak Wood &8IIâžœ&eIII&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Oak Wood",
+                                    "position": [
+                                        -146,
+                                        76,
+                                        -33
+                                    ],
+                                    "radius": 40
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Leaflet Helmet &b%1&r\nCraft Leaflet Chestplate &b%2&r\nCraft Leaflet Leggings &b%3&r\nCraft Leaflet Boots &b%4&r",
+                        "items": {
+                            "LEAFLET_HELMET": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "LEAFLET_CHESTPLATE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "LEAFLET_LEGGINGS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "LEAFLET_BOOTS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp wizard",
+                        "subArea": "Wizard Tower",
+                        "command": "/warp wizard"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #15",
+                                    "position": [
+                                        43,
+                                        121,
+                                        70
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp barn",
+                        "subArea": "The Barn",
+                        "command": "/warp barn"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Chicken Minion I &b%1&r\nCraft Pig Minion I &b%2",
+                        "items": {
+                            "CHICKEN_GENERATOR_1": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "PIG_GENERATOR_1": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/is",
+                        "area": "Private Island",
+                        "command": "/is"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Pick up Cobblestone Minion",
+                        "criteria": "&r&aYou picked up a minion! You currently have"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/is",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/is"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Place Chicken and Pig Minion",
+                        "criteria": "&r&bYou placed a minion! (2/${*})&r"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Do your daily superpairs",
+                        "criteria": "&r&eYou claimed the &r&bSuperpairs &r&erewards!&r"
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp desert",
+                        "subArea": "Desert Settlement",
+                        "command": "/warp desert"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #16",
+                                    "position": [
+                                        145,
+                                        76,
+                                        -374
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp trapper",
+                        "subArea": "Trapper's Den",
+                        "command": "/warp trapper"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #17",
+                                    "position": [
+                                        279,
+                                        112,
+                                        -541
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp desert",
+                        "subArea": "Desert Settlement",
+                        "command": "/warp desert"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Mining 12",
+                        "criteria": "  &r&b&lSKILL LEVEL UP &3Mining &8XIâžœ&3XII&r"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Mushroom Collection 3",
+                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eMushroom &8IIâžœ&eIII&r"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Mushroom Armor",
+                        "items": {
+                            "MUSHROOM_HELMET": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "MUSHROOM_CHESTPLATE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "MUSHROOM_LEGGINGS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "MUSHROOM_BOOTS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp hub",
+                        "subArea": "Farm",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp hub",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "enchant",
+                        "instruction": "Enchant items",
+                        "items": {
+                            "MUSHROOM_HELMET": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V",
+                                    "Respiration III",
+                                    "Aqua Affinity I"
+                                ],
+                                "done": false
+                            },
+                            "MUSHROOM_CHESTPLATE": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V"
+                                ],
+                                "done": false
+                            },
+                            "MUSHROOM_LEGGINGS": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V"
+                                ],
+                                "done": false
+                            },
+                            "MUSHROOM_BOOTS": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V",
+                                    "Depth Strider III",
+                                    "Feather Falling V"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Enchanting Table",
+                                    "position": [
+                                        -37,
+                                        69,
+                                        -111
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "reforge",
+                        "instruction": "Reforge items",
+                        "items": {
+                            "ROOKIE_HOE": {
+                                "reforges": [
+                                    "Robust"
+                                ],
+                                "done": false
+                            },
+                            "END_SWORD": {
+                                "reforges": [
+                                    "Sharp"
+                                ],
+                                "done": false
+                            },
+                            "MUSHROOM_HELMET": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            },
+                            "MUSHROOM_CHESTPLATE": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            },
+                            "MUSHROOM_LEGGINGS": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            },
+                            "MUSHROOM_BOOTS": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Blacksmith",
+                                    "position": [
+                                        -29,
+                                        69,
+                                        -126
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "guiItem",
+                        "instruction": "Apply Black Diamond to Promising Pickaxe",
+                        "guiName": "Reforge Anvil",
+                        "itemIndex": 13,
+                        "has": "Fruitful Promising Pickaxe",
+                        "doesntHave": "Click the ANVIL BELOW to combine.",
+                        "highlight": false,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Reforge Anvil",
+                                    "position": [
+                                        -29,
+                                        69,
+                                        -137
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #18",
+                                    "position": [
+                                        -21,
+                                        79,
+                                        -166
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #19",
+                                    "position": [
+                                        -6,
+                                        66,
+                                        -179
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Unlock Dwarven Mines",
+                "shown": false,
+                "stepIndex": 0,
+                "steps": [
+                    {
+                        "type": "area",
+                        "instruction": "/warp deep",
+                        "area": "Deep Caverns",
+                        "command": "/warp deep"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #20",
+                                    "position": [
+                                        3,
+                                        152,
+                                        85
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp deep",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp deep"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #21",
+                                    "position": [
+                                        -18,
+                                        163,
+                                        26
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -24,
+                                        154,
+                                        17
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -17,
+                                        144,
+                                        -11
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        29,
+                                        123,
+                                        -9
+                                    ],
+                                    "radius": 6
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -3,
+                                        119,
+                                        25
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        6,
+                                        108,
+                                        46
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        25,
+                                        97,
+                                        42
+                                    ],
+                                    "radius": 6
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -9,
+                                        98,
+                                        5
+                                    ],
+                                    "radius": 6
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -5,
+                                        72,
+                                        60
+                                    ],
+                                    "radius": 10
+                                },
+                                {
+                                    "text": "Soul #22",
+                                    "position": [
+                                        18,
+                                        74,
+                                        74
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        9,
+                                        65,
+                                        55
+                                    ],
+                                    "radius": 6
+                                },
+                                {
+                                    "text": "Soul #23",
+                                    "position": [
+                                        0,
+                                        64,
+                                        57
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -19,
+                                        64,
+                                        26
+                                    ],
+                                    "radius": 8
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -9,
+                                        63,
+                                        -13
+                                    ],
+                                    "radius": 6
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -41,
+                                        41,
+                                        22
+                                    ],
+                                    "radius": 7
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -18,
+                                        38,
+                                        50
+                                    ],
+                                    "radius": 7
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        10,
+                                        36,
+                                        60
+                                    ],
+                                    "radius": 5
+                                },
+                                {
+                                    "text": "Soul #24",
+                                    "position": [
+                                        -21,
+                                        24,
+                                        72
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "Reach Obsidian Sanctuary",
+                        "subArea": "Obsidian Sanctuary",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        -39,
+                                        15,
+                                        61
+                                    ],
+                                    "radius": 6
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Diamond Collection 4",
+                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eDiamond &8IIIâžœ&eIV&r",
+                        "shown": false,
+                        "clientCommand": "/shtrackcollection DIAMOND 1600"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Enchanted Diamond &b%1&r",
+                        "items": {
+                            "ENCHANTED_DIAMOND": {
+                                "count": 0,
+                                "target": 10,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Take lift to Lapis Quarry",
+                        "guiName": "Lift",
+                        "slotIndex": 12,
+                        "highlight": true,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Lift Operator",
+                                    "position": [
+                                        45,
+                                        13,
+                                        15
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Lapis Lazuli Collection 4",
+                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eLapis Lazuli &8IIIâžœ&eIV&r",
+                        "shown": false,
+                        "clientCommand": "/shtrackcollection LAPIS_LAZULI 2000"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Enchanted Lapis Lazuli &b%1&r",
+                        "items": {
+                            "ENCHANTED_LAPIS_LAZULI": {
+                                "count": 0,
+                                "target": 10,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Take lift to Pigmen's Den",
+                        "guiName": "Lift",
+                        "slotIndex": 14,
+                        "highlight": true,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Lift Operator",
+                                    "position": [
+                                        45,
+                                        121,
+                                        15
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        },
+                        "shown": false
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #25",
+                                    "position": [
+                                        44,
+                                        98,
+                                        23
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Redstone Collection 4",
+                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eRedstone &8IIIâžœ&eIV&r",
+                        "shown": false,
+                        "clientCommand": "/shtrackcollection REDSTONE 1600"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Enchanted Redstone &b%1&r",
+                        "items": {
+                            "ENCHANTED_REDSTONE": {
+                                "count": 0,
+                                "target": 10,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Collect Redstone &b%1&r",
+                        "items": {
+                            "REDSTONE": {
+                                "count": 0,
+                                "target": 32,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Take lift to Obsidian Sanctuary",
+                        "guiName": "Lift",
+                        "slotIndex": 30,
+                        "highlight": true,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Lift Operator",
+                                    "position": [
+                                        45,
+                                        101,
+                                        17
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        },
+                        "clientCommand": "/shtrackcollection"
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "Give Rhys Enchanted Items",
+                        "area": "Dwarven Mines",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Rhys",
+                                    "position": [
+                                        31,
+                                        12,
+                                        14
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Post Unlocking Dwarven Mines",
+                "shown": false,
+                "stepIndex": 0,
+                "steps": [
+                    {
+                        "type": "guiItem",
+                        "instruction": "/hotm",
+                        "guiName": "Heart of the Mountain",
+                        "itemIndex": null,
+                        "has": null,
+                        "doesntHave": null,
+                        "highlight": false,
+                        "command": "/hotm"
+                    },
+                    {
+                        "type": "guiItem",
+                        "instruction": "Unlock the Mining Speed Perk",
+                        "guiName": "Heart of the Mountain",
+                        "itemIndex": 40,
+                        "has": "You don't have enough Mithril",
+                        "doesntHave": null,
+                        "highlight": true
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy Fractured Mithril Pickaxe &b%1&r",
+                        "items": {
+                            "FRACTURED_MITHRIL_PICKAXE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Bubu",
+                                    "position": [
+                                        -11,
+                                        201,
+                                        -104
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "guiItem",
+                        "instruction": "Open the King's Commission Menu",
+                        "guiName": "Commissions",
+                        "itemIndex": null,
+                        "has": null,
+                        "doesntHave": null,
+                        "highlight": false,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "King",
+                                    "position": [
+                                        129,
+                                        196,
+                                        196
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/warp hub",
+                        "area": "Hub",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "enchant",
+                        "instruction": "Enchant Fractured Mithril Pickaxe",
+                        "items": {
+                            "FRACTURED_MITHRIL_PICKAXE": {
+                                "enchants": [
+                                    "Efficiency V",
+                                    "Fortune III",
+                                    "Smelting Touch I"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Enchanting Table",
+                                    "position": [
+                                        -37,
+                                        69,
+                                        -111
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy Black Diamond &b%1",
+                        "items": {
+                            "ONYX": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Mine Merchant",
+                                    "position": [
+                                        -9.5,
+                                        68,
+                                        -125.5
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "guiItem",
+                        "instruction": "Apply Black Diamond to Fractured Mithril Pickaxe",
+                        "guiName": "Reforge Anvil",
+                        "itemIndex": 13,
+                        "has": "Fruitful Fractured Mithril Pickaxe",
+                        "doesntHave": "Click the ANVIL BELOW to combine.",
+                        "highlight": false,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Reforge Anvil",
+                                    "position": [
+                                        -29,
+                                        69,
+                                        -137
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Unlock The End",
+                "shown": false,
+                "stepIndex": 0,
+                "steps": [
+                    {
+                        "type": "area",
+                        "instruction": "/warp mines",
+                        "area": "Dwarven Mines",
+                        "command": "/warp mines"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Emerald Collection 3",
+                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eEmerald &8IIâžœ&eIII&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Emeralds",
+                                    "position": [
+                                        29,
+                                        237,
+                                        -132
+                                    ],
+                                    "radius": 40
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Magnetic Talisman &b%1&r",
+                        "items": {
+                            "MAGNETIC_TALISMAN": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp forge",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp forge"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Combat 12",
+                        "criteria": "  &r&b&lSKILL LEVEL UP &3Combat &8XIâžœ&3XII&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Glacite Walkers",
+                                    "position": [
+                                        0,
+                                        128,
+                                        160
+                                    ],
+                                    "radius": 40
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/warp end",
+                        "area": "The End",
+                        "command": "/warp end"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Talk to Lone Adventurer",
+                        "criteria": "&e[NPC] &6Lone Adventurer&f: &rTry killing &a5 &rof them!&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Lone Adventurer",
+                                    "position": [
+                                        -525,
+                                        101,
+                                        -276
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Kill 5 Endermen",
+                        "criteria": "  &r&fTalk to Lone Adventurer&r"
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Buy Void Sword",
+                        "guiName": "Lone Adventurer Trade",
+                        "slotIndex": 13,
+                        "highlight": true,
+                        "coins": 200000,
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Lone Adventurer",
+                                    "position": [
+                                        -525,
+                                        101,
+                                        -276
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/warp hub",
+                        "area": "Hub",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "reforge",
+                        "instruction": "Reforge items",
+                        "items": {
+                            "VOID_SWORD": {
+                                "reforges": [
+                                    "Sharp"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Blacksmith",
+                                    "position": [
+                                        -29,
+                                        69,
+                                        -126
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "enchant",
+                        "instruction": "Enchant items",
+                        "items": {
+                            "VOID_SWORD": {
+                                "enchants": [
+                                    "Sharpness V",
+                                    "Fire Aspect II",
+                                    "Experience III",
+                                    "Looting III",
+                                    "Scavenger III",
+                                    "Luck V",
+                                    "Cubism V",
+                                    "Cleave V",
+                                    "Life Steal III",
+                                    "Giant Killer V",
+                                    "Critical V",
+                                    "First Strike IV",
+                                    "Ender Slayer V",
+                                    "Impaling III",
+                                    "Execute V",
+                                    "Thunderlord V",
+                                    "Lethality V",
+                                    "Vampirism V",
+                                    "Venomous V"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Enchanting Table",
+                                    "position": [
+                                        -37,
+                                        69,
+                                        -111
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/warp end",
+                        "area": "The End",
+                        "command": "/warp end"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Obtain Ender Helmet &b%1&r\nObtain Ender Chestplate &b%2&r\nObtain Ender Leggings &b%3&r\nObtain Ender Boots &b%4&r",
+                        "items": {
+                            "END_HELMET": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "END_CHESTPLATE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "END_LEGGINGS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "END_BOOTS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/warp hub",
+                        "area": "Hub",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "reforge",
+                        "instruction": "Reforge items",
+                        "items": {
+                            "END_HELMET": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            },
+                            "END_CHESTPLATE": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            },
+                            "END_LEGGINGS": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            },
+                            "END_BOOTS": {
+                                "reforges": [
+                                    "Fierce"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Blacksmith",
+                                    "position": [
+                                        -29,
+                                        69,
+                                        -126
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "enchant",
+                        "instruction": "Enchant items",
+                        "items": {
+                            "END_HELMET": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V",
+                                    "Respiration III",
+                                    "Aqua Affinity I"
+                                ],
+                                "done": false
+                            },
+                            "END_CHESTPLATE": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V"
+                                ],
+                                "done": false
+                            },
+                            "END_LEGGINGS": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V"
+                                ],
+                                "done": false
+                            },
+                            "END_BOOTS": {
+                                "enchants": [
+                                    "Protection V",
+                                    "Growth V",
+                                    "Depth Strider III",
+                                    "Feather Falling V"
+                                ],
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Enchanting Table",
+                                    "position": [
+                                        -37,
+                                        69,
+                                        -111
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp drag",
+                        "subArea": "Dragon's Nest",
+                        "command": "/warp drag"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Combat 15",
+                        "criteria": "  &r&b&lSKILL LEVEL UP &3Combat &8XIVâžœ&3XV&r"
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/warp hub",
+                        "area": "Hub",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Farm Wheat &b%1&r\nFarm Enchanted Seeds &b%2&r",
+                        "items": {
+                            "WHEAT": {
+                                "count": 0,
+                                "target": 25,
+                                "done": false
+                            },
+                            "ENCHANTED_SEEDS": {
+                                "count": 0,
+                                "target": 3,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Wheat",
+                                    "position": [
+                                        41,
+                                        71,
+                                        -137
+                                    ],
+                                    "radius": 30
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "subArea",
+                        "instruction": "/warp barn",
+                        "subArea": "The Barn",
+                        "command": "/warp barn"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Farm Enchanted Potatoes &b%1&r",
+                        "items": {
+                            "ENCHANTED_POTATO": {
+                                "count": 0,
+                                "target": 50,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Potatoes",
+                                    "position": [
+                                        172,
+                                        81,
+                                        -268
+                                    ],
+                                    "radius": 30
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/is",
+                        "area": "Private Island",
+                        "command": "/is"
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "Agree to help Sam",
+                        "area": "Garden",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Sam",
+                                    "position": [
+                                        8,
+                                        100,
+                                        41
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Talk to Jacob",
+                        "criteria": "&e[NPC] Jacob&f: &rHowdy! Fine day eh?&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Jacob",
+                                    "position": [
+                                        -21,
+                                        71,
+                                        -16
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Give Sam 25 Wheat",
+                        "criteria": "&e[NPC] &bSam&f: &r&fWow, you did it!&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Sam",
+                                    "position": [
+                                        -8,
+                                        71,
+                                        -7
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Talk to Sam",
+                        "criteria": "&e[NPC] &bSam&f: &r&fHead over to the desk, there you can browse SkyMart to order some fuel.&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Sam",
+                                    "position": [
+                                        -15,
+                                        72,
+                                        -28
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "guiItem",
+                        "instruction": "/desk",
+                        "guiName": "Desk",
+                        "itemIndex": null,
+                        "has": null,
+                        "doesntHave": null,
+                        "highlight": false,
+                        "command": "/desk"
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Navigate to SkyMart",
+                        "guiName": "Desk",
+                        "slotIndex": 23,
+                        "highlight": true
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Navigate to Farming Essentials",
+                        "guiName": "SkyMart",
+                        "slotIndex": 11,
+                        "highlight": true
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Purchase Fuel",
+                        "guiName": "SkyMart Farming Essentials",
+                        "slotIndex": 10,
+                        "highlight": true,
+                        "coins": 20000
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Put Fuel in Composter",
+                        "criteria": "&r&aAdded &r&23,000 &r&afuel to the composter!&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Composter",
+                                    "position": [
+                                        -11.5,
+                                        72,
+                                        -27.5
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Compost",
+                        "criteria": "&r&aPicked up 1 Compost!&r",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Composter",
+                                    "position": [
+                                        -11.5,
+                                        72,
+                                        -27.5
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "guiItem",
+                        "instruction": "/desk",
+                        "guiName": "Desk",
+                        "itemIndex": null,
+                        "has": null,
+                        "doesntHave": null,
+                        "highlight": false,
+                        "command": "/desk"
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Navigate to Configure Plots",
+                        "guiName": "Desk",
+                        "slotIndex": 19,
+                        "highlight": true
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Unlock Plot 1",
+                        "guiName": "Configure Plots",
+                        "slotIndex": 13,
+                        "highlight": true
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Confirm Plot Unlock",
+                        "guiName": "Confirm Plot Unlock",
+                        "slotIndex": 11,
+                        "highlight": true
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Collect Sam's Scythe &b%1&r",
+                        "items": {
+                            "SAM_SCYTHE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/tptoplot 1",
+                        "criteria": "&r&aTeleported you to &r&aPlot &r&7- &r&b1&r&a!&r",
+                        "command": "/tptoplot 1"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Clean the plot",
+                        "criteria": "&r&aPlot &r&7- &r&b1 &r&ais now clean!&r"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp garden",
+                        "criteria": "&r&7Warping...&r",
+                        "command": "/warp garden"
+                    },
+                    {
+                        "type": "guiItem",
+                        "instruction": "/desk",
+                        "guiName": "Desk",
+                        "itemIndex": null,
+                        "has": null,
+                        "doesntHave": null,
+                        "highlight": false,
+                        "command": "/desk"
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Navigate to Configure Plots",
+                        "guiName": "Desk",
+                        "slotIndex": 19,
+                        "highlight": true
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Select Plot 1",
+                        "guiName": "Configure Plots",
+                        "slotIndex": 13,
+                        "highlight": true
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Select Wheat Preset",
+                        "guiName": "Plot Modification: 1",
+                        "slotIndex": 11,
+                        "highlight": true
+                    },
+                    {
+                        "type": "guiClickSlot",
+                        "instruction": "Confirm paste",
+                        "guiName": "Confirm Paste",
+                        "slotIndex": 11,
+                        "highlight": true
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Collect Fairy Soul",
+                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Soul #19",
+                                    "position": [
+                                        -6,
+                                        66,
+                                        -179
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
