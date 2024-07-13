@@ -1,32 +1,14 @@
 {
     "name": "July 2024 (Carries)",
-    "version": 1,
+    "version": 2,
     "data": {
         "goalIndex": 0,
         "goals": [
             {
                 "name": "The Basics",
                 "shown": false,
-                "stepIndex": 0,
+                "stepIndex": 11,
                 "steps": [
-                    {
-                        "type": "message",
-                        "instruction": "/visit GodJr",
-                        "criteria": "&r&7Sending a visit request...&r",
-                        "command": "/visit GodJr"
-                    },
-                    {
-                        "type": "cake",
-                        "instruction": "Eat cakes &b%1",
-                        "count": 0,
-                        "target": 14
-                    },
-                    {
-                        "type": "area",
-                        "instruction": "/warp hub",
-                        "area": "Hub",
-                        "command": "/warp hub"
-                    },
                     {
                         "type": "message",
                         "instruction": "Collect Fairy Soul",
