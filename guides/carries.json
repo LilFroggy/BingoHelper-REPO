@@ -1,6 +1,6 @@
 {
     "name": "July 2024 (Carries)",
-    "version": 2,
+    "version": 3,
     "data": {
         "goalIndex": 0,
         "goals": [
@@ -9,6 +9,11 @@
                 "shown": false,
                 "stepIndex": 11,
                 "steps": [
+                    {
+                        "type": "message",
+                        "instruction": "Hi eeee you shouldn't see this",
+                        "criteria": "SOUL! You found a Fairy Soul!"
+                    },
                     {
                         "type": "buy",
                         "instruction": "Buy Red Mushrooms&r &b%1&r\nBuy Rookie Hoe &b%2",
