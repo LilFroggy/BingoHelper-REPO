@@ -11,9 +11,9 @@
                 "steps": [
                     {
                         "type": "message",
-                        "instruction": "/visit GodJr",
+                        "instruction": "/visit LilFroggy",
                         "criteria": "Sending a visit request...",
-                        "command": "/visit GodJr"
+                        "command": "/visit LilFroggy"
                     },
                     {
                         "type": "cake",
@@ -167,7 +167,7 @@
                         "type": "buy",
                         "instruction": "Buy Oak Log &b%1&r\nBuy Sticks&r &b%2",
                         "items": {
-                            "OAK_WOOD": {
+                            "LOG": {
                                 "count": 0,
                                 "target": 8,
                                 "done": false
@@ -185,7 +185,7 @@
                                 {
                                     "text": "Lumber Merchant",
                                     "position": [
-                                        -51,
+                                        -50,
                                         70,
                                         -68
                                     ],
@@ -314,7 +314,7 @@
                     {
                         "type": "message",
                         "instruction": "Drop and pickup coal",
-                        "criteria": ""
+                        "criteria": "Mine coal"
                     },
                     {
                         "type": "has",
@@ -341,7 +341,7 @@
                         "type": "buy",
                         "instruction": "Buy Experience Bottle &b%1&r",
                         "items": {
-                            "EXPERIENCE_BOTTLE": {
+                            "EXP_BOTTLE": {
                                 "count": 0,
                                 "target": 1,
                                 "done": false
@@ -663,7 +663,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Oak Collection 3",
-                        "criteria": "  COLLECTION LEVEL UP Oak Wood II➜III",
+                        "criteria": "COLLECTION LEVEL UP Oak Wood II➜III",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -783,12 +783,12 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Mining 12",
-                        "criteria": "  SKILL LEVEL UP Mining XI➜XII"
+                        "criteria": "SKILL LEVEL UP Mining XI➜XII"
                     },
                     {
                         "type": "message",
                         "instruction": "Unlock Mushroom Collection 3",
-                        "criteria": "  COLLECTION LEVEL UP Mushroom II➜III"
+                        "criteria": "COLLECTION LEVEL UP Mushroom II➜III"
                     },
                     {
                         "type": "has",
@@ -1128,7 +1128,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Diamond Collection 4",
-                        "criteria": "  COLLECTION LEVEL UP Diamond III➜IV",
+                        "criteria": "COLLECTION LEVEL UP Diamond III➜IV",
                         "shown": false,
                         "clientCommand": "/shtrackcollection DIAMOND 1600"
                     },
@@ -1169,7 +1169,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Lapis Lazuli Collection 4",
-                        "criteria": "  COLLECTION LEVEL UP Lapis Lazuli III➜IV",
+                        "criteria": "COLLECTION LEVEL UP Lapis Lazuli III➜IV",
                         "shown": false,
                         "clientCommand": "/shtrackcollection LAPIS_LAZULI 2000"
                     },
@@ -1211,7 +1211,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Redstone Collection 4",
-                        "criteria": "  COLLECTION LEVEL UP Redstone III➜IV",
+                        "criteria": "COLLECTION LEVEL UP Redstone III➜IV",
                         "shown": false,
                         "clientCommand": "/shtrackcollection REDSTONE 1600"
                     },
@@ -1348,6 +1348,24 @@
                             "beam": true,
                             "list": [
                                 {
+                                    "text": "[!]",
+                                    "position": [
+                                        63,
+                                        200,
+                                        -100
+                                    ],
+                                    "radius": 15
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        116,
+                                        187,
+                                        -10
+                                    ],
+                                    "radius": 15
+                                },
+                                {
                                     "text": "King",
                                     "position": [
                                         129,
@@ -1463,19 +1481,64 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Emerald Collection 3",
-                        "criteria": "  COLLECTION LEVEL UP Emerald II➜III",
+                        "criteria": "COLLECTION LEVEL UP Emerald II➜III",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
                             "list": [
                                 {
+                                    "text": "[!]",
+                                    "position": [
+                                        5,
+                                        207,
+                                        -108
+                                    ],
+                                    "radius": 7
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        11,
+                                        214,
+                                        -108
+                                    ],
+                                    "radius": 3
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        11,
+                                        220,
+                                        -104
+                                    ],
+                                    "radius": 3
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        16,
+                                        228,
+                                        -104
+                                    ],
+                                    "radius": 3
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        19,
+                                        232,
+                                        -98
+                                    ],
+                                    "radius": 4
+                                },
+                                {
                                     "text": "Emeralds",
                                     "position": [
                                         29,
-                                        237,
-                                        -132
+                                        236,
+                                        -93
                                     ],
-                                    "radius": 40
+                                    "radius": 10
                                 }
                             ],
                             "index": 0
@@ -1501,7 +1564,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Combat 12",
-                        "criteria": "  SKILL LEVEL UP Combat XI➜XII",
+                        "criteria": "SKILL LEVEL UP Combat XI➜XII",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -1549,7 +1612,7 @@
                     {
                         "type": "message",
                         "instruction": "Kill 5 Endermen",
-                        "criteria": "  Talk to Lone Adventurer"
+                        "criteria": "Talk to Lone Adventurer"
                     },
                     {
                         "type": "guiClickSlot",
@@ -1802,7 +1865,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Combat 15",
-                        "criteria": "  SKILL LEVEL UP Combat XIV➜XV"
+                        "criteria": "SKILL LEVEL UP Combat XIV➜XV"
                     },
                     {
                         "type": "area",
