@@ -11,6 +11,12 @@
                 "steps": [
                     {
                         "type": "message",
+                        "instruction": "This guide has carries",
+                        "criteria": "",
+                        "command": "/bh skip"
+                    },
+                    {
+                        "type": "message",
                         "instruction": "/visit LilFroggy",
                         "criteria": "Sending a visit request...",
                         "command": "/visit LilFroggy"
