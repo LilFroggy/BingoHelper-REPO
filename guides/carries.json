@@ -7,7 +7,7 @@
             {
                 "name": "The Basics",
                 "shown": false,
-                "stepIndex": 0,
+                "stepIndex": 30,
                 "steps": [
                     {
                         "type": "message",
@@ -464,7 +464,8 @@
                                 }
                             ],
                             "index": 0
-                        }
+                        },
+                        "count": 0
                     },
                     {
                         "type": "message",
