@@ -1,13 +1,13 @@
 {
     "name": "July 2024 (Carries)",
-    "version": 2,
+    "version": 1,
     "data": {
         "goalIndex": 0,
         "goals": [
             {
                 "name": "The Basics",
                 "shown": false,
-                "stepIndex": 30,
+                "stepIndex": 0,
                 "steps": [
                     {
                         "type": "message",
@@ -464,8 +464,7 @@
                                 }
                             ],
                             "index": 0
-                        },
-                        "count": 0
+                        }
                     },
                     {
                         "type": "message",
