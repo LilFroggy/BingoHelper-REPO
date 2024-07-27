@@ -7,12 +7,129 @@
             {
                 "name": "The Basics",
                 "shown": false,
-                "stepIndex": 11,
+                "stepIndex": 0,
                 "steps": [
                     {
                         "type": "message",
                         "instruction": "This guide has no carries",
-                        "criteria": "SOUL! You found a Fairy Soul!"
+                        "criteria": "",
+                        "command": "/bh skip"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/visit LilFroggy",
+                        "criteria": "Sending a visit request...",
+                        "command": "/visit LilFroggy"
+                    },
+                    {
+                        "type": "cake",
+                        "instruction": "Eat cakes &b%1",
+                        "count": 0,
+                        "target": 14
+                    },
+                    {
+                        "type": "area",
+                        "instruction": "/warp hub",
+                        "area": "Hub",
+                        "command": "/warp hub"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Unlock Farming 7",
+                        "criteria": "SKILL LEVEL UP Farming VI➜VII",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Wheat",
+                                    "position": [
+                                        41,
+                                        71,
+                                        -137
+                                    ],
+                                    "radius": 30
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Craft Farm Suit Armor",
+                        "items": {
+                            "FARM_SUIT_HELMET": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "FARM_SUIT_CHESTPLATE": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "FARM_SUIT_LEGGINGS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            },
+                            "FARM_SUIT_BOOTS": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        }
+                    },
+                    {
+                        "type": "sell",
+                        "instruction": "Sell Wheat and Seeds",
+                        "items": [
+                            "WHEAT",
+                            "SEEDS"
+                        ],
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Fish Merchant",
+                                    "position": [
+                                        52,
+                                        68,
+                                        -83
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
+                    },
+                    {
+                        "type": "buy",
+                        "instruction": "Buy Fishing Rod &b%1",
+                        "items": {
+                            "FISHING_ROD": {
+                                "count": 0,
+                                "target": 1,
+                                "done": false
+                            }
+                        },
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Fish Merchant",
+                                    "position": [
+                                        52,
+                                        68,
+                                        -83
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
+                        }
                     },
                     {
                         "type": "buy",
@@ -48,36 +165,15 @@
                     },
                     {
                         "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #7",
-                                    "position": [
-                                        26,
-                                        80,
-                                        -65
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
                         "instruction": "/warp hub",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp hub"
                     },
                     {
                         "type": "buy",
                         "instruction": "Buy Oak Log &b%1&r\nBuy Sticks&r &b%2",
                         "items": {
-                            "OAK_WOOD": {
+                            "LOG": {
                                 "count": 0,
                                 "target": 8,
                                 "done": false
@@ -97,28 +193,7 @@
                                     "position": [
                                         -50,
                                         70,
-                                        -69
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #8",
-                                    "position": [
-                                        -53,
-                                        70,
-                                        -100
+                                        -68
                                     ],
                                     "radius": 5
                                 }
@@ -129,7 +204,7 @@
                     {
                         "type": "message",
                         "instruction": "Talk to Librarian",
-                        "criteria": "&e[NPC] Librarian&f: &r&fGreetings! Welcome to the &bLibrary&f!&r",
+                        "criteria": "[NPC] Librarian: Greetings! Welcome to the Library!",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -150,7 +225,7 @@
                     {
                         "type": "message",
                         "instruction": "Talk to Blacksmith",
-                        "criteria": "&e[NPC] Blacksmith&f: &r&fI'm the town Blacksmith! I can &areforge &fitems for you, for a price.&r",
+                        "criteria": "[NPC] Blacksmith: I'm the town Blacksmith! I can reforge items for you, for a price.",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -243,31 +318,9 @@
                         }
                     },
                     {
-                        "type": "has",
-                        "instruction": "Mine Coal &b%1&r",
-                        "items": {
-                            "COAL": {
-                                "count": 0,
-                                "target": 11,
-                                "done": false
-                            }
-                        },
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Coal Ore",
-                                    "position": [
-                                        -6,
-                                        69,
-                                        -120
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
+                        "type": "message",
+                        "instruction": "Drop and pickup coal",
+                        "criteria": "Mine coal"
                     },
                     {
                         "type": "has",
@@ -294,7 +347,7 @@
                         "type": "buy",
                         "instruction": "Buy Experience Bottle &b%1&r",
                         "items": {
-                            "EXPERIENCE_BOTTLE": {
+                            "EXP_BOTTLE": {
                                 "count": 0,
                                 "target": 1,
                                 "done": false
@@ -401,7 +454,6 @@
                     {
                         "type": "coins",
                         "instruction": "Get coins from enchanting &6%1",
-                        "criteria": "&r&cYou have reached the daily cap of 500,000 Enchanting EXP. Keep in mind EXP from experiments bypasses this cap!&r",
                         "target": 50000,
                         "waypoint": {
                             "type": "list",
@@ -422,29 +474,8 @@
                     },
                     {
                         "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #9",
-                                    "position": [
-                                        -16,
-                                        66,
-                                        -110
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
                         "instruction": "/warp hub",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp hub"
                     },
                     {
@@ -477,39 +508,18 @@
                     {
                         "type": "message",
                         "instruction": "Give pet item",
-                        "criteria": "&r&aYour pet is now holding &r&fAll Skills Exp Boost&r&a.&r"
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #10",
-                                    "position": [
-                                        30,
-                                        79,
-                                        -94
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
+                        "criteria": "Your pet is now holding All Skills Exp Boost."
                     },
                     {
                         "type": "message",
                         "instruction": "/warp hub",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp hub"
                     },
                     {
                         "type": "message",
                         "instruction": "Finish daily enchanting xp",
-                        "criteria": "&r&cYou have reached the daily cap of 500,000 Enchanting EXP. Keep in mind EXP from experiments bypasses this cap!&r",
+                        "criteria": "You have reached the daily cap of 500,000 Enchanting EXP. Keep in mind EXP from experiments bypasses this cap!",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -530,7 +540,7 @@
                     {
                         "type": "message",
                         "instruction": "/warp hub",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp hub"
                     },
                     {
@@ -626,92 +636,8 @@
                     {
                         "type": "message",
                         "instruction": "/warp hub",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp hub"
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #11",
-                                    "position": [
-                                        -49,
-                                        90,
-                                        -72
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #12",
-                                    "position": [
-                                        -81,
-                                        70,
-                                        -88
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #13",
-                                    "position": [
-                                        -94,
-                                        72,
-                                        -129
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #14",
-                                    "position": [
-                                        -142,
-                                        77,
-                                        -31
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
                     },
                     {
                         "type": "has",
@@ -743,7 +669,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Oak Collection 3",
-                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eOak Wood &8IIâžœ&eIII&r",
+                        "criteria": "COLLECTION LEVEL UP Oak Wood II➜III",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -794,27 +720,6 @@
                         "command": "/warp wizard"
                     },
                     {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #15",
-                                    "position": [
-                                        43,
-                                        121,
-                                        70
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
                         "type": "subArea",
                         "instruction": "/warp barn",
                         "subArea": "The Barn",
@@ -845,23 +750,23 @@
                     {
                         "type": "message",
                         "instruction": "Pick up Cobblestone Minion",
-                        "criteria": "&r&aYou picked up a minion! You currently have"
+                        "criteria": "You picked up a minion! You currently have"
                     },
                     {
                         "type": "message",
                         "instruction": "/is",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/is"
                     },
                     {
                         "type": "message",
                         "instruction": "Place Chicken and Pig Minion",
-                        "criteria": "&r&bYou placed a minion! (2/${*})&r"
+                        "criteria": "You placed a minion! (2/"
                     },
                     {
                         "type": "message",
                         "instruction": "Do your daily superpairs",
-                        "criteria": "&r&eYou claimed the &r&bSuperpairs &r&erewards!&r"
+                        "criteria": "You claimed the Superpairs rewards!"
                     },
                     {
                         "type": "subArea",
@@ -870,52 +775,10 @@
                         "command": "/warp desert"
                     },
                     {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #16",
-                                    "position": [
-                                        145,
-                                        76,
-                                        -374
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
                         "type": "subArea",
                         "instruction": "/warp trapper",
                         "subArea": "Trapper's Den",
                         "command": "/warp trapper"
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #17",
-                                    "position": [
-                                        279,
-                                        112,
-                                        -541
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
                     },
                     {
                         "type": "subArea",
@@ -926,12 +789,12 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Mining 12",
-                        "criteria": "  &r&b&lSKILL LEVEL UP &3Mining &8XIâžœ&3XII&r"
+                        "criteria": "SKILL LEVEL UP Mining XI➜XII"
                     },
                     {
                         "type": "message",
                         "instruction": "Unlock Mushroom Collection 3",
-                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eMushroom &8IIâžœ&eIII&r"
+                        "criteria": "COLLECTION LEVEL UP Mushroom II➜III"
                     },
                     {
                         "type": "has",
@@ -968,7 +831,7 @@
                     {
                         "type": "message",
                         "instruction": "/warp hub",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp hub"
                     },
                     {
@@ -1107,48 +970,6 @@
                             ],
                             "index": 0
                         }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #18",
-                                    "position": [
-                                        -21,
-                                        79,
-                                        -166
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #19",
-                                    "position": [
-                                        -6,
-                                        66,
-                                        -179
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
                     }
                 ]
             },
@@ -1164,57 +985,9 @@
                         "command": "/warp deep"
                     },
                     {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #20",
-                                    "position": [
-                                        3,
-                                        152,
-                                        85
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "/warp deep",
-                        "criteria": "&r&7Warping...&r",
-                        "command": "/warp deep"
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #21",
-                                    "position": [
-                                        -18,
-                                        163,
-                                        26
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
+                        "type": "subArea",
+                        "instruction": "Reach Obsidian Sanctuary",
+                        "subArea": "Obsidian Sanctuary",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -1292,27 +1065,6 @@
                                     "radius": 10
                                 },
                                 {
-                                    "text": "Soul #22",
-                                    "position": [
-                                        18,
-                                        74,
-                                        74
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
                                     "text": "[!]",
                                     "position": [
                                         9,
@@ -1321,27 +1073,6 @@
                                     ],
                                     "radius": 6
                                 },
-                                {
-                                    "text": "Soul #23",
-                                    "position": [
-                                        0,
-                                        64,
-                                        57
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
                                 {
                                     "text": "[!]",
                                     "position": [
@@ -1388,27 +1119,6 @@
                                     "radius": 5
                                 },
                                 {
-                                    "text": "Soul #24",
-                                    "position": [
-                                        -21,
-                                        24,
-                                        72
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "subArea",
-                        "instruction": "Reach Obsidian Sanctuary",
-                        "subArea": "Obsidian Sanctuary",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
                                     "text": "[!]",
                                     "position": [
                                         -39,
@@ -1424,7 +1134,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Diamond Collection 4",
-                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eDiamond &8IIIâžœ&eIV&r",
+                        "criteria": "COLLECTION LEVEL UP Diamond III➜IV",
                         "shown": false,
                         "clientCommand": "/shtrackcollection DIAMOND 1600"
                     },
@@ -1465,7 +1175,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Lapis Lazuli Collection 4",
-                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eLapis Lazuli &8IIIâžœ&eIV&r",
+                        "criteria": "COLLECTION LEVEL UP Lapis Lazuli III➜IV",
                         "shown": false,
                         "clientCommand": "/shtrackcollection LAPIS_LAZULI 2000"
                     },
@@ -1506,29 +1216,8 @@
                     },
                     {
                         "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #25",
-                                    "position": [
-                                        44,
-                                        98,
-                                        23
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
-                    },
-                    {
-                        "type": "message",
                         "instruction": "Unlock Redstone Collection 4",
-                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eRedstone &8IIIâžœ&eIV&r",
+                        "criteria": "COLLECTION LEVEL UP Redstone III➜IV",
                         "shown": false,
                         "clientCommand": "/shtrackcollection REDSTONE 1600"
                     },
@@ -1665,6 +1354,24 @@
                             "beam": true,
                             "list": [
                                 {
+                                    "text": "[!]",
+                                    "position": [
+                                        63,
+                                        200,
+                                        -100
+                                    ],
+                                    "radius": 15
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        116,
+                                        187,
+                                        -10
+                                    ],
+                                    "radius": 15
+                                },
+                                {
                                     "text": "King",
                                     "position": [
                                         129,
@@ -1690,8 +1397,7 @@
                             "FRACTURED_MITHRIL_PICKAXE": {
                                 "enchants": [
                                     "Efficiency V",
-                                    "Fortune III",
-                                    "Smelting Touch I"
+                                    "Fortune III"
                                 ],
                                 "done": false
                             }
@@ -1781,19 +1487,64 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Emerald Collection 3",
-                        "criteria": "  &r&6&lCOLLECTION LEVEL UP &eEmerald &8IIâžœ&eIII&r",
+                        "criteria": "COLLECTION LEVEL UP Emerald II➜III",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
                             "list": [
                                 {
+                                    "text": "[!]",
+                                    "position": [
+                                        5,
+                                        207,
+                                        -108
+                                    ],
+                                    "radius": 7
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        11,
+                                        214,
+                                        -108
+                                    ],
+                                    "radius": 3
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        11,
+                                        220,
+                                        -104
+                                    ],
+                                    "radius": 3
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        16,
+                                        228,
+                                        -104
+                                    ],
+                                    "radius": 3
+                                },
+                                {
+                                    "text": "[!]",
+                                    "position": [
+                                        19,
+                                        232,
+                                        -98
+                                    ],
+                                    "radius": 4
+                                },
+                                {
                                     "text": "Emeralds",
                                     "position": [
                                         29,
-                                        237,
-                                        -132
+                                        236,
+                                        -93
                                     ],
-                                    "radius": 40
+                                    "radius": 10
                                 }
                             ],
                             "index": 0
@@ -1813,13 +1564,13 @@
                     {
                         "type": "message",
                         "instruction": "/warp forge",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp forge"
                     },
                     {
                         "type": "message",
                         "instruction": "Unlock Combat 12",
-                        "criteria": "  &r&b&lSKILL LEVEL UP &3Combat &8XIâžœ&3XII&r",
+                        "criteria": "SKILL LEVEL UP Combat XI➜XII",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -1846,7 +1597,7 @@
                     {
                         "type": "message",
                         "instruction": "Talk to Lone Adventurer",
-                        "criteria": "&e[NPC] &6Lone Adventurer&f: &rTry killing &a5 &rof them!&r",
+                        "criteria": "[NPC] Lone Adventurer: Try killing 5 of them!",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -1867,7 +1618,7 @@
                     {
                         "type": "message",
                         "instruction": "Kill 5 Endermen",
-                        "criteria": "  &r&fTalk to Lone Adventurer&r"
+                        "criteria": "Talk to Lone Adventurer"
                     },
                     {
                         "type": "guiClickSlot",
@@ -2120,7 +1871,7 @@
                     {
                         "type": "message",
                         "instruction": "Unlock Combat 15",
-                        "criteria": "  &r&b&lSKILL LEVEL UP &3Combat &8XIVâžœ&3XV&r"
+                        "criteria": "SKILL LEVEL UP Combat XIV➜XV"
                     },
                     {
                         "type": "area",
@@ -2223,7 +1974,7 @@
                     {
                         "type": "message",
                         "instruction": "Talk to Jacob",
-                        "criteria": "&e[NPC] Jacob&f: &rHowdy! Fine day eh?&r",
+                        "criteria": "[NPC] Jacob: Howdy! Fine day eh?",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -2244,7 +1995,7 @@
                     {
                         "type": "message",
                         "instruction": "Give Sam 25 Wheat",
-                        "criteria": "&e[NPC] &bSam&f: &r&fWow, you did it!&r",
+                        "criteria": "[NPC] Sam: Wow, you did it!",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -2265,7 +2016,7 @@
                     {
                         "type": "message",
                         "instruction": "Talk to Sam",
-                        "criteria": "&e[NPC] &bSam&f: &r&fHead over to the desk, there you can browse SkyMart to order some fuel.&r",
+                        "criteria": "[NPC] Sam: Head over to the desk, there you can browse SkyMart to order some fuel.",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -2318,7 +2069,7 @@
                     {
                         "type": "message",
                         "instruction": "Put Fuel in Composter",
-                        "criteria": "&r&aAdded &r&23,000 &r&afuel to the composter!&r",
+                        "criteria": "Added 3,000 fuel to the composter!",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -2339,7 +2090,7 @@
                     {
                         "type": "message",
                         "instruction": "Collect Compost",
-                        "criteria": "&r&aPicked up 1 Compost!&r",
+                        "criteria": "Picked up 1 Compost!",
                         "waypoint": {
                             "type": "list",
                             "beam": true,
@@ -2402,18 +2153,18 @@
                     {
                         "type": "message",
                         "instruction": "/tptoplot 1",
-                        "criteria": "&r&aTeleported you to &r&aPlot &r&7- &r&b1&r&a!&r",
+                        "criteria": "Teleported you to Plot - 1!",
                         "command": "/tptoplot 1"
                     },
                     {
                         "type": "message",
                         "instruction": "Clean the plot",
-                        "criteria": "&r&aPlot &r&7- &r&b1 &r&ais now clean!&r"
+                        "criteria": "Plot - 1 is now clean!"
                     },
                     {
                         "type": "message",
                         "instruction": "/warp garden",
-                        "criteria": "&r&7Warping...&r",
+                        "criteria": "Warping...",
                         "command": "/warp garden"
                     },
                     {
@@ -2453,27 +2204,6 @@
                         "guiName": "Confirm Paste",
                         "slotIndex": 11,
                         "highlight": true
-                    },
-                    {
-                        "type": "message",
-                        "instruction": "Collect Fairy Soul",
-                        "criteria": "SOUL! You found a Fairy Soul!",
-                        "waypoint": {
-                            "type": "list",
-                            "beam": true,
-                            "list": [
-                                {
-                                    "text": "Soul #19",
-                                    "position": [
-                                        -6,
-                                        66,
-                                        -179
-                                    ],
-                                    "radius": 5
-                                }
-                            ],
-                            "index": 0
-                        }
                     }
                 ]
             }
