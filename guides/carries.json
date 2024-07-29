@@ -13,7 +13,7 @@
                         "type": "message",
                         "instruction": "This guide has carries",
                         "criteria": "",
-                        "command": "/bh skip"
+                        "clientCommand": "/bh skip"
                     },
                     {
                         "type": "message",
