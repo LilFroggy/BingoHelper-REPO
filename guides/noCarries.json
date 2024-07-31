@@ -1,6 +1,6 @@
 {
     "name": "August 2024 (Carries) (Only the carry version is available for this bingo)",
-    "version": 1,
+    "version": 2,
     "data": {
         "goalIndex": 0,
         "goals": [
@@ -2415,6 +2415,33 @@
                                 "target": 1,
                                 "done": false
                             }
+                        }
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "/warp spider",
+                        "criteria": "Warping...",
+                        "command": "/warp spider"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Talk to Grandma Wolf",
+                        "criteria": "[NPC] Grandma Wolf: I've added the Grandma Wolf Pet to your Pets Menu.",
+                        "waypoint": {
+                            "type": "list",
+                            "beam": true,
+                            "list": [
+                                {
+                                    "text": "Grandma Wolf",
+                                    "position": [
+                                        -282,
+                                        122,
+                                        -191
+                                    ],
+                                    "radius": 5
+                                }
+                            ],
+                            "index": 0
                         }
                     },
                     {
