@@ -1,6 +1,6 @@
 {
     "name": "August 2024 (Carries) (Only the carry verion is available this bingo)",
-    "version": 3,
+    "version": 4,
     "data": {
         "goalIndex": 0,
         "goals": [
@@ -2793,12 +2793,6 @@
                             ],
                             "index": 0
                         }
-                    },
-                    {
-                        "type": "area",
-                        "instruction": "/warp hub",
-                        "area": "Hub",
-                        "command": "/warp hub"
                     }
                 ]
             }
