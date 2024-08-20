@@ -8,7 +8,7 @@
                 "type": "message",
                 "instruction": "This is a test guide",
                 "criteria": "I understand",
-                "clientCommand": "/bg skip"
+                "clientCommand": "/bh skip"
             },
             {
                 "type": "message",
