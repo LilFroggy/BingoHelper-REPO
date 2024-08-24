@@ -7,14 +7,14 @@
             {
                 "type": "message",
                 "instruction": "This is a test guide",
-                "criteria": "I understand",
+                "criteria": "/bh skip",
                 "clientCommand": "/bh skip"
             },
             {
                 "type": "message",
-                "instruction": "/visit LilFroggy",
+                "instruction": "/visit %visitIsland%",
                 "criteria": "Sending a visit request...",
-                "command": "/visit LilFroggy"
+                "command": "/visit %visitIsland%"
             },
             {
                 "type": "cake",
@@ -79,7 +79,6 @@
                 "instruction": "Sell Wheat and Seeds",
                 "items": [
                     "WHEAT",
-                    "HAY_BLOCK",
                     "SEEDS"
                 ],
                 "waypoint": {
@@ -465,8 +464,7 @@
                         }
                     ],
                     "index": 0
-                },
-                "count": 0
+                }
             },
             {
                 "type": "message",
@@ -1143,7 +1141,6 @@
                 "instruction": "Take lift to Lapis Quarry",
                 "guiName": "Lift",
                 "slotIndex": 12,
-                "highlight": true,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
