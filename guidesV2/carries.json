@@ -2,7 +2,7 @@
     "name": "Carry Guide",
     "version": 1,
     "data": {
-        "stepIndex": 1,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
@@ -18,7 +18,7 @@
             },
             {
                 "type": "cake",
-                "instruction": "Eat cakes &b%1",
+                "instruction": "Eat cakes &b%cakes%",
                 "eaten": []
             },
             {
@@ -28,9 +28,10 @@
                 "command": "/warp hub"
             },
             {
-                "type": "message",
-                "instruction": "Unlock Farming 7",
-                "criteria": "SKILL LEVEL UP Farming VI➜VII",
+                "type": "skill",
+                "instruction": "Unlock Farming 7 &b(Level %level%)",
+                "skill": "farming",
+                "level": 7,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -100,7 +101,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Fishing Rod &b%1",
+                "instruction": "Buy Fishing Rod &b%1%",
                 "items": {
                     "FISHING_ROD": {
                         "count": 0,
@@ -127,7 +128,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Red Mushrooms&r &b%1&r\nBuy Rookie Hoe &b%2",
+                "instruction": "Buy Red Mushrooms&r &b%1%&r\nBuy Rookie Hoe &b%2%",
                 "items": {
                     "RED_MUSHROOM": {
                         "count": 0,
@@ -165,7 +166,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Oak Log &b%1&r\nBuy Sticks&r &b%2",
+                "instruction": "Buy Oak Log &b%1%&r\nBuy Sticks&r &b%2%",
                 "items": {
                     "LOG": {
                         "count": 0,
@@ -239,7 +240,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy End Sword &b%1",
+                "instruction": "Buy End Sword &b%1%",
                 "items": {
                     "END_SWORD": {
                         "count": 0,
@@ -266,7 +267,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Coal &b%1&r\nBuy Iron Ingot &b%2&r\nBuy Gold Ingot &b%3&r\n&fBuy Promising Pickaxe&r &b%4&r\nBuy Black Diamond &b%5&r",
+                "instruction": "Buy Coal &b%1%&r\nBuy Iron Ingot &b%2%&r\nBuy Gold Ingot &b%3%&r\n&fBuy Promising Pickaxe&r &b%4%&r\nBuy Black Diamond &b%5%&r",
                 "items": {
                     "COAL": {
                         "count": 0,
@@ -318,7 +319,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Golden Axe &b%1&r\n&fCraft Golden Shovel &b%2&r\n&fCraft Shears &b%3&r",
+                "instruction": "Craft Golden Axe &b%1%&r\n&fCraft Golden Shovel &b%2%&r\n&fCraft Shears &b%3%&r",
                 "items": {
                     "GOLD_AXE": {
                         "count": 0,
@@ -339,7 +340,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Experience Bottle &b%1&r",
+                "instruction": "Buy Experience Bottle &b%1%&r",
                 "items": {
                     "EXP_BOTTLE": {
                         "count": 0,
@@ -436,7 +437,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Experimentation Table &b%1",
+                "instruction": "Craft Experimentation Table &b%1%",
                 "items": {
                     "EXPERIMENTATION_TABLE": {
                         "count": 0,
@@ -447,7 +448,7 @@
             },
             {
                 "type": "coins",
-                "instruction": "Get coins from enchanting &6%1",
+                "instruction": "Get coins from enchanting &6%coins%",
                 "target": 50000,
                 "waypoint": {
                     "type": "list",
@@ -464,8 +465,7 @@
                         }
                     ],
                     "index": 0
-                },
-                "count": 0
+                }
             },
             {
                 "type": "message",
@@ -475,7 +475,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy All Skills Exp Boost &b%1",
+                "instruction": "Buy All Skills Exp Boost &b%1%",
                 "items": {
                     "PET_ITEM_ALL_SKILLS_BOOST_COMMON": {
                         "count": 0,
@@ -540,7 +540,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Obtain Cheese &b%1&r",
+                "instruction": "Obtain Cheese &b%1%&r",
                 "items": {
                     "CHEESE_FUEL": {
                         "count": 0,
@@ -636,7 +636,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Shear Oak Leaves &b%1",
+                "instruction": "Shear Oak Leaves &b%1%",
                 "items": {
                     "LEAVES": {
                         "count": 0,
@@ -662,9 +662,10 @@
                 }
             },
             {
-                "type": "message",
-                "instruction": "Unlock Oak Collection 3",
-                "criteria": "COLLECTION LEVEL UP Oak Wood II➜III",
+                "type": "collection",
+                "instruction": "Unlock Oak Wood 3 &b(Tier %level%)",
+                "collection": "oak_wood",
+                "level": 3,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -684,7 +685,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Leaflet Helmet &b%1&r\nCraft Leaflet Chestplate &b%2&r\nCraft Leaflet Leggings &b%3&r\nCraft Leaflet Boots &b%4&r",
+                "instruction": "Craft Leaflet Helmet &b%1%&r\nCraft Leaflet Chestplate &b%2%&r\nCraft Leaflet Leggings &b%3%&r\nCraft Leaflet Boots &b%4%&r",
                 "items": {
                     "LEAFLET_HELMET": {
                         "count": 0,
@@ -722,7 +723,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Chicken Minion I &b%1&r\nCraft Pig Minion I &b%2",
+                "instruction": "Craft Chicken Minion I &b%1%&r\nCraft Pig Minion I &b%2%",
                 "items": {
                     "CHICKEN_GENERATOR_1": {
                         "count": 0,
@@ -782,14 +783,16 @@
                 "command": "/warp desert"
             },
             {
-                "type": "message",
-                "instruction": "Unlock Mining 12",
-                "criteria": "SKILL LEVEL UP Mining XI➜XII"
+                "type": "skill",
+                "instruction": "Unlock Mining 12 &b(Level %level%)",
+                "skill": "mining",
+                "level": 12
             },
             {
-                "type": "message",
-                "instruction": "Unlock Mushroom Collection 3",
-                "criteria": "COLLECTION LEVEL UP Mushroom II➜III"
+                "type": "collection",
+                "instruction": "Unlock Mushroom 3 &b(Tier %level%)",
+                "collection": "mushroom",
+                "level": 3
             },
             {
                 "type": "has",
@@ -1120,15 +1123,15 @@
                 }
             },
             {
-                "type": "message",
-                "instruction": "Unlock Diamond Collection 4",
-                "criteria": "COLLECTION LEVEL UP Diamond III➜IV",
-                "shown": false,
+                "type": "collection",
+                "instruction": "Unlock Diamond 4 &b(Tier %level%)",
+                "collection": "diamond",
+                "level": 4,
                 "clientCommand": "/shtrackcollection DIAMOND 1600"
             },
             {
                 "type": "has",
-                "instruction": "Craft Enchanted Diamond &b%1&r",
+                "instruction": "Craft Enchanted Diamond &b%1%&r",
                 "items": {
                     "ENCHANTED_DIAMOND": {
                         "count": 0,
@@ -1160,15 +1163,15 @@
                 }
             },
             {
-                "type": "message",
-                "instruction": "Unlock Lapis Lazuli Collection 4",
-                "criteria": "COLLECTION LEVEL UP Lapis Lazuli III➜IV",
-                "shown": false,
+                "type": "collection",
+                "instruction": "Unlock Lapis Lazuli 4 &b(Tier %level%)",
+                "collection": "lapis_lazuli",
+                "level": 4,
                 "clientCommand": "/shtrackcollection LAPIS_LAZULI 2000"
             },
             {
                 "type": "has",
-                "instruction": "Craft Enchanted Lapis Lazuli &b%1&r",
+                "instruction": "Craft Enchanted Lapis Lazuli &b%1%&r",
                 "items": {
                     "ENCHANTED_LAPIS_LAZULI": {
                         "count": 0,
@@ -1202,15 +1205,15 @@
                 "shown": false
             },
             {
-                "type": "message",
-                "instruction": "Unlock Redstone Collection 4",
-                "criteria": "COLLECTION LEVEL UP Redstone III➜IV",
-                "shown": false,
+                "type": "collection",
+                "instruction": "Unlock Redstone 4 &b(Tier %level%)",
+                "collection": "redstone",
+                "level": 4,
                 "clientCommand": "/shtrackcollection REDSTONE 1600"
             },
             {
                 "type": "has",
-                "instruction": "Craft Enchanted Redstone &b%1&r",
+                "instruction": "Craft Enchanted Redstone &b%1%&r",
                 "items": {
                     "ENCHANTED_REDSTONE": {
                         "count": 0,
@@ -1221,7 +1224,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Collect Redstone &b%1&r",
+                "instruction": "Collect Redstone &b%1%&r",
                 "items": {
                     "REDSTONE": {
                         "count": 0,
@@ -1296,7 +1299,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Fractured Mithril Pickaxe &b%1&r",
+                "instruction": "Buy Fractured Mithril Pickaxe &b%1%&r",
                 "items": {
                     "FRACTURED_MITHRIL_PICKAXE": {
                         "count": 0,
@@ -1401,7 +1404,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Black Diamond &b%1",
+                "instruction": "Buy Black Diamond &b%1%",
                 "items": {
                     "ONYX": {
                         "count": 0,
@@ -1458,9 +1461,10 @@
                 "command": "/warp mines"
             },
             {
-                "type": "message",
-                "instruction": "Unlock Emerald Collection 3",
-                "criteria": "COLLECTION LEVEL UP Emerald II➜III",
+                "type": "collection",
+                "instruction": "Unlock Emerald 3 &b(Tier %level%)",
+                "collection": "emerald",
+                "level": 3,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -1525,7 +1529,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Magnetic Talisman &b%1&r",
+                "instruction": "Craft Magnetic Talisman &b%1%&r",
                 "items": {
                     "MAGNETIC_TALISMAN": {
                         "count": 0,
@@ -1541,9 +1545,10 @@
                 "command": "/warp forge"
             },
             {
-                "type": "message",
-                "instruction": "Unlock Combat 12",
-                "criteria": "SKILL LEVEL UP Combat XI➜XII",
+                "type": "skill",
+                "instruction": "Unlock Combat 12 &b(Level %level%)",
+                "skill": "combat",
+                "level": 12,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -1705,7 +1710,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Obtain Ender Helmet &b%1&r\nObtain Ender Chestplate &b%2&r\nObtain Ender Leggings &b%3&r\nObtain Ender Boots &b%4&r",
+                "instruction": "Obtain Ender Helmet &b%1%&r\nObtain Ender Chestplate &b%2%&r\nObtain Ender Leggings &b%3%&r\nObtain Ender Boots &b%4%&r",
                 "items": {
                     "END_HELMET": {
                         "count": 0,
@@ -1842,9 +1847,10 @@
                 "command": "/warp drag"
             },
             {
-                "type": "message",
-                "instruction": "Unlock Combat 15",
-                "criteria": "SKILL LEVEL UP Combat XIV➜XV"
+                "type": "skill",
+                "instruction": "Unlock Combat 15 &b(Level %level%)",
+                "skill": "combat",
+                "level": 15
             },
             {
                 "type": "area",
@@ -1854,7 +1860,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Farm Wheat &b%1&r\nFarm Enchanted Seeds &b%2&r",
+                "instruction": "Farm Wheat &b%1%&r\nFarm Enchanted Seeds &b%2%&r",
                 "items": {
                     "WHEAT": {
                         "count": 0,
@@ -1892,7 +1898,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Farm Enchanted Potatoes &b%1&r",
+                "instruction": "Farm Enchanted Potatoes &b%1%&r",
                 "items": {
                     "ENCHANTED_POTATO": {
                         "count": 0,
@@ -2114,7 +2120,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Collect Sam's Scythe &b%1&r",
+                "instruction": "Collect Sam's Scythe &b%1%&r",
                 "items": {
                     "SAM_SCYTHE": {
                         "count": 0,
