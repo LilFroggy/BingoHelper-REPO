@@ -154,13 +154,44 @@
             },
             {
                 "type": "sell",
-                "instruction": "Sell Wheat and Seeds",
+                "instruction": "Sell materials",
                 "items": [
                     "HAY_BLOCK",
                     "WHEAT",
                     "SEEDS"
                 ],
                 "command": "/trades"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Potato Collection 1",
+                "collection": "potato",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Potatoes",
+                            "position": [
+                                87,
+                                71,
+                                -97
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Potatoes",
+                            "position": [
+                                87,
+                                71,
+                                -97
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "message",
@@ -173,9 +204,9 @@
                 "instruction": "Buy Rookie Hoe &b%1%",
                 "items": {
                     "ROOKIE_HOE": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -196,6 +227,82 @@
                 }
             },
             {
+                "type": "collection",
+                "instruction": "Unlock Carrot Collection 1",
+                "collection": "carrot",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -3,
+                                69,
+                                8
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -7,
+                                69,
+                                21
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -17,
+                                69,
+                                22
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -23,
+                                70,
+                                32
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -41,
+                                68,
+                                32
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -41,
+                                68,
+                                32
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "CARROT_ITEM",
+                    "POTATO_ITEM"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "message",
                 "instruction": "/warp hub",
                 "criteria": "Warping...",
@@ -203,27 +310,22 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Oak Log &b%1%&r\nBuy Sticks&r &b%2%\nBuy Wooden Swords&r &b%3%\nBuy Wooden Shovel &b%4%",
+                "instruction": "Buy Oak Log &b%1%&r\nBuy Wooden Swords&r &b%2%\nBuy Wooden Shovel &b%3%",
                 "items": {
                     "LOG": {
-                        "count": 8,
+                        "count": 0,
                         "target": 8,
-                        "done": true
-                    },
-                    "STICK": {
-                        "count": 32,
-                        "target": 32,
-                        "done": true
+                        "done": false
                     },
                     "WOOD_SWORD": {
-                        "count": 5,
+                        "count": 0,
                         "target": 5,
-                        "done": true
+                        "done": false
                     },
                     "WOOD_SPADE": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -245,7 +347,7 @@
             },
             {
                 "type": "sell",
-                "instruction": "Store Wooden Tools in Ender Chest",
+                "instruction": "Store Wooden Swords\nStore Wooden Shovel",
                 "items": [
                     "WOOD_SWORD",
                     "WOOD_SPADE"
@@ -299,9 +401,9 @@
                 "instruction": "Buy End Sword &b%1%",
                 "items": {
                     "END_SWORD": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -326,19 +428,19 @@
                 "instruction": "Buy Coal &b%1%&r\nBuy Gold Ingot &b%2%&r\n&fBuy Promising Pickaxe&r &b%3%&r",
                 "items": {
                     "COAL": {
-                        "count": 10,
+                        "count": 0,
                         "target": 10,
-                        "done": true
+                        "done": false
                     },
                     "GOLD_INGOT": {
-                        "count": 4,
+                        "count": 0,
                         "target": 4,
-                        "done": true
+                        "done": false
                     },
                     "PROMISING_PICKAXE": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -368,14 +470,14 @@
                 "instruction": "Craft Golden Axe &b%1%&r\n&fCraft Golden Shovel &b%2%&r",
                 "items": {
                     "GOLD_AXE": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     },
                     "GOLD_SPADE": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "command": "/craft"
@@ -385,9 +487,9 @@
                 "instruction": "Buy Experience Bottle &b%1%&r",
                 "items": {
                     "EXP_BOTTLE": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -619,6 +721,23 @@
                 "slotIndex": 32
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER",
+                    "LEATHER",
+                    "RAW_BEEF",
+                    "POTATO_ITEM",
+                    "WHEAT",
+                    "SEEDS",
+                    "CARROT_ITEM",
+                    "PUMPKIN",
+                    "MELON_BLOCK",
+                    "MELON"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "area",
                 "instruction": "/is",
                 "area": "Private Island",
@@ -628,6 +747,22 @@
                 "type": "message",
                 "instruction": "Pick up Cobblestone Minion",
                 "criteria": "You picked up a minion! You currently have"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Cobblestone Minion",
+                "items": [
+                    "COBBLESTONE_GENERATOR_1"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "message",
@@ -661,6 +796,282 @@
                 "command": "/warp desert"
             },
             {
+                "type": "has",
+                "instruction": "Get Cocoa Beans &b%1%&r\nGet Sugar Cane &b%2%",
+                "items": {
+                    "INK_SACK:3": {
+                        "count": 0,
+                        "target": 75,
+                        "done": false
+                    },
+                    "SUGAR_CANE": {
+                        "count": 0,
+                        "target": 50,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                155,
+                                76,
+                                -405
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                129,
+                                65,
+                                -431
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                103,
+                                65,
+                                -445
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                121,
+                                65,
+                                -473
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                145,
+                                69,
+                                -484
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                139,
+                                76,
+                                -508
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                139,
+                                76,
+                                -508
+                            ],
+                            "radius": 300
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "INK_SACK:3",
+                    "SUGAR_CANE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp desert",
+                "criteria": "Warping...",
+                "command": "/warp desert"
+            },
+            {
+                "type": "has",
+                "instruction": "Mine Sand &b%1%",
+                "items": {
+                    "SAND": {
+                        "count": 0,
+                        "target": 80,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Sand",
+                            "position": [
+                                208,
+                                77,
+                                -372
+                            ],
+                            "radius": 20
+                        },
+                        {
+                            "text": "Sand",
+                            "position": [
+                                208,
+                                77,
+                                -372
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SAND_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion I",
+                "guiName": "Sand Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Mine Sand &b%1%",
+                "items": {
+                    "SAND": {
+                        "count": 0,
+                        "target": 160,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe SAND_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion II",
+                "guiName": "Sand Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Mine Sand &b%1%",
+                "items": {
+                    "SAND": {
+                        "count": 0,
+                        "target": 320,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe SAND_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion III",
+                "guiName": "Sand Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Mine Sand &b%1%",
+                "items": {
+                    "SAND": {
+                        "count": 0,
+                        "target": 512,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 14,
+                "command": "/viewrecipe SAND_GENERATOR_4"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion IV",
+                "guiName": "Sand Minion IV Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Enchanted Sand &b%1%",
+                "items": {
+                    "ENCHANTED_SAND": {
+                        "count": 0,
+                        "target": 8,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 15,
+                "command": "/viewrecipe SAND_GENERATOR_5"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion V",
+                "guiName": "Sand Minion V Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Enchanted Sand &b%1%",
+                "items": {
+                    "ENCHANTED_SAND": {
+                        "count": 0,
+                        "target": 16,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 21,
+                "command": "/viewrecipe SAND_GENERATOR_6"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion VI",
+                "guiName": "Sand Minion VI Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Sand Collection 7",
+                "collection": "sand",
+                "level": 7
+            },
+            {
                 "type": "skill",
                 "instruction": "Unlock Mining 12",
                 "skill": "mining",
@@ -671,6 +1082,17 @@
                 "instruction": "Unlock Mushroom Collection 3",
                 "collection": "mushroom",
                 "level": 3
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "SAND",
+                    "ENCHANTED_SAND",
+                    "HUGE_MUSHROOM_1",
+                    "HUGE_MUSHROOM_2"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "subArea",
@@ -958,6 +1380,14 @@
                 "clientCommand": "/shtrackcollection COAL 1000"
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "has",
                 "instruction": "Craft Enchanted Coal &b%1%",
                 "items": {
@@ -1025,6 +1455,14 @@
                     }
                 },
                 "command": "/viewrecipe ENCHANTED_COAL"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COAL"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "area",
@@ -1226,6 +1664,16 @@
                 "clientCommand": "/shtrackcollection LAPIS_LAZULI 2000"
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE",
+                    "ROTTEN_FLESH",
+                    "LAPIS_CRYSTAL"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "has",
                 "instruction": "Craft Enchanted Lapis Lazuli &b%1%&r",
                 "items": {
@@ -1236,6 +1684,14 @@
                     }
                 },
                 "command": "/viewrecipe ENCHANTED_LAPIS_LAZULI"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "INK_SACK:4"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "guiClickSlot",
@@ -1278,6 +1734,16 @@
                 "collection": "redstone",
                 "level": 4,
                 "clientCommand": "/shtrackcollection REDSTONE 1600"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE",
+                    "GOLD_NUGGET",
+                    "FLAMING_SWORD"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "has",
@@ -1438,6 +1904,14 @@
                 "slotIndex": 48
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "guiClickSlot",
                 "instruction": "Navigate to Chicken Minion Recipes",
                 "guiName": "Chicken Minion Recipes",
@@ -1477,6 +1951,7 @@
                     "FRACTURED_MITHRIL_PICKAXE": {
                         "enchants": [
                             "Efficiency V",
+                            "Smelting Touch I",
                             "Fortune III"
                         ],
                         "done": false
@@ -1637,6 +2112,84 @@
                 "command": "/viewrecipe MAGNETIC_TALISMAN"
             },
             {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Bags",
+                "guiName": "SkyBlock Menu",
+                "slotIndex": 29,
+                "command": "/sbmenu"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sack of Sacks",
+                "guiName": "Your Bags",
+                "slotIndex": 24
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Magnetic Talisman",
+                "items": [
+                    "MAGNETIC_TALISMAN"
+                ]
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "EMERALD",
+                    "REDSTONE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Iron Collection 1",
+                "collection": "iron",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                33,
+                                231,
+                                -97
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                63,
+                                200,
+                                -96
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                88,
+                                194,
+                                -32
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Iron",
+                            "position": [
+                                52,
+                                203,
+                                -9
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
                 "type": "message",
                 "instruction": "/warp forge",
                 "criteria": "Warping...",
@@ -1749,6 +2302,37 @@
                 "instruction": "/warp spider",
                 "area": "Spider's Den",
                 "command": "/warp spider"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Bone Collection 1",
+                "collection": "bone",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Gravel Skeletons",
+                            "position": [
+                                -346,
+                                112,
+                                -228
+                            ],
+                            "radius": 30
+                        },
+                        {
+                            "text": "Gravel Skeletons",
+                            "position": [
+                                -346,
+                                112,
+                                -228
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "message",
@@ -1865,7 +2449,55 @@
             },
             {
                 "type": "has",
-                "instruction": "Obtain Ender Helmet &b%1%&r\nObtain Ender Chestplate &b%2%&r\nObtain Ender Leggings &b%3%&r\nObtain Ender Boots &b%4%&r",
+                "instruction": "Get Ender Pearls &b%1%",
+                "items": {
+                    "ENDER_PEARL": {
+                        "count": 0,
+                        "target": 64,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Enderman Minion Recipes",
+                "guiName": "Enderman Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe ENDERMAN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Enderman Minion I",
+                "guiName": "Enderman Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Ender Pearls &b%1%",
+                "items": {
+                    "ENDER_PEARL": {
+                        "count": 0,
+                        "target": 128,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Enderman Minion Recipes",
+                "guiName": "Enderman Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe ENDERMAN_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Enderman Minion II",
+                "guiName": "Enderman Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Ender Helmet &b%1%&r\nGet Ender Chestplate &b%2%&r\nGet Ender Leggings &b%3%&r\nGet Ender Boots &b%4%&r",
                 "items": {
                     "END_HELMET": {
                         "count": 0,
@@ -2004,6 +2636,20 @@
                 "instruction": "Unlock Combat 15\n&cMine nearby nodes!",
                 "skill": "combat",
                 "level": 15
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "MITE_GEL",
+                    "OBSIDIAN",
+                    "ENCHANTED_OBSIDIAN",
+                    "ENDER_STONE",
+                    "ENCHANTED_ENDSTONE",
+                    "ENDSTONE_ROSE",
+                    "RUNE"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "area",
