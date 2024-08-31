@@ -1827,7 +1827,7 @@
                             "radius": 5
                         }
                     ],
-                    "index": 5
+                    "index": 0
                 }
             },
             {
@@ -1916,7 +1916,7 @@
                             "radius": 5
                         }
                     ],
-                    "index": 3
+                    "index": 0
                 }
             },
             {
@@ -1924,14 +1924,14 @@
                 "instruction": "Get Gold Blocks &b%1%\nGet Enchanted Gold &b%2%",
                 "items": {
                     "GOLD_BLOCK": {
-                        "count": 128,
+                        "count": 0,
                         "target": 128,
-                        "done": true
+                        "done": false
                     },
                     "ENCHANTED_GOLD": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -1966,7 +1966,7 @@
                             "radius": 16
                         }
                     ],
-                    "index": 2
+                    "index": 0
                 }
             },
             {
@@ -2005,6 +2005,7 @@
                 "items": [
                     "STARFALL",
                     "GOLD_INGOT",
+                    "ENCHANTED_GOLD",
                     "IRON_INGOT",
                     "COBBLESTONE",
                     "STONE"
