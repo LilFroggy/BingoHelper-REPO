@@ -6,12 +6,6 @@
         "steps": [
             {
                 "type": "message",
-                "instruction": "This guide has carries",
-                "criteria": "/bh skip",
-                "clientCommand": "/bh skip"
-            },
-            {
-                "type": "message",
                 "instruction": "/visit %visitIsland%",
                 "criteria": "Sending a visit request...",
                 "command": "/visit %visitIsland%"
