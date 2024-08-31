@@ -3213,12 +3213,22 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Nether Wart &b%1%",
+                "instruction": "Buy Nether Wart &b%1%\nBuy Brewing Stand &b%2%\nBuy Water Bottles &b%2%",
                 "items": {
                     "NETHER_STALK": {
-                        "count": 0,
-                        "target": 560,
+                        "count": 1,
+                        "target": 561,
                         "done": false
+                    },
+                    "BREWING_STAND_ITEM": {
+                        "count": 1,
+                        "target": 1,
+                        "done": true
+                    },
+                    "POTION": {
+                        "count": 3,
+                        "target": 3,
+                        "done": true
                     }
                 },
                 "waypoint": {
