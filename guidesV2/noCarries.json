@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 135,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
@@ -2209,11 +2209,26 @@
                 "instruction": "Get Grand Experience Bottles &b%1%\n&cGet them from mining nodes",
                 "items": {
                     "GRAND_EXP_BOTTLE": {
-                        "count": 0,
+                        "count": 4,
                         "target": 4,
-                        "done": false
+                        "done": true
                     }
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "MITE_GEL",
+                    "OBSIDIAN",
+                    "ENCHANTED_OBSIDIAN",
+                    "ENDER_STONE",
+                    "ENCHANTED_ENDSTONE",
+                    "ENDSTONE_ROSE",
+                    "RUNE",
+                    "ENDER_PEARL"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "area",
@@ -2249,7 +2264,7 @@
                             "radius": 100
                         }
                     ],
-                    "index": 0
+                    "index": 1
                 }
             },
             {
