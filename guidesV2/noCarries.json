@@ -2,7 +2,7 @@
         "name": "No Carry Guide (September 2024)",
         "version": 1,
         "data": {
-            "stepIndex": 148,
+            "stepIndex": 0,
             "steps": [
                 {
                     "type": "message",
