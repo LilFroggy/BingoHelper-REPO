@@ -3755,11 +3755,17 @@
                                 69,
                                 -137
                             ],
-                            "radius": 5
+                            "radius": 2
                         }
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
             },
             {
                 "type": "sell",
@@ -3768,12 +3774,6 @@
                     "END_SWORD"
                 ],
                 "command": "/trades"
-            },
-            {
-                "type": "message",
-                "instruction": "/warp stonks",
-                "criteria": "Warping...",
-                "command": "/warp stonks"
             },
             {
                 "type": "buy",
