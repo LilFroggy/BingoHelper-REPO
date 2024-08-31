@@ -365,7 +365,7 @@
                     },
                     "WOOD_SWORD": {
                         "count": 0,
-                        "target": 7,
+                        "target": 9,
                         "done": false
                     },
                     "WOOD_SPADE": {
