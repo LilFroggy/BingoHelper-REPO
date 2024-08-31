@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 139,
         "steps": [
             {
                 "type": "message",
@@ -589,7 +589,7 @@
                 "instruction": "Get Cheese &b%1%&r",
                 "items": {
                     "CHEESE_FUEL": {
-                        "count": 3,
+                        "count": 0,
                         "target": 5,
                         "done": false
                     }
@@ -685,14 +685,14 @@
                 "instruction": "Get Raw Chicken &b%1%&r\nGet Raw Porkchop &b%2%",
                 "items": {
                     "RAW_CHICKEN": {
-                        "count": 364,
+                        "count": 0,
                         "target": 64,
-                        "done": true
+                        "done": false
                     },
                     "PORK": {
-                        "count": 79,
+                        "count": 0,
                         "target": 64,
-                        "done": true
+                        "done": false
                     }
                 }
             },
@@ -2147,14 +2147,14 @@
                 "instruction": "Get Gold Blocks &b%1%\nGet Enchanted Gold &b%2%",
                 "items": {
                     "GOLD_BLOCK": {
-                        "count": 0,
+                        "count": 1,
                         "target": 128,
                         "done": false
                     },
                     "ENCHANTED_GOLD": {
-                        "count": 0,
+                        "count": 1,
                         "target": 1,
-                        "done": false
+                        "done": true
                     }
                 },
                 "waypoint": {
@@ -2340,12 +2340,12 @@
             },
             {
                 "type": "has",
-                "instruction": "Get Grand Experience Bottles &b%1%\n&eMine ender nodes",
+                "instruction": "Get Grand Experience Bottles &b%1%\n&cGet them from mining nodes",
                 "items": {
                     "GRAND_EXP_BOTTLE": {
-                        "count": 0,
+                        "count": 113,
                         "target": 32,
-                        "done": false
+                        "done": true
                     }
                 }
             },
