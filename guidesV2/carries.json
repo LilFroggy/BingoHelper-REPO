@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 255,
         "steps": [
             {
                 "type": "message",
@@ -3681,6 +3681,93 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy End Sword &b%1%",
+                "items": {
+                    "END_SWORD": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Weaponsmith",
+                            "position": [
+                                -10.5,
+                                68,
+                                -130.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Dirty Bottle &b%1%",
+                "items": {
+                    "DIRT_BOTTLE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Smithmonger",
+                            "position": [
+                                -33,
+                                69,
+                                -136
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Apply Dirt Bottle to End Sword",
+                "guiName": "Reforge Anvil",
+                "itemIndex": 13,
+                "has": "Dirty End Sword",
+                "doesntHave": "Click the ANVIL BELOW to combine.",
+                "highlight": false,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Reforge Anvil",
+                            "position": [
+                                -29,
+                                69,
+                                -137
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "END_SWORD"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "message",
