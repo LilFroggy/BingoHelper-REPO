@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 116,
+        "stepIndex": 120,
         "steps": [
             {
                 "type": "message",
@@ -666,6 +666,33 @@
                 "type": "message",
                 "instruction": "Place Chicken and Pig Minion\n&cDon't forget storages!",
                 "criteria": "You placed a minion! (2/"
+            },
+            {
+                "type": "area",
+                "instruction": "/warp spider",
+                "area": "Spider's Den",
+                "command": "/warp spider"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Grandma Wolf",
+                "criteria": "[NPC] Grandma Wolf: The pet does not need to be spawned for combos to work! Happy hunting!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Grandma Wolf",
+                            "position": [
+                                -282,
+                                122,
+                                -191
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "subArea",
@@ -2056,7 +2083,7 @@
                             "radius": 100
                         }
                     ],
-                    "index": 0
+                    "index": 2
                 }
             },
             {
@@ -2064,7 +2091,8 @@
                 "instruction": "Sell materials",
                 "items": [
                     "COBBLESTONE",
-                    "STONE"
+                    "STONE",
+                    "RUNE"
                 ],
                 "command": "/trades"
             },
@@ -2231,27 +2259,6 @@
                     "BONE"
                 ],
                 "command": "/trades"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Grandma Wolf",
-                "criteria": "[NPC] Grandma Wolf: The pet does not need to be spawned for combos to work! Happy hunting!",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Grandma Wolf",
-                            "position": [
-                                -282,
-                                122,
-                                -191
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
             },
             {
                 "type": "subArea",
