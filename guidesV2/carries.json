@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 268,
         "steps": [
             {
                 "type": "message",
@@ -1985,7 +1985,7 @@
             },
             {
                 "type": "guiItem",
-                "instruction": "Give 2 Cheese to Chicken Minion",
+                "instruction": "Give 1 Cheese to Chicken Minion",
                 "guiName": "Chicken Minion I",
                 "itemIndex": 19,
                 "has": "Tasty Cheese",
@@ -2690,6 +2690,59 @@
                 }
             },
             {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Second Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (4/"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Give 1 Cheese to Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "itemIndex": 19,
+                "has": "Tasty Cheese",
+                "doesntHave": null,
+                "highlight": true
+            },
+            {
                 "type": "subArea",
                 "instruction": "/warp drag",
                 "subArea": "Dragon's Nest",
@@ -2714,6 +2767,65 @@
                     "RUNE"
                 ],
                 "command": "/trades"
+            },
+            {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Second Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Third Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (5/"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Give 1 Cheese to Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "itemIndex": 19,
+                "has": "Tasty Cheese",
+                "doesntHave": null,
+                "highlight": true
             },
             {
                 "type": "area",
