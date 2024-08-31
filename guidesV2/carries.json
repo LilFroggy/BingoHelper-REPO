@@ -1693,7 +1693,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Obtain Lapis Lazuli &b%1%&r",
+                "instruction": "Get Lapis Lazuli &b%1%&r",
                 "items": {
                     "INK_SACK:4": {
                         "count": 0,
@@ -1765,7 +1765,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Obtain Redstone &b%1%&r",
+                "instruction": "Get Redstone &b%1%&r",
                 "items": {
                     "REDSTONE": {
                         "count": 0,
@@ -2743,6 +2743,16 @@
                 }
             },
             {
+                "type": "sell",
+                "instruction": "Store Wooden Swords\nStore Wooden Pickaxes\nStore Wooden Hoes",
+                "items": [
+                    "WOOD_SWORD",
+                    "WOOD_PICKAXE",
+                    "WOOD_HOE"
+                ],
+                "command": "/ec 1"
+            },
+            {
                 "type": "buy",
                 "instruction": "Buy Bones &b%1%",
                 "items": {
@@ -3704,7 +3714,120 @@
                             "radius": 3
                         }
                     ],
-                    "index": 2
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Redstone Minion Recipes",
+                "guiName": "Redstone Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe REDSTONE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Redstone Minion I",
+                "guiName": "Redstone Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Redstone Minion Recipes",
+                "guiName": "Redstone Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe REDSTONE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Redstone Minion II",
+                "guiName": "Redstone Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Redstone Minion",
+                "items": [
+                    "REDSTONE_GENERATOR_2"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Oak Wood Collection 4",
+                "collection": "oak_wood",
+                "level": 4,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Small Storages &b%1%&r",
+                "items": {
+                    "SMALL_ENCHANTED_CHEST": {
+                        "count": 0,
+                        "target": 5,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Oak Wood Collection 7\n&cKeep enchanted oak wood!",
+                "collection": "oak_wood",
+                "level": 7,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
                 }
             }
         ]
