@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 105,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
@@ -2153,6 +2153,15 @@
                 }
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE",
+                    "STONE"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "area",
                 "instruction": "/warp end",
                 "area": "The End",
@@ -2269,6 +2278,14 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "BONE"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "message",
@@ -2421,6 +2438,15 @@
                 "command": "/trades"
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COAL",
+                    "LOG"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "message",
                 "instruction": "/warp hub",
                 "criteria": "Warping...",
@@ -2532,7 +2558,7 @@
             },
             {
                 "type": "sell",
-                "instruction": "Sell materials",
+                "instruction": "Sell materials\n&cSell extra armor!",
                 "items": [
                     "MITE_GEL",
                     "OBSIDIAN",
@@ -2661,7 +2687,7 @@
             },
             {
                 "type": "sell",
-                "instruction": "Sell materials",
+                "instruction": "Sell materials\n&cSell extra armor!",
                 "items": [
                     "MITE_GEL",
                     "OBSIDIAN",
