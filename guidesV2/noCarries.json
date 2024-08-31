@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 139,
+        "stepIndex": 148,
         "steps": [
             {
                 "type": "message",
@@ -2147,14 +2147,14 @@
                 "instruction": "Get Gold Blocks &b%1%\nGet Enchanted Gold &b%2%",
                 "items": {
                     "GOLD_BLOCK": {
-                        "count": 1,
+                        "count": 0,
                         "target": 128,
                         "done": false
                     },
                     "ENCHANTED_GOLD": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -2427,7 +2427,7 @@
                         "reforges": [
                             "Sharp"
                         ],
-                        "done": false
+                        "done": true
                     }
                 },
                 "waypoint": {
@@ -2462,7 +2462,7 @@
                             "First Strike IV",
                             "Ender Slayer V"
                         ],
-                        "done": false
+                        "done": true
                     }
                 },
                 "waypoint": {
@@ -2493,7 +2493,7 @@
                 "instruction": "Get Oak Wood &b%1%",
                 "items": {
                     "LOG": {
-                        "count": 0,
+                        "count": 4,
                         "target": 600,
                         "done": false
                     }
@@ -2526,7 +2526,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Coal Blocks &b%1%\n&eTrade Oak Wood for Coal",
+                "instruction": "Craft Coal Blocks &b%1%\n&cTrade Oak Wood for Coal",
                 "items": {
                     "COAL_BLOCK": {
                         "count": 0,
