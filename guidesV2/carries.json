@@ -1895,6 +1895,14 @@
                 }
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "PROMISING_PICKAXE"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "guiItem",
                 "instruction": "Open the King's Commission Menu",
                 "guiName": "Commissions",
@@ -2344,6 +2352,14 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "END_SWORD"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "area",
@@ -3828,7 +3844,7 @@
                             "radius": 100
                         }
                     ],
-                    "index": 1
+                    "index": 0
                 }
             },
             {
@@ -3836,7 +3852,7 @@
                 "instruction": "Craft Enchanted Oak Wood &b%1%&r",
                 "items": {
                     "ENCHANTED_OAK_LOG": {
-                        "count": 1,
+                        "count": 0,
                         "target": 32,
                         "done": false
                     }
@@ -3848,7 +3864,7 @@
                 "instruction": "Craft Medium Storages &b%1%&r",
                 "items": {
                     "MEDIUM_ENCHANTED_CHEST": {
-                        "count": 1,
+                        "count": 0,
                         "target": 4,
                         "done": false
                     }
