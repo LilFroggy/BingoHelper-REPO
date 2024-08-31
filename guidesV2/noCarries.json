@@ -360,7 +360,7 @@
                     "items": {
                         "LOG": {
                             "count": 0,
-                            "target": 10,
+                            "target": 8,
                             "done": false
                         },
                         "STICK": {
