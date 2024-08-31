@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 109,
         "steps": [
             {
                 "type": "message",
@@ -1643,9 +1643,9 @@
                 "instruction": "Craft Enchanted Redstone &b%1%&r",
                 "items": {
                     "ENCHANTED_REDSTONE": {
-                        "count": 10,
+                        "count": 0,
                         "target": 10,
-                        "done": true
+                        "done": false
                     }
                 },
                 "command": "/viewrecipe ENCHANTED_REDSTONE"
@@ -1655,9 +1655,9 @@
                 "instruction": "Collect Redstone &b%1%&r",
                 "items": {
                     "REDSTONE": {
-                        "count": 34,
+                        "count": 0,
                         "target": 32,
-                        "done": true
+                        "done": false
                     }
                 }
             },
@@ -1754,109 +1754,13 @@
                             "radius": 5
                         }
                     ],
-                    "index": 0
+                    "index": 2
                 }
-            },
-            {
-                "type": "area",
-                "instruction": "/is",
-                "area": "Private Island",
-                "command": "/is"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "FEATHER"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Chicken Minion Recipes",
-                "guiName": "Chicken Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe CHICKEN_GENERATOR_1"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Craft Chicken Minion I",
-                "guiName": "Chicken Minion I Recipe",
-                "slotIndex": 32
             },
             {
                 "type": "message",
-                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
-                "criteria": "You placed a minion! (3/"
-            },
-            {
-                "type": "area",
-                "instruction": "/warp hub",
-                "area": "Hub",
-                "command": "/warp hub"
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Black Diamond &b%1%",
-                "items": {
-                    "ONYX": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Mine Merchant",
-                            "position": [
-                                -9.5,
-                                68,
-                                -125.5
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Apply Black Diamond to Fractured Mithril Pickaxe",
-                "guiName": "Reforge Anvil",
-                "itemIndex": 13,
-                "has": "Fruitful Fractured Mithril Pickaxe",
-                "doesntHave": "Click the ANVIL BELOW to combine.",
-                "highlight": false,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Reforge Anvil",
-                            "position": [
-                                -29,
-                                69,
-                                -137
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "area",
                 "instruction": "/warp mines",
-                "area": "Dwarven Mines",
+                "criteria": "Warping...",
                 "command": "/warp mines"
             },
             {
@@ -2160,6 +2064,44 @@
                     "STONE"
                 ],
                 "command": "/trades"
+            },
+            {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (3/"
             },
             {
                 "type": "area",
