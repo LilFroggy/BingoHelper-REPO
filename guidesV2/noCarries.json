@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 99,
+        "stepIndex": 105,
         "steps": [
             {
                 "type": "message",
@@ -1569,9 +1569,9 @@
                 "instruction": "Craft Enchanted Lapis Lazuli &b%1%&r",
                 "items": {
                     "ENCHANTED_LAPIS_LAZULI": {
-                        "count": 10,
+                        "count": 0,
                         "target": 10,
-                        "done": true
+                        "done": false
                     }
                 },
                 "command": "/viewrecipe ENCHANTED_LAPIS_LAZULI"
@@ -1613,9 +1613,9 @@
                 "instruction": "Get Redstone &b%1%&r",
                 "items": {
                     "REDSTONE": {
-                        "count": 8,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     }
                 }
             },
@@ -1643,9 +1643,9 @@
                 "instruction": "Craft Enchanted Redstone &b%1%&r",
                 "items": {
                     "ENCHANTED_REDSTONE": {
-                        "count": 0,
+                        "count": 10,
                         "target": 10,
-                        "done": false
+                        "done": true
                     }
                 },
                 "command": "/viewrecipe ENCHANTED_REDSTONE"
@@ -1655,9 +1655,9 @@
                 "instruction": "Collect Redstone &b%1%&r",
                 "items": {
                     "REDSTONE": {
-                        "count": 0,
+                        "count": 34,
                         "target": 32,
-                        "done": false
+                        "done": true
                     }
                 }
             },
@@ -1713,41 +1713,6 @@
                 "slotIndex": 40,
                 "highlight": true,
                 "command": "/hotm"
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Fractured Mithril Pickaxe &b%1%&r",
-                "items": {
-                    "FRACTURED_MITHRIL_PICKAXE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Bubu",
-                            "position": [
-                                -11,
-                                201,
-                                -104
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "PROMISING_PICKAXE"
-                ],
-                "command": "/trades"
             },
             {
                 "type": "guiItem",
@@ -1992,9 +1957,11 @@
                 "type": "sell",
                 "instruction": "Sell materials",
                 "items": [
+                    "INK_SACK:4",
                     "EMERALD",
                     "REDSTONE",
                     "COBBLESTONE",
+                    "STONE",
                     "STONE"
                 ],
                 "command": "/trades"
@@ -2127,6 +2094,17 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "GOLD_INGOT",
+                    "IRON_INGOT",
+                    "COBBLESTONE",
+                    "STONE"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "message",
