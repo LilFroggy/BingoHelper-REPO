@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 134,
+        "stepIndex": 135,
         "steps": [
             {
                 "type": "message",
@@ -2210,7 +2210,7 @@
                 "items": {
                     "GRAND_EXP_BOTTLE": {
                         "count": 0,
-                        "target": 32,
+                        "target": 4,
                         "done": false
                     }
                 }
@@ -2274,14 +2274,12 @@
             },
             {
                 "type": "enchant",
-                "instruction": "Enchant items",
+                "instruction": "Enchant items\n&cUse 4 grands to get first strike!\n&cGet bottles from villager!",
                 "items": {
                     "VOID_SWORD": {
                         "enchants": [
                             "Sharpness V",
-                            "Looting III",
                             "Luck V",
-                            "Life Steal III",
                             "Giant Killer V",
                             "Critical V",
                             "First Strike IV",
