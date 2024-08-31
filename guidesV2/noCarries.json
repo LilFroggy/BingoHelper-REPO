@@ -539,7 +539,7 @@
                     "items": {
                         "EXP_BOTTLE": {
                             "count": 0,
-                            "target": 128,
+                            "target": 144,
                             "done": false
                         }
                     },
