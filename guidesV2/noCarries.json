@@ -1,9 +1,14 @@
     {
         "name": "No Carry Guide (September 2024)",
-        "version": 2,
+        "version": 3,
         "data": {
             "stepIndex": 0,
             "steps": [
+                {
+                    "type": "message",
+                    "instruction": "Type &c/bh skip&r to begin!",
+                    "criteria": "Sure I'll do that"
+                },
                 {
                     "type": "message",
                     "instruction": "/visit %visitIsland%",
