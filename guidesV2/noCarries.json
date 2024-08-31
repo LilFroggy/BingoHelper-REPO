@@ -1270,7 +1270,8 @@
                 "type": "sell",
                 "instruction": "Sell materials",
                 "items": [
-                    "COBBLESTONE"
+                    "COBBLESTONE",
+                    "STONE"
                 ],
                 "command": "/trades"
             },
