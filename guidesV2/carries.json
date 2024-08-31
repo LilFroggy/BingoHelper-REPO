@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 163,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
@@ -3661,6 +3661,51 @@
                 "instruction": "/warp stonks",
                 "criteria": "Warping...",
                 "command": "/warp stonks"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Redstone &b%1%",
+                "items": {
+                    "REDSTONE": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -51,
+                                71,
+                                -30
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -47,
+                                69,
+                                -32
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Redstone Engineer",
+                            "position": [
+                                -52.5,
+                                65,
+                                -29.5
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 2
+                }
             }
         ]
     }
