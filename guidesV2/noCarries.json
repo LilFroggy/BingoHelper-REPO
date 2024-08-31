@@ -557,45 +557,12 @@
             },
             {
                 "type": "enchant",
-                "instruction": "Enchant items\n&cKeep 25 levels after!",
+                "instruction": "Enchant items\n&cBuy bottles from librarian!",
                 "items": {
                     "GOLD_AXE": {
                         "enchants": [
                             "Efficiency V",
                             "Silk Touch I"
-                        ],
-                        "done": false
-                    },
-                    "PROMISING_PICKAXE": {
-                        "enchants": [
-                            "Efficiency V",
-                            "Fortune III"
-                        ],
-                        "done": false
-                    },
-                    "ROOKIE_HOE": {
-                        "enchants": [
-                            "Harvesting V"
-                        ],
-                        "done": false
-                    },
-                    "FARM_SUIT_BOOTS": {
-                        "enchants": [
-                            "Depth Strider III"
-                        ],
-                        "done": false
-                    },
-                    "END_SWORD": {
-                        "enchants": [
-                            "Sharpness V",
-                            "Fire Aspect II",
-                            "Looting III",
-                            "Luck V",
-                            "Life Steal III",
-                            "Giant Killer V",
-                            "Critical V",
-                            "First Strike IV",
-                            "Ender Slayer V"
                         ],
                         "done": false
                     }
@@ -618,15 +585,8 @@
                 }
             },
             {
-                "type": "guiClickSlot",
-                "instruction": "Craft Experimentation Table",
-                "guiName": "Experimentation Table Recipe",
-                "slotIndex": 32,
-                "command": "/viewrecipe EXPERIMENTATION_TABLE"
-            },
-            {
                 "type": "has",
-                "instruction": "Lootshare Cheese &b%1%&r",
+                "instruction": "Get Cheese &b%1%&r",
                 "items": {
                     "CHEESE_FUEL": {
                         "count": 0,
@@ -1235,58 +1195,6 @@
                 "instruction": "/warp hub",
                 "criteria": "Warping...",
                 "command": "/warp hub"
-            },
-            {
-                "type": "enchant",
-                "instruction": "Enchant items",
-                "items": {
-                    "MUSHROOM_HELMET": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V"
-                        ],
-                        "done": false
-                    },
-                    "MUSHROOM_CHESTPLATE": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V"
-                        ],
-                        "done": false
-                    },
-                    "MUSHROOM_LEGGINGS": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V"
-                        ],
-                        "done": false
-                    },
-                    "MUSHROOM_BOOTS": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V",
-                            "Depth Strider III",
-                            "Feather Falling V"
-                        ],
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Enchanting Table",
-                            "position": [
-                                -37,
-                                69,
-                                -111
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
             },
             {
                 "type": "reforge",
@@ -2029,7 +1937,7 @@
             },
             {
                 "type": "enchant",
-                "instruction": "Enchant Fractured Mithril Pickaxe",
+                "instruction": "Enchant items",
                 "items": {
                     "FRACTURED_MITHRIL_PICKAXE": {
                         "enchants": [
@@ -2466,6 +2374,17 @@
                 "command": "/trades"
             },
             {
+                "type": "has",
+                "instruction": "Get Grand Experience Bottles &b%1%\n&eMine ender nodes",
+                "items": {
+                    "GRAND_EXP_BOTTLE": {
+                        "count": 0,
+                        "target": 32,
+                        "done": false
+                    }
+                }
+            },
+            {
                 "type": "area",
                 "instruction": "/warp spider",
                 "area": "Spider's Den",
@@ -2570,24 +2489,13 @@
                     "VOID_SWORD": {
                         "enchants": [
                             "Sharpness V",
-                            "Fire Aspect II",
-                            "Experience III",
                             "Looting III",
-                            "Scavenger III",
                             "Luck V",
-                            "Cubism V",
-                            "Cleave V",
                             "Life Steal III",
                             "Giant Killer V",
                             "Critical V",
                             "First Strike IV",
-                            "Ender Slayer V",
-                            "Impaling III",
-                            "Execute V",
-                            "Thunderlord V",
-                            "Lethality V",
-                            "Vampirism V",
-                            "Venomous V"
+                            "Ender Slayer V"
                         ],
                         "done": false
                     }
@@ -2839,58 +2747,6 @@
                                 -29,
                                 69,
                                 -126
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "enchant",
-                "instruction": "Enchant items",
-                "items": {
-                    "END_HELMET": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V"
-                        ],
-                        "done": false
-                    },
-                    "END_CHESTPLATE": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V"
-                        ],
-                        "done": false
-                    },
-                    "END_LEGGINGS": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V"
-                        ],
-                        "done": false
-                    },
-                    "END_BOOTS": {
-                        "enchants": [
-                            "Protection V",
-                            "Growth V",
-                            "Depth Strider III",
-                            "Feather Falling V"
-                        ],
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Enchanting Table",
-                            "position": [
-                                -37,
-                                69,
-                                -111
                             ],
                             "radius": 5
                         }
