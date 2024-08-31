@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 268,
         "steps": [
             {
                 "type": "message",
@@ -3216,19 +3216,19 @@
                 "instruction": "Buy Nether Wart &b%1%\nBuy Brewing Stand &b%2%\nBuy Water Bottles &b%2%",
                 "items": {
                     "NETHER_STALK": {
-                        "count": 1,
+                        "count": 0,
                         "target": 561,
                         "done": false
                     },
                     "BREWING_STAND_ITEM": {
-                        "count": 1,
+                        "count": 0,
                         "target": 1,
-                        "done": true
+                        "done": false
                     },
                     "POTION": {
-                        "count": 3,
+                        "count": 0,
                         "target": 3,
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -3256,6 +3256,15 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Brewing Stand\nStore Water Bottles",
+                "items": [
+                    "BREWING_STAND_ITEM",
+                    "POTION"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "guiClickSlot",
@@ -3967,6 +3976,128 @@
                     }
                 },
                 "command": "/viewrecipe MEDIUM_ENCHANTED_CHEST"
+            },
+            {
+                "type": "subArea",
+                "instruction": "/warp desert",
+                "subArea": "Desert Settlement",
+                "command": "/warp desert"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Sugar Cane Collection 4",
+                "collection": "sugar_cane",
+                "level": 4,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                155,
+                                76,
+                                -405
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                129,
+                                65,
+                                -431
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                103,
+                                65,
+                                -445
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                121,
+                                65,
+                                -473
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                145,
+                                69,
+                                -484
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                139,
+                                76,
+                                -508
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                139,
+                                76,
+                                -508
+                            ],
+                            "radius": 300
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Enchanted Sugar",
+                "guiName": "Enchanted Sugar Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe ENCHANTED_SUGAR"
+            },
+            {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Brewing Stand &b%1%\nGet Water Bottles &b%2%\nGet Nether Wart &b%3%",
+                "items": {
+                    "BREWING_STAND_ITEM": {
+                        "count": 1,
+                        "target": 1,
+                        "done": true
+                    },
+                    "POTION": {
+                        "count": 1,
+                        "target": 3,
+                        "done": false
+                    },
+                    "NETHER_STALK": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "Brew 3 Speed Potions\n&eNether Wart -> Enchanted Sugar",
+                "criteria": "BINGO GOAL COMPLETE! Brewer"
             }
         ]
     }
