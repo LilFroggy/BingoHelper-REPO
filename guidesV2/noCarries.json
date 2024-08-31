@@ -1078,43 +1078,43 @@
                         "reforges": [
                             "Sharp"
                         ],
-                        "done": true
+                        "done": false
                     },
                     "ROOKIE_HOE": {
                         "reforges": [
                             "Robust"
                         ],
-                        "done": true
+                        "done": false
                     },
                     "GOLD_AXE": {
                         "reforges": [
                             "Double-Bit"
                         ],
-                        "done": true
+                        "done": false
                     },
                     "MUSHROOM_HELMET": {
                         "reforges": [
                             "Fierce"
                         ],
-                        "done": true
+                        "done": false
                     },
                     "MUSHROOM_CHESTPLATE": {
                         "reforges": [
                             "Fierce"
                         ],
-                        "done": true
+                        "done": false
                     },
                     "MUSHROOM_LEGGINGS": {
                         "reforges": [
                             "Fierce"
                         ],
-                        "done": true
+                        "done": false
                     },
                     "MUSHROOM_BOOTS": {
                         "reforges": [
                             "Fierce"
                         ],
-                        "done": true
+                        "done": false
                     }
                 },
                 "waypoint": {
@@ -1141,6 +1141,7 @@
                     "PROMISING_PICKAXE": {
                         "enchants": [
                             "Efficiency V",
+                            "Smelting Touch I",
                             "Fortune III"
                         ],
                         "done": true
