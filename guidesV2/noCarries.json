@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 109,
+        "stepIndex": 116,
         "steps": [
             {
                 "type": "message",
@@ -1754,7 +1754,7 @@
                             "radius": 5
                         }
                     ],
-                    "index": 2
+                    "index": 0
                 }
             },
             {
@@ -1827,7 +1827,7 @@
                             "radius": 5
                         }
                     ],
-                    "index": 0
+                    "index": 5
                 }
             },
             {
@@ -1916,7 +1916,7 @@
                             "radius": 5
                         }
                     ],
-                    "index": 0
+                    "index": 3
                 }
             },
             {
@@ -1924,14 +1924,14 @@
                 "instruction": "Get Gold Blocks &b%1%\nGet Enchanted Gold &b%2%",
                 "items": {
                     "GOLD_BLOCK": {
-                        "count": 0,
+                        "count": 128,
                         "target": 128,
-                        "done": false
+                        "done": true
                     },
                     "ENCHANTED_GOLD": {
-                        "count": 0,
+                        "count": 1,
                         "target": 1,
-                        "done": false
+                        "done": true
                     }
                 },
                 "waypoint": {
@@ -1966,7 +1966,7 @@
                             "radius": 16
                         }
                     ],
-                    "index": 0
+                    "index": 2
                 }
             },
             {
@@ -2003,6 +2003,7 @@
                 "type": "sell",
                 "instruction": "Sell materials",
                 "items": [
+                    "STARFALL",
                     "GOLD_INGOT",
                     "IRON_INGOT",
                     "COBBLESTONE",
