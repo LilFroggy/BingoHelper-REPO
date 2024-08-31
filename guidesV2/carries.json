@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 268,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
@@ -4096,7 +4096,7 @@
             },
             {
                 "type": "message",
-                "instruction": "Brew 3 Speed Potions\n&eNether Wart -> Enchanted Sugar",
+                "instruction": "Brew 3 Speed Potions\n&cBrew archery if missing xp",
                 "criteria": "BINGO GOAL COMPLETE! Brewer"
             }
         ]
