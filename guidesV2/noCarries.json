@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 18,
         "steps": [
             {
                 "type": "message",
@@ -365,7 +365,7 @@
                     },
                     "WOOD_SWORD": {
                         "count": 0,
-                        "target": 7,
+                        "target": 9,
                         "done": false
                     },
                     "WOOD_SPADE": {
