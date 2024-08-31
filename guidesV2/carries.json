@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 163,
         "steps": [
             {
                 "type": "message",
@@ -200,6 +200,52 @@
                 "command": "/warp hub"
             },
             {
+                "type": "collection",
+                "instruction": "Unlock Nether Wart Collection 1",
+                "collection": "nether_wart",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Nether Wart",
+                            "position": [
+                                34,
+                                67,
+                                -69
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Nether Wart",
+                            "position": [
+                                52,
+                                67,
+                                -64
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Nether Wart",
+                            "position": [
+                                52,
+                                67,
+                                -64
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
                 "type": "buy",
                 "instruction": "Buy Rookie Hoe &b%1%",
                 "items": {
@@ -310,7 +356,7 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Oak Log &b%1%&r\nBuy Wooden Swords&r &b%2%\nBuy Wooden Shovel &b%3%",
+                "instruction": "Buy Oak Wood &b%1%&r\nBuy Wooden Swords&r &b%2%\nBuy Wooden Shovel &b%3%",
                 "items": {
                     "LOG": {
                         "count": 0,
@@ -2136,7 +2182,9 @@
                 "instruction": "Sell materials",
                 "items": [
                     "EMERALD",
-                    "REDSTONE"
+                    "REDSTONE",
+                    "COBBLESTONE",
+                    "STONE"
                 ],
                 "command": "/trades"
             },
@@ -2633,7 +2681,7 @@
             },
             {
                 "type": "skill",
-                "instruction": "Unlock Combat 15\n&cMine nearby nodes!",
+                "instruction": "Unlock Combat 15\n&cMine nearby ender nodes!\n&cUpgrade enderman minion!",
                 "skill": "combat",
                 "level": 15
             },
@@ -2656,6 +2704,855 @@
                 "instruction": "/warp hub",
                 "area": "Hub",
                 "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Wooden Swords&r &b%1%\nBuy Wooden Pickaxes &b%2%\nBuy Wooden Hoes &b%3%",
+                "items": {
+                    "WOOD_SWORD": {
+                        "count": 0,
+                        "target": 8,
+                        "done": false
+                    },
+                    "WOOD_PICKAXE": {
+                        "count": 0,
+                        "target": 4,
+                        "done": false
+                    },
+                    "WOOD_HOE": {
+                        "count": 0,
+                        "target": 7,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Bones &b%1%",
+                "items": {
+                    "BONE": {
+                        "count": 0,
+                        "target": 640,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Adventurer",
+                            "position": [
+                                -42,
+                                70,
+                                -65
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Skeleton Minion Recipes",
+                "guiName": "Skeleton Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SKELETON_GENERATOR_1"
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Skeleton Minion I &b%1%",
+                "items": {
+                    "SKELETON_GENERATOR_1": {
+                        "count": 0,
+                        "target": 8,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Skeleton Minions",
+                "items": [
+                    "SKELETON_GENERATOR_1"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Wheat &b%1%",
+                "items": {
+                    "WHEAT": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe WHEAT_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion I",
+                "guiName": "Wheat Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe WHEAT_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion II",
+                "guiName": "Wheat Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe WHEAT_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion III",
+                "guiName": "Wheat Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Carrots &b%1%",
+                "items": {
+                    "CARROT_ITEM": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Carrot Minion Recipes",
+                "guiName": "Carrot Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CARROT_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Carrot Minion I",
+                "guiName": "Carrot Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Carrot Minion Recipes",
+                "guiName": "Carrot Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe CARROT_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Carrot Minion II",
+                "guiName": "Carrot Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Potatoes &b%1%",
+                "items": {
+                    "POTATO_ITEM": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Potato Minion Recipes",
+                "guiName": "Potato Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe POTATO_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Potato Minion I",
+                "guiName": "Potato Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Potato Minion Recipes",
+                "guiName": "Potato Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe POTATO_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Potato Minion II",
+                "guiName": "Potato Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Sugar Cane &b%1%",
+                "items": {
+                    "SUGAR_CANE": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sugar Cane Minion Recipes",
+                "guiName": "Sugar Cane Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SUGAR_CANE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sugar Cane Minion I",
+                "guiName": "Sugar Cane Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sugar Cane Minion Recipes",
+                "guiName": "Sugar Cane Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe SUGAR_CANE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sugar Cane Minion II",
+                "guiName": "Sugar Cane Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Cocoa Beans &b%1%",
+                "items": {
+                    "INK_SACK:3": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cocoa Beans Minion Recipes",
+                "guiName": "Cocoa Beans Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe COCOA_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cocoa Beans Minion I",
+                "guiName": "Cocoa Beans Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cocoa Beans Minion Recipes",
+                "guiName": "Cocoa Beans Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe COCOA_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cocoa Beans Minion II",
+                "guiName": "Cocoa Beans Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Red Mushrooms &b%1%",
+                "items": {
+                    "RED_MUSHROOM": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion I",
+                "guiName": "Mushroom Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion II",
+                "guiName": "Mushroom Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion III",
+                "guiName": "Mushroom Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Brown Mushrooms &b%1%",
+                "items": {
+                    "BROWN_MUSHROOM": {
+                        "count": 0,
+                        "target": 512,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 14,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_4"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion IV",
+                "guiName": "Mushroom Minion IV Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Nether Wart &b%1%",
+                "items": {
+                    "NETHER_STALK": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                20,
+                                70,
+                                -79
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Alchemist",
+                            "position": [
+                                41,
+                                70,
+                                -64
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Nether Wart Minion Recipes",
+                "guiName": "Nether Wart Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe NETHER_WARTS_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Nether Wart Minion I",
+                "guiName": "Nether Wart Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Nether Wart Minion Recipes",
+                "guiName": "Nether Wart Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe NETHER_WARTS_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Nether Wart Minion II",
+                "guiName": "Nether Wart Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Nether Wart Minion Recipes",
+                "guiName": "Nether Wart Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe NETHER_WARTS_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Nether Wart Minion III",
+                "guiName": "Nether Wart Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Wheat Minion\nStore Carrot Minion\nStore Potato Minion\nStore Sugar Cane Minion\nStore Cocoa Beans Minion\nStore Mushroom Minion\nStore Nether Wart Minion",
+                "items": [
+                    "WHEAT_GENERATOR_3",
+                    "CARROT_GENERATOR_2",
+                    "POTATO_GENERATOR_2",
+                    "SUGAR_CANE_GENERATOR_2",
+                    "COCOA_GENERATOR_2",
+                    "MUSHROOM_GENERATOR_4",
+                    "NETHER_WARTS_GENERATOR_3"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Coal &b%1%",
+                "items": {
+                    "COAL": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Coal Minion Recipes",
+                "guiName": "Coal Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe COAL_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Coal Minion I",
+                "guiName": "Coal Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Coal Minion Recipes",
+                "guiName": "Coal Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe COAL_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Coal Minion II",
+                "guiName": "Coal Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Coal Minion Recipes",
+                "guiName": "Coal Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe COAL_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Coal Minion III",
+                "guiName": "Coal Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Iron Ingot &b%1%",
+                "items": {
+                    "IRON_INGOT": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Iron Minion Recipes",
+                "guiName": "Iron Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe IRON_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Iron Minion I",
+                "guiName": "Iron Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Iron Minion Recipes",
+                "guiName": "Iron Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe IRON_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Iron Minion II",
+                "guiName": "Iron Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Iron Minion Recipes",
+                "guiName": "Iron Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe IRON_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Iron Minion III",
+                "guiName": "Iron Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Gold Ingot &b%1%",
+                "items": {
+                    "GOLD_INGOT": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Gold Minion Recipes",
+                "guiName": "Gold Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe GOLD_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Gold Minion I",
+                "guiName": "Gold Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Gold Minion Recipes",
+                "guiName": "Gold Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe GOLD_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Gold Minion II",
+                "guiName": "Gold Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Gold Minion Recipes",
+                "guiName": "Gold Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe GOLD_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Gold Minion III",
+                "guiName": "Gold Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Cobblestone Minion &b%1%",
+                "items": {
+                    "COBBLESTONE_GENERATOR_1": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "command": "/ec 1"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Cobblestone &b%1%",
+                "items": {
+                    "COBBLESTONE": {
+                        "count": 0,
+                        "target": 480,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cobblestone Minion Recipes",
+                "guiName": "Cobblestone Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe COBBLESTONE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cobblestone Minion II",
+                "guiName": "Cobblestone Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cobblestone Minion Recipes",
+                "guiName": "Cobblestone Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe COBBLESTONE_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cobblestone Minion III",
+                "guiName": "Cobblestone Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Coal Minion\nStore Iron Minion\nStore Gold Minion\nStore Cobblestone Minion",
+                "items": [
+                    "COAL_GENERATOR_3",
+                    "IRON_GENERATOR_3",
+                    "GOLD_GENERATOR_3",
+                    "COBBLESTONE_GENERATOR_3"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "buy",
@@ -2758,6 +3655,12 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
             }
         ]
     }
