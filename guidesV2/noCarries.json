@@ -590,96 +590,6 @@
                     }
                 },
                 {
-                    "type": "has",
-                    "instruction": "Get Cheese &b%1%&r",
-                    "items": {
-                        "CHEESE_FUEL": {
-                            "count": 0,
-                            "target": 5,
-                            "done": false
-                        }
-                    },
-                    "waypoint": {
-                        "type": "list",
-                        "beam": true,
-                        "list": [
-                            {
-                                "text": "In/Around Community Center",
-                                "position": [
-                                    4,
-                                    73,
-                                    -106
-                                ],
-                                "radius": 10
-                            },
-                            {
-                                "text": "Farm Stalls",
-                                "position": [
-                                    43,
-                                    72,
-                                    -159
-                                ],
-                                "radius": 10
-                            },
-                            {
-                                "text": "In/Behind Thaumaturgist",
-                                "position": [
-                                    46,
-                                    69,
-                                    -38
-                                ],
-                                "radius": 10
-                            },
-                            {
-                                "text": "Food Court Behind Taylor",
-                                "position": [
-                                    26,
-                                    68,
-                                    -28
-                                ],
-                                "radius": 10
-                            },
-                            {
-                                "text": "Carpenter Basement/Hole",
-                                "position": [
-                                    19,
-                                    61,
-                                    -9
-                                ],
-                                "radius": 10
-                            },
-                            {
-                                "text": "Mountain Shack Hole/Cauldron",
-                                "position": [
-                                    -4,
-                                    69,
-                                    4
-                                ],
-                                "radius": 10
-                            },
-                            {
-                                "text": "Auction House Basement",
-                                "position": [
-                                    -41,
-                                    57,
-                                    -97
-                                ],
-                                "radius": 10
-                            },
-                            {
-                                "text": "Hexatorum Stairs/Basement",
-                                "position": [
-                                    -57,
-                                    64,
-                                    -118
-                                ],
-                                "radius": 10
-                            }
-                        ],
-                        "index": 0
-                    }
-                },
-                {
                     "type": "subArea",
                     "instruction": "/warp barn",
                     "subArea": "The Barn",
@@ -783,15 +693,6 @@
                     "type": "message",
                     "instruction": "Place Chicken and Pig Minion\n&cDon't forget storages!",
                     "criteria": "You placed a minion! (2/"
-                },
-                {
-                    "type": "guiItem",
-                    "instruction": "Give 2 Cheese to Chicken Minion",
-                    "guiName": "Chicken Minion I",
-                    "itemIndex": 19,
-                    "has": "Tasty Cheese",
-                    "doesntHave": null,
-                    "highlight": true
                 },
                 {
                     "type": "subArea",
@@ -1921,15 +1822,6 @@
                     "criteria": "You placed a minion! (3/"
                 },
                 {
-                    "type": "guiItem",
-                    "instruction": "Give 1 Cheese to Chicken Minion",
-                    "guiName": "Chicken Minion I",
-                    "itemIndex": 19,
-                    "has": "Tasty Cheese",
-                    "doesntHave": null,
-                    "highlight": true
-                },
-                {
                     "type": "area",
                     "instruction": "/warp hub",
                     "area": "Hub",
@@ -2769,15 +2661,6 @@
                     "criteria": "You placed a minion! (4/"
                 },
                 {
-                    "type": "guiItem",
-                    "instruction": "Give 1 Cheese to Chicken Minion",
-                    "guiName": "Chicken Minion I",
-                    "itemIndex": 19,
-                    "has": "Tasty Cheese",
-                    "doesntHave": null,
-                    "highlight": true
-                },
-                {
                     "type": "subArea",
                     "instruction": "/warp drag",
                     "subArea": "Dragon's Nest",
@@ -2853,15 +2736,6 @@
                     "type": "message",
                     "instruction": "Place Chicken Minion\n&cDon't forget storage!",
                     "criteria": "You placed a minion! (5/"
-                },
-                {
-                    "type": "guiItem",
-                    "instruction": "Give 1 Cheese to Chicken Minion",
-                    "guiName": "Chicken Minion I",
-                    "itemIndex": 19,
-                    "has": "Tasty Cheese",
-                    "doesntHave": null,
-                    "highlight": true
                 },
                 {
                     "type": "area",
