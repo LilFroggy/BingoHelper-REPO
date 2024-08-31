@@ -1931,36 +1931,6 @@
                 "command": "/warp hub"
             },
             {
-                "type": "enchant",
-                "instruction": "Enchant items",
-                "items": {
-                    "FRACTURED_MITHRIL_PICKAXE": {
-                        "enchants": [
-                            "Efficiency V",
-                            "Smelting Touch I",
-                            "Fortune III"
-                        ],
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Enchanting Table",
-                            "position": [
-                                -37,
-                                69,
-                                -111
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
                 "type": "buy",
                 "instruction": "Buy Black Diamond &b%1%",
                 "items": {
