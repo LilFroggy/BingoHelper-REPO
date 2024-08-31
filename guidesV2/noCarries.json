@@ -1,15 +1,9 @@
 {
-    "name": "No Carry Guide",
+    "name": "No Carry Guide (September 2024)",
     "version": 1,
     "data": {
         "stepIndex": 0,
         "steps": [
-            {
-                "type": "message",
-                "instruction": "This is a no carry guide",
-                "criteria": "/bh skip",
-                "clientCommand": "/bh skip"
-            },
             {
                 "type": "message",
                 "instruction": "/visit %visitIsland%",
@@ -29,7 +23,7 @@
             },
             {
                 "type": "skill",
-                "instruction": "Unlock Farming 7 &b(Level %level%)",
+                "instruction": "Unlock Farming 7",
                 "skill": "farming",
                 "level": 7,
                 "waypoint": {
@@ -39,11 +33,74 @@
                         {
                             "text": "Wheat",
                             "position": [
+                                42,
+                                70,
+                                -123
+                            ],
+                            "radius": 4
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                47,
+                                71,
+                                -137
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                63,
+                                71,
+                                -134
+                            ],
+                            "radius": 8
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                73,
+                                72,
+                                -162
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                59,
+                                72,
+                                -183
+                            ],
+                            "radius": 6
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                24,
+                                71,
+                                -179
+                            ],
+                            "radius": 6
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                28,
+                                70,
+                                -141
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
                                 41,
                                 71,
                                 -137
                             ],
-                            "radius": 30
+                            "radius": 100
                         }
                     ],
                     "index": 0
@@ -51,90 +108,141 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Farm Suit Armor",
+                "instruction": "Craft Hay Bale &b%1%",
                 "items": {
-                    "FARM_SUIT_HELMET": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "FARM_SUIT_CHESTPLATE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "FARM_SUIT_LEGGINGS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "FARM_SUIT_BOOTS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell Wheat and Seeds",
-                "items": [
-                    "WHEAT",
-                    "SEEDS"
-                ],
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Fish Merchant",
-                            "position": [
-                                52,
-                                68,
-                                -83
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Fishing Rod &b%1%",
-                "items": {
-                    "FISHING_ROD": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Fish Merchant",
-                            "position": [
-                                52,
-                                68,
-                                -83
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Red Mushrooms&r &b%1%&r\nBuy Rookie Hoe &b%2%",
-                "items": {
-                    "RED_MUSHROOM": {
+                    "HAY_BLOCK": {
                         "count": 0,
                         "target": 24,
                         "done": false
-                    },
+                    }
+                },
+                "command": "/craft"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farm Suit Helmet",
+                "guiName": "Farm Suit Helmet Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe FARM_SUIT_HELMET"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farm Suit Chestplate",
+                "guiName": "Farm Suit Chestplate Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe FARM_SUIT_CHESTPLATE"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farm Suit Leggings",
+                "guiName": "Farm Suit Leggings Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe FARM_SUIT_LEGGINGS"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farm Suit Boots",
+                "guiName": "Farm Suit Boots Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe FARM_SUIT_BOOTS"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "HAY_BLOCK",
+                    "WHEAT",
+                    "SEEDS"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Potato Collection 1",
+                "collection": "potato",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Potatoes",
+                            "position": [
+                                87,
+                                71,
+                                -97
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Potatoes",
+                            "position": [
+                                87,
+                                71,
+                                -97
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Nether Wart Collection 1",
+                "collection": "nether_wart",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Nether Wart",
+                            "position": [
+                                34,
+                                67,
+                                -69
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Nether Wart",
+                            "position": [
+                                52,
+                                67,
+                                -64
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Nether Wart",
+                            "position": [
+                                52,
+                                67,
+                                -64
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Rookie Hoe &b%1%",
+                "items": {
                     "ROOKIE_HOE": {
                         "count": 0,
                         "target": 1,
@@ -159,6 +267,83 @@
                 }
             },
             {
+                "type": "collection",
+                "instruction": "Unlock Carrot Collection 1",
+                "collection": "carrot",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -3,
+                                69,
+                                8
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -7,
+                                69,
+                                21
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -17,
+                                69,
+                                22
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -23,
+                                70,
+                                32
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -41,
+                                68,
+                                32
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Carrots",
+                            "position": [
+                                -41,
+                                68,
+                                32
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "CARROT_ITEM",
+                    "POTATO_ITEM",
+                    "NETHER_STALK"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "message",
                 "instruction": "/warp hub",
                 "criteria": "Warping...",
@@ -166,16 +351,26 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Oak Log &b%1%&r\nBuy Sticks&r &b%2%",
+                "instruction": "Buy Oak Wood &b%1%&r\nBuy Sticks &b%2%&r\nBuy Wooden Swords&r &b%3%\nBuy Wooden Shovel &b%4%",
                 "items": {
                     "LOG": {
                         "count": 0,
-                        "target": 8,
+                        "target": 10,
                         "done": false
                     },
                     "STICK": {
                         "count": 0,
-                        "target": 32,
+                        "target": 4,
+                        "done": false
+                    },
+                    "WOOD_SWORD": {
+                        "count": 0,
+                        "target": 7,
+                        "done": false
+                    },
+                    "WOOD_SPADE": {
+                        "count": 0,
+                        "target": 1,
                         "done": false
                     }
                 },
@@ -195,6 +390,15 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Wooden Swords\nStore Wooden Shovel",
+                "items": [
+                    "WOOD_SWORD",
+                    "WOOD_SPADE"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "message",
@@ -267,16 +471,11 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Coal &b%1%&r\nBuy Iron Ingot &b%2%&r\nBuy Gold Ingot &b%3%&r\n&fBuy Promising Pickaxe&r &b%4%&r\nBuy Black Diamond &b%5%&r",
+                "instruction": "Buy Coal &b%1%&r\nBuy Gold Ingot &b%2%&r\n&fBuy Promising Pickaxe&r &b%3%&r",
                 "items": {
                     "COAL": {
                         "count": 0,
                         "target": 10,
-                        "done": false
-                    },
-                    "IRON_INGOT": {
-                        "count": 0,
-                        "target": 2,
                         "done": false
                     },
                     "GOLD_INGOT": {
@@ -285,11 +484,6 @@
                         "done": false
                     },
                     "PROMISING_PICKAXE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "ONYX": {
                         "count": 0,
                         "target": 1,
                         "done": false
@@ -306,7 +500,7 @@
                                 68,
                                 -125.5
                             ],
-                            "radius": 5
+                            "radius": 2
                         }
                     ],
                     "index": 0
@@ -319,7 +513,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Golden Axe &b%1%&r\n&fCraft Golden Shovel &b%2%&r\n&fCraft Shears &b%3%&r",
+                "instruction": "Craft Golden Axe &b%1%&r\n&fCraft Golden Shovel &b%2%&r",
                 "items": {
                     "GOLD_AXE": {
                         "count": 0,
@@ -330,13 +524,9 @@
                         "count": 0,
                         "target": 1,
                         "done": false
-                    },
-                    "SHEARS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
                     }
-                }
+                },
+                "command": "/craft"
             },
             {
                 "type": "buy",
@@ -367,7 +557,7 @@
             },
             {
                 "type": "enchant",
-                "instruction": "Enchant items",
+                "instruction": "Enchant items\n&cKeep 25 levels after!",
                 "items": {
                     "GOLD_AXE": {
                         "enchants": [
@@ -392,14 +582,6 @@
                     "FARM_SUIT_BOOTS": {
                         "enchants": [
                             "Depth Strider III"
-                        ],
-                        "done": false
-                    },
-                    "FISHING_ROD": {
-                        "enchants": [
-                            "Lure V",
-                            "Angler V",
-                            "Piscary V"
                         ],
                         "done": false
                     },
@@ -436,115 +618,19 @@
                 }
             },
             {
-                "type": "has",
-                "instruction": "Craft Experimentation Table &b%1%",
-                "items": {
-                    "EXPERIMENTATION_TABLE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "coins",
-                "instruction": "Get coins from enchanting &6%coins%",
-                "target": 50000,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Enchanting Table",
-                            "position": [
-                                -37,
-                                69,
-                                -111
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "/warp hub",
-                "criteria": "Warping...",
-                "command": "/warp hub"
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy All Skills Exp Boost &b%1%",
-                "items": {
-                    "PET_ITEM_ALL_SKILLS_BOOST_COMMON": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Zog",
-                            "position": [
-                                34,
-                                71,
-                                -97
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Give pet item",
-                "criteria": "Your pet is now holding All Skills Exp Boost."
-            },
-            {
-                "type": "message",
-                "instruction": "/warp hub",
-                "criteria": "Warping...",
-                "command": "/warp hub"
-            },
-            {
-                "type": "message",
-                "instruction": "Finish daily enchanting xp",
-                "criteria": "You have reached the daily cap of 500,000 Enchanting EXP. Keep in mind EXP from experiments bypasses this cap!",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Enchanting Table",
-                            "position": [
-                                -37,
-                                69,
-                                -111
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "/warp hub",
-                "criteria": "Warping...",
-                "command": "/warp hub"
+                "type": "guiClickSlot",
+                "instruction": "Craft Experimentation Table",
+                "guiName": "Experimentation Table Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe EXPERIMENTATION_TABLE"
             },
             {
                 "type": "has",
-                "instruction": "Obtain Cheese &b%1%&r",
+                "instruction": "Lootshare Cheese &b%1%&r",
                 "items": {
                     "CHEESE_FUEL": {
                         "count": 0,
-                        "target": 6,
+                        "target": 5,
                         "done": false
                     }
                 },
@@ -629,93 +715,6 @@
                 }
             },
             {
-                "type": "message",
-                "instruction": "/warp hub",
-                "criteria": "Warping...",
-                "command": "/warp hub"
-            },
-            {
-                "type": "has",
-                "instruction": "Shear Oak Leaves &b%1%",
-                "items": {
-                    "LEAVES": {
-                        "count": 0,
-                        "target": 24,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Oak Leaves",
-                            "position": [
-                                -146,
-                                76,
-                                -33
-                            ],
-                            "radius": 40
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "collection",
-                "instruction": "Unlock Oak Wood 3 &b(Tier %level%)",
-                "collection": "oak_wood",
-                "level": 3,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Oak Wood",
-                            "position": [
-                                -146,
-                                76,
-                                -33
-                            ],
-                            "radius": 40
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Leaflet Helmet &b%1%&r\nCraft Leaflet Chestplate &b%2%&r\nCraft Leaflet Leggings &b%3%&r\nCraft Leaflet Boots &b%4%&r",
-                "items": {
-                    "LEAFLET_HELMET": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "LEAFLET_CHESTPLATE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "LEAFLET_LEGGINGS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "LEAFLET_BOOTS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "subArea",
-                "instruction": "/warp wizard",
-                "subArea": "Wizard Tower",
-                "command": "/warp wizard"
-            },
-            {
                 "type": "subArea",
                 "instruction": "/warp barn",
                 "subArea": "The Barn",
@@ -723,19 +722,64 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Chicken Minion I &b%1%&r\nCraft Pig Minion I &b%2%",
+                "instruction": "Get Raw Chicken &b%1%&r\nGet Raw Porkchop &b%2%",
                 "items": {
-                    "CHICKEN_GENERATOR_1": {
+                    "RAW_CHICKEN": {
                         "count": 0,
-                        "target": 1,
+                        "target": 64,
                         "done": false
                     },
-                    "PIG_GENERATOR_1": {
+                    "PORK": {
                         "count": 0,
-                        "target": 1,
+                        "target": 64,
                         "done": false
                     }
                 }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Pig Minion Recipes",
+                "guiName": "Pig Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe PIG_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Pig Minion I",
+                "guiName": "Pig Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER",
+                    "LEATHER",
+                    "RAW_BEEF",
+                    "POTATO_ITEM",
+                    "WHEAT",
+                    "SEEDS",
+                    "CARROT_ITEM",
+                    "PUMPKIN",
+                    "MELON_BLOCK",
+                    "MELON",
+                    "PORK",
+                    "RAW_CHICKEN"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "area",
@@ -749,6 +793,22 @@
                 "criteria": "You picked up a minion! You currently have"
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Cobblestone Minion",
+                "items": [
+                    "COBBLESTONE_GENERATOR_1"
+                ],
+                "command": "/ec 1"
+            },
+            {
                 "type": "message",
                 "instruction": "/is",
                 "criteria": "Warping...",
@@ -756,8 +816,17 @@
             },
             {
                 "type": "message",
-                "instruction": "Place Chicken and Pig Minion",
+                "instruction": "Place Chicken and Pig Minion\n&cDon't forget storages!",
                 "criteria": "You placed a minion! (2/"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Give 2 Cheese to Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "itemIndex": 19,
+                "has": "Tasty Cheese",
+                "doesntHave": null,
+                "highlight": true
             },
             {
                 "type": "message",
@@ -771,60 +840,395 @@
                 "command": "/warp desert"
             },
             {
-                "type": "subArea",
-                "instruction": "/warp trapper",
-                "subArea": "Trapper's Den",
-                "command": "/warp trapper"
+                "type": "has",
+                "instruction": "Get Cocoa Beans &b%1%&r\nGet Sugar Cane &b%2%",
+                "items": {
+                    "INK_SACK:3": {
+                        "count": 0,
+                        "target": 75,
+                        "done": false
+                    },
+                    "SUGAR_CANE": {
+                        "count": 0,
+                        "target": 100,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                155,
+                                76,
+                                -405
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                129,
+                                65,
+                                -431
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                103,
+                                65,
+                                -445
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                121,
+                                65,
+                                -473
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                145,
+                                69,
+                                -484
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                139,
+                                76,
+                                -508
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oasis",
+                            "position": [
+                                139,
+                                76,
+                                -508
+                            ],
+                            "radius": 300
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
-                "type": "subArea",
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "INK_SACK:3",
+                    "SUGAR_CANE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "message",
                 "instruction": "/warp desert",
-                "subArea": "Desert Settlement",
+                "criteria": "Warping...",
                 "command": "/warp desert"
             },
             {
-                "type": "skill",
-                "instruction": "Unlock Mining 12 &b(Level %level%)",
-                "skill": "mining",
-                "level": 12
+                "type": "has",
+                "instruction": "Mine Sand &b%1%",
+                "items": {
+                    "SAND": {
+                        "count": 0,
+                        "target": 80,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Sand",
+                            "position": [
+                                208,
+                                77,
+                                -372
+                            ],
+                            "radius": 20
+                        },
+                        {
+                            "text": "Sand",
+                            "position": [
+                                208,
+                                77,
+                                -372
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
-                "type": "collection",
-                "instruction": "Unlock Mushroom 3 &b(Tier %level%)",
-                "collection": "mushroom",
-                "level": 3
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SAND_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion I",
+                "guiName": "Sand Minion I Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "has",
-                "instruction": "Craft Mushroom Armor",
+                "instruction": "Mine Sand &b%1%",
                 "items": {
-                    "MUSHROOM_HELMET": {
+                    "SAND": {
                         "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "MUSHROOM_CHESTPLATE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "MUSHROOM_LEGGINGS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "MUSHROOM_BOOTS": {
-                        "count": 0,
-                        "target": 1,
+                        "target": 160,
                         "done": false
                     }
                 }
             },
             {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe SAND_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion II",
+                "guiName": "Sand Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Mine Sand &b%1%",
+                "items": {
+                    "SAND": {
+                        "count": 0,
+                        "target": 320,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe SAND_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion III",
+                "guiName": "Sand Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Mine Sand &b%1%",
+                "items": {
+                    "SAND": {
+                        "count": 0,
+                        "target": 512,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 14,
+                "command": "/viewrecipe SAND_GENERATOR_4"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion IV",
+                "guiName": "Sand Minion IV Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Enchanted Sand &b%1%",
+                "items": {
+                    "ENCHANTED_SAND": {
+                        "count": 0,
+                        "target": 8,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 15,
+                "command": "/viewrecipe SAND_GENERATOR_5"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion V",
+                "guiName": "Sand Minion V Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Enchanted Sand &b%1%",
+                "items": {
+                    "ENCHANTED_SAND": {
+                        "count": 0,
+                        "target": 16,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 21,
+                "command": "/viewrecipe SAND_GENERATOR_6"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion VI",
+                "guiName": "Sand Minion VI Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Sand Collection 7",
+                "collection": "sand",
+                "level": 7
+            },
+            {
+                "type": "skill",
+                "instruction": "Unlock Mining 12",
+                "skill": "mining",
+                "level": 12
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Mushroom Collection 3",
+                "collection": "mushroom",
+                "level": 3,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mushrooms",
+                            "position": [
+                                329,
+                                72,
+                                -419
+                            ],
+                            "radius": 20
+                        },
+                        {
+                            "text": "Mushrooms",
+                            "position": [
+                                329,
+                                72,
+                                -419
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "SAND",
+                    "ENCHANTED_SAND",
+                    "HUGE_MUSHROOM_1",
+                    "HUGE_MUSHROOM_2"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "subArea",
-                "instruction": "/warp hub",
+                "instruction": "/hub",
                 "subArea": "Farm",
+                "command": "/hub"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
                 "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Red Mushrooms &b%1%",
+                "items": {
+                    "RED_MUSHROOM": {
+                        "count": 0,
+                        "target": 24,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Helmet",
+                "guiName": "Mushroom Helmet Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe MUSHROOM_HELMET"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Chestplate",
+                "guiName": "Mushroom Chestplate Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe MUSHROOM_CHESTPLATE"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Leggings",
+                "guiName": "Mushroom Leggings Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe MUSHROOM_LEGGINGS"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Mushroom Suit Boots",
+                "guiName": "Mushroom Boots Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe MUSHROOM_BOOTS"
             },
             {
                 "type": "message",
@@ -839,9 +1243,7 @@
                     "MUSHROOM_HELMET": {
                         "enchants": [
                             "Protection V",
-                            "Growth V",
-                            "Respiration III",
-                            "Aqua Affinity I"
+                            "Growth V"
                         ],
                         "done": false
                     },
@@ -890,15 +1292,21 @@
                 "type": "reforge",
                 "instruction": "Reforge items",
                 "items": {
+                    "END_SWORD": {
+                        "reforges": [
+                            "Sharp"
+                        ],
+                        "done": false
+                    },
                     "ROOKIE_HOE": {
                         "reforges": [
                             "Robust"
                         ],
                         "done": false
                     },
-                    "END_SWORD": {
+                    "GOLD_AXE": {
                         "reforges": [
-                            "Sharp"
+                            "Double-Bit"
                         ],
                         "done": false
                     },
@@ -945,6 +1353,33 @@
                 }
             },
             {
+                "type": "buy",
+                "instruction": "Buy Black Diamond &b%1%",
+                "items": {
+                    "ONYX": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
                 "type": "guiItem",
                 "instruction": "Apply Black Diamond to Promising Pickaxe",
                 "guiName": "Reforge Anvil",
@@ -968,6 +1403,141 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Coal Collection 4",
+                "collection": "coal",
+                "level": 4,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Coal",
+                            "position": [
+                                -20,
+                                71,
+                                -167
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Coal",
+                            "position": [
+                                -41,
+                                65,
+                                -164
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Coal",
+                            "position": [
+                                -59,
+                                63,
+                                -145
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Coal",
+                            "position": [
+                                -20,
+                                71,
+                                -167
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                },
+                "clientCommand": "/shtrackcollection COAL 1000"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Enchanted Coal &b%1%",
+                "items": {
+                    "ENCHANTED_COAL": {
+                        "count": 0,
+                        "target": 6,
+                        "done": false
+                    }
+                },
+                "command": "/viewrecipe ENCHANTED_COAL"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Oak Wood &b%1%",
+                "items": {
+                    "LOG": {
+                        "count": 0,
+                        "target": 300,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Trade Oak Wood for Coal &b%1%",
+                "items": {
+                    "COAL": {
+                        "count": 0,
+                        "target": 640,
+                        "done": false
+                    }
+                },
+                "command": "/trades"
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Enchanted Coal &b%1%",
+                "items": {
+                    "ENCHANTED_COAL": {
+                        "count": 0,
+                        "target": 10,
+                        "done": false
+                    }
+                },
+                "command": "/viewrecipe ENCHANTED_COAL"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COAL"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "area",
@@ -1123,22 +1693,10 @@
                 }
             },
             {
-                "type": "collection",
-                "instruction": "Unlock Diamond 4 &b(Tier %level%)",
-                "collection": "diamond",
-                "level": 4,
-                "clientCommand": "/shtrackcollection DIAMOND 1600"
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Enchanted Diamond &b%1%&r",
-                "items": {
-                    "ENCHANTED_DIAMOND": {
-                        "count": 0,
-                        "target": 10,
-                        "done": false
-                    }
-                }
+                "type": "message",
+                "instruction": "/warp deep",
+                "criteria": "Warping...",
+                "command": "/warp deep"
             },
             {
                 "type": "guiClickSlot",
@@ -1153,7 +1711,7 @@
                             "text": "Lift Operator",
                             "position": [
                                 45,
-                                13,
+                                150,
                                 15
                             ],
                             "radius": 5
@@ -1163,11 +1721,32 @@
                 }
             },
             {
+                "type": "has",
+                "instruction": "Get Lapis Lazuli &b%1%&r",
+                "items": {
+                    "INK_SACK:4": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                }
+            },
+            {
                 "type": "collection",
-                "instruction": "Unlock Lapis Lazuli 4 &b(Tier %level%)",
+                "instruction": "Unlock Lapis Lazuli Collection 4",
                 "collection": "lapis_lazuli",
                 "level": 4,
                 "clientCommand": "/shtrackcollection LAPIS_LAZULI 2000"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE",
+                    "ROTTEN_FLESH",
+                    "LAPIS_CRYSTAL"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "has",
@@ -1178,7 +1757,16 @@
                         "target": 10,
                         "done": false
                     }
-                }
+                },
+                "command": "/viewrecipe ENCHANTED_LAPIS_LAZULI"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "INK_SACK:4"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "guiClickSlot",
@@ -1205,11 +1793,32 @@
                 "shown": false
             },
             {
+                "type": "has",
+                "instruction": "Get Redstone &b%1%&r",
+                "items": {
+                    "REDSTONE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                }
+            },
+            {
                 "type": "collection",
-                "instruction": "Unlock Redstone 4 &b(Tier %level%)",
+                "instruction": "Unlock Redstone Collection 4",
                 "collection": "redstone",
                 "level": 4,
                 "clientCommand": "/shtrackcollection REDSTONE 1600"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "COBBLESTONE",
+                    "GOLD_NUGGET",
+                    "FLAMING_SWORD"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "has",
@@ -1220,7 +1829,8 @@
                         "target": 10,
                         "done": false
                     }
-                }
+                },
+                "command": "/viewrecipe ENCHANTED_REDSTONE"
             },
             {
                 "type": "has",
@@ -1279,23 +1889,12 @@
                 }
             },
             {
-                "type": "guiItem",
-                "instruction": "/hotm",
-                "guiName": "Heart of the Mountain",
-                "itemIndex": null,
-                "has": null,
-                "doesntHave": null,
-                "highlight": false,
-                "command": "/hotm"
-            },
-            {
-                "type": "guiItem",
+                "type": "guiClickSlot",
                 "instruction": "Unlock the Mining Speed Perk",
                 "guiName": "Heart of the Mountain",
-                "itemIndex": 40,
-                "has": "You don't have enough Mithril",
-                "doesntHave": null,
-                "highlight": true
+                "slotIndex": 40,
+                "highlight": true,
+                "command": "/hotm"
             },
             {
                 "type": "buy",
@@ -1323,6 +1922,14 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "PROMISING_PICKAXE"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "guiItem",
@@ -1369,6 +1976,53 @@
             },
             {
                 "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (3/"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Give 1 Cheese to Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "itemIndex": 19,
+                "has": "Tasty Cheese",
+                "doesntHave": null,
+                "highlight": true
+            },
+            {
+                "type": "area",
                 "instruction": "/warp hub",
                 "area": "Hub",
                 "command": "/warp hub"
@@ -1380,6 +2034,7 @@
                     "FRACTURED_MITHRIL_PICKAXE": {
                         "enchants": [
                             "Efficiency V",
+                            "Smelting Touch I",
                             "Fortune III"
                         ],
                         "done": false
@@ -1462,7 +2117,7 @@
             },
             {
                 "type": "collection",
-                "instruction": "Unlock Emerald 3 &b(Tier %level%)",
+                "instruction": "Unlock Emerald Collection 3",
                 "collection": "emerald",
                 "level": 3,
                 "waypoint": {
@@ -1528,14 +2183,170 @@
                 }
             },
             {
+                "type": "guiClickSlot",
+                "instruction": "Craft Magnetic Talisman",
+                "guiName": "Magnetic Talisman Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe MAGNETIC_TALISMAN"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Bags",
+                "guiName": "SkyBlock Menu",
+                "slotIndex": 29,
+                "command": "/sbmenu"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sack of Sacks",
+                "guiName": "Your Bags",
+                "slotIndex": 24
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Magnetic Talisman",
+                "items": [
+                    "MAGNETIC_TALISMAN"
+                ]
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "EMERALD",
+                    "REDSTONE",
+                    "COBBLESTONE",
+                    "STONE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Iron Collection 1",
+                "collection": "iron_ingot",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                33,
+                                231,
+                                -97
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                63,
+                                200,
+                                -96
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                88,
+                                194,
+                                -32
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Iron",
+                            "position": [
+                                52,
+                                203,
+                                -9
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
                 "type": "has",
-                "instruction": "Craft Magnetic Talisman &b%1%&r",
+                "instruction": "Get Gold Blocks &b%1%\nGet Enchanted Gold &b%2%",
                 "items": {
-                    "MAGNETIC_TALISMAN": {
+                    "GOLD_BLOCK": {
+                        "count": 0,
+                        "target": 128,
+                        "done": false
+                    },
+                    "ENCHANTED_GOLD": {
                         "count": 0,
                         "target": 1,
                         "done": false
                     }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                101,
+                                193,
+                                -17
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                139,
+                                187,
+                                15
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Gold",
+                            "position": [
+                                179,
+                                157,
+                                39
+                            ],
+                            "radius": 16
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Enchanted Gold",
+                "items": [
+                    "ENCHANTED_GOLD"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Gold Collection 6",
+                "collection": "gold_ingot",
+                "level": 6,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Gold",
+                            "position": [
+                                179,
+                                157,
+                                39
+                            ],
+                            "radius": 16
+                        }
+                    ],
+                    "index": 0
                 }
             },
             {
@@ -1546,13 +2357,22 @@
             },
             {
                 "type": "skill",
-                "instruction": "Unlock Combat 12 &b(Level %level%)",
+                "instruction": "Unlock Combat 12",
                 "skill": "combat",
                 "level": 12,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
                     "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -38,
+                                135,
+                                11
+                            ],
+                            "radius": 20
+                        },
                         {
                             "text": "Glacite Walkers",
                             "position": [
@@ -1561,6 +2381,15 @@
                                 160
                             ],
                             "radius": 40
+                        },
+                        {
+                            "text": "Glacite Walkers",
+                            "position": [
+                                0,
+                                128,
+                                160
+                            ],
+                            "radius": 100
                         }
                     ],
                     "index": 0
@@ -1599,6 +2428,12 @@
                 "criteria": "Talk to Lone Adventurer"
             },
             {
+                "type": "message",
+                "instruction": "/warp end",
+                "criteria": "Warping...",
+                "command": "/warp end"
+            },
+            {
                 "type": "guiClickSlot",
                 "instruction": "Buy Void Sword",
                 "guiName": "Lone Adventurer Trade",
@@ -1623,9 +2458,81 @@
                 }
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "END_SWORD"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "area",
+                "instruction": "/warp spider",
+                "area": "Spider's Den",
+                "command": "/warp spider"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Bone Collection 1",
+                "collection": "bone",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Gravel Skeletons",
+                            "position": [
+                                -346,
+                                112,
+                                -228
+                            ],
+                            "radius": 30
+                        },
+                        {
+                            "text": "Gravel Skeletons",
+                            "position": [
+                                -346,
+                                112,
+                                -228
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Grandma Wolf",
+                "criteria": "[NPC] Grandma Wolf: The pet does not need to be spawned for combos to work! Happy hunting!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Grandma Wolf",
+                            "position": [
+                                -282,
+                                122,
+                                -191
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "subArea",
+                "instruction": "/hub",
+                "subArea": "Graveyard",
+                "command": "/hub"
+            },
+            {
+                "type": "message",
                 "instruction": "/warp hub",
-                "area": "Hub",
+                "criteria": "Warping...",
                 "command": "/warp hub"
             },
             {
@@ -1703,6 +2610,90 @@
                 }
             },
             {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Oak Wood &b%1%",
+                "items": {
+                    "LOG": {
+                        "count": 0,
+                        "target": 600,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Coal Blocks &b%1%\n&eTrade Oak Wood for Coal",
+                "items": {
+                    "COAL_BLOCK": {
+                        "count": 0,
+                        "target": 128,
+                        "done": false
+                    }
+                },
+                "command": "/trades"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Buy Rare Bee Pet",
+                "guiName": "Bea",
+                "slotIndex": 11,
+                "highlight": true,
+                "coins": 50000,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Bea",
+                            "position": [
+                                31,
+                                70,
+                                -95
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
                 "type": "area",
                 "instruction": "/warp end",
                 "area": "The End",
@@ -1710,7 +2701,55 @@
             },
             {
                 "type": "has",
-                "instruction": "Obtain Ender Helmet &b%1%&r\nObtain Ender Chestplate &b%2%&r\nObtain Ender Leggings &b%3%&r\nObtain Ender Boots &b%4%&r",
+                "instruction": "Get Ender Pearls &b%1%",
+                "items": {
+                    "ENDER_PEARL": {
+                        "count": 0,
+                        "target": 64,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Enderman Minion Recipes",
+                "guiName": "Enderman Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe ENDERMAN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Enderman Minion I",
+                "guiName": "Enderman Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Ender Pearls &b%1%",
+                "items": {
+                    "ENDER_PEARL": {
+                        "count": 0,
+                        "target": 128,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Enderman Minion Recipes",
+                "guiName": "Enderman Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe ENDERMAN_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Enderman Minion II",
+                "guiName": "Enderman Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Ender Helmet &b%1%&r\nGet Ender Chestplate &b%2%&r\nGet Ender Leggings &b%3%&r\nGet Ender Boots &b%4%&r",
                 "items": {
                     "END_HELMET": {
                         "count": 0,
@@ -1735,6 +2774,21 @@
                 }
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "MITE_GEL",
+                    "OBSIDIAN",
+                    "ENCHANTED_OBSIDIAN",
+                    "ENDER_STONE",
+                    "ENCHANTED_ENDSTONE",
+                    "ENDSTONE_ROSE",
+                    "RUNE",
+                    "ENDER_PEARL"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "area",
                 "instruction": "/warp hub",
                 "area": "Hub",
@@ -1744,6 +2798,12 @@
                 "type": "reforge",
                 "instruction": "Reforge items",
                 "items": {
+                    "VOID_SWORD": {
+                        "reforges": [
+                            "Spicy"
+                        ],
+                        "done": false
+                    },
                     "END_HELMET": {
                         "reforges": [
                             "Fierce"
@@ -1793,9 +2853,7 @@
                     "END_HELMET": {
                         "enchants": [
                             "Protection V",
-                            "Growth V",
-                            "Respiration III",
-                            "Aqua Affinity I"
+                            "Growth V"
                         ],
                         "done": false
                     },
@@ -1841,6 +2899,59 @@
                 }
             },
             {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Second Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (4/"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Give 1 Cheese to Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "itemIndex": 19,
+                "has": "Tasty Cheese",
+                "doesntHave": null,
+                "highlight": true
+            },
+            {
                 "type": "subArea",
                 "instruction": "/warp drag",
                 "subArea": "Dragon's Nest",
@@ -1848,9 +2959,83 @@
             },
             {
                 "type": "skill",
-                "instruction": "Unlock Combat 15 &b(Level %level%)",
+                "instruction": "Unlock Combat 15\n&cMine nearby ender nodes!\n&cUpgrade enderman minion!",
                 "skill": "combat",
                 "level": 15
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "MITE_GEL",
+                    "OBSIDIAN",
+                    "ENCHANTED_OBSIDIAN",
+                    "ENDER_STONE",
+                    "ENCHANTED_ENDSTONE",
+                    "ENDSTONE_ROSE",
+                    "RUNE",
+                    "ENDER_PEARL"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Second Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Third Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (5/"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Give 1 Cheese to Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "itemIndex": 19,
+                "has": "Tasty Cheese",
+                "doesntHave": null,
+                "highlight": true
             },
             {
                 "type": "area",
@@ -1859,15 +3044,529 @@
                 "command": "/warp hub"
             },
             {
+                "type": "buy",
+                "instruction": "Buy Wooden Swords&r &b%1%\nBuy Wooden Pickaxes &b%2%\nBuy Wooden Hoes &b%3%",
+                "items": {
+                    "WOOD_SWORD": {
+                        "count": 0,
+                        "target": 8,
+                        "done": false
+                    },
+                    "WOOD_PICKAXE": {
+                        "count": 0,
+                        "target": 4,
+                        "done": false
+                    },
+                    "WOOD_HOE": {
+                        "count": 0,
+                        "target": 7,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Wooden Swords\nStore Wooden Pickaxes\nStore Wooden Hoes",
+                "items": [
+                    "WOOD_SWORD",
+                    "WOOD_PICKAXE",
+                    "WOOD_HOE"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Bones &b%1%",
+                "items": {
+                    "BONE": {
+                        "count": 0,
+                        "target": 640,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Adventurer",
+                            "position": [
+                                -42,
+                                70,
+                                -65
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Skeleton Minion Recipes",
+                "guiName": "Skeleton Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SKELETON_GENERATOR_1"
+            },
+            {
                 "type": "has",
-                "instruction": "Farm Wheat &b%1%&r\nFarm Enchanted Seeds &b%2%&r",
+                "instruction": "Craft Skeleton Minion I &b%1%",
+                "items": {
+                    "SKELETON_GENERATOR_1": {
+                        "count": 0,
+                        "target": 8,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Skeleton Minions",
+                "items": [
+                    "SKELETON_GENERATOR_1"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Wheat &b%1%",
                 "items": {
                     "WHEAT": {
                         "count": 0,
-                        "target": 25,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe WHEAT_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion I",
+                "guiName": "Wheat Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe WHEAT_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion II",
+                "guiName": "Wheat Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe WHEAT_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion III",
+                "guiName": "Wheat Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Carrots &b%1%",
+                "items": {
+                    "CARROT_ITEM": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Carrot Minion Recipes",
+                "guiName": "Carrot Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CARROT_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Carrot Minion I",
+                "guiName": "Carrot Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Carrot Minion Recipes",
+                "guiName": "Carrot Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe CARROT_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Carrot Minion II",
+                "guiName": "Carrot Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Potatoes &b%1%",
+                "items": {
+                    "POTATO_ITEM": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Potato Minion Recipes",
+                "guiName": "Potato Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe POTATO_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Potato Minion I",
+                "guiName": "Potato Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Potato Minion Recipes",
+                "guiName": "Potato Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe POTATO_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Potato Minion II",
+                "guiName": "Potato Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Sugar Cane &b%1%",
+                "items": {
+                    "SUGAR_CANE": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sugar Cane Minion Recipes",
+                "guiName": "Sugar Cane Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SUGAR_CANE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sugar Cane Minion I",
+                "guiName": "Sugar Cane Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sugar Cane Minion Recipes",
+                "guiName": "Sugar Cane Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe SUGAR_CANE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sugar Cane Minion II",
+                "guiName": "Sugar Cane Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Cocoa Beans &b%1%",
+                "items": {
+                    "INK_SACK:3": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cocoa Beans Minion Recipes",
+                "guiName": "Cocoa Beans Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe COCOA_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cocoa Beans Minion I",
+                "guiName": "Cocoa Beans Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cocoa Beans Minion Recipes",
+                "guiName": "Cocoa Beans Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe COCOA_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cocoa Beans Minion II",
+                "guiName": "Cocoa Beans Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cocoa Beans Minion Recipes",
+                "guiName": "Cocoa Beans Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe COCOA_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cocoa Beans Minion III",
+                "guiName": "Cocoa Beans Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Red Mushrooms &b%1%",
+                "items": {
+                    "RED_MUSHROOM": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion I",
+                "guiName": "Mushroom Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion II",
+                "guiName": "Mushroom Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion III",
+                "guiName": "Mushroom Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Brown Mushrooms &b%1%",
+                "items": {
+                    "BROWN_MUSHROOM": {
+                        "count": 0,
+                        "target": 512,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Farm Merchant",
+                            "position": [
+                                15,
+                                70,
+                                -72.35
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Mushroom Minion Recipes",
+                "guiName": "Mushroom Minion Recipes",
+                "slotIndex": 14,
+                "command": "/viewrecipe MUSHROOM_GENERATOR_4"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Go to next page",
+                "guiName": "Mushroom Minion IV Recipe",
+                "slotIndex": 53
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Mushroom Minion IV",
+                "guiName": "Mushroom Minion IV Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Nether Wart &b%1%\nBuy Brewing Stand &b%2%\nBuy Water Bottles &b%2%",
+                "items": {
+                    "NETHER_STALK": {
+                        "count": 0,
+                        "target": 561,
                         "done": false
                     },
-                    "ENCHANTED_SEEDS": {
+                    "BREWING_STAND_ITEM": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "POTION": {
                         "count": 0,
                         "target": 3,
                         "done": false
@@ -1878,31 +3577,103 @@
                     "beam": true,
                     "list": [
                         {
-                            "text": "Wheat",
+                            "text": "[!]",
+                            "position": [
+                                20,
+                                70,
+                                -79
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Alchemist",
                             "position": [
                                 41,
-                                71,
-                                -137
+                                70,
+                                -64
                             ],
-                            "radius": 30
+                            "radius": 5
                         }
                     ],
                     "index": 0
                 }
             },
             {
-                "type": "subArea",
-                "instruction": "/warp barn",
-                "subArea": "The Barn",
-                "command": "/warp barn"
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Nether Wart Minion Recipes",
+                "guiName": "Nether Wart Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe NETHER_WARTS_GENERATOR_1"
             },
             {
-                "type": "has",
-                "instruction": "Farm Enchanted Potatoes &b%1%&r",
+                "type": "guiClickSlot",
+                "instruction": "Craft Nether Wart Minion I",
+                "guiName": "Nether Wart Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Nether Wart Minion Recipes",
+                "guiName": "Nether Wart Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe NETHER_WARTS_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Nether Wart Minion II",
+                "guiName": "Nether Wart Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Nether Wart Minion Recipes",
+                "guiName": "Nether Wart Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe NETHER_WARTS_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Nether Wart Minion III",
+                "guiName": "Nether Wart Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Brewing Stand\nStore Water Bottles\nStore Nether Wart",
+                "items": [
+                    "BREWING_STAND_ITEM",
+                    "POTION",
+                    "NETHER_STALK"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Wheat Minion\nStore Carrot Minion\nStore Potato Minion\nStore Sugar Cane Minion\nStore Cocoa Beans Minion\nStore Mushroom Minion\nStore Nether Wart Minion",
+                "items": [
+                    "WHEAT_GENERATOR_3",
+                    "CARROT_GENERATOR_2",
+                    "POTATO_GENERATOR_2",
+                    "SUGAR_CANE_GENERATOR_2",
+                    "COCOA_GENERATOR_3",
+                    "MUSHROOM_GENERATOR_4",
+                    "NETHER_WARTS_GENERATOR_3"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Coal &b%1%",
                 "items": {
-                    "ENCHANTED_POTATO": {
+                    "COAL": {
                         "count": 0,
-                        "target": 50,
+                        "target": 560,
                         "done": false
                     }
                 },
@@ -1911,17 +3682,647 @@
                     "beam": true,
                     "list": [
                         {
-                            "text": "Potatoes",
+                            "text": "Mine Merchant",
                             "position": [
-                                172,
-                                81,
-                                -268
+                                -9.5,
+                                68,
+                                -125.5
                             ],
-                            "radius": 30
+                            "radius": 5
                         }
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Coal Minion Recipes",
+                "guiName": "Coal Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe COAL_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Coal Minion I",
+                "guiName": "Coal Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Coal Minion Recipes",
+                "guiName": "Coal Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe COAL_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Coal Minion II",
+                "guiName": "Coal Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Coal Minion Recipes",
+                "guiName": "Coal Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe COAL_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Coal Minion III",
+                "guiName": "Coal Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Iron Ingot &b%1%",
+                "items": {
+                    "IRON_INGOT": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Iron Minion Recipes",
+                "guiName": "Iron Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe IRON_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Iron Minion I",
+                "guiName": "Iron Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Iron Minion Recipes",
+                "guiName": "Iron Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe IRON_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Iron Minion II",
+                "guiName": "Iron Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Iron Minion Recipes",
+                "guiName": "Iron Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe IRON_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Iron Minion III",
+                "guiName": "Iron Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Gold Ingot &b%1%",
+                "items": {
+                    "GOLD_INGOT": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Gold Minion Recipes",
+                "guiName": "Gold Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe GOLD_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Gold Minion I",
+                "guiName": "Gold Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Gold Minion Recipes",
+                "guiName": "Gold Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe GOLD_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Gold Minion II",
+                "guiName": "Gold Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Gold Minion Recipes",
+                "guiName": "Gold Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe GOLD_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Gold Minion III",
+                "guiName": "Gold Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "has",
+                "instruction": "Get Cobblestone Minion &b%1%",
+                "items": {
+                    "COBBLESTONE_GENERATOR_1": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "command": "/ec 1"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Cobblestone &b%1%",
+                "items": {
+                    "COBBLESTONE": {
+                        "count": 0,
+                        "target": 480,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Mine Merchant",
+                            "position": [
+                                -9.5,
+                                68,
+                                -125.5
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cobblestone Minion Recipes",
+                "guiName": "Cobblestone Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe COBBLESTONE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cobblestone Minion II",
+                "guiName": "Cobblestone Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Cobblestone Minion Recipes",
+                "guiName": "Cobblestone Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe COBBLESTONE_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Cobblestone Minion III",
+                "guiName": "Cobblestone Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Coal Minion\nStore Iron Minion\nStore Gold Minion\nStore Cobblestone Minion",
+                "items": [
+                    "COAL_GENERATOR_3",
+                    "IRON_GENERATOR_3",
+                    "GOLD_GENERATOR_3",
+                    "COBBLESTONE_GENERATOR_3"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Iron Armor\nBuy Rosetta Armor\nBuy Squire Armor\nBuy Celeste Armor",
+                "items": {
+                    "IRON_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "IRON_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "IRON_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "IRON_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "CELESTE_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "CELESTE_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "CELESTE_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "CELESTE_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Rosetta",
+                            "position": [
+                                -12,
+                                68,
+                                -141
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy End Sword &b%1%",
+                "items": {
+                    "END_SWORD": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Weaponsmith",
+                            "position": [
+                                -10.5,
+                                68,
+                                -130.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Dirty Bottle &b%1%",
+                "items": {
+                    "DIRT_BOTTLE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Smithmonger",
+                            "position": [
+                                -33,
+                                69,
+                                -136
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Apply Dirt Bottle to End Sword",
+                "guiName": "Reforge Anvil",
+                "itemIndex": 13,
+                "has": "Dirty End Sword",
+                "doesntHave": "Click the ANVIL BELOW to combine.",
+                "highlight": false,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Reforge Anvil",
+                            "position": [
+                                -29,
+                                69,
+                                -137
+                            ],
+                            "radius": 2
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "END_SWORD"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Redstone &b%1%",
+                "items": {
+                    "REDSTONE": {
+                        "count": 0,
+                        "target": 384,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -51,
+                                71,
+                                -30
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -47,
+                                69,
+                                -32
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Redstone Engineer",
+                            "position": [
+                                -52.5,
+                                65,
+                                -29.5
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Redstone Minion Recipes",
+                "guiName": "Redstone Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe REDSTONE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Redstone Minion I",
+                "guiName": "Redstone Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Redstone Minion Recipes",
+                "guiName": "Redstone Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe REDSTONE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Redstone Minion II",
+                "guiName": "Redstone Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Redstone Minion",
+                "items": [
+                    "REDSTONE_GENERATOR_2"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Oak Wood &b%1%",
+                "items": {
+                    "LOG": {
+                        "count": 0,
+                        "target": 256,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Small Storages &b%1%&r",
+                "items": {
+                    "SMALL_ENCHANTED_CHEST": {
+                        "count": 0,
+                        "target": 4,
+                        "done": false
+                    }
+                },
+                "command": "/viewrecipe SMALL_ENCHANTED_CHEST"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Oak Wood Collection 7\n&cKeep enchanted oak wood!",
+                "collection": "oak_wood",
+                "level": 7,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 16
+                        },
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -117,
+                                74,
+                                -32
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Enchanted Oak Wood &b%1%&r",
+                "items": {
+                    "ENCHANTED_OAK_LOG": {
+                        "count": 0,
+                        "target": 32,
+                        "done": false
+                    }
+                },
+                "command": "/craft"
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Medium Storages &b%1%&r",
+                "items": {
+                    "MEDIUM_ENCHANTED_CHEST": {
+                        "count": 0,
+                        "target": 4,
+                        "done": false
+                    }
+                },
+                "command": "/viewrecipe MEDIUM_ENCHANTED_CHEST"
             },
             {
                 "type": "area",
@@ -1930,259 +4331,118 @@
                 "command": "/is"
             },
             {
-                "type": "area",
-                "instruction": "Agree to help Sam",
-                "area": "Garden",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Sam",
-                            "position": [
-                                8,
-                                100,
-                                41
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Jacob",
-                "criteria": "[NPC] Jacob: Howdy! Fine day eh?",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Jacob",
-                            "position": [
-                                -21,
-                                71,
-                                -16
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Give Sam 25 Wheat",
-                "criteria": "[NPC] Sam: Wow, you did it!",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Sam",
-                            "position": [
-                                -8,
-                                71,
-                                -7
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Sam",
-                "criteria": "[NPC] Sam: Head over to the desk, there you can browse SkyMart to order some fuel.",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Sam",
-                            "position": [
-                                -15,
-                                72,
-                                -28
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "guiItem",
-                "instruction": "/desk",
-                "guiName": "Desk",
-                "itemIndex": null,
-                "has": null,
-                "doesntHave": null,
-                "highlight": false,
-                "command": "/desk"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to SkyMart",
-                "guiName": "Desk",
-                "slotIndex": 23,
-                "highlight": true
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Farming Essentials",
-                "guiName": "SkyMart",
-                "slotIndex": 11,
-                "highlight": true
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Purchase Fuel",
-                "guiName": "SkyMart Farming Essentials",
-                "slotIndex": 10,
-                "highlight": true,
-                "coins": 20000
-            },
-            {
-                "type": "message",
-                "instruction": "Put Fuel in Composter",
-                "criteria": "Added 3,000 fuel to the composter!",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Composter",
-                            "position": [
-                                -11.5,
-                                72,
-                                -27.5
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Compost",
-                "criteria": "Picked up 1 Compost!",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Composter",
-                            "position": [
-                                -11.5,
-                                72,
-                                -27.5
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "guiItem",
-                "instruction": "/desk",
-                "guiName": "Desk",
-                "itemIndex": null,
-                "has": null,
-                "doesntHave": null,
-                "highlight": false,
-                "command": "/desk"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Configure Plots",
-                "guiName": "Desk",
-                "slotIndex": 19,
-                "highlight": true
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Unlock Plot 1",
-                "guiName": "Configure Plots",
-                "slotIndex": 13,
-                "highlight": true
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Confirm Plot Unlock",
-                "guiName": "Confirm Plot Unlock",
-                "slotIndex": 11,
-                "highlight": true
-            },
-            {
                 "type": "has",
-                "instruction": "Collect Sam's Scythe &b%1%&r",
+                "instruction": "Get Enchanted Gold &b%1%\nGet Brewing Stand &b%2%\nGet Water Bottles &b%3%\nGet Nether Wart &b%4%",
                 "items": {
-                    "SAM_SCYTHE": {
+                    "ENCHANTED_GOLD": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "BREWING_STAND_ITEM": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "POTION": {
+                        "count": 0,
+                        "target": 3,
+                        "done": false
+                    },
+                    "NETHER_STALK": {
                         "count": 0,
                         "target": 1,
                         "done": false
                     }
-                }
+                },
+                "command": "/ec 1"
             },
             {
                 "type": "message",
-                "instruction": "/tptoplot 1",
-                "criteria": "Teleported you to Plot - 1!",
-                "command": "/tptoplot 1"
+                "instruction": "Brew 3 Speed Potions\n&cBrew archery if missing xp",
+                "criteria": "BINGO GOAL COMPLETE! Brewer"
             },
             {
                 "type": "message",
-                "instruction": "Clean the plot",
-                "criteria": "Plot - 1 is now clean!"
-            },
-            {
-                "type": "message",
-                "instruction": "/warp garden",
+                "instruction": "/is",
                 "criteria": "Warping...",
-                "command": "/warp garden"
-            },
-            {
-                "type": "guiItem",
-                "instruction": "/desk",
-                "guiName": "Desk",
-                "itemIndex": null,
-                "has": null,
-                "doesntHave": null,
-                "highlight": false,
-                "command": "/desk"
+                "command": "/is"
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Navigate to Configure Plots",
-                "guiName": "Desk",
-                "slotIndex": 19,
-                "highlight": true
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Select Plot 1",
-                "guiName": "Configure Plots",
-                "slotIndex": 13,
-                "highlight": true
+                "instruction": "Collect Second Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Select Wheat Preset",
-                "guiName": "Plot Modification: 1",
+                "instruction": "Collect Third Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Fourth Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
                 "slotIndex": 11,
-                "highlight": true
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Confirm paste",
-                "guiName": "Confirm Paste",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
                 "slotIndex": 11,
-                "highlight": true
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minions\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (8/"
             }
         ]
     }
