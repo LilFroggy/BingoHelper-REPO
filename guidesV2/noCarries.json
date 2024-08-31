@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 27,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
@@ -589,7 +589,7 @@
                 "instruction": "Get Cheese &b%1%&r",
                 "items": {
                     "CHEESE_FUEL": {
-                        "count": 0,
+                        "count": 3,
                         "target": 5,
                         "done": false
                     }
@@ -685,14 +685,14 @@
                 "instruction": "Get Raw Chicken &b%1%&r\nGet Raw Porkchop &b%2%",
                 "items": {
                     "RAW_CHICKEN": {
-                        "count": 0,
+                        "count": 364,
                         "target": 64,
-                        "done": false
+                        "done": true
                     },
                     "PORK": {
-                        "count": 0,
+                        "count": 79,
                         "target": 64,
-                        "done": false
+                        "done": true
                     }
                 }
             },
@@ -787,11 +787,6 @@
                 "has": "Tasty Cheese",
                 "doesntHave": null,
                 "highlight": true
-            },
-            {
-                "type": "message",
-                "instruction": "Do your daily superpairs",
-                "criteria": "You claimed the Superpairs rewards!"
             },
             {
                 "type": "subArea",
