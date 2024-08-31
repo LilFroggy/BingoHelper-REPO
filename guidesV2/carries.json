@@ -3794,10 +3794,11 @@
                 "items": {
                     "SMALL_ENCHANTED_CHEST": {
                         "count": 0,
-                        "target": 5,
+                        "target": 4,
                         "done": false
                     }
-                }
+                },
+                "command": "/viewrecipe SMALL_ENCHANTED_CHEST"
             },
             {
                 "type": "collection",
@@ -3827,8 +3828,32 @@
                             "radius": 100
                         }
                     ],
-                    "index": 0
+                    "index": 1
                 }
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Enchanted Oak Wood &b%1%&r",
+                "items": {
+                    "ENCHANTED_OAK_LOG": {
+                        "count": 1,
+                        "target": 32,
+                        "done": false
+                    }
+                },
+                "command": "/craft"
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Medium Storages &b%1%&r",
+                "items": {
+                    "MEDIUM_ENCHANTED_CHEST": {
+                        "count": 1,
+                        "target": 4,
+                        "done": false
+                    }
+                },
+                "command": "/viewrecipe MEDIUM_ENCHANTED_CHEST"
             }
         ]
     }
