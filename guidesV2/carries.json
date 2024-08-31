@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 255,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
