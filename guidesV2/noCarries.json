@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 79,
         "steps": [
             {
                 "type": "message",
@@ -1140,9 +1140,10 @@
                 "items": {
                     "PROMISING_PICKAXE": {
                         "enchants": [
+                            "Efficiency V",
                             "Fortune III"
                         ],
-                        "done": false
+                        "done": true
                     }
                 },
                 "waypoint": {
@@ -1260,7 +1261,7 @@
                             "radius": 100
                         }
                     ],
-                    "index": 1
+                    "index": 0
                 },
                 "clientCommand": "/shtrackcollection COAL 1000"
             },
