@@ -2,7 +2,7 @@
     "name": "Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 268,
+        "stepIndex": 0,
         "steps": [
             {
                 "type": "message",
@@ -4210,6 +4210,146 @@
                 "type": "message",
                 "instruction": "Brew 3 Speed Potions\n&cBrew archery if missing xp",
                 "criteria": "BINGO GOAL COMPLETE! Brewer"
+            },
+            {
+                "type": "message",
+                "instruction": "/is",
+                "criteria": "Warping...",
+                "command": "/is"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Second Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Third Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Fourth Chicken Minion",
+                "guiName": "Chicken Minion I",
+                "slotIndex": 48
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "FEATHER"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Chicken Minion Recipes",
+                "guiName": "Chicken Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Chicken Minion I",
+                "guiName": "Chicken Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "message",
+                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
+                "criteria": "You placed a minion! (5/"
+            },
+            {
+                "type": "message",
+                "instruction": "Use this step if you want to grind cheese",
+                "criteria": "Give me cheese please",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "In/Around Community Center",
+                            "position": [
+                                4,
+                                73,
+                                -106
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Farm Stalls",
+                            "position": [
+                                43,
+                                72,
+                                -159
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "In/Behind Thaumaturgist",
+                            "position": [
+                                46,
+                                69,
+                                -38
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Food Court Behind Taylor",
+                            "position": [
+                                26,
+                                68,
+                                -28
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Carpenter Basement/Hole",
+                            "position": [
+                                19,
+                                61,
+                                -9
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Mountain Shack Hole/Cauldron",
+                            "position": [
+                                -4,
+                                69,
+                                4
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Auction House Basement",
+                            "position": [
+                                -41,
+                                57,
+                                -97
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Hexatorum Stairs/Basement",
+                            "position": [
+                                -57,
+                                64,
+                                -118
+                            ],
+                            "radius": 10
+                        }
+                    ],
+                    "index": 0
+                }
             }
         ]
     }
