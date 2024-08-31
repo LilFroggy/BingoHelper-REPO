@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 93,
+        "stepIndex": 99,
         "steps": [
             {
                 "type": "message",
@@ -1569,9 +1569,9 @@
                 "instruction": "Craft Enchanted Lapis Lazuli &b%1%&r",
                 "items": {
                     "ENCHANTED_LAPIS_LAZULI": {
-                        "count": 0,
+                        "count": 10,
                         "target": 10,
-                        "done": false
+                        "done": true
                     }
                 },
                 "command": "/viewrecipe ENCHANTED_LAPIS_LAZULI"
@@ -1613,9 +1613,9 @@
                 "instruction": "Get Redstone &b%1%&r",
                 "items": {
                     "REDSTONE": {
-                        "count": 0,
+                        "count": 8,
                         "target": 1,
-                        "done": false
+                        "done": true
                     }
                 }
             },
@@ -1630,7 +1630,9 @@
                 "type": "sell",
                 "instruction": "Sell materials",
                 "items": [
+                    "INK_SACK:4",
                     "COBBLESTONE",
+                    "STONE",
                     "GOLD_NUGGET",
                     "FLAMING_SWORD"
                 ],
