@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 1,
     "data": {
-        "stepIndex": 18,
+        "stepIndex": 27,
         "steps": [
             {
                 "type": "message",
@@ -534,7 +534,7 @@
                 "items": {
                     "EXP_BOTTLE": {
                         "count": 0,
-                        "target": 1,
+                        "target": 128,
                         "done": false
                     }
                 },
@@ -557,7 +557,7 @@
             },
             {
                 "type": "enchant",
-                "instruction": "Enchant items\n&cBuy bottles from librarian!",
+                "instruction": "Enchant items\n&cUse bottles from librarian!",
                 "items": {
                     "GOLD_AXE": {
                         "enchants": [
