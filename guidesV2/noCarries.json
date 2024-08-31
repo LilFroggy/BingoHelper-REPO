@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 120,
+        "stepIndex": 134,
         "steps": [
             {
                 "type": "message",
@@ -2083,7 +2083,7 @@
                             "radius": 100
                         }
                     ],
-                    "index": 2
+                    "index": 0
                 }
             },
             {
@@ -2273,34 +2273,6 @@
                 "command": "/warp hub"
             },
             {
-                "type": "reforge",
-                "instruction": "Reforge items",
-                "items": {
-                    "VOID_SWORD": {
-                        "reforges": [
-                            "Sharp"
-                        ],
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Blacksmith",
-                            "position": [
-                                -29,
-                                69,
-                                -126
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
                 "type": "enchant",
                 "instruction": "Enchant items",
                 "items": {
@@ -2328,6 +2300,34 @@
                                 -37,
                                 69,
                                 -111
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "reforge",
+                "instruction": "Reforge items",
+                "items": {
+                    "VOID_SWORD": {
+                        "reforges": [
+                            "Sharp"
+                        ],
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Blacksmith",
+                            "position": [
+                                -29,
+                                69,
+                                -126
                             ],
                             "radius": 5
                         }
