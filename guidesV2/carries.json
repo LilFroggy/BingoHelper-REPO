@@ -788,6 +788,33 @@
             },
             {
                 "type": "area",
+                "instruction": "/warp spider",
+                "area": "Spider's Den",
+                "command": "/warp spider"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Grandma Wolf",
+                "criteria": "[NPC] Grandma Wolf: The pet does not need to be spawned for combos to work! Happy hunting!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Grandma Wolf",
+                            "position": [
+                                -282,
+                                122,
+                                -191
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "area",
                 "instruction": "/is",
                 "area": "Private Island",
                 "command": "/is"
@@ -2502,27 +2529,6 @@
                                 -228
                             ],
                             "radius": 100
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Grandma Wolf",
-                "criteria": "[NPC] Grandma Wolf: The pet does not need to be spawned for combos to work! Happy hunting!",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Grandma Wolf",
-                            "position": [
-                                -282,
-                                122,
-                                -191
-                            ],
-                            "radius": 5
                         }
                     ],
                     "index": 0
