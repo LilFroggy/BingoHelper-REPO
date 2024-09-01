@@ -4370,7 +4370,7 @@
             },
             {
                 "type": "message",
-                "instruction": "Brew 3 Speed Potions\n&cBrew archery if missing xp",
+                "instruction": "Brew 3 Absorption Potions\n&cBrew archery if missing xp",
                 "criteria": "BINGO GOAL COMPLETE! Brewer"
             },
             {
