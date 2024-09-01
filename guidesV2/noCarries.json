@@ -2,7 +2,7 @@
     "name": "No Carry Guide (September 2024)",
     "version": 3,
     "data": {
-        "stepIndex": 0,
+        "stepIndex": 142,
         "steps": [
             {
                 "type": "message",
@@ -2209,9 +2209,9 @@
                 "instruction": "Get Grand Experience Bottles &b%1%\n&cGet them from mining nodes",
                 "items": {
                     "GRAND_EXP_BOTTLE": {
-                        "count": 4,
-                        "target": 4,
-                        "done": true
+                        "count": 0,
+                        "target": 16,
+                        "done": false
                     }
                 }
             },
@@ -2264,7 +2264,7 @@
                             "radius": 100
                         }
                     ],
-                    "index": 1
+                    "index": 0
                 }
             },
             {
@@ -2289,7 +2289,7 @@
             },
             {
                 "type": "enchant",
-                "instruction": "Enchant items\n&cUse 4 grands to get first strike!\n&cGet bottles from villager!",
+                "instruction": "Enchant items\n&cUse grands on high level enchants!\n&cGet bottles from villager!",
                 "items": {
                     "VOID_SWORD": {
                         "enchants": [
