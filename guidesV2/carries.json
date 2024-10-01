@@ -1,14 +1,9 @@
 {
-    "name": "Carry Guide (September 2024)",
-    "version": 4,
+    "name": "October 2024 (Carries)",
+    "version": 1,
     "data": {
         "stepIndex": 0,
         "steps": [
-            {
-                "type": "message",
-                "instruction": "Type &c/bh skip&r to begin!",
-                "criteria": "Sure I'll do that"
-            },
             {
                 "type": "message",
                 "instruction": "/visit %visitIsland%",
@@ -27,10 +22,10 @@
                 "command": "/warp hub"
             },
             {
-                "type": "skill",
-                "instruction": "Unlock Farming 7",
-                "skill": "farming",
-                "level": 7,
+                "type": "collection",
+                "instruction": "Unlock Wheat Collection 4",
+                "collection": "wheat",
+                "level": 4,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -117,7 +112,7 @@
                 "items": {
                     "HAY_BLOCK": {
                         "count": 0,
-                        "target": 24,
+                        "target": 29,
                         "done": false
                     }
                 },
@@ -150,6 +145,13 @@
                 "guiName": "Farm Suit Boots Recipe",
                 "slotIndex": 32,
                 "command": "/viewrecipe FARM_SUIT_BOOTS"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farming Talisman",
+                "guiName": "Farming Talisman Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe FARMING_TALISMAN"
             },
             {
                 "type": "sell",
@@ -193,10 +195,31 @@
                 }
             },
             {
-                "type": "message",
-                "instruction": "/warp hub",
-                "criteria": "Warping...",
-                "command": "/warp hub"
+                "type": "buy",
+                "instruction": "Buy Fishing Rod &b%1%",
+                "items": {
+                    "FISHING_ROD": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Fish Merchant",
+                            "position": [
+                                52,
+                                68,
+                                -83
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "collection",
@@ -210,29 +233,20 @@
                         {
                             "text": "Nether Wart",
                             "position": [
+                                52,
+                                67,
+                                -64
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Nether Wart",
+                            "position": [
                                 34,
                                 67,
                                 -69
                             ],
                             "radius": 7
-                        },
-                        {
-                            "text": "Nether Wart",
-                            "position": [
-                                52,
-                                67,
-                                -64
-                            ],
-                            "radius": 7
-                        },
-                        {
-                            "text": "Nether Wart",
-                            "position": [
-                                52,
-                                67,
-                                -64
-                            ],
-                            "radius": 100
                         }
                     ],
                     "index": 0
@@ -375,7 +389,7 @@
                     },
                     "WOOD_SPADE": {
                         "count": 0,
-                        "target": 1,
+                        "target": 10,
                         "done": false
                     }
                 },
@@ -562,7 +576,7 @@
             },
             {
                 "type": "enchant",
-                "instruction": "Enchant items\n&cKeep 25 levels after!",
+                "instruction": "Enchant items\n&cSave 25 levels for later!",
                 "items": {
                     "GOLD_AXE": {
                         "enchants": [
@@ -590,6 +604,16 @@
                         ],
                         "done": false
                     },
+                    "FISHING_ROD": {
+                        "enchants": [
+                            "Lure V",
+                            "Piscary V",
+                            "Luck of the Sea V",
+                            "Blessing V",
+                            "Angler V"
+                        ],
+                        "done": false
+                    },
                     "END_SWORD": {
                         "enchants": [
                             "Sharpness V",
@@ -600,7 +624,8 @@
                             "Giant Killer V",
                             "Critical V",
                             "First Strike IV",
-                            "Ender Slayer V"
+                            "Ender Slayer V",
+                            "Impaling III"
                         ],
                         "done": false
                     }
@@ -623,19 +648,13 @@
                 }
             },
             {
-                "type": "guiClickSlot",
-                "instruction": "Craft Experimentation Table",
-                "guiName": "Experimentation Table Recipe",
-                "slotIndex": 32,
-                "command": "/viewrecipe EXPERIMENTATION_TABLE"
-            },
-            {
-                "type": "has",
-                "instruction": "Lootshare Cheese &b%1%&r",
+                "type": "reforge",
+                "instruction": "Reforge items",
                 "items": {
-                    "CHEESE_FUEL": {
-                        "count": 0,
-                        "target": 5,
+                    "END_SWORD": {
+                        "reforges": [
+                            "Sharp"
+                        ],
                         "done": false
                     }
                 },
@@ -644,76 +663,53 @@
                     "beam": true,
                     "list": [
                         {
-                            "text": "In/Around Community Center",
+                            "text": "Blacksmith",
                             "position": [
-                                4,
-                                73,
-                                -106
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Farm Stalls",
-                            "position": [
-                                43,
-                                72,
-                                -159
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "In/Behind Thaumaturgist",
-                            "position": [
-                                46,
+                                -29,
                                 69,
-                                -38
+                                -126
                             ],
-                            "radius": 10
-                        },
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Experimentation Table",
+                "guiName": "Experimentation Table Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe EXPERIMENTATION_TABLE"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Yellow Stained Glass &b%1%",
+                "items": {
+                    "STAINED_GLASS:4": {
+                        "count": 0,
+                        "target": 20,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
                         {
-                            "text": "Food Court Behind Taylor",
+                            "text": "Wool Weaver",
                             "position": [
-                                26,
-                                68,
-                                -28
+                                -47.5,
+                                74,
+                                -31
                             ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Carpenter Basement/Hole",
-                            "position": [
-                                19,
-                                61,
-                                -9
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Mountain Shack Hole/Cauldron",
-                            "position": [
-                                -4,
-                                69,
-                                4
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Auction House Basement",
-                            "position": [
-                                -41,
-                                57,
-                                -97
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Hexatorum Stairs/Basement",
-                            "position": [
-                                -57,
-                                64,
-                                -118
-                            ],
-                            "radius": 10
+                            "radius": 3
                         }
                     ],
                     "index": 0
@@ -727,14 +723,9 @@
             },
             {
                 "type": "has",
-                "instruction": "Get Raw Chicken &b%1%&r\nGet Raw Porkchop &b%2%",
+                "instruction": "Get Raw Chicken &b%1%",
                 "items": {
                     "RAW_CHICKEN": {
-                        "count": 0,
-                        "target": 64,
-                        "done": false
-                    },
-                    "PORK": {
                         "count": 0,
                         "target": 64,
                         "done": false
@@ -755,22 +746,10 @@
                 "slotIndex": 32
             },
             {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Pig Minion Recipes",
-                "guiName": "Pig Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe PIG_GENERATOR_1"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Craft Pig Minion I",
-                "guiName": "Pig Minion I Recipe",
-                "slotIndex": 32
-            },
-            {
                 "type": "sell",
                 "instruction": "Sell materials",
                 "items": [
+                    "EGG",
                     "FEATHER",
                     "LEATHER",
                     "RAW_BEEF",
@@ -848,17 +827,8 @@
             },
             {
                 "type": "message",
-                "instruction": "Place Chicken and Pig Minion\n&cDon't forget storages!",
-                "criteria": "You placed a minion! (2/"
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Give 2 Cheese to Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "itemIndex": 19,
-                "has": "Tasty Cheese",
-                "doesntHave": null,
-                "highlight": true
+                "instruction": "Place Chicken Minion\n&cDon't forget a storage!",
+                "criteria": "You placed a minion!"
             },
             {
                 "type": "message",
@@ -893,65 +863,11 @@
                         {
                             "text": "Oasis",
                             "position": [
-                                155,
-                                76,
-                                -405
+                                122,
+                                64,
+                                -450
                             ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Oasis",
-                            "position": [
-                                129,
-                                65,
-                                -431
-                            ],
-                            "radius": 16
-                        },
-                        {
-                            "text": "Oasis",
-                            "position": [
-                                103,
-                                65,
-                                -445
-                            ],
-                            "radius": 16
-                        },
-                        {
-                            "text": "Oasis",
-                            "position": [
-                                121,
-                                65,
-                                -473
-                            ],
-                            "radius": 16
-                        },
-                        {
-                            "text": "Oasis",
-                            "position": [
-                                145,
-                                69,
-                                -484
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Oasis",
-                            "position": [
-                                139,
-                                76,
-                                -508
-                            ],
-                            "radius": 16
-                        },
-                        {
-                            "text": "Oasis",
-                            "position": [
-                                139,
-                                76,
-                                -508
-                            ],
-                            "radius": 300
+                            "radius": 50
                         }
                     ],
                     "index": 0
@@ -1154,6 +1070,15 @@
                 "level": 12
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "SAND",
+                    "ENCHANTED_SAND"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "collection",
                 "instruction": "Unlock Mushroom Collection 3",
                 "collection": "mushroom",
@@ -1163,22 +1088,96 @@
                     "beam": true,
                     "list": [
                         {
-                            "text": "Mushrooms",
+                            "text": "[!]",
                             "position": [
                                 329,
                                 72,
                                 -419
                             ],
-                            "radius": 20
+                            "radius": 12
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                335,
+                                74,
+                                -449
+                            ],
+                            "radius": 12
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                300,
+                                80,
+                                -474
+                            ],
+                            "radius": 12
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                248,
+                                54,
+                                -506
+                            ],
+                            "radius": 12
                         },
                         {
                             "text": "Mushrooms",
                             "position": [
-                                329,
-                                72,
-                                -419
+                                207,
+                                42,
+                                -515
                             ],
-                            "radius": 100
+                            "radius": 30
+                        },
+                        {
+                            "text": "Mushrooms",
+                            "position": [
+                                207,
+                                42,
+                                -515
+                            ],
+                            "radius": 200
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Get Glowing Mushrooms &b%1%",
+                "items": {
+                    "GLOWING_MUSHROOM": {
+                        "count": 0,
+                        "target": 8,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Buy Empty Chum Bucket &b%1%",
+                "items": {
+                    "EMPTY_CHUM_BUCKET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Moby",
+                            "position": [
+                                205.5,
+                                43,
+                                -500.5
+                            ],
+                            "radius": 5
                         }
                     ],
                     "index": 0
@@ -1188,8 +1187,8 @@
                 "type": "sell",
                 "instruction": "Sell materials",
                 "items": [
-                    "SAND",
-                    "ENCHANTED_SAND",
+                    "BROWN_MUSHROOM",
+                    "RED_MUSHROOM",
                     "HUGE_MUSHROOM_1",
                     "HUGE_MUSHROOM_2"
                 ],
@@ -1263,12 +1262,6 @@
                 "command": "/viewrecipe MUSHROOM_BOOTS"
             },
             {
-                "type": "message",
-                "instruction": "/warp hub",
-                "criteria": "Warping...",
-                "command": "/warp hub"
-            },
-            {
                 "type": "enchant",
                 "instruction": "Enchant items",
                 "items": {
@@ -1324,9 +1317,9 @@
                 "type": "reforge",
                 "instruction": "Reforge items",
                 "items": {
-                    "END_SWORD": {
+                    "FARM_SUIT_BOOTS": {
                         "reforges": [
-                            "Sharp"
+                            "Titanic"
                         ],
                         "done": false
                     },
@@ -1437,6 +1430,205 @@
                 }
             },
             {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Clay Collection 1",
+                "collection": "clay",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Fisherman's Hut",
+                            "position": [
+                                153,
+                                68,
+                                46
+                            ],
+                            "radius": 20
+                        },
+                        {
+                            "text": "Fisherman's Hut",
+                            "position": [
+                                153,
+                                68,
+                                46
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "ROTTEN_FLESH",
+                    "BONE",
+                    "RAW_FISH:1",
+                    "RAW_FISH:2",
+                    "RAW_FISH:3",
+                    "INK_SACK",
+                    "WATER_LILY",
+                    "SPONGE",
+                    "SEA_LANTERN",
+                    "PRISMARINE_CRYSTALS",
+                    "PRISMARINE_SHARD",
+                    "RAW_FISH",
+                    "GOLDEN_APPLE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Clay &b%1%&r\n&cTrade seeds",
+                "items": {
+                    "CLAY_BALL": {
+                        "count": 0,
+                        "target": 400,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                42,
+                                70,
+                                -123
+                            ],
+                            "radius": 4
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                47,
+                                71,
+                                -137
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                63,
+                                71,
+                                -134
+                            ],
+                            "radius": 8
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                73,
+                                72,
+                                -162
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                59,
+                                72,
+                                -183
+                            ],
+                            "radius": 6
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                24,
+                                71,
+                                -179
+                            ],
+                            "radius": 6
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                28,
+                                70,
+                                -141
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                41,
+                                71,
+                                -137
+                            ],
+                            "radius": 100
+                        }
+                    ],
+                    "index": 0
+                },
+                "command": "/trades"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "HAY_BLOCK",
+                    "WHEAT",
+                    "SEEDS"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Clay Minion Recipes",
+                "guiName": "Clay Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe CLAY_GENERATOR_1"
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Clay Minion I &b%1%",
+                "items": {
+                    "CLAY_GENERATOR_1": {
+                        "count": 0,
+                        "target": 5,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "message",
+                "instruction": "Place Clay Minions\n&cDon't forget storages!",
+                "criteria": "You placed a minion! (6/"
+            },
+            {
+                "type": "area",
+                "instruction": "/warp hub",
+                "area": "Hub",
+                "command": "/warp hub"
+            },
+            {
                 "type": "collection",
                 "instruction": "Unlock Coal Collection 4",
                 "collection": "coal",
@@ -1508,17 +1700,17 @@
             },
             {
                 "type": "message",
-                "instruction": "/warp hub",
+                "instruction": "/warp stonks",
                 "criteria": "Warping...",
-                "command": "/warp hub"
+                "command": "/warp stonks"
             },
             {
-                "type": "buy",
-                "instruction": "Buy Oak Wood &b%1%",
+                "type": "has",
+                "instruction": "Craft Enchanted Coal &b%1%&r\n&cTrade wood for coal",
                 "items": {
-                    "LOG": {
+                    "ENCHANTED_COAL": {
                         "count": 0,
-                        "target": 300,
+                        "target": 15,
                         "done": false
                     }
                 },
@@ -1527,47 +1719,35 @@
                     "beam": true,
                     "list": [
                         {
-                            "text": "Lumber Merchant",
+                            "text": "Oak Wood",
                             "position": [
-                                -50,
-                                70,
-                                -68
+                                -119,
+                                74,
+                                -32
                             ],
-                            "radius": 5
+                            "radius": 20
+                        },
+                        {
+                            "text": "Oak Wood",
+                            "position": [
+                                -119,
+                                74,
+                                -32
+                            ],
+                            "radius": 100
                         }
                     ],
                     "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Trade Oak Wood for Coal &b%1%",
-                "items": {
-                    "COAL": {
-                        "count": 0,
-                        "target": 640,
-                        "done": false
-                    }
                 },
                 "command": "/trades"
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Enchanted Coal &b%1%",
-                "items": {
-                    "ENCHANTED_COAL": {
-                        "count": 0,
-                        "target": 10,
-                        "done": false
-                    }
-                },
-                "command": "/viewrecipe ENCHANTED_COAL"
             },
             {
                 "type": "sell",
                 "instruction": "Sell materials",
                 "items": [
-                    "COAL"
+                    "COAL",
+                    "LOG",
+                    "LEAVES"
                 ],
                 "command": "/trades"
             },
@@ -1578,9 +1758,15 @@
                 "command": "/warp deep"
             },
             {
-                "type": "subArea",
-                "instruction": "Reach Obsidian Sanctuary",
-                "subArea": "Obsidian Sanctuary",
+                "type": "buy",
+                "instruction": "Buy Superboom TNT &b%1%",
+                "items": {
+                    "SUPERBOOM_TNT": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -1588,18 +1774,74 @@
                         {
                             "text": "[!]",
                             "position": [
-                                -24,
-                                154,
-                                17
+                                6,
+                                156,
+                                12
                             ],
-                            "radius": 10
+                            "radius": 7
                         },
                         {
                             "text": "[!]",
                             "position": [
-                                -17,
-                                144,
-                                -11
+                                20,
+                                164,
+                                -13
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                29,
+                                159,
+                                -29
+                            ],
+                            "radius": 12
+                        },
+                        {
+                            "text": "Walter",
+                            "position": [
+                                18.5,
+                                156,
+                                -36.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Superboom TNT",
+                "items": [
+                    "SUPERBOOM_TNT"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "area",
+                "instruction": "Give Rhys Enchanted Coal",
+                "area": "Dwarven Mines",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -4,
+                                150,
+                                -13
+                            ],
+                            "radius": 6
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -3,
+                                135,
+                                -19
                             ],
                             "radius": 10
                         },
@@ -1719,194 +1961,7 @@
                                 61
                             ],
                             "radius": 6
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "/warp deep",
-                "criteria": "Warping...",
-                "command": "/warp deep"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Take lift to Lapis Quarry",
-                "guiName": "Lift",
-                "slotIndex": 12,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Lift Operator",
-                            "position": [
-                                45,
-                                150,
-                                15
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Get Lapis Lazuli &b%1%&r",
-                "items": {
-                    "INK_SACK:4": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "collection",
-                "instruction": "Unlock Lapis Lazuli Collection 4",
-                "collection": "lapis_lazuli",
-                "level": 4,
-                "clientCommand": "/shtrackcollection LAPIS_LAZULI 2000"
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "COBBLESTONE",
-                    "ROTTEN_FLESH",
-                    "LAPIS_CRYSTAL"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Enchanted Lapis Lazuli &b%1%&r",
-                "items": {
-                    "ENCHANTED_LAPIS_LAZULI": {
-                        "count": 0,
-                        "target": 10,
-                        "done": false
-                    }
-                },
-                "command": "/viewrecipe ENCHANTED_LAPIS_LAZULI"
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "INK_SACK:4"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Take lift to Pigmen's Den",
-                "guiName": "Lift",
-                "slotIndex": 14,
-                "highlight": true,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Lift Operator",
-                            "position": [
-                                45,
-                                121,
-                                15
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                },
-                "shown": false
-            },
-            {
-                "type": "has",
-                "instruction": "Get Redstone &b%1%&r",
-                "items": {
-                    "REDSTONE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "collection",
-                "instruction": "Unlock Redstone Collection 4",
-                "collection": "redstone",
-                "level": 4,
-                "clientCommand": "/shtrackcollection REDSTONE 1600"
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "COBBLESTONE",
-                    "GOLD_NUGGET",
-                    "FLAMING_SWORD"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Enchanted Redstone &b%1%&r",
-                "items": {
-                    "ENCHANTED_REDSTONE": {
-                        "count": 0,
-                        "target": 10,
-                        "done": false
-                    }
-                },
-                "command": "/viewrecipe ENCHANTED_REDSTONE"
-            },
-            {
-                "type": "has",
-                "instruction": "Collect Redstone &b%1%&r",
-                "items": {
-                    "REDSTONE": {
-                        "count": 0,
-                        "target": 32,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Take lift to Obsidian Sanctuary",
-                "guiName": "Lift",
-                "slotIndex": 30,
-                "highlight": true,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Lift Operator",
-                            "position": [
-                                45,
-                                101,
-                                17
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                },
-                "clientCommand": "/shtrackcollection"
-            },
-            {
-                "type": "area",
-                "instruction": "Give Rhys Enchanted Items",
-                "area": "Dwarven Mines",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
+                        },
                         {
                             "text": "Rhys",
                             "position": [
@@ -1964,8 +2019,47 @@
                 "command": "/trades"
             },
             {
+                "type": "message",
+                "instruction": "Do Fetchur Quest",
+                "criteria": "[NPC] Fetchur: thanks thats probably what i needed",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                71.5,
+                                200,
+                                -118.5
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                85,
+                                224,
+                                -124
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Fetchur",
+                            "position": [
+                                83.5,
+                                224,
+                                -118.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
                 "type": "guiItem",
-                "instruction": "Open the King's Commission Menu",
+                "instruction": "Open King's Commission Menu",
                 "guiName": "Commissions",
                 "itemIndex": null,
                 "has": null,
@@ -1978,9 +2072,9 @@
                         {
                             "text": "[!]",
                             "position": [
-                                63,
-                                200,
-                                -100
+                                87,
+                                194,
+                                -41
                             ],
                             "radius": 15
                         },
@@ -2007,51 +2101,53 @@
                 }
             },
             {
-                "type": "area",
-                "instruction": "/is",
-                "area": "Private Island",
-                "command": "/is"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "FEATHER"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Chicken Minion Recipes",
-                "guiName": "Chicken Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe CHICKEN_GENERATOR_1"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Craft Chicken Minion I",
-                "guiName": "Chicken Minion I Recipe",
-                "slotIndex": 32
-            },
-            {
                 "type": "message",
-                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
-                "criteria": "You placed a minion! (3/"
+                "instruction": "Do Puzzler Quest",
+                "criteria": "[NPC] Puzzler: ▶▶Nice!  ▲Here, ◀have ▼some◀ ▶Mithril Powder!▲",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                162,
+                                196,
+                                181
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                172,
+                                196,
+                                160
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Puzzler",
+                            "position": [
+                                181,
+                                196,
+                                135
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "guiItem",
-                "instruction": "Give 1 Cheese to Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "itemIndex": 19,
-                "has": "Tasty Cheese",
+                "instruction": "Upgrade Mining Speed Perk",
+                "guiName": "Heart of the Mountain",
+                "itemIndex": 40,
+                "has": "You don't have enough Mithril Powder!",
                 "doesntHave": null,
-                "highlight": true
+                "highlight": true,
+                "command": "/hotm"
             },
             {
                 "type": "area",
@@ -2066,7 +2162,6 @@
                     "FRACTURED_MITHRIL_PICKAXE": {
                         "enchants": [
                             "Efficiency V",
-                            "Smelting Touch I",
                             "Fortune III"
                         ],
                         "done": false
@@ -2149,6 +2244,144 @@
             },
             {
                 "type": "collection",
+                "instruction": "Unlock Redstone Collection 1",
+                "collection": "redstone",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                63,
+                                200,
+                                -100
+                            ],
+                            "radius": 15
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                116,
+                                187,
+                                -10
+                            ],
+                            "radius": 15
+                        },
+                        {
+                            "text": "Redstone",
+                            "position": [
+                                141,
+                                173,
+                                17
+                            ],
+                            "radius": 10
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Get Gold Blocks &b%1%",
+                "items": {
+                    "GOLD_BLOCK": {
+                        "count": 0,
+                        "target": 128,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Gold",
+                            "position": [
+                                179,
+                                157,
+                                39
+                            ],
+                            "radius": 10
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Get Gold Ingot &b%1%",
+                "items": {
+                    "GOLD_INGOT": {
+                        "count": 0,
+                        "target": 5,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Gold",
+                            "position": [
+                                179,
+                                157,
+                                39
+                            ],
+                            "radius": 10
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Get Emerald &b%1%",
+                "items": {
+                    "EMERALD": {
+                        "count": 0,
+                        "target": 64,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                172,
+                                150,
+                                78
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Emerald",
+                            "position": [
+                                160,
+                                157,
+                                73
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Emeralds",
+                "items": [
+                    "EMERALD"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "collection",
                 "instruction": "Unlock Emerald Collection 3",
                 "collection": "emerald",
                 "level": 3,
@@ -2157,62 +2390,24 @@
                     "beam": true,
                     "list": [
                         {
-                            "text": "[!]",
+                            "text": "Emerald",
                             "position": [
-                                5,
-                                207,
-                                -108
-                            ],
-                            "radius": 7
-                        },
-                        {
-                            "text": "[!]",
-                            "position": [
-                                11,
-                                214,
-                                -108
-                            ],
-                            "radius": 3
-                        },
-                        {
-                            "text": "[!]",
-                            "position": [
-                                11,
-                                220,
-                                -104
-                            ],
-                            "radius": 3
-                        },
-                        {
-                            "text": "[!]",
-                            "position": [
-                                16,
-                                228,
-                                -104
-                            ],
-                            "radius": 3
-                        },
-                        {
-                            "text": "[!]",
-                            "position": [
-                                19,
-                                232,
-                                -98
-                            ],
-                            "radius": 4
-                        },
-                        {
-                            "text": "Emeralds",
-                            "position": [
-                                29,
-                                236,
-                                -93
+                                160,
+                                157,
+                                73
                             ],
                             "radius": 5
                         }
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Talisman of Coins",
+                "guiName": "Talisman of Coins Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe COIN_TALISMAN"
             },
             {
                 "type": "guiClickSlot",
@@ -2236,21 +2431,11 @@
             },
             {
                 "type": "sell",
-                "instruction": "Store Magnetic Talisman",
+                "instruction": "Store Magnetic and Coin Talisman",
                 "items": [
-                    "MAGNETIC_TALISMAN"
+                    "MAGNETIC_TALISMAN",
+                    "COIN_TALISMAN"
                 ]
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "EMERALD",
-                    "REDSTONE",
-                    "COBBLESTONE",
-                    "STONE"
-                ],
-                "command": "/trades"
             },
             {
                 "type": "collection",
@@ -2262,90 +2447,13 @@
                     "beam": true,
                     "list": [
                         {
-                            "text": "[!]",
-                            "position": [
-                                33,
-                                231,
-                                -97
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "[!]",
-                            "position": [
-                                63,
-                                200,
-                                -96
-                            ],
-                            "radius": 16
-                        },
-                        {
-                            "text": "[!]",
-                            "position": [
-                                88,
-                                194,
-                                -32
-                            ],
-                            "radius": 10
-                        },
-                        {
                             "text": "Iron",
                             "position": [
-                                52,
-                                203,
-                                -9
+                                151,
+                                128,
+                                53
                             ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Get Gold Blocks &b%1%\nGet Enchanted Gold &b%2%",
-                "items": {
-                    "GOLD_BLOCK": {
-                        "count": 0,
-                        "target": 128,
-                        "done": false
-                    },
-                    "ENCHANTED_GOLD": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "[!]",
-                            "position": [
-                                101,
-                                193,
-                                -17
-                            ],
-                            "radius": 16
-                        },
-                        {
-                            "text": "[!]",
-                            "position": [
-                                139,
-                                187,
-                                15
-                            ],
-                            "radius": 16
-                        },
-                        {
-                            "text": "Gold",
-                            "position": [
-                                179,
-                                157,
-                                39
-                            ],
-                            "radius": 16
+                            "radius": 7
                         }
                     ],
                     "index": 0
@@ -2353,33 +2461,17 @@
             },
             {
                 "type": "sell",
-                "instruction": "Store Enchanted Gold",
+                "instruction": "Sell materials",
                 "items": [
-                    "ENCHANTED_GOLD"
+                    "REDSTONE",
+                    "COBBLESTONE",
+                    "STONE",
+                    "GOLD_INGOT",
+                    "IRON_INGOT",
+                    "EMERALD",
+                    "MITHRIL"
                 ],
-                "command": "/ec 1"
-            },
-            {
-                "type": "collection",
-                "instruction": "Unlock Gold Collection 6",
-                "collection": "gold_ingot",
-                "level": 6,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Gold",
-                            "position": [
-                                179,
-                                157,
-                                39
-                            ],
-                            "radius": 16
-                        }
-                    ],
-                    "index": 0
-                }
+                "command": "/trades"
             },
             {
                 "type": "message",
@@ -2428,6 +2520,16 @@
                 }
             },
             {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "RUNE",
+                    "COBBLESTONE",
+                    "STONE"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "area",
                 "instruction": "/warp end",
                 "area": "The End",
@@ -2456,7 +2558,7 @@
             },
             {
                 "type": "message",
-                "instruction": "Kill 5 Endermen",
+                "instruction": "Kill 5 Endermen\n&cSave ender pearls",
                 "criteria": "Talk to Lone Adventurer"
             },
             {
@@ -2490,18 +2592,31 @@
                 }
             },
             {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "END_SWORD"
-                ],
-                "command": "/trades"
-            },
-            {
                 "type": "area",
                 "instruction": "/warp spider",
                 "area": "Spider's Den",
                 "command": "/warp spider"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Archaeologist",
+                "criteria": "[NPC] Archaeologist: Hey, are you an adventurer?",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Archaeologist",
+                            "position": [
+                                -361,
+                                111,
+                                -290.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "collection",
@@ -2533,6 +2648,542 @@
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "END_SWORD",
+                    "BONE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #1",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -342,
+                                122,
+                                -253
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #2",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -391,
+                                108.5,
+                                -217
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -392,
+                                95,
+                                -217
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -391,
+                                93,
+                                -220
+                            ],
+                            "radius": 1
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -384,
+                                89,
+                                -225
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "subArea",
+                "instruction": "/warp nest",
+                "subArea": "Spider Mound",
+                "command": "/warp nest"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #3",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -173,
+                                133,
+                                -293
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -178,
+                                136,
+                                -297
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #4",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -144,
+                                93,
+                                -340
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -143,
+                                81,
+                                -341
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -147,
+                                83,
+                                -335
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #5",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -143,
+                                81,
+                                -341
+                            ],
+                            "radius": 2
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -176,
+                                88,
+                                -360
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -202,
+                                88,
+                                -353
+                            ],
+                            "radius": 2
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -188,
+                                80,
+                                -346
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #6",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -202,
+                                83,
+                                -353
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -250,
+                                88,
+                                -331
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -254,
+                                70,
+                                -327
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -197,
+                                60,
+                                -312
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -197,
+                                62,
+                                -301
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -206,
+                                63,
+                                -301
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Get Superboom TNT &b%1%",
+                "items": {
+                    "SUPERBOOM_TNT": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #7",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -197,
+                                62,
+                                -301
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -197,
+                                60,
+                                -312
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -199,
+                                60,
+                                -327
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -221,
+                                61,
+                                -335
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -222.5,
+                                70,
+                                -332
+                            ],
+                            "radius": 2
+                        },
+                        {
+                            "text": "Superboom",
+                            "position": [
+                                -234,
+                                71,
+                                -317
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Pearl",
+                            "position": [
+                                -227,
+                                68,
+                                -311
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -225,
+                                70,
+                                -316
+                            ],
+                            "radius": 2
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp spider",
+                "criteria": "Warping...",
+                "command": "/warp spider"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #8",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -279,
+                                93,
+                                -231
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -316,
+                                96,
+                                -195
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -340,
+                                85,
+                                -227
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -355,
+                                86,
+                                -213
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #9",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -351,
+                                85,
+                                -233
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -367,
+                                79,
+                                -255
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Pearl",
+                            "position": [
+                                -367,
+                                89,
+                                -247
+                            ],
+                            "radius": 4
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -372,
+                                89,
+                                -242
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Relic #10",
+                "criteria": "+10,000 Coins! (",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -367,
+                                89,
+                                -248
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -356,
+                                75,
+                                -257
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Pearl",
+                            "position": [
+                                -353,
+                                75,
+                                -277
+                            ],
+                            "radius": 4
+                        },
+                        {
+                            "text": "Pearl",
+                            "position": [
+                                -353,
+                                72,
+                                -287
+                            ],
+                            "radius": 4
+                        },
+                        {
+                            "text": "Relic",
+                            "position": [
+                                -372,
+                                89,
+                                -242
+                            ],
+                            "radius": 1
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "GRAVEL",
+                    "BONE",
+                    "FLINT",
+                    "ENDER_PEARL",
+                    "STRING",
+                    "SPIDER_EYE",
+                    "RUNE"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "subArea",
@@ -2664,7 +3315,7 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Coal Blocks &b%1%\n&eTrade Oak Wood for Coal",
+                "instruction": "Craft Coal Blocks &b%1%\n&cTrade Oak Wood for Coal",
                 "items": {
                     "COAL_BLOCK": {
                         "count": 0,
@@ -2672,6 +3323,16 @@
                         "done": false
                     }
                 },
+                "command": "/trades"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "LEAVES",
+                    "LOG",
+                    "COAL"
+                ],
                 "command": "/trades"
             },
             {
@@ -2794,8 +3455,7 @@
                     "ENDER_STONE",
                     "ENCHANTED_ENDSTONE",
                     "ENDSTONE_ROSE",
-                    "RUNE",
-                    "ENDER_PEARL"
+                    "RUNE"
                 ],
                 "command": "/trades"
             },
@@ -2910,59 +3570,6 @@
                 }
             },
             {
-                "type": "area",
-                "instruction": "/is",
-                "area": "Private Island",
-                "command": "/is"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Second Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "FEATHER"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Chicken Minion Recipes",
-                "guiName": "Chicken Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe CHICKEN_GENERATOR_1"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Craft Chicken Minion I",
-                "guiName": "Chicken Minion I Recipe",
-                "slotIndex": 32
-            },
-            {
-                "type": "message",
-                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
-                "criteria": "You placed a minion! (4/"
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Give 1 Cheese to Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "itemIndex": 19,
-                "has": "Tasty Cheese",
-                "doesntHave": null,
-                "highlight": true
-            },
-            {
                 "type": "subArea",
                 "instruction": "/warp drag",
                 "subArea": "Dragon's Nest",
@@ -2991,65 +3598,6 @@
             },
             {
                 "type": "area",
-                "instruction": "/is",
-                "area": "Private Island",
-                "command": "/is"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Second Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Third Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "FEATHER"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Chicken Minion Recipes",
-                "guiName": "Chicken Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe CHICKEN_GENERATOR_1"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Craft Chicken Minion I",
-                "guiName": "Chicken Minion I Recipe",
-                "slotIndex": 32
-            },
-            {
-                "type": "message",
-                "instruction": "Place Chicken Minion\n&cDon't forget storage!",
-                "criteria": "You placed a minion! (5/"
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Give 1 Cheese to Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "itemIndex": 19,
-                "has": "Tasty Cheese",
-                "doesntHave": null,
-                "highlight": true
-            },
-            {
-                "type": "area",
                 "instruction": "/warp hub",
                 "area": "Hub",
                 "command": "/warp hub"
@@ -3060,7 +3608,7 @@
                 "items": {
                     "WOOD_SWORD": {
                         "count": 0,
-                        "target": 8,
+                        "target": 1,
                         "done": false
                     },
                     "WOOD_PICKAXE": {
@@ -3107,7 +3655,7 @@
                 "items": {
                     "BONE": {
                         "count": 0,
-                        "target": 640,
+                        "target": 560,
                         "done": false
                     }
                 },
@@ -3136,23 +3684,96 @@
                 "command": "/viewrecipe SKELETON_GENERATOR_1"
             },
             {
-                "type": "has",
-                "instruction": "Craft Skeleton Minion I &b%1%",
-                "items": {
-                    "SKELETON_GENERATOR_1": {
-                        "count": 0,
-                        "target": 8,
-                        "done": false
-                    }
-                }
+                "type": "guiClickSlot",
+                "instruction": "Craft Skeleton Minion I",
+                "guiName": "Skeleton Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Skeleton Minion Recipes",
+                "guiName": "Skeleton Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe SKELETON_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Skeleton Minion II",
+                "guiName": "Skeleton Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Skeleton Minion Recipes",
+                "guiName": "Skeleton Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe SKELETON_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Skeleton Minion III",
+                "guiName": "Skeleton Minion III Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "sell",
                 "instruction": "Store Skeleton Minions",
                 "items": [
-                    "SKELETON_GENERATOR_1"
+                    "SKELETON_GENERATOR_3"
                 ],
                 "command": "/ec 1"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Zombie Talisman &b%1%&r\nBuy Skeleton Talisman &b%2%&r\nBuy Village Affinity Talisman &b%3%&r\nBuy Mine Affinity Talisman &b%4%&r\nBuy Intimidation Talisman &b%5%&r\nBuy Scavenger Talisman &b%6%&r",
+                "items": {
+                    "ZOMBIE_TALISMAN": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SKELETON_TALISMAN": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "VILLAGE_TALISMAN": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "MINE_TALISMAN": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "INTIMIDATION_TALISMAN": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SCAVENGER_TALISMAN": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Adventurer",
+                            "position": [
+                                -42,
+                                70,
+                                -65
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "message",
@@ -3565,21 +4186,21 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Nether Wart &b%1%\nBuy Brewing Stand &b%2%\nBuy Water Bottles &b%2%",
+                "instruction": "Buy Nether Wart &b%1%\nBuy Brewing Stand &b%2%\nBuy Water Bottles &b%3%",
                 "items": {
                     "NETHER_STALK": {
                         "count": 0,
-                        "target": 561,
+                        "target": 562,
                         "done": false
                     },
                     "BREWING_STAND_ITEM": {
                         "count": 0,
-                        "target": 1,
+                        "target": 2,
                         "done": false
                     },
                     "POTION": {
                         "count": 0,
-                        "target": 3,
+                        "target": 6,
                         "done": false
                     }
                 },
@@ -3650,7 +4271,7 @@
             },
             {
                 "type": "sell",
-                "instruction": "Store Brewing Stand\nStore Water Bottles\nStore Nether Wart",
+                "instruction": "Store Brewing Stands\nStore Water Bottles\nStore Nether Wart",
                 "items": [
                     "BREWING_STAND_ITEM",
                     "POTION",
@@ -3953,199 +4574,10 @@
                 "command": "/ec 1"
             },
             {
-                "type": "buy",
-                "instruction": "Buy Iron Armor\nBuy Rosetta Armor\nBuy Squire Armor\nBuy Celeste Armor",
-                "items": {
-                    "IRON_HELMET": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "IRON_CHESTPLATE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "IRON_LEGGINGS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "IRON_BOOTS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "ROSETTA_HELMET": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "ROSETTA_CHESTPLATE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "ROSETTA_LEGGINGS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "ROSETTA_BOOTS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "SQUIRE_HELMET": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "SQUIRE_CHESTPLATE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "SQUIRE_LEGGINGS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "SQUIRE_BOOTS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "CELESTE_HELMET": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "CELESTE_CHESTPLATE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "CELESTE_LEGGINGS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "CELESTE_BOOTS": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Rosetta",
-                            "position": [
-                                -12,
-                                68,
-                                -141
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy End Sword &b%1%",
-                "items": {
-                    "END_SWORD": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Weaponsmith",
-                            "position": [
-                                -10.5,
-                                68,
-                                -130.5
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Dirty Bottle &b%1%",
-                "items": {
-                    "DIRT_BOTTLE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Smithmonger",
-                            "position": [
-                                -33,
-                                69,
-                                -136
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Apply Dirt Bottle to End Sword",
-                "guiName": "Reforge Anvil",
-                "itemIndex": 13,
-                "has": "Dirty End Sword",
-                "doesntHave": "Click the ANVIL BELOW to combine.",
-                "highlight": false,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Reforge Anvil",
-                            "position": [
-                                -29,
-                                69,
-                                -137
-                            ],
-                            "radius": 2
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
                 "type": "message",
                 "instruction": "/warp stonks",
                 "criteria": "Warping...",
                 "command": "/warp stonks"
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "END_SWORD"
-                ],
-                "command": "/trades"
             },
             {
                 "type": "buy",
@@ -4281,31 +4713,57 @@
                 "command": "/viewrecipe SMALL_ENCHANTED_CHEST"
             },
             {
-                "type": "collection",
-                "instruction": "Unlock Oak Wood Collection 7\n&cKeep enchanted oak wood!",
-                "collection": "oak_wood",
-                "level": 7,
+                "type": "subArea",
+                "instruction": "/warp jungle",
+                "subArea": "Jungle Island",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Juliette",
+                "criteria": "[NPC] Juliette: Nice to meet you!",
                 "waypoint": {
                     "type": "list",
                     "beam": true,
                     "list": [
                         {
-                            "text": "Oak Wood",
+                            "text": "Juliette",
                             "position": [
-                                -117,
-                                74,
-                                -32
+                                -477,
+                                134,
+                                -117.5
                             ],
-                            "radius": 16
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: I'm.. trying to find gold...",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -470,
+                                102,
+                                -14
+                            ],
+                            "radius": 5
                         },
                         {
-                            "text": "Oak Wood",
+                            "text": "Romero",
                             "position": [
-                                -117,
-                                74,
-                                -32
+                                -450,
+                                91,
+                                2
                             ],
-                            "radius": 100
+                            "radius": 5
                         }
                     ],
                     "index": 0
@@ -4313,56 +4771,224 @@
             },
             {
                 "type": "has",
-                "instruction": "Craft Enchanted Oak Wood &b%1%&r",
+                "instruction": "Get Yellow Rock &b%1%",
                 "items": {
-                    "ENCHANTED_OAK_LOG": {
+                    "YELLOW_ROCK": {
                         "count": 0,
-                        "target": 32,
+                        "target": 1,
                         "done": false
                     }
                 },
-                "command": "/craft"
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -470,
+                                102,
+                                -14
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Gold Mine",
+                            "position": [
+                                -437,
+                                110,
+                                5
+                            ],
+                            "radius": 12
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: Thank you so much!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "[!]",
+                            "position": [
+                                -470,
+                                102,
+                                -14
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Romero",
+                            "position": [
+                                -450,
+                                91,
+                                2
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "/warp jungle",
+                "criteria": "Warping...",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Juliette",
+                "criteria": "[NPC] Juliette: He said he was getting groceries at the downtown markets.",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Juliette",
+                            "position": [
+                                -477,
+                                134,
+                                -117.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "subArea",
+                "instruction": "/hub",
+                "subArea": "Forest",
+                "command": "/hub"
+            },
+            {
+                "type": "subArea",
+                "instruction": "/warp hub",
+                "subArea": "Village",
+                "command": "/warp hub"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: Groceries?",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Romero",
+                            "position": [
+                                -18,
+                                71,
+                                -28
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "has",
-                "instruction": "Craft Medium Storages &b%1%&r",
+                "instruction": "Get Poppies &b%1%",
                 "items": {
-                    "MEDIUM_ENCHANTED_CHEST": {
+                    "RED_ROSE": {
                         "count": 0,
-                        "target": 4,
+                        "target": 15,
                         "done": false
                     }
                 },
-                "command": "/viewrecipe MEDIUM_ENCHANTED_CHEST"
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Poppies",
+                            "position": [
+                                -12,
+                                71,
+                                -27
+                            ],
+                            "radius": 20
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
-                "type": "area",
-                "instruction": "/is",
-                "area": "Private Island",
-                "command": "/is"
+                "type": "message",
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: Please bring the bouquet to Juliette!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Romero",
+                            "position": [
+                                -18,
+                                71,
+                                -28
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "subArea",
+                "instruction": "/warp jungle",
+                "subArea": "Jungle Island",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Juliette",
+                "criteria": "[NPC] Juliette: He's at some sort of emerald altar...",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Juliette",
+                            "position": [
+                                -477,
+                                134,
+                                -117.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "subArea",
+                "instruction": "/warp spider",
+                "subArea": "Spider's Den",
+                "command": "/warp spider"
+            },
+            {
+                "type": "subArea",
+                "instruction": "/warp hub",
+                "subArea": "Graveyard",
+                "command": "/warp hub"
             },
             {
                 "type": "has",
-                "instruction": "Get Enchanted Gold &b%1%\nGet Brewing Stand &b%2%\nGet Water Bottles &b%3%\nGet Nether Wart &b%4%",
+                "instruction": "Get Emeralds &b%1%",
                 "items": {
-                    "ENCHANTED_GOLD": {
+                    "EMERALD": {
                         "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "BREWING_STAND_ITEM": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "POTION": {
-                        "count": 0,
-                        "target": 3,
-                        "done": false
-                    },
-                    "NETHER_STALK": {
-                        "count": 0,
-                        "target": 1,
+                        "target": 64,
                         "done": false
                     }
                 },
@@ -4370,90 +4996,586 @@
             },
             {
                 "type": "message",
-                "instruction": "Brew 3 Absorption Potions\n&cBrew archery if missing xp",
-                "criteria": "BINGO GOAL COMPLETE! Brewer"
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: Now bring this gift to Juliette!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Romero",
+                            "position": [
+                                -124,
+                                72,
+                                -123
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "subArea",
+                "instruction": "/warp jungle",
+                "subArea": "Jungle Island",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "has",
+                "instruction": "Talk to Juliette",
+                "items": {
+                    "WEDDING_RING_2": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Juliette",
+                            "position": [
+                                -477,
+                                134,
+                                -117.5
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Jungle Wood Collection 1",
+                "collection": "jungle_wood",
+                "level": 1
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Acacia Wood Collection 1",
+                "collection": "acacia_wood",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Acacia",
+                            "position": [
+                                -420,
+                                110,
+                                0
+                            ],
+                            "radius": 45
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Dark Oak Wood Collection 1",
+                "collection": "dark_oak_wood",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Dark Oak",
+                            "position": [
+                                -341,
+                                106,
+                                -73
+                            ],
+                            "radius": 50
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Spruce Wood Collection 1",
+                "collection": "spruce_wood",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Spruce",
+                            "position": [
+                                -356,
+                                89,
+                                23
+                            ],
+                            "radius": 45
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Birch Wood Collection 1",
+                "collection": "birch_wood",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Birch",
+                            "position": [
+                                -301,
+                                84,
+                                -15
+                            ],
+                            "radius": 40
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "subArea",
+                "instruction": "/hub",
+                "subArea": "Forest",
+                "command": "/hub"
             },
             {
                 "type": "message",
-                "instruction": "/is",
+                "instruction": "/warp hub",
                 "criteria": "Warping...",
-                "command": "/is"
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Wooden Axe&r &b%1%",
+                "items": {
+                    "WOOD_AXE": {
+                        "count": 0,
+                        "target": 6,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Oak Wood &b%1%",
+                "items": {
+                    "LOG": {
+                        "count": 0,
+                        "target": 560,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Collect Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Second Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Third Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Collect Fourth Chicken Minion",
-                "guiName": "Chicken Minion I",
-                "slotIndex": 48
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell materials",
-                "items": [
-                    "FEATHER"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Chicken Minion Recipes",
-                "guiName": "Chicken Minion Recipes",
+                "instruction": "Navigate to Oak Minion Recipes",
+                "guiName": "Oak Minion Recipes",
                 "slotIndex": 11,
-                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+                "command": "/viewrecipe OAK_GENERATOR_1"
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Craft Chicken Minion I",
-                "guiName": "Chicken Minion I Recipe",
+                "instruction": "Craft Oak Minion I",
+                "guiName": "Oak Minion I Recipe",
                 "slotIndex": 32
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Navigate to Chicken Minion Recipes",
-                "guiName": "Chicken Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+                "instruction": "Navigate to Oak Minion Recipes",
+                "guiName": "Oak Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe OAK_GENERATOR_2"
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Craft Chicken Minion I",
-                "guiName": "Chicken Minion I Recipe",
+                "instruction": "Craft Oak Minion II",
+                "guiName": "Oak Minion II Recipe",
                 "slotIndex": 32
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Navigate to Chicken Minion Recipes",
-                "guiName": "Chicken Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe CHICKEN_GENERATOR_1"
+                "instruction": "Navigate to Oak Minion Recipes",
+                "guiName": "Oak Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe OAK_GENERATOR_3"
             },
             {
                 "type": "guiClickSlot",
-                "instruction": "Craft Chicken Minion I",
-                "guiName": "Chicken Minion I Recipe",
+                "instruction": "Craft Oak Minion III",
+                "guiName": "Oak Minion III Recipe",
                 "slotIndex": 32
             },
             {
-                "type": "message",
-                "instruction": "Place Chicken Minions\n&cDon't forget storage!",
-                "criteria": "You placed a minion! (8/"
+                "type": "buy",
+                "instruction": "Buy Birch Wood &b%1%",
+                "items": {
+                    "LOG:2": {
+                        "count": 0,
+                        "target": 510,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Birch Minion Recipes",
+                "guiName": "Birch Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe BIRCH_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Birch Minion I",
+                "guiName": "Birch Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Birch Minion Recipes",
+                "guiName": "Birch Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe BIRCH_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Birch Minion II",
+                "guiName": "Birch Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Birch Minion Recipes",
+                "guiName": "Birch Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe BIRCH_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Birch Minion III",
+                "guiName": "Birch Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Spruce Wood &b%1%",
+                "items": {
+                    "LOG:1": {
+                        "count": 0,
+                        "target": 510,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Spruce Minion Recipes",
+                "guiName": "Spruce Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SPRUCE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Spruce Minion I",
+                "guiName": "Spruce Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Spruce Minion Recipes",
+                "guiName": "Spruce Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe SPRUCE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Spruce Minion II",
+                "guiName": "Spruce Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Spruce Minion Recipes",
+                "guiName": "Spruce Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe SPRUCE_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Spruce Minion III",
+                "guiName": "Spruce Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Dark Oak Wood &b%1%",
+                "items": {
+                    "LOG_2:1": {
+                        "count": 0,
+                        "target": 510,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Dark Oak Minion Recipes",
+                "guiName": "Dark Oak Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe DARK_OAK_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Dark Oak Minion I",
+                "guiName": "Dark Oak Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Dark Oak Minion Recipes",
+                "guiName": "Dark Oak Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe DARK_OAK_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Dark Oak Minion II",
+                "guiName": "Dark Oak Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Dark Oak Minion Recipes",
+                "guiName": "Dark Oak Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe DARK_OAK_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Dark Oak Minion III",
+                "guiName": "Dark Oak Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Acacia Wood &b%1%",
+                "items": {
+                    "LOG_2": {
+                        "count": 0,
+                        "target": 510,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Acacia Minion Recipes",
+                "guiName": "Acacia Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe ACACIA_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Acacia Minion I",
+                "guiName": "Acacia Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Acacia Minion Recipes",
+                "guiName": "Acacia Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe ACACIA_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Acacia Minion II",
+                "guiName": "Acacia Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Acacia Minion Recipes",
+                "guiName": "Acacia Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe ACACIA_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Acacia Minion III",
+                "guiName": "Acacia Minion III Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Jungle Wood &b%1%",
+                "items": {
+                    "LOG:3": {
+                        "count": 0,
+                        "target": 510,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 3
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Jungle Minion Recipes",
+                "guiName": "Jungle Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe JUNGLE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Jungle Minion I",
+                "guiName": "Jungle Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Jungle Minion Recipes",
+                "guiName": "Jungle Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe JUNGLE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Jungle Minion II",
+                "guiName": "Jungle Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Jungle Minion Recipes",
+                "guiName": "Jungle Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe JUNGLE_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Jungle Minion III",
+                "guiName": "Jungle Minion III Recipe",
+                "slotIndex": 32
             }
         ]
     }
