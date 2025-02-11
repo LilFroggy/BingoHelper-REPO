@@ -6,7 +6,7 @@
         "steps": [
             {
                 "type": "message",
-                "instruction": "&cRun /bh update to get the latest guide",
+                "instruction": "&astay tuned for next bingo",
                 "criteria": ":D"
             }
         ]
