@@ -1,21 +1,18 @@
 {
-    "name": "OUTDATED GUIDE",
-    "version": 1,
+    "name": "Test Guide",
+    "version": 2,
     "data": {
-        "goalIndex": 0,
-        "goals": [
+        "stepIndex": 0,
+        "steps": [
             {
-                "name": "The Basics",
-                "shown": false,
-                "stepIndex": 0,
-                "steps": [
-                    {
-                        "type": "message",
-                        "instruction": "&4&lOUTDATED GUIDE&r\nRun &c/ct files&r and delete BingoHelper\nThen &c/ct import BingoHelper&r\nThen set preferences",
-                        "criteria": "Sending a visit request...",
-                        "command": "/visit LilFroggy"
-                    }
-                ]
+                "type": "message",
+                "instruction": "/visit %visitIsland%",
+                "criteria": "Sending a visit request..."
+            },
+            {
+                "type": "cake",
+                "instruction": "Eat cakes &b%cakes%",
+                "eaten": ["cake 1", "cake 2"]
             }
         ]
     }
