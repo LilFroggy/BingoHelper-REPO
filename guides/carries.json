@@ -7,12 +7,27 @@
             {
                 "type": "message",
                 "instruction": "/visit %visitIsland%",
-                "criteria": "Sending a visit request..."
+                "criteria": "Sending a visit request...",
+                "waypoint": {
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
             },
             {
                 "type": "cake",
                 "instruction": "Eat cakes &b%cakes%",
-                "eaten": ["cake 1", "cake 2"]
+                "eaten": ["cake 1", "cake 2"],
+                "command": "ec 1"
             }
         ]
     }
