@@ -27,7 +27,7 @@
                 "type": "cake",
                 "instruction": "Eat cakes &b%cakes%",
                 "eaten": ["cake 1", "cake 2"],
-                "command": "ec 1"
+                "serverCommand": "ec 1"
             }
         ]
     }
