@@ -28,6 +28,17 @@
                 "instruction": "Eat cakes &b%cakes%",
                 "eaten": [],
                 "serverCommand": "ec 1"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "HAY_BLOCK",
+                    "WHEAT",
+                    "SEEDS",
+                    "POTATO_ITEM"
+                ],
+                "command": "/trades"
             }
         ]
     }
