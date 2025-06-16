@@ -1,6 +1,6 @@
 {
     "name": "Test Guide",
-    "version": 2,
+    "version": 1,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -26,7 +26,7 @@
             {
                 "type": "cake",
                 "instruction": "Eat cakes &b%cakes%",
-                "eaten": ["cake 1", "cake 2"],
+                "eaten": [],
                 "serverCommand": "ec 1"
             }
         ]
