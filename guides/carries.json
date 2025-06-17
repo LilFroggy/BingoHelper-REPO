@@ -38,6 +38,17 @@
                     "SEEDS",
                     "POTATO_ITEM"
                 ]
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Rookie Hoe &b%1%",
+                "items": {
+                    "Rookie Hoe": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                }
             }
         ]
     }
