@@ -37,7 +37,15 @@
                     "WHEAT",
                     "SEEDS",
                     "POTATO_ITEM"
-                ]
+                ],
+                "outlineEntity": {
+                    "entityType": "entity.minecraft.player",
+                    "position": [
+                        -9.0,
+                        68.0,
+                        -125.0
+                    ]
+                }
             },
             {
                 "type": "buy",
