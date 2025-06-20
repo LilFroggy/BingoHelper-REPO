@@ -39,7 +39,7 @@
                     "POTATO_ITEM"
                 ],
                 "outlineEntity": {
-                    "entityType": "entity.minecraft.player",
+                    "entityType": "Player",
                     "position": [
                         -9.0,
                         68.0,
