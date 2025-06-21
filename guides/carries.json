@@ -55,6 +55,11 @@
                         "count": 0,
                         "target": 1,
                         "done": false
+                    },
+                    "WHEAT": {
+                        "count": 0,
+                        "target": 6,
+                        "done": false
                     }
                 }
             }
