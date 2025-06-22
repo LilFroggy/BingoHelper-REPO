@@ -61,6 +61,14 @@
                         "target": 6,
                         "done": false
                     }
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        15.5,
+			            70.0,
+			            -71.8125
+                    ]
                 }
             }
         ]
