@@ -65,9 +65,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        15.5,
-			            70.0,
-			            -71.8125
+			15.5,
+			70.0,
+			-71.8125
                     ]
                 }
             }
