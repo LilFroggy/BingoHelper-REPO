@@ -233,6 +233,11 @@
                     "WOOD_SWORD",
                     "WOOD_SPADE"
                 ]
+            },
+	    {
+                "type": "experience",
+                "instruction": "Get 75 XP Levels &b%level%",
+                "level": 75
             }
         ]
     }
