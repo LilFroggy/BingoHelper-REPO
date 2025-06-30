@@ -1,21 +1,243 @@
 {
-    "name": "OUTDATED GUIDE",
+    "name": "Test Guide",
     "version": 1,
     "data": {
-        "goalIndex": 0,
-        "goals": [
+        "stepIndex": 0,
+        "steps": [
             {
-                "name": "The Basics",
-                "shown": false,
-                "stepIndex": 0,
-                "steps": [
-                    {
-                        "type": "message",
-                        "instruction": "&4&lOUTDATED GUIDE&r\nRun &c/ct files&r and delete BingoHelper\nThen &c/ct import BingoHelper&r\nThen set preferences",
-                        "criteria": "Sending a visit request...",
-                        "command": "/visit LilFroggy"
+                "type": "message",
+                "instruction": "/visit %visitIsland%",
+                "criteria": "Sending a visit request...",
+                "waypoint": {
+                    "list": [
+                        {
+                            "text": "Lumber Merchant",
+                            "position": [
+                                -50,
+                                70,
+                                -68
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "cake",
+                "instruction": "Eat cakes &b%cakes%",
+                "eaten": [],
+                "serverCommand": "ec 1"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "HAY_BLOCK",
+                    "WHEAT",
+                    "SEEDS",
+                    "POTATO_ITEM"
+                ],
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -9.0,
+                        68.0,
+                        -125.0
+                    ]
+                }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Rookie Hoe &b%1%",
+                "items": {
+                    "ROOKIE_HOE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "WHEAT": {
+                        "count": 0,
+                        "target": 6,
+                        "done": false
                     }
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+			15.5,
+			70.0,
+			-71.8125
+                    ]
+                }
+            },
+	    {
+                "type": "has",
+                "instruction": "Craft Golden Axe &b%1%&r\n&fCraft Golden Shovel &b%2%&r",
+                "items": {
+                    "GOLD_AXE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "GOLD_SPADE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                }
+            },
+	    {
+                "type": "area",
+                "instruction": "/warp hub",
+                "area": "Hub"
+            },
+	    {
+                "type": "subArea",
+                "instruction": "/warp barn",
+                "subArea": "The Barn"
+            },
+	    {
+                "type": "enchant",
+                "instruction": "Enchant items",
+                "items": {
+                    "GOLD_AXE": {
+                        "enchants": [
+                            "Efficiency V"
+                        ],
+                        "done": false
+                    },
+                    "ROOKIE_HOE": {
+                        "enchants": [
+                            "Harvesting V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_HELMET": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_CHESTPLATE": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_LEGGINGS": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_BOOTS": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V",
+                            "Depth Strider III",
+                            "Feather Falling V"
+                        ],
+                        "done": false
+                    },
+                    "END_SWORD": {
+                        "enchants": [
+                            "Sharpness V",
+                            "Fire Aspect II",
+                            "Looting III",
+                            "Luck V",
+                            "Life Steal III",
+                            "Giant Killer V",
+                            "Critical V",
+                            "First Strike IV",
+                            "Ender Slayer V"
+                        ],
+                        "done": false
+                    }
+                }
+            },
+	    {
+                "type": "reforge",
+                "instruction": "Reforge items",
+                "items": {
+                    "END_SWORD": {
+                        "reforges": [
+                            "Sharp"
+                        ],
+                        "done": false
+                    },
+                    "ROOKIE_HOE": {
+                        "reforges": [
+                            "Robust"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_HELMET": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_CHESTPLATE": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_LEGGINGS": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_BOOTS": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    }
+                }
+            },
+	    {
+                "type": "guiItem",
+                "instruction": "Apply Black Diamond to Fractured Mithril Pickaxe",
+                "guiName": "Reforge Anvil",
+                "itemIndex": 13,
+                "has": "Fruitful Fractured Mithril Pickaxe",
+                "doesntHave": "Click the ANVIL BELOW to combine.",
+                "highlight": false
+            },
+	    {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farm Suit Helmet",
+                "guiName": "Farm Suit Helmet Recipe",
+                "slotIndex": 32
+            },
+	    {
+                "type": "store",
+                "instruction": "Store Oak Wood\nStore Wooden Swords\nStore Wooden Shovel",
+                "items": [
+                    "LOG",
+                    "WOOD_SWORD",
+                    "WOOD_SPADE"
                 ]
+            },
+	    {
+                "type": "retrieve",
+                "instruction": "Retrieve items",
+                "items": [
+                    "LOG",
+                    "WOOD_SWORD",
+                    "WOOD_SPADE"
+                ]
+            },
+	    {
+                "type": "experience",
+                "instruction": "Get 75 XP Levels &b%level%",
+                "level": 75
             }
         ]
     }
