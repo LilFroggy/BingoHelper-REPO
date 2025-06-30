@@ -209,6 +209,12 @@
                 "has": "Fruitful Fractured Mithril Pickaxe",
                 "doesntHave": "Click the ANVIL BELOW to combine.",
                 "highlight": false
+            },
+	    {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farm Suit Helmet",
+                "guiName": "Farm Suit Helmet Recipe",
+                "slotIndex": 32
             }
         ]
     }
