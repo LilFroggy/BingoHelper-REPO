@@ -86,6 +86,11 @@
                         "done": false
                     }
                 }
+            },
+	    {
+                "type": "area",
+                "instruction": "/warp hub",
+                "area": "Hub"
             }
         ]
     }
