@@ -215,6 +215,15 @@
                 "instruction": "Craft Farm Suit Helmet",
                 "guiName": "Farm Suit Helmet Recipe",
                 "slotIndex": 32
+            },
+	    {
+                "type": "store",
+                "instruction": "Store Oak Wood\nStore Wooden Swords\nStore Wooden Shovel",
+                "items": [
+                    "LOG",
+                    "WOOD_SWORD",
+                    "WOOD_SPADE"
+                ]
             }
         ]
     }
