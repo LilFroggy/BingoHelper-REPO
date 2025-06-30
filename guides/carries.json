@@ -158,6 +158,48 @@
                         "done": false
                     }
                 }
+            },
+	    {
+                "type": "reforge",
+                "instruction": "Reforge items",
+                "items": {
+                    "END_SWORD": {
+                        "reforges": [
+                            "Sharp"
+                        ],
+                        "done": false
+                    },
+                    "ROOKIE_HOE": {
+                        "reforges": [
+                            "Robust"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_HELMET": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_CHESTPLATE": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_LEGGINGS": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_BOOTS": {
+                        "reforges": [
+                            "Titanic"
+                        ],
+                        "done": false
+                    }
+                }
             }
         ]
     }
