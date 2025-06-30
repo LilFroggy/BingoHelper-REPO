@@ -224,6 +224,15 @@
                     "WOOD_SWORD",
                     "WOOD_SPADE"
                 ]
+            },
+	    {
+                "type": "retrieve",
+                "instruction": "Retrieve items",
+                "items": [
+                    "LOG",
+                    "WOOD_SWORD",
+                    "WOOD_SPADE"
+                ]
             }
         ]
     }
