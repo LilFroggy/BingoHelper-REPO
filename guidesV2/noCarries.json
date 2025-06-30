@@ -1,9 +1,15 @@
 {
-    "name": "June 2025 (Carries)",
+    "name": "July 2025 (Carries)",
     "version": 1,
     "data": {
         "stepIndex": 0,
         "steps": [
+            {
+                "type": "message",
+                "instruction": "Hire Rabbit Bro\n&7(Click to get chocolate)",
+                "criteria": "Rabbit Bro has been promoted to [1] Intern!",
+                "command": "/cf"
+            },
             {
                 "type": "message",
                 "instruction": "/visit %visitIsland%",
@@ -71,10 +77,10 @@
                 }
             },
             {
-                "type": "skill",
-                "instruction": "Unlock Farming 5",
-                "skill": "farming",
-                "level": 5,
+                "type": "collection",
+                "instruction": "Unlock Wheat Collection 4",
+                "collection": "wheat",
+                "level": 4,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -156,6 +162,12 @@
                 }
             },
             {
+                "type": "skill",
+                "instruction": "Unlock Farming 5",
+                "skill": "farming",
+                "level": 5
+            },
+            {
                 "type": "guiClickSlot",
                 "instruction": "Craft Farm Suit Helmet",
                 "guiName": "Farm Suit Helmet Recipe",
@@ -182,6 +194,13 @@
                 "guiName": "Farm Suit Boots Recipe",
                 "slotIndex": 32,
                 "command": "/viewrecipe FARM_SUIT_BOOTS"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Farming Talisman",
+                "guiName": "Farming Talisman Recipe",
+                "slotIndex": 32,
+                "command": "/viewrecipe FARMING_TALISMAN"
             },
             {
                 "type": "sell",
@@ -216,7 +235,7 @@
                     },
                     "WOOD_SWORD": {
                         "count": 0,
-                        "target": 8,
+                        "target": 10,
                         "done": false
                     },
                     "WOOD_SPADE": {
@@ -356,7 +375,7 @@
             {
                 "type": "message",
                 "instruction": "Drop and pickup coal",
-                "criteria": "Mine coal"
+                "criteria": "OBJECTIVE COMPLETE"
             },
             {
                 "type": "has",
@@ -404,7 +423,7 @@
             },
             {
                 "type": "store",
-                "instruction": "Store Items",
+                "instruction": "Store items",
                 "items": [
                     "EXP_BOTTLE",
                     "STICK"
@@ -511,13 +530,6 @@
                         ],
                         "done": false
                     },
-                    "GOLD_AXE": {
-                        "reforges": [
-                            "Double-Bit",
-                            "Lush"
-                        ],
-                        "done": false
-                    },
                     "ROOKIE_HOE": {
                         "reforges": [
                             "Robust"
@@ -594,55 +606,6 @@
                                 -31
                             ],
                             "radius": 0
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Open the variety menu",
-                "guiName": "Builder",
-                "slotIndex": 16,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Builder",
-                            "position": [
-                                -51.5,
-                                71,
-                                -28
-                            ],
-                            "radius": 3
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Glowstone &b%1%",
-                "items": {
-                    "GLOWSTONE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Builder",
-                            "position": [
-                                -51.5,
-                                71,
-                                -28
-                            ],
-                            "radius": 3
                         }
                     ],
                     "index": 0
@@ -759,56 +722,6 @@
                 "command": "/trades"
             },
             {
-                "type": "subArea",
-                "instruction": "/warp barn",
-                "subArea": "The Barn",
-                "command": "/warp barn"
-            },
-            {
-                "type": "has",
-                "instruction": "Get Raw Porkchop &b%1%",
-                "items": {
-                    "PORK": {
-                        "count": 0,
-                        "target": 64,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Navigate to Pig Minion Recipes",
-                "guiName": "Pig Minion Recipes",
-                "slotIndex": 11,
-                "command": "/viewrecipe PIG_GENERATOR_1"
-            },
-            {
-                "type": "guiClickSlot",
-                "instruction": "Craft Pig Minion I",
-                "guiName": "Pig Minion I Recipe",
-                "slotIndex": 32
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell items",
-                "items": [
-                    "FEATHER",
-                    "LEATHER",
-                    "RAW_BEEF",
-                    "POTATO_ITEM",
-                    "WHEAT",
-                    "SEEDS",
-                    "CARROT_ITEM",
-                    "PUMPKIN",
-                    "MELON_BLOCK",
-                    "MELON",
-                    "PORK",
-                    "RAW_CHICKEN",
-                    "EGG"
-                ],
-                "command": "/trades"
-            },
-            {
                 "type": "area",
                 "instruction": "/is",
                 "area": "Private Island",
@@ -844,22 +757,10 @@
                 "command": "/trades"
             },
             {
-                "type": "has",
-                "instruction": "Place and break Glowstone",
-                "items": {
-                    "GLOWSTONE_DUST": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                }
-            },
-            {
                 "type": "store",
-                "instruction": "Store Items",
+                "instruction": "Store items",
                 "items": [
-                    "COBBLESTONE_GENERATOR_1",
-                    "GLOWSTONE_DUST"
+                    "COBBLESTONE_GENERATOR_1"
                 ],
                 "command": "/ec 1"
             },
@@ -876,13 +777,8 @@
             },
             {
                 "type": "message",
-                "instruction": "Do daily superpairs\n&cDo all of them (3)",
+                "instruction": "Do daily superpairs\n&cDo all 3 experiments\n&7(Prioritize getting pairs)",
                 "criteria": "You claimed the Superpairs rewards!"
-            },
-            {
-                "type": "message",
-                "instruction": "Place Pig Minion\n&cDon't forget a storage!",
-                "criteria": "You placed a minion! (1/"
             },
             {
                 "type": "area",
@@ -1785,11 +1681,11 @@
             },
             {
                 "type": "has",
-                "instruction": "Get Gold Blocks &b%1%",
+                "instruction": "Get Gold Ingot &b%1%",
                 "items": {
-                    "GOLD_BLOCK": {
+                    "GOLD_INGOT": {
                         "count": 0,
-                        "target": 58,
+                        "target": 5,
                         "done": false
                     }
                 },
@@ -1826,17 +1722,6 @@
                         }
                     ],
                     "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Get Gold Ingot &b%1%",
-                "items": {
-                    "GOLD_INGOT": {
-                        "count": 0,
-                        "target": 5,
-                        "done": false
-                    }
                 }
             },
             {
@@ -1902,44 +1787,9 @@
                 "instruction": "Store Talisman",
                 "items": [
                     "COIN_TALISMAN",
-                    "MAGNETIC_TALISMAN"
+                    "MAGNETIC_TALISMAN",
+                    "FARMING_TALISMAN"
                 ]
-            },
-            {
-                "type": "has",
-                "instruction": "Get Coal Blocks &b%1%",
-                "items": {
-                    "COAL_BLOCK": {
-                        "count": 0,
-                        "target": 58,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Coal",
-                            "position": [
-                                159,
-                                160,
-                                95
-                            ],
-                            "radius": 10
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "store",
-                "instruction": "Store Items",
-                "items": [
-                    "GOLD_BLOCK",
-                    "COAL_BLOCK"
-                ],
-                "command": "/ec 1"
             },
             {
                 "type": "sell",
@@ -1957,7 +1807,7 @@
             },
             {
                 "type": "skill",
-                "instruction": "Unlock Combat 12",
+                "instruction": "Unlock Combat 12\n&cSave Glacite Jewels",
                 "skill": "combat",
                 "level": 12,
                 "waypoint": {
@@ -2203,7 +2053,7 @@
                 "items": {
                     "SKELETON_GENERATOR_1": {
                         "count": 0,
-                        "target": 6,
+                        "target": 8,
                         "done": false
                     }
                 }
@@ -2529,9 +2379,9 @@
             },
             {
                 "type": "area",
-                "instruction": "/warp end",
+                "instruction": "/warp drag",
                 "area": "The End",
-                "command": "/warp end"
+                "command": "/warp drag"
             },
             {
                 "type": "skill",
@@ -2826,54 +2676,11 @@
                 "command": "/trades"
             },
             {
-                "type": "buy",
-                "instruction": "Buy Brewing Stand &b%1%&r\nBuy Water Bottle &b%2%&r",
-                "items": {
-                    "BREWING_STAND_ITEM": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "POTION": {
-                        "count": 0,
-                        "target": 3,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "[!]",
-                            "position": [
-                                20,
-                                70,
-                                -79
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "Alchemist",
-                            "position": [
-                                41,
-                                70,
-                                -64
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
                 "type": "store",
-                "instruction": "Store Items",
+                "instruction": "Store items",
                 "items": [
                     "ZOMBIE_GENERATOR_3",
-                    "WHEAT_GENERATOR_3",
-                    "BREWING_STAND_ITEM",
-                    "POTION"
+                    "WHEAT_GENERATOR_3"
                 ],
                 "command": "/ec 1"
             },
@@ -2945,182 +2752,10 @@
                 "slotIndex": 32
             },
             {
-                "type": "buy",
-                "instruction": "Buy Coal &b%1%",
-                "items": {
-                    "COAL": {
-                        "count": 0,
-                        "target": 630,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Mine Merchant",
-                            "position": [
-                                -9.5,
-                                68,
-                                -125.5
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Coal Blocks &b%1%",
-                "items": {
-                    "COAL_BLOCK": {
-                        "count": 0,
-                        "target": 70,
-                        "done": false
-                    }
-                },
-                "command": "/craft"
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Gold Ingot &b%1%",
-                "items": {
-                    "GOLD_INGOT": {
-                        "count": 0,
-                        "target": 630,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Mine Merchant",
-                            "position": [
-                                -9.5,
-                                68,
-                                -125.5
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Gold Blocks &b%1%",
-                "items": {
-                    "GOLD_BLOCK": {
-                        "count": 0,
-                        "target": 70,
-                        "done": false
-                    }
-                },
-                "command": "/craft"
-            },
-            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
-                    "COBBLESTONE",
-                    "COAL",
-                    "GOLD_INGOT"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Artisanal Shortbow &b%1%&r\nBuy Flint Arrows &b%2%&r",
-                "items": {
-                    "ARTISANAL_SHORTBOW": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    },
-                    "ARROW": {
-                        "count": 0,
-                        "target": 64,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Weaponsmith",
-                            "position": [
-                                -10.5,
-                                68,
-                                -130.5
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Jax",
-                "criteria": "[NPC] Jax: Ready to test your skills? Step on the pressure plate and all the targets will light up, if you can shoot them all in 25 seconds, I'll know you're the real deal.",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "[!]",
-                            "position": [
-                                -13,
-                                68,
-                                -135
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "Jax",
-                            "position": [
-                                5,
-                                61,
-                                -134.5
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Complete Target Practice",
-                "criteria": "You've successfully completed Target Practice I",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "(Stand Here)",
-                            "position": [
-                                0,
-                                61,
-                                -145
-                            ],
-                            "radius": 5
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell items",
-                "items": [
-                    "ARTISANAL_SHORTBOW",
-                    "ARROW"
+                    "COBBLESTONE"
                 ],
                 "command": "/trades"
             },
@@ -3133,43 +2768,303 @@
                 "command": "/ec 1"
             },
             {
-                "type": "retrieve",
-                "instruction": "Retrieve Items",
-                "items": [
-                    "COAL_BLOCK",
-                    "GOLD_BLOCK"
-                ],
-                "command": "/ec 1"
-            },
-            {
                 "type": "message",
                 "instruction": "/warp hub",
                 "criteria": "Warping...",
                 "command": "/warp hub"
             },
             {
-                "type": "guiClickSlot",
-                "instruction": "Buy Rare Bee Pet",
-                "guiName": "Bea",
-                "slotIndex": 11,
-                "highlight": true,
-                "coins": 50000,
+                "type": "has",
+                "instruction": "Get Wheat &b%1%&r\nGet Enchanted Seeds &b%2%&r",
+                "items": {
+                    "WHEAT": {
+                        "count": 0,
+                        "target": 25,
+                        "done": false
+                    },
+                    "ENCHANTED_SEEDS": {
+                        "count": 0,
+                        "target": 50,
+                        "done": false
+                    }
+                },
                 "waypoint": {
                     "type": "list",
                     "beam": true,
                     "list": [
                         {
-                            "text": "Bea",
+                            "text": "Wheat",
                             "position": [
-                                31,
+                                42,
                                 70,
-                                -95
+                                -123
                             ],
-                            "radius": 5
+                            "radius": 4
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                47,
+                                71,
+                                -137
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                63,
+                                71,
+                                -134
+                            ],
+                            "radius": 8
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                73,
+                                72,
+                                -162
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                59,
+                                72,
+                                -183
+                            ],
+                            "radius": 6
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                24,
+                                71,
+                                -179
+                            ],
+                            "radius": 6
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                28,
+                                70,
+                                -141
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Wheat",
+                            "position": [
+                                41,
+                                71,
+                                -137
+                            ],
+                            "radius": 100
                         }
                     ],
                     "index": 0
                 }
+            },
+            {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "area",
+                "instruction": "Agree to help Sam",
+                "area": "Garden",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Sam",
+                            "position": [
+                                8,
+                                100,
+                                41
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Give Sam 25 Wheat",
+                "criteria": "[NPC] Sam: Wow, you did it!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Sam",
+                            "position": [
+                                -8,
+                                71,
+                                -7
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Sam",
+                "criteria": "[NPC] Sam: Head over to the desk, there you can browse SkyMart to order some fuel.",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Sam",
+                            "position": [
+                                -15,
+                                72,
+                                -28
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to SkyMart",
+                "guiName": "Desk",
+                "slotIndex": 23,
+                "highlight": true,
+                "command": "/desk"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Farming Essentials",
+                "guiName": "SkyMart",
+                "slotIndex": 11,
+                "highlight": true
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Buy Biofuel",
+                "guiName": "SkyMart Farming Essentials",
+                "slotIndex": 10,
+                "highlight": true,
+                "coins": 20000
+            },
+            {
+                "type": "message",
+                "instruction": "Insert fuel",
+                "criteria": "Take Compost from the Composter",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Composter",
+                            "position": [
+                                -11.5,
+                                72,
+                                -27.5
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Collect Compost",
+                "guiName": "Composter",
+                "slotIndex": 13,
+                "highlight": true
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Configure Plots",
+                "guiName": "Desk",
+                "slotIndex": 19,
+                "highlight": true,
+                "command": "/desk"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Unlock Plot 1",
+                "guiName": "Configure Plots",
+                "slotIndex": 13,
+                "highlight": true
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Confirm Plot Unlock",
+                "guiName": "Confirm Plot Unlock",
+                "slotIndex": 11,
+                "highlight": true
+            },
+            {
+                "type": "message",
+                "instruction": "/tptoplot 1",
+                "criteria": "Teleported you to Plot - 1!",
+                "command": "/tptoplot 1"
+            },
+            {
+                "type": "message",
+                "instruction": "Clean Plot",
+                "criteria": "Plot - 1 is now clean!"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell materials",
+                "items": [
+                    "LOG",
+                    "SAPLING",
+                    "APPLE",
+                    "RED_ROSE",
+                    "YELLOW_FLOWER",
+                    "RED_ROSE:3",
+                    "DIRT",
+                    "GRASS",
+                    "LEAVES"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Configure Plots",
+                "guiName": "Desk",
+                "slotIndex": 19,
+                "highlight": true,
+                "command": "/desk"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Select Plot 1",
+                "guiName": "Configure Plots",
+                "slotIndex": 13,
+                "highlight": true
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Select Wheat Preset",
+                "guiName": "Plot Modification: 1",
+                "slotIndex": 11,
+                "highlight": true
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Confirm Paste",
+                "guiName": "Confirm Paste",
+                "slotIndex": 11,
+                "highlight": true
             }
         ]
     }
