@@ -91,6 +91,11 @@
                 "type": "area",
                 "instruction": "/warp hub",
                 "area": "Hub"
+            },
+	    {
+                "type": "subArea",
+                "instruction": "/warp barn",
+                "subArea": "The Barn"
             }
         ]
     }
