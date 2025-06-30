@@ -96,6 +96,68 @@
                 "type": "subArea",
                 "instruction": "/warp barn",
                 "subArea": "The Barn"
+            },
+	    {
+                "type": "enchant",
+                "instruction": "Enchant items",
+                "items": {
+                    "GOLD_AXE": {
+                        "enchants": [
+                            "Efficiency V"
+                        ],
+                        "done": false
+                    },
+                    "ROOKIE_HOE": {
+                        "enchants": [
+                            "Harvesting V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_HELMET": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_CHESTPLATE": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_LEGGINGS": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_BOOTS": {
+                        "enchants": [
+                            "Protection V",
+                            "Growth V",
+                            "Depth Strider III",
+                            "Feather Falling V"
+                        ],
+                        "done": false
+                    },
+                    "END_SWORD": {
+                        "enchants": [
+                            "Sharpness V",
+                            "Fire Aspect II",
+                            "Looting III",
+                            "Luck V",
+                            "Life Steal III",
+                            "Giant Killer V",
+                            "Critical V",
+                            "First Strike IV",
+                            "Ender Slayer V"
+                        ],
+                        "done": false
+                    }
+                }
             }
         ]
     }
