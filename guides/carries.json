@@ -70,10 +70,18 @@
                                 70,
                                 -72.35
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        15,
+                        70,
+                        -72.35
+                    ]
                 }
             },
             {
@@ -255,10 +263,18 @@
                                 70,
                                 -68
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -50,
+                        70,
+                        -68
+                    ]
                 }
             },
             {
@@ -286,10 +302,18 @@
                                 69,
                                 -113
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        -36,
+                        69,
+                        -113
+                    ]
                 }
             },
             {
@@ -307,10 +331,18 @@
                                 69,
                                 -126
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        -29,
+                        69,
+                        -126
+                    ]
                 }
             },
             {
@@ -334,10 +366,18 @@
                                 68,
                                 -130.5
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -10.5,
+                        68,
+                        -130.5
+                    ]
                 }
             },
             {
@@ -366,10 +406,18 @@
                                 68,
                                 -125.5
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -9.5,
+                        68,
+                        -125.5
+                    ]
                 }
             },
             {
@@ -415,10 +463,18 @@
                                 69,
                                 -113
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        -36,
+                        69,
+                        -113
+                    ]
                 }
             },
             {
@@ -572,10 +628,18 @@
                                 69,
                                 -126
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        -29,
+                        69,
+                        -126
+                    ]
                 }
             },
             {
@@ -605,10 +669,18 @@
                                 74,
                                 -31
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -47.5,
+                        74,
+                        -31
+                    ]
                 }
             },
             {
@@ -650,10 +722,18 @@
                                 65,
                                 -29.5
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -52.5,
+                        65,
+                        -29.5
+                    ]
                 }
             },
             {
@@ -801,10 +881,18 @@
                                 113,
                                 -197
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -272,
+                        113,
+                        -197
+                    ]
                 }
             },
             {
@@ -822,10 +910,18 @@
                                 122,
                                 -191
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -282,
+                        122,
+                        -191
+                    ]
                 }
             },
             {
@@ -1091,10 +1187,18 @@
                                 68,
                                 -125.5
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -9.5,
+                        68,
+                        -125.5
+                    ]
                 }
             },
             {
@@ -1307,10 +1411,18 @@
                                 150,
                                 15
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        45,
+                        150,
+                        15
+                    ]
                 }
             },
             {
@@ -1367,10 +1479,18 @@
                                 101,
                                 17
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        45,
+                        101,
+                        17
+                    ]
                 }
             },
             {
@@ -1401,10 +1521,18 @@
                                 12,
                                 14
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        31,
+                        12,
+                        14
+                    ]
                 }
             },
             {
@@ -1436,10 +1564,18 @@
                                 201,
                                 -104
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -11,
+                        201,
+                        -104
+                    ]
                 }
             },
             {
@@ -1483,10 +1619,18 @@
                                 224,
                                 -118.5
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        83.5,
+                        224,
+                        -118.5
+                    ]
                 }
             },
             {
@@ -1526,10 +1670,18 @@
                                 196,
                                 196
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        129,
+                        196,
+                        196
+                    ]
                 }
             },
             {
@@ -1565,10 +1717,18 @@
                                 196,
                                 135
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        181,
+                        196,
+                        135
+                    ]
                 }
             },
             {
@@ -1642,10 +1802,18 @@
                                 68,
                                 -125.5
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -9.5,
+                        68,
+                        -125.5
+                    ]
                 }
             },
             {
@@ -1894,10 +2062,18 @@
                                 101,
                                 -276
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -525,
+                        101,
+                        -276
+                    ]
                 }
             },
             {
@@ -1929,10 +2105,18 @@
                                 101,
                                 -276
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -525,
+                        101,
+                        -276
+                    ]
                 }
             },
             {
@@ -1956,10 +2140,18 @@
                                 111,
                                 -290.5
                             ],
-                            "radius": 5
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -361,
+                        111,
+                        -290.5
+                    ]
                 }
             },
             {
@@ -2034,10 +2226,18 @@
                                 70,
                                 -65
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -42,
+                        70,
+                        -65
+                    ]
                 }
             },
             {
@@ -2134,10 +2334,18 @@
                                 69,
                                 -126
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        -29,
+                        69,
+                        -126
+                    ]
                 }
             },
             {
@@ -2319,10 +2527,18 @@
                                 69,
                                 -126
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        -29,
+                        69,
+                        -126
+                    ]
                 }
             },
             {
@@ -2436,10 +2652,18 @@
                                 70,
                                 -68
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -50,
+                        70,
+                        -68
+                    ]
                 }
             },
             {
@@ -2497,10 +2721,18 @@
                                 70,
                                 -65
                             ],
-                            "radius": 5
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -42,
+                        70,
+                        -65
+                    ]
                 }
             },
             {
@@ -2549,10 +2781,18 @@
                                 70,
                                 -65
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -42,
+                        70,
+                        -65
+                    ]
                 }
             },
             {
@@ -2621,10 +2861,18 @@
                                 70,
                                 -72.35
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        15,
+                        70,
+                        -72.35
+                    ]
                 }
             },
             {
@@ -2719,10 +2967,18 @@
                                 68,
                                 -125.5
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -9.5,
+                        68,
+                        -125.5
+                    ]
                 }
             },
             {
@@ -2889,10 +3145,18 @@
                                 100,
                                 41
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        8,
+                        100,
+                        41
+                    ]
                 }
             },
             {
@@ -2910,10 +3174,18 @@
                                 71,
                                 -7
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -8,
+                        71,
+                        -7
+                    ]
                 }
             },
             {
@@ -2931,10 +3203,18 @@
                                 72,
                                 -28
                             ],
-                            "radius": 0
+                            "radius": 10
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -15,
+                        72,
+                        -28
+                    ]
                 }
             },
             {
