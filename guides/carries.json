@@ -78,9 +78,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        15,
-                        70,
-                        -72.35
+                        15.5,
+                        70.0,
+                        -71.8125
                     ]
                 }
             },
@@ -271,9 +271,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -50,
-                        70,
-                        -68
+                        -49.5,
+                        70.0,
+                        -67.5
                     ]
                 }
             },
@@ -310,9 +310,9 @@
                 "outlineEntity": {
                     "entityType": "Villager",
                     "position": [
-                        -36,
-                        69,
-                        -113
+                        -35.5,
+                        69.0,
+                        -112.5
                     ]
                 }
             },
@@ -339,9 +339,9 @@
                 "outlineEntity": {
                     "entityType": "Villager",
                     "position": [
-                        -29,
-                        69,
-                        -126
+                        -28.5,
+                        69.0,
+                        -125.5
                     ]
                 }
             },
@@ -374,9 +374,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -10.5,
-                        68,
-                        -130.5
+                        -10.0,
+                        68.0,
+                        -130.0
                     ]
                 }
             },
@@ -414,9 +414,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -9.5,
-                        68,
-                        -125.5
+                        -9.0,
+                        68.0,
+                        -125.0
                     ]
                 }
             },
@@ -636,9 +636,9 @@
                 "outlineEntity": {
                     "entityType": "Villager",
                     "position": [
-                        -29,
-                        69,
-                        -126
+                        -28.5,
+                        69.0,
+                        -125.5
                     ]
                 }
             },
@@ -677,9 +677,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -47.5,
-                        74,
-                        -31
+                        -47.0,
+                        74.0,
+                        -30.5
                     ]
                 }
             },
@@ -730,9 +730,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -52.5,
-                        65,
-                        -29.5
+                        -52.0,
+                        65.0,
+                        -29.0
                     ]
                 }
             },
@@ -889,9 +889,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -272,
-                        113,
-                        -197
+                        -271.5,
+                        113.0,
+                        -196.5
                     ]
                 }
             },
@@ -918,9 +918,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -282,
-                        122,
-                        -191
+                        -281.5,
+                        122.0,
+                        -190.5
                     ]
                 }
             },
@@ -1195,9 +1195,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -9.5,
-                        68,
-                        -125.5
+                        -9.0,
+                        68.0,
+                        -125.0
                     ]
                 }
             },
@@ -1419,9 +1419,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        45,
-                        150,
-                        15
+                        45.5,
+                        150.0,
+                        15.5
                     ]
                 }
             },
@@ -1487,9 +1487,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        45,
-                        101,
-                        17
+                        45.5,
+                        101.0,
+                        17.5
                     ]
                 }
             },
@@ -1529,9 +1529,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        31,
-                        12,
-                        14
+                        31.5,
+                        12.0,
+                        14.5
                     ]
                 }
             },
@@ -1572,9 +1572,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -11,
-                        201,
-                        -104
+                        -10.5,
+                        201.0,
+                        -103.5
                     ]
                 }
             },
@@ -1627,9 +1627,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        83.5,
-                        224,
-                        -118.5
+                        84.0,
+                        224.0,
+                        -118.0
                     ]
                 }
             },
@@ -1678,9 +1678,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        129,
-                        196,
-                        196
+                        129.5,
+                        196.0,
+                        196.5
                     ]
                 }
             },
@@ -1725,9 +1725,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        181,
-                        196,
-                        135
+                        181.5,
+                        196.0,
+                        135.5
                     ]
                 }
             },
@@ -1810,9 +1810,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -9.5,
-                        68,
-                        -125.5
+                        -9.0,
+                        68.0,
+                        -125.0
                     ]
                 }
             },
@@ -2148,9 +2148,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -361,
-                        111,
-                        -290.5
+                        -360.5,
+                        111.0,
+                        -290.0
                     ]
                 }
             },
@@ -2234,9 +2234,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -42,
-                        70,
-                        -65
+                        -41.5,
+                        70.0,
+                        -64.5
                     ]
                 }
             },
@@ -2342,9 +2342,9 @@
                 "outlineEntity": {
                     "entityType": "Villager",
                     "position": [
-                        -29,
-                        69,
-                        -126
+                        -28.5,
+                        69.0,
+                        -125.5
                     ]
                 }
             },
@@ -2535,9 +2535,9 @@
                 "outlineEntity": {
                     "entityType": "Villager",
                     "position": [
-                        -29,
-                        69,
-                        -126
+                        -28.5,
+                        69.0,
+                        -125.5
                     ]
                 }
             },
@@ -2660,9 +2660,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -50,
-                        70,
-                        -68
+                        -49.5,
+                        70.0,
+                        -67.5
                     ]
                 }
             },
@@ -2729,9 +2729,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -42,
-                        70,
-                        -65
+                        -41.5,
+                        70.0,
+                        -64.5
                     ]
                 }
             },
@@ -2789,9 +2789,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -42,
-                        70,
-                        -65
+                        -41.5,
+                        70.0,
+                        -64.5
                     ]
                 }
             },
@@ -2869,9 +2869,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        15,
-                        70,
-                        -72.35
+                        15.5,
+                        70.0,
+                        -71.8125
                     ]
                 }
             },
@@ -2975,9 +2975,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -9.5,
-                        68,
-                        -125.5
+                        -9.0,
+                        68.0,
+                        -125.0
                     ]
                 }
             },
