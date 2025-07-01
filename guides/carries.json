@@ -4,6 +4,28 @@
     "data": {
         "stepIndex": 0,
         "steps": [
+	    {
+                "type": "skill",
+                "instruction": "Unlock Farming 1",
+                "skill": "farming",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Potatoes",
+                            "position": [
+                                26,
+                                70,
+                                -85
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
             {
                 "type": "message",
                 "instruction": "/visit %visitIsland%",
