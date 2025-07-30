@@ -1,6 +1,6 @@
 {
     "name": "August 2025",
-    "version": 3,
+    "version": 4,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -290,7 +290,7 @@
                     },
                     "MINNOW_BAIT": {
                         "count": 0,
-                        "target": 640,
+                        "target": 64,
                         "done": false
                     }
                 },
@@ -980,6 +980,17 @@
                         100.0,
                         36.5
                     ]
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Actually pick up cobblestone minion",
+                "items": {
+                    "COBBLESTONE_GENERATOR_1": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
                 }
             },
             {
