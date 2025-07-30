@@ -1,6 +1,6 @@
 {
     "name": "August 2025",
-    "version": 1,
+    "version": 2,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -164,6 +164,12 @@
                 }
             },
             {
+                "type": "skill",
+                "instruction": "Unlock Farming 5",
+                "skill": "farming",
+                "level": 5
+            },
+            {
                 "type": "guiClickSlot",
                 "instruction": "Craft Farm Suit Helmet",
                 "guiName": "Farm Suit Helmet Recipe",
@@ -192,18 +198,13 @@
                 "command": "/viewrecipe FARM_SUIT_BOOTS"
             },
             {
-                "type": "skill",
-                "instruction": "Unlock Farming 10",
-                "skill": "farming",
-                "level": 10
-            },
-            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
                     "HAY_BLOCK",
                     "WHEAT",
                     "SEEDS",
+                    "ENCHANTED_SEEDS",
                     "POTATO_ITEM"
                 ],
                 "command": "/trades"
@@ -888,9 +889,9 @@
                 "command": "/trades"
             },
             {
-                "type": "subArea",
+                "type": "area",
                 "instruction": "/warp barn",
-                "subArea": "The Barn",
+                "area": "The Farming Islands",
                 "command": "/warp barn"
             },
             {
@@ -944,9 +945,10 @@
                 "command": "/is"
             },
             {
-                "type": "message",
+                "type": "guiClickSlot",
                 "instruction": "Pick up Cobblestone Minion",
-                "criteria": "You picked up a minion! You currently have",
+                "guiName": "Cobblestone Minion I",
+                "slotIndex": 53,
                 "waypoint": {
                     "type": "list",
                     "beam": true,
