@@ -269,6 +269,14 @@
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        52.5,
+                        68.0,
+                        -82.5
+                    ]
                 }
             },
             {
