@@ -2205,9 +2205,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -525,
-                        101,
-                        -276
+                        -524.5,
+                        101.0,
+                        -275.5
                     ]
                 }
             },
@@ -2248,9 +2248,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -525,
-                        101,
-                        -276
+                        -524.5,
+                        101.0,
+                        -275.5
                     ]
                 }
             },
