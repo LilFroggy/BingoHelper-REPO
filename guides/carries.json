@@ -3571,7 +3571,7 @@
             },
             {
                 "type": "message",
-                "instruction": "&aYou completed the guide\n&aRun &e/bhskip &ato hide guide",
+                "instruction": "&aThat's all! Run &e/bhskip &ato hide this display",
                 "criteria": "knasdlakdjo",
                 "clientCommand": "/bhskip"
             },
