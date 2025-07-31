@@ -3571,6 +3571,12 @@
             },
             {
                 "type": "message",
+                "instruction": "&aYou completed the guide\n&aRun &e/bhskip &ato hide guide",
+                "criteria": "knasdlakdjo",
+                "clientCommand": "/bhskip"
+            },
+            {
+                "type": "message",
                 "instruction": "",
                 "criteria": "knasdlakdjo"
             }
