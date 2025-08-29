@@ -1817,9 +1817,6 @@
                 "type": "guiItem",
                 "instruction": "Open King's Commission Menu",
                 "guiName": "Commissions",
-                "itemIndex": null,
-                "has": null,
-                "doesntHave": null,
                 "highlight": false,
                 "waypoint": {
                     "type": "list",
@@ -1921,8 +1918,7 @@
                 "instruction": "Upgrade Mining Speed Perk",
                 "guiName": "Heart of the Mountain",
                 "itemIndex": 40,
-                "has": "You don't have enough Mithril Powder!" ,
-                "doesntHave": null,
+                "has": "You don't have enough Mithril Powder!",
                 "highlight": true,
                 "command": "/hotm"
             },
@@ -2104,7 +2100,7 @@
                     "GOLD_INGOT",
                     "IRON_INGOT",
                     "EMERALD",
-                    "MITHRIL"
+                    "MITHRIL_ORE"
                 ],
                 "command": "/trades"
             },
