@@ -1,6 +1,6 @@
 {
     "name": "August 2025",
-    "version": 2,
+    "version": 4,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -269,6 +269,14 @@
                         }
                     ],
                     "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        52.5,
+                        68.0,
+                        -82.5
+                    ]
                 }
             },
             {
@@ -282,7 +290,7 @@
                     },
                     "MINNOW_BAIT": {
                         "count": 0,
-                        "target": 640,
+                        "target": 64,
                         "done": false
                     }
                 },
@@ -972,6 +980,17 @@
                         100.0,
                         36.5
                     ]
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Actually pick up cobblestone minion",
+                "items": {
+                    "COBBLESTONE_GENERATOR_1": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
                 }
             },
             {
@@ -1798,9 +1817,6 @@
                 "type": "guiItem",
                 "instruction": "Open King's Commission Menu",
                 "guiName": "Commissions",
-                "itemIndex": null,
-                "has": null,
-                "doesntHave": null,
                 "highlight": false,
                 "waypoint": {
                     "type": "list",
@@ -1902,8 +1918,7 @@
                 "instruction": "Upgrade Mining Speed Perk",
                 "guiName": "Heart of the Mountain",
                 "itemIndex": 40,
-                "has": "You don't have enough Mithril Powder!" ,
-                "doesntHave": null,
+                "has": "You don't have enough Mithril Powder!",
                 "highlight": true,
                 "command": "/hotm"
             },
@@ -2085,7 +2100,7 @@
                     "GOLD_INGOT",
                     "IRON_INGOT",
                     "EMERALD",
-                    "MITHRIL"
+                    "MITHRIL_ORE"
                 ],
                 "command": "/trades"
             },
@@ -2186,9 +2201,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -525,
-                        101,
-                        -276
+                        -524.5,
+                        101.0,
+                        -275.5
                     ]
                 }
             },
@@ -2229,9 +2244,9 @@
                 "outlineEntity": {
                     "entityType": "Player",
                     "position": [
-                        -525,
-                        101,
-                        -276
+                        -524.5,
+                        101.0,
+                        -275.5
                     ]
                 }
             },
@@ -3549,6 +3564,17 @@
                         -140.5
                     ]
                 }
+            },
+            {
+                "type": "message",
+                "instruction": "&aThat's all! Run &e/bhskip &ato hide this display",
+                "criteria": "knasdlakdjo",
+                "clientCommand": "/bhskip"
+            },
+            {
+                "type": "message",
+                "instruction": "",
+                "criteria": "knasdlakdjo"
             }
         ]
     }
