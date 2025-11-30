@@ -1,6 +1,6 @@
 {
     "name": "December 2025",
-    "version": 1,
+    "version": 2,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -6234,6 +6234,245 @@
                     "JUNGLE_GENERATOR_3"
                 ],
                 "command": "/ec 1"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Iron Armor\nBuy Rosetta Armor\nBuy Squire Armor",
+                "items": {
+                    "IRON_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "IRON_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "IRON_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "IRON_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "ROSETTA_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "SQUIRE_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Rosetta",
+                            "position": [
+                                -12,
+                                68,
+                                -141
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -11.5,
+                        68.0,
+                        -140.5
+                    ]
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Armor Sets",
+                "items": [
+                    "IRON_HELMET",
+                    "IRON_CHESTPLATE",
+                    "IRON_LEGGINGS",
+                    "IRON_BOOTS",
+                    "ROSETTA_HELMET",
+                    "ROSETTA_CHESTPLATE",
+                    "ROSETTA_LEGGINGS",
+                    "ROSETTA_BOOTS",
+                    "SQUIRE_HELMET",
+                    "SQUIRE_CHESTPLATE",
+                    "SQUIRE_LEGGINGS",
+                    "SQUIRE_BOOTS"
+                ],
+                "command": "/wardrobe"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Celeste Armor\nBuy Starlight Armor\nBuy Mercenary Armor",
+                "items": {
+                    "CELESTE_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "CELESTE_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "CELESTE_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "CELESTE_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "STARLIGHT_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "STARLIGHT_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "STARLIGHT_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "STARLIGHT_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "MERCENARY_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "MERCENARY_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "MERCENARY_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "MERCENARY_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Rosetta",
+                            "position": [
+                                -12,
+                                68,
+                                -141
+                            ],
+                            "radius": 5
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -11.5,
+                        68.0,
+                        -140.5
+                    ]
+                }
+            },
+            {
+                "type": "sell",
+                "instruction": "Store Armor Sets",
+                "items": [
+                    "CELESTE_HELMET",
+                    "CELESTE_CHESTPLATE",
+                    "CELESTE_LEGGINGS",
+                    "CELESTE_BOOTS",
+                    "STARLIGHT_HELMET",
+                    "STARLIGHT_CHESTPLATE",
+                    "STARLIGHT_LEGGINGS",
+                    "STARLIGHT_BOOTS",
+                    "MERCENARY_HELMET",
+                    "MERCENARY_CHESTPLATE",
+                    "MERCENARY_LEGGINGS",
+                    "MERCENARY_BOOTS"
+                ],
+                "command": "/wardrobe"
+            },
+            {
+                "type": "retrieve",
+                "instruction": "Retrieve items",
+                "items": [
+                    "FARM_SUIT_HELMET",
+                    "FARM_SUIT_CHESTPLATE",
+                    "FARM_SUIT_LEGGINGS",
+                    "FARM_SUIT_BOOTS",
+                    "PUMPKIN_HELMET",
+                    "PUMPKIN_CHESTPLATE",
+                    "PUMPKIN_LEGGINGS",
+                    "PUMPKIN_BOOTS"
+                ],
+                "command": "/ec 2"
             }
         ]
     }
