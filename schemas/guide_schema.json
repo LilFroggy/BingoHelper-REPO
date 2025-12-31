@@ -303,7 +303,7 @@
             "properties": {
                 "type": { "const": "skill" },
                 "skill": { "$ref": "#/definitions/Skills" },
-                "level": { "type": "integer" }
+                "level": { "type": "number" }
             },
             "required": [
                 "skill",
