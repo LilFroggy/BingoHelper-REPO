@@ -1,6 +1,6 @@
 {
     "name": "February 2026",
-    "version": 1,
+    "version": 2,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -1265,11 +1265,17 @@
                 "command": "/mobtypes"
             },
             {
-                "type": "upgradeMinion",
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Pig Minion Recipes",
+                "guiName": "Pig Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe PIG_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
                 "instruction": "Craft Pig Minion I",
-                "minionId": "PIG",
-                "fromLevel": 0,
-                "toLevel": 1
+                "guiName": "Pig Minion I Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "has",
@@ -1380,7 +1386,7 @@
                     "MELON",
                     "PORK",
                     "RAW_CHICKEN",
-		    "EGG"
+		            "EGG"
                 ],
                 "command": "/trades"
             },
@@ -1472,11 +1478,17 @@
                 }
             },
             {
-                "type": "upgradeMinion",
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe SAND_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
                 "instruction": "Craft Sand Minion I",
-                "minionId": "SAND",
-                "fromLevel": 0,
-                "toLevel": 1
+                "guiName": "Sand Minion I Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "has",
@@ -1490,11 +1502,17 @@
                 }
             },
             {
-                "type": "upgradeMinion",
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe SAND_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
                 "instruction": "Craft Sand Minion II",
-                "minionId": "SAND",
-                "fromLevel": 1,
-                "toLevel": 2
+                "guiName": "Sand Minion II Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "has",
@@ -1508,11 +1526,17 @@
                 }
             },
             {
-                "type": "upgradeMinion",
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe SAND_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
                 "instruction": "Craft Sand Minion III",
-                "minionId": "SAND",
-                "fromLevel": 2,
-                "toLevel": 3
+                "guiName": "Sand Minion III Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "has",
@@ -1526,11 +1550,17 @@
                 }
             },
             {
-                "type": "upgradeMinion",
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 14,
+                "command": "/viewrecipe SAND_GENERATOR_4"
+            },
+            {
+                "type": "guiClickSlot",
                 "instruction": "Craft Sand Minion IV",
-                "minionId": "SAND",
-                "fromLevel": 3,
-                "toLevel": 4
+                "guiName": "Sand Minion IV Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "has",
@@ -1544,13 +1574,19 @@
                 }
             },
             {
-                "type": "upgradeMinion",
-                "instruction": "Craft Sand Minion V",
-                "minionId": "SAND",
-                "fromLevel": 4,
-                "toLevel": 5
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 15,
+                "command": "/viewrecipe SAND_GENERATOR_5"
             },
-	    {
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion V",
+                "guiName": "Sand Minion V Recipe",
+                "slotIndex": 32
+            },
+	        {
                 "type": "has",
                 "instruction": "Get Enchanted Sand &b%1%",
                 "items": {
@@ -1562,13 +1598,18 @@
                 }
             },
             {
-                "type": "upgradeMinion",
-                "instruction": "Craft Sand Minion VI",
-                "minionId": "SAND",
-                "fromLevel": 5,
-                "toLevel": 6
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Sand Minion Recipes",
+                "guiName": "Sand Minion Recipes",
+                "slotIndex": 21,
+                "command": "/viewrecipe SAND_GENERATOR_6"
             },
-
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Sand Minion VI",
+                "guiName": "Sand Minion VI Recipe",
+                "slotIndex": 32
+            },
             {
                 "type": "skill",
                 "instruction": "Unlock Mining 11.9",
@@ -3134,11 +3175,43 @@
                 }
             },
             {
-                "type": "upgradeMinion",
-                "instruction": "Craft up to End Stone Minion III",
-                "minionId": "ENDER_STONE",
-                "fromLevel": 0,
-                "toLevel": 3
+                "type": "guiClickSlot",
+                "instruction": "Navigate to End Stone Minion Recipes",
+                "guiName": "End Stone Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe ENDER_STONE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft End Stone Minion I",
+                "guiName": "End Stone Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to End Stone Minion Recipes",
+                "guiName": "End Stone Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe ENDER_STONE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft End Stone Minion II",
+                "guiName": "End Stone Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to End Stone Minion Recipes",
+                "guiName": "End Stone Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe ENDER_STONE_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft End Stone Minion III",
+                "guiName": "End Stone Minion III Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "guiClickSlot",
@@ -3232,11 +3305,43 @@
                 }
             },
             {
-                "type": "upgradeMinion",
-                "instruction": "Craft up to Zombie Minion III",
-                "minionId": "ZOMBIE",
-                "fromLevel": 0,
-                "toLevel": 3
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Zombie Minion Recipes",
+                "guiName": "Zombie Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe ZOMBIE_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Zombie Minion I",
+                "guiName": "Zombie Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Zombie Minion Recipes",
+                "guiName": "Zombie Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe ZOMBIE_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Zombie Minion II",
+                "guiName": "Zombie Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Zombie Minion Recipes",
+                "guiName": "Zombie Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe ZOMBIE_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Zombie Minion III",
+                "guiName": "Zombie Minion III Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "message",
@@ -3280,11 +3385,43 @@
                 }
             },
             {
-                "type": "upgradeMinion",
-                "instruction": "Craft up to Wheat Minion III",
-                "minionId": "WHEAT",
-                "fromLevel": 0,
-                "toLevel": 3
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 11,
+                "command": "/viewrecipe WHEAT_GENERATOR_1"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion I",
+                "guiName": "Wheat Minion I Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 12,
+                "command": "/viewrecipe WHEAT_GENERATOR_2"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion II",
+                "guiName": "Wheat Minion II Recipe",
+                "slotIndex": 32
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Navigate to Wheat Minion Recipes",
+                "guiName": "Wheat Minion Recipes",
+                "slotIndex": 13,
+                "command": "/viewrecipe WHEAT_GENERATOR_3"
+            },
+            {
+                "type": "guiClickSlot",
+                "instruction": "Craft Wheat Minion III",
+                "guiName": "Wheat Minion III Recipe",
+                "slotIndex": 32
             },
             {
                 "type": "store",
@@ -3705,7 +3842,7 @@
                     "CACTUS_CHESTPLATE",
                     "CACTUS_LEGGINGS",
                     "CACTUS_BOOTS",
-		    "MUSHROOM_HELMET",
+		            "MUSHROOM_HELMET",
                     "MUSHROOM_CHESTPLATE",
                     "MUSHROOM_LEGGINGS",
                     "MUSHROOM_BOOTS"
@@ -3724,7 +3861,7 @@
                     "CACTUS_CHESTPLATE",
                     "CACTUS_LEGGINGS",
                     "CACTUS_BOOTS",
-		    "MUSHROOM_HELMET",
+		            "MUSHROOM_HELMET",
                     "MUSHROOM_CHESTPLATE",
                     "MUSHROOM_LEGGINGS",
                     "MUSHROOM_BOOTS"
