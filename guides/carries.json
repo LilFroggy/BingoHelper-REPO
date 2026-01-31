@@ -1380,7 +1380,7 @@
                     "MELON",
                     "PORK",
                     "RAW_CHICKEN",
-		    "EGG"
+		            "EGG"
                 ],
                 "command": "/trades"
             },
@@ -3705,7 +3705,7 @@
                     "CACTUS_CHESTPLATE",
                     "CACTUS_LEGGINGS",
                     "CACTUS_BOOTS",
-		    "MUSHROOM_HELMET",
+		            "MUSHROOM_HELMET",
                     "MUSHROOM_CHESTPLATE",
                     "MUSHROOM_LEGGINGS",
                     "MUSHROOM_BOOTS"
@@ -3724,7 +3724,7 @@
                     "CACTUS_CHESTPLATE",
                     "CACTUS_LEGGINGS",
                     "CACTUS_BOOTS",
-		    "MUSHROOM_HELMET",
+		            "MUSHROOM_HELMET",
                     "MUSHROOM_CHESTPLATE",
                     "MUSHROOM_LEGGINGS",
                     "MUSHROOM_BOOTS"
