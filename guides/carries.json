@@ -1550,7 +1550,7 @@
                 "fromLevel": 4,
                 "toLevel": 5
             },
-	    {
+	        {
                 "type": "has",
                 "instruction": "Get Enchanted Sand &b%1%",
                 "items": {
@@ -1568,7 +1568,6 @@
                 "fromLevel": 5,
                 "toLevel": 6
             },
-
             {
                 "type": "skill",
                 "instruction": "Unlock Mining 11.9",
