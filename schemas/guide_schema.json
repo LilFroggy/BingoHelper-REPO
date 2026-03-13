@@ -35,7 +35,8 @@
                             { "$ref": "#/definitions/CollectionStep" },
                             { "$ref": "#/definitions/StoreStep" },
                             { "$ref": "#/definitions/RetrieveStep" },
-                            { "$ref": "#/definitions/ExperienceStep" }
+                            { "$ref": "#/definitions/ExperienceStep" },
+                            { "$ref": "#/definitions/UpgradeMinionStep" }
                         ],
                         "required": [
                             "type",
@@ -118,7 +119,8 @@
                 "collection",
                 "store",
                 "retrieve",
-                "experience"
+                "experience",
+                "upgradeMinion"
             ]
         },
         "MessageStep": {
@@ -353,6 +355,22 @@
             "required": [
                 "level"
             ]
+        },
+        "UpgradeMinionStep": {
+            "properties": {
+                "type": { "const": "upgradeMinion" },
+                "minionId": { "$ref": "#/definitions/MinionIds" },
+                "fromLevel": { "type": "integer" },
+                "toLevel": { "type": "integer" }
+            },
+            "required": [
+                "minionId",
+                "fromLevel",
+                "toLevel"
+            ]
+        },
+        "MinionIds": {
+            "type": "string"
         },
         "ItemIds": {
             "type": "string"
