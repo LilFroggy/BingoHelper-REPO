@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Guide Schema",
-    "description": "The schema that is actually used to validate guides. Differs from guide_creation_schema.json in that it does not have example bloat.",
+    "description": "The schema that is used to validate guides.",
     "type": "object",
     "properties": {
         "name": { "type": "string" },
