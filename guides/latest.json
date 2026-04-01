@@ -1,6 +1,6 @@
 {
     "name": "April 2026",
-    "version": 2,
+    "version": 3,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -221,13 +221,8 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Coal &b%1%&r\nBuy Golden Pickaxe &b%2%&r",
+                "instruction": "Buy Golden Pickaxe &b%1%&r",
                 "items": {
-                    "COAL": {
-                        "count": 0,
-                        "target": 10,
-                        "done": false
-                    },
                     "GOLD_PICKAXE": {
                         "count": 0,
                         "target": 1,
@@ -633,50 +628,6 @@
                 "command": "/warp stonks"
             },
             {
-                "type": "buy",
-                "instruction": "Buy Experience Bottle &b%1%&r\n&cSave for experimentation table",
-                "items": {
-                    "EXP_BOTTLE": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -64.0,
-                                70.0,
-                                -76.5
-                            ],
-                            "radius": 12
-                        },
-                        {
-                            "text": "Librarian",
-                            "position": [
-                                -68.5,
-                                70.0,
-                                -79.5
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                },
-                "outlineEntity": {
-                    "entityType": "Villager",
-                    "position": [
-                        -68.5,
-                        70.0,
-                        -79.5
-                    ]
-                }
-            },
-            {
                 "type": "enchant",
                 "instruction": "Enchant items\n&eGet splashed with grands\n&eOR\n&e1. Swap to main profile\n&e2. Join a hub-selector hub\n&e3. Throw a titanic in a corner\n&e4. Collect xp on bingo profile",
                 "items": {
@@ -742,6 +693,15 @@
                         {
                             "text": "",
                             "position": [
+                                -64.0,
+                                70.0,
+                                -76.5
+                            ],
+                            "radius": 12
+                        },
+                        {
+                            "text": "",
+                            "position": [
                                 -67.0,
                                 70.0,
                                 -81.0
@@ -750,6 +710,41 @@
                         }
                     ],
                     "index": 0
+                }
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Experience Bottle &b%1%&r\n&cSave for experimentation table",
+                "items": {
+                    "EXP_BOTTLE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Librarian",
+                            "position": [
+                                -68.5,
+                                70.0,
+                                -79.5
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        -68.5,
+                        70.0,
+                        -79.5
+                    ]
                 }
             },
             {
@@ -1264,8 +1259,13 @@
             },
             {
                 "type": "has",
-                "instruction": "Get Eggs &b%1%&r",
+                "instruction": "Kill a Chicken &b%1%&r\nGet Eggs &b%2%&r",
                 "items": {
+                    "RAW_CHICKEN": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
                     "EGG": {
                         "count": 0,
                         "target": 1,
@@ -1309,9 +1309,9 @@
                 "command": "/trades"
             },
             {
-                "type": "area",
+                "type": "message",
                 "instruction": "/warp desert",
-                "area": "The Farming Islands",
+                "criteria": "Warping...",
                 "command": "/warp desert"
             },
             {
