@@ -149,7 +149,7 @@
             {
                 "type": "message",
                 "instruction": "Talk to Blacksmith",
-                "criteria": "[NPC] Blacksmith: Go into the Mine to collect Coal, then come back to learn how to reforge items!",
+                "criteria": "[NPC] Blacksmith:",
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -1062,31 +1062,6 @@
             },
             {
                 "type": "area",
-                "instruction": "/warp barn",
-                "area": "The Farming Islands",
-                "command": "/warp barn"
-            },
-            {
-                "type": "has",
-                "instruction": "Get Egg &b%1%&r",
-                "items": {
-                    "EGG": {
-                        "count": 0,
-                        "target": 1,
-                        "done": false
-                    }
-                }
-            },
-            {
-                "type": "store",
-                "instruction": "Store items",
-                "items": [
-                    "EGG"
-                ],
-                "command": "/ec 1"
-            },
-            {
-                "type": "area",
                 "instruction": "/warp castle",
                 "area": "Hub",
                 "command": "/warp castle"
@@ -1280,6 +1255,31 @@
                         "done": false
                     }
                 }
+            },
+            {
+                "type": "area",
+                "instruction": "/warp barn",
+                "area": "The Farming Islands",
+                "command": "/warp barn"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Eggs &b%1%&r",
+                "items": {
+                    "EGG": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                }
+            },
+            {
+                "type": "store",
+                "instruction": "Store items",
+                "items": [
+                    "EGG"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "sell",
@@ -1596,8 +1596,62 @@
                 }
             },
             {
+                "type": "reforge",
+                "instruction": "Reforge items",
+                "items": {
+                    "FARM_SUIT_HELMET": {
+                        "reforges": [
+                            "Fierce"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_CHESTPLATE": {
+                        "reforges": [
+                            "Fierce"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_LEGGINGS": {
+                        "reforges": [
+                            "Fierce"
+                        ],
+                        "done": false
+                    },
+                    "FARM_SUIT_BOOTS": {
+                        "reforges": [
+                            "Fierce"
+                        ],
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Blacksmith",
+                            "position": [
+                                10.5,
+                                63.0,
+                                -126.5
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Villager",
+                    "position": [
+                        10.5,
+                        63.0,
+                        -126.5
+                    ]
+                }
+            },
+            {
                 "type": "collection",
-                "instruction": "Mine Coal & Cobblestone",
+                "instruction": "Mine Coal and Cobblestone",
                 "collection": "cobblestone",
                 "level": 3,
                 "waypoint": {
@@ -1635,7 +1689,7 @@
             },
             {
                 "type": "message",
-                "instruction": "Add Silverfish to Pet Menu\n&7(Hold item & Right-Click)",
+                "instruction": "Add Silverfish to Pet Menu\n&7(Hold item and Right-Click)",
                 "criteria": "Successfully added Silverfish to your pet menu!"
             },
             {
@@ -1997,8 +2051,8 @@
             },
             {
                 "type": "message",
-                "instruction": "Kill a Redstone Pigman",
-                "criteria": "BESTIARY FAMILY UNLOCKED Redstone Pigman",
+                "instruction": "Kill an Emerald Slime",
+                "criteria": "BESTIARY FAMILY UNLOCKED Emerald Slime",
                 "waypoint": {
                     "type": "list",
                     "beam": true,
@@ -2013,7 +2067,7 @@
                             "radius": 10
                         },
                         {
-                            "text": "Redstone Pigmen",
+                            "text": "",
                             "position": [
                                 6,
                                 108,
@@ -2021,27 +2075,6 @@
                             ],
                             "radius": 10
                         },
-                        {
-                            "text": "Redstone Pigmen",
-                            "position": [
-                                6,
-                                108,
-                                46
-                            ],
-                            "radius": 200
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Kill an Emerald Slime",
-                "criteria": "BESTIARY FAMILY UNLOCKED Emerald Slime",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
                         {
                             "text": "",
                             "position": [
@@ -2270,6 +2303,14 @@
                 "instruction": "Sell items",
                 "items": [
                     "ANCIENT_CLAW",
+                    "COAL",
+                    "IRON_ORE",
+                    "GOLD_ORE",
+                    "INK_SACK:4",
+                    "REDSTONE",
+                    "EMERALD",
+                    "DIAMOND",
+                    "OBSIDIAN",
                     "LAPIS_CRYSTAL",
                     "COBBLESTONE",
                     "GOLD_NUGGET",
@@ -2727,6 +2768,56 @@
             },
             {
                 "type": "buy",
+                "instruction": "Buy Starlight Armor",
+                "items": {
+                    "STARLIGHT_HELMET": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "STARLIGHT_CHESTPLATE": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "STARLIGHT_LEGGINGS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    },
+                    "STARLIGHT_BOOTS": {
+                        "count": 0,
+                        "target": 1,
+                        "done": false
+                    }
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Rosetta",
+                            "position": [
+                                -53.5,
+                                69.0,
+                                -88.5
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntity": {
+                    "entityType": "Player",
+                    "position": [
+                        -53.5,
+                        69.0,
+                        -88.5
+                    ]
+                }
+            },
+            {
+                "type": "buy",
                 "instruction": "Buy Black Diamond &b%1%",
                 "items": {
                     "ONYX": {
@@ -2843,7 +2934,36 @@
                 "items": {
                     "CLEAVER": {
                         "reforges": [
-                            "Sharp"
+                            "Sharp",
+                            "Odd Sword"
+                        ],
+                        "done": false
+                    },
+                    "STARLIGHT_HELMET": {
+                        "reforges": [
+                            "Clean",
+                            "Pure"
+                        ],
+                        "done": false
+                    },
+                    "STARLIGHT_CHESTPLATE": {
+                        "reforges": [
+                            "Clean",
+                            "Pure"
+                        ],
+                        "done": false
+                    },
+                    "STARLIGHT_LEGGINGS": {
+                        "reforges": [
+                            "Clean",
+                            "Pure"
+                        ],
+                        "done": false
+                    },
+                    "STARLIGHT_BOOTS": {
+                        "reforges": [
+                            "Clean",
+                            "Pure"
                         ],
                         "done": false
                     }
@@ -2872,6 +2992,28 @@
                         -126.5
                     ]
                 }
+            },
+            {
+                "type": "store",
+                "instruction": "Equip Starlight Armor",
+                "items": [
+                    "STARLIGHT_HELMET",
+                    "STARLIGHT_CHESTPLATE",
+                    "STARLIGHT_LEGGINGS",
+                    "STARLIGHT_BOOTS"
+                ],
+                "command": "/equipment"
+            },
+            {
+                "type": "store",
+                "instruction": "Store Farm Suit Armor",
+                "items": [
+                    "FARM_SUIT_HELMET",
+                    "FARM_SUIT_CHESTPLATE",
+                    "FARM_SUIT_LEGGINGS",
+                    "FARM_SUIT_BOOTS"
+                ],
+                "command": "/wardrobe"
             },
             {
                 "type": "message",
@@ -3086,11 +3228,16 @@
                 "command": "/mobtypes"
             },
             {
+                "type": "area",
+                "instruction": "/warp arachne",
+                "area": "Spider's Den",
+                "command": "/warp arachne"
+            },
+            {
                 "type": "skill",
-                "instruction": "Unlock Combat 12\n&7(Kill Crypt Ghouls)",
+                "instruction": "Unlock Combat 12",
                 "skill": "combat",
-                "level": 12,
-                "command": "/warp crypt"
+                "level": 12
             },
             {
                 "type": "sell",
@@ -3211,6 +3358,12 @@
                 "type": "reforge",
                 "instruction": "Reforge items",
                 "items": {
+                    "SUPER_CLEAVER": {
+                        "reforges": [
+                            "Epic"
+                        ],
+                        "done": false
+                    },
                     "END_HELMET": {
                         "reforges": [
                             "Fierce"
@@ -3269,17 +3422,6 @@
                         -126.5
                     ]
                 }
-            },
-            {
-                "type": "store",
-                "instruction": "Equip Ender Armor",
-                "items": [
-                    "END_HELMET",
-                    "END_CHESTPLATE",
-                    "END_LEGGINGS",
-                    "END_BOOTS"
-                ],
-                "command": "/equipment"
             },
             {
                 "type": "area",
