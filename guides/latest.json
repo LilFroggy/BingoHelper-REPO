@@ -1,6 +1,6 @@
 {
     "name": "April 2026",
-    "version": 1,
+    "version": 2,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -1596,60 +1596,6 @@
                 }
             },
             {
-                "type": "reforge",
-                "instruction": "Reforge items",
-                "items": {
-                    "FARM_SUIT_HELMET": {
-                        "reforges": [
-                            "Fierce"
-                        ],
-                        "done": false
-                    },
-                    "FARM_SUIT_CHESTPLATE": {
-                        "reforges": [
-                            "Fierce"
-                        ],
-                        "done": false
-                    },
-                    "FARM_SUIT_LEGGINGS": {
-                        "reforges": [
-                            "Fierce"
-                        ],
-                        "done": false
-                    },
-                    "FARM_SUIT_BOOTS": {
-                        "reforges": [
-                            "Fierce"
-                        ],
-                        "done": false
-                    }
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Blacksmith",
-                            "position": [
-                                10.5,
-                                63.0,
-                                -126.5
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                },
-                "outlineEntity": {
-                    "entityType": "Villager",
-                    "position": [
-                        10.5,
-                        63.0,
-                        -126.5
-                    ]
-                }
-            },
-            {
                 "type": "collection",
                 "instruction": "Mine Coal and Cobblestone",
                 "collection": "cobblestone",
@@ -1751,7 +1697,7 @@
                 "items": {
                     "COAL": {
                         "count": 0,
-                        "target": 630,
+                        "target": 640,
                         "done": false
                     }
                 },
@@ -1922,7 +1868,7 @@
                 "items": {
                     "LOG": {
                         "count": 0,
-                        "target": 760,
+                        "target": 755,
                         "done": false
                     }
                 },
@@ -1958,7 +1904,7 @@
                 "items": {
                     "COAL": {
                         "count": 0,
-                        "target": 1520,
+                        "target": 1510,
                         "done": false
                     }
                 },
