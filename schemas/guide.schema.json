@@ -44,14 +44,16 @@
                             "type",
                             "instruction"
                         ]
-                    }
+                    },
+					"additionalProperties": false
                 }
             },
             "required": [
                 "stepIndex",
                 "steps"
             ]
-        }
+        },
+		"additionalProperties": false
     },
     "required": [
         "name",
@@ -74,6 +76,7 @@
                             },
                             "radius": { "type": "integer" }
                         },
+						"additionalProperties": false,
                         "required": [
                             "text",
                             "position",
@@ -83,6 +86,7 @@
                 },
                 "index": { "type": "integer" }
             },
+			"additionalProperties": false,
             "required": [
                 "type",
                 "beam",
@@ -100,9 +104,11 @@
 					"properties": {
 						"entity": { "$ref": "#/definitions/EntityPredicate" }
 					},
+					"additionalProperties": false,
 					"minProperties": 1
 				}
-            }
+            },
+			"additionalProperties": false
         },
 		"EntityPredicate": { "type": "object",
 			"properties": {
@@ -114,6 +120,7 @@
                 },
 				"skin": { "type": "string" }
             },
+			"additionalProperties": false,
 			"minProperties": 1
 		},
         "StepTypes": {
@@ -248,14 +255,14 @@
                     "propertyNames": {
                         "$ref": "#/definitions/ItemIds"
                     },
-					"additionalProperties": {
-                        "type": "object",
+					"additionalProperties": { "type": "object",
                         "properties": {
                             "enchants": { "type": "array",
                                 "items": { "$ref": "#/definitions/Enchants" }
                             },
                             "done": { "type": "boolean" }
                         },
+						"additionalProperties": false,
                         "required": [
                             "enchants",
                             "done"
@@ -274,14 +281,14 @@
                     "propertyNames": {
                         "$ref": "#/definitions/ItemIds"
                     },
-					"additionalProperties": {
-                        "type": "object",
+					"additionalProperties": { "type": "object",
                         "properties": {
                             "reforges": { "type": "array",
                                 "items": { "$ref": "#/definitions/Reforges" }
                             },
                             "done": { "type": "boolean" }
                         },
+						"additionalProperties": false,
                         "required": [
                             "reforges",
                             "done"
@@ -447,5 +454,6 @@
         "SubArea": {
             "type": "string"
         }
-    }
+    },
+	"additionalProperties": false
 }
