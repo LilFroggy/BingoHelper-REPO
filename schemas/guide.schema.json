@@ -36,7 +36,8 @@
                             { "$ref": "#/definitions/StoreStep" },
                             { "$ref": "#/definitions/RetrieveStep" },
                             { "$ref": "#/definitions/ExperienceStep" },
-                            { "$ref": "#/definitions/UpgradeMinionStep" }
+                            { "$ref": "#/definitions/UpgradeMinionStep" },
+							{ "$ref": "#/definitions/MobTypesStep" }
                         ],
                         "required": [
                             "type",
@@ -90,7 +91,7 @@
         },
         "OutlineEntityProperty": {
             "properties": {
-                "entityType": { "type": "string" },
+                "type": { "type": "string" },
                 "position": { "type": "array",
                     "items": { "type": "number" },
                     "minItems": 3,
@@ -98,7 +99,7 @@
                 }
             },
             "required": [
-                "entityType",
+                "type",
                 "position"
             ]
         },
@@ -120,7 +121,8 @@
                 "store",
                 "retrieve",
                 "experience",
-                "upgradeMinion"
+                "upgradeMinion",
+				"mobTypes"
             ]
         },
         "MessageStep": {
@@ -368,6 +370,45 @@
                 "fromLevel",
                 "toLevel"
             ]
+        },
+		"MobTypesStep": {
+            "properties": {
+                "type": { "const": "mobTypes" },
+                "mobTypes": {
+                    "type": "array",
+                    "items": { "$ref": "#/definitions/MobTypes" }
+                }
+            },
+            "required": [
+                "mobTypes"
+            ]
+        },
+		"MobTypes": {
+            "enum": [
+				"airborne",
+				"animal",
+				"aquatic",
+				"arcane",
+				"arthropod",
+				"construct",
+				"cubic",
+				"elusive",
+				"ender",
+				"frozen",
+				"glacial",
+				"humanoid",
+				"infernal",
+				"magmatic",
+				"mythological",
+				"pest",
+				"shielded",
+				"skeletal",
+				"spooky",
+				"subterranean",
+				"undead",
+				"wither",
+				"woodland"
+			]
         },
         "MinionIds": {
             "type": "string"
