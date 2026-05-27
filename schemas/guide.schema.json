@@ -15,7 +15,6 @@
                             "type": { "$ref": "#/definitions/StepTypes" },
                             "instruction": { "type": "string" },
                             "command": { "type": "string" },
-                            "clientCommand": { "type": "string" },
                             "waypoint": { "$ref": "#/definitions/WaypointProperty" },
                             "outlineEntity": { "$ref": "#/definitions/OutlineEntityProperty" },
 							"async": { "$ref": "#/definitions/AsyncProperty" }
