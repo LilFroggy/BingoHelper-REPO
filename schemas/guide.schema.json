@@ -320,6 +320,7 @@
                 "type": { "const": "clickSlot" },
                 "guiName": { "type": "string" },
                 "slotIndex": { "type": "integer" },
+                "skyblockId": { "$ref": "#/definitions/ItemIds" },
                 "has": { "type": "array",
                     "items": { "type": "string" },
                     "minItems": 1
