@@ -17,7 +17,11 @@
                             "command": { "type": "string" },
                             "waypoint": { "$ref": "#/definitions/WaypointProperty" },
                             "outlineEntity": { "$ref": "#/definitions/OutlineEntityProperty" },
-							"async": { "$ref": "#/definitions/AsyncProperty" }
+							"async": { "$ref": "#/definitions/AsyncProperty" },
+                            "ranks": { "type": "array",
+                                "items": { "type": "integer" },
+                                "minItems": 1
+                            }
                         },
                         "oneOf": [
                             { "$ref": "#/definitions/MessageStep" },
@@ -30,7 +34,7 @@
                             { "$ref": "#/definitions/EnchantStep" },
                             { "$ref": "#/definitions/ReforgeStep" },
                             { "$ref": "#/definitions/GuiItemStep" },
-                            { "$ref": "#/definitions/GuiClickSlotStep" },
+                            { "$ref": "#/definitions/ClickSlotStep" },
                             { "$ref": "#/definitions/SkillStep" },
                             { "$ref": "#/definitions/CollectionStep" },
                             { "$ref": "#/definitions/StoreStep" },
@@ -134,7 +138,7 @@
                 "enchant",
                 "reforge",
                 "guiItem",
-                "guiClickSlot",
+                "clickSlot",
                 "skill",
                 "collection",
                 "store",
@@ -311,16 +315,21 @@
                 "guiName"
             ]
         },
-        "GuiClickSlotStep": { "type": "object",
+        "ClickSlotStep": { "type": "object",
             "properties": {
-                "type": { "const": "guiClickSlot" },
+                "type": { "const": "clickSlot" },
                 "guiName": { "type": "string" },
-                "slotIndex": { "type": "integer" }
-            },
-            "required": [
-                "guiName",
-                "slotIndex"
-            ]
+                "slotIndex": { "type": "integer" },
+                "has": { "type": "array",
+                    "items": { "type": "string" },
+                    "minItems": 1
+                },
+                "doesntHave": { "type": "array",
+                    "items": { "type": "string" },
+                    "minItems": 1
+                },
+                "playerInv": { "type": "boolean" }
+            }
         },
         "SkillStep": { "type": "object",
             "properties": {
