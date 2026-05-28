@@ -450,31 +450,7 @@
             ]
         },
 		"MobTypes": {
-            "enum": [
-				"airborne",
-				"animal",
-				"aquatic",
-				"arcane",
-				"arthropod",
-				"construct",
-				"cubic",
-				"elusive",
-				"ender",
-				"frozen",
-				"glacial",
-				"humanoid",
-				"infernal",
-				"magmatic",
-				"mythological",
-				"pest",
-				"shielded",
-				"skeletal",
-				"spooky",
-				"subterranean",
-				"undead",
-				"wither",
-				"woodland"
-			]
+            "type": "string"
         },
         "MinionIds": {
             "type": "string"
