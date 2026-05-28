@@ -16,7 +16,7 @@
                             "instruction": { "type": "string" },
                             "command": { "type": "string" },
                             "waypoint": { "$ref": "#/definitions/WaypointProperty" },
-                            "outlineEntity": { "$ref": "#/definitions/OutlineEntityProperty" },
+                            "outlineEntities": { "$ref": "#/definitions/OutlineEntitiesProperty" },
 							"async": { "$ref": "#/definitions/AsyncProperty" },
                             "ranks": { "type": "array",
                                 "items": { "type": "integer" },
@@ -97,7 +97,7 @@
                 "index"
             ]
         },
-        "OutlineEntityProperty": { "type": "object",
+        "OutlineEntitiesProperty": { "type": "object",
             "$ref": "#/definitions/EntityPredicate"
         },
 		"AsyncProperty": { "type": "object",
