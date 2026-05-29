@@ -1,481 +1,719 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Guide Schema",
-    "description": "The schema that is used to validate guides.",
-    "type": "object",
-    "properties": {
-        "name": { "type": "string" },
-        "version": { "type": "integer" },
-        "data": { "type": "object",
-            "properties": {
-                "stepIndex": { "type": "integer" },
-                "steps": { "type": "array",
-                    "items": { "type": "object",
-                        "properties": {
-                            "type": { "$ref": "#/definitions/StepTypes" },
-                            "instruction": { "type": "string" },
-                            "command": { "type": "string" },
-                            "waypoint": { "$ref": "#/definitions/WaypointProperty" },
-                            "outlineEntities": { "$ref": "#/definitions/OutlineEntitiesProperty" },
-                            "highlightSlots": { "$ref": "#/definitions/HighlightSlotsProperty" },
-                            "bingoRanks": { "type": "array",
-                                "items": { "type": "integer" },
-                                "minItems": 1
-                            },
-							"async": { "$ref": "#/definitions/AsyncProperty" }
-                        },
-                        "oneOf": [
-                            { "$ref": "#/definitions/MessageStep" },
-                            { "$ref": "#/definitions/CakeStep" },
-                            { "$ref": "#/definitions/SellStep" },
-                            { "$ref": "#/definitions/BuyStep" },
-                            { "$ref": "#/definitions/HasStep" },
-                            { "$ref": "#/definitions/AreaStep" },
-                            { "$ref": "#/definitions/SubAreaStep" },
-                            { "$ref": "#/definitions/EnchantStep" },
-                            { "$ref": "#/definitions/ReforgeStep" },
-                            { "$ref": "#/definitions/GuiItemStep" },
-                            { "$ref": "#/definitions/ClickSlotStep" },
-                            { "$ref": "#/definitions/SkillStep" },
-                            { "$ref": "#/definitions/CollectionStep" },
-                            { "$ref": "#/definitions/StoreStep" },
-                            { "$ref": "#/definitions/RetrieveStep" },
-                            { "$ref": "#/definitions/ExperienceStep" },
-                            { "$ref": "#/definitions/UpgradeMinionStep" },
-							{ "$ref": "#/definitions/MobTypesStep" }
-                        ],
-                        "required": [
-                            "type",
-                            "instruction"
-                        ]
-                    },
+	"$schema": "http://json-schema.org/draft/2019-09/schema#",
+	"title": "Guide Schema",
+	"description": "The schema that is used to validate guides.",
+	"type": "object",
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"version": {
+			"type": "integer"
+		},
+		"data": {
+			"type": "object",
+			"properties": {
+				"stepIndex": {
+					"type": "integer"
+				},
+				"steps": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Step",
+						"oneOf": [
+							{
+								"$ref": "#/definitions/MessageStep"
+							},
+							{
+								"$ref": "#/definitions/CakeStep"
+							},
+							{
+								"$ref": "#/definitions/SellStep"
+							},
+							{
+								"$ref": "#/definitions/BuyStep"
+							},
+							{
+								"$ref": "#/definitions/HasStep"
+							},
+							{
+								"$ref": "#/definitions/AreaStep"
+							},
+							{
+								"$ref": "#/definitions/SubAreaStep"
+							},
+							{
+								"$ref": "#/definitions/EnchantStep"
+							},
+							{
+								"$ref": "#/definitions/ReforgeStep"
+							},
+							{
+								"$ref": "#/definitions/GuiItemStep"
+							},
+							{
+								"$ref": "#/definitions/ClickSlotStep"
+							},
+							{
+								"$ref": "#/definitions/SkillStep"
+							},
+							{
+								"$ref": "#/definitions/CollectionStep"
+							},
+							{
+								"$ref": "#/definitions/StoreStep"
+							},
+							{
+								"$ref": "#/definitions/RetrieveStep"
+							},
+							{
+								"$ref": "#/definitions/ExperienceStep"
+							},
+							{
+								"$ref": "#/definitions/UpgradeMinionStep"
+							},
+							{
+								"$ref": "#/definitions/MobTypesStep"
+							}
+						],
+						"required": [
+							"type",
+							"instruction"
+						],
+						"unevaluatedProperties": false
+					},
 					"additionalProperties": false
-                }
-            },
-            "required": [
-                "stepIndex",
-                "steps"
-            ]
-        },
+				}
+			},
+			"required": [
+				"stepIndex",
+				"steps"
+			]
+		},
 		"additionalProperties": false
-    },
-    "required": [
-        "name",
-        "version",
-        "data"
-    ],
-    "definitions": {
-        "WaypointProperty": { "type": "object",
-            "properties": {
-                "type": { "const": "list" },
-                "beam": { "type": "boolean" },
-                "list": { "type": "array",
-                    "items": { "type": "object",
-                        "properties": {
-                            "text": { "type": "string" },
-                            "position": { "type": "array",
-                                "items": { "type": "number" },
-                                "minItems": 3,
-                                "maxItems": 3
-                            },
-                            "radius": { "type": "integer" }
-                        },
+	},
+	"required": [
+		"name",
+		"version",
+		"data"
+	],
+	"definitions": {
+		"StepTypes": {
+			"enum": [
+				"message",
+				"cake",
+				"sell",
+				"buy",
+				"has",
+				"area",
+				"subArea",
+				"enchant",
+				"reforge",
+				"guiItem",
+				"clickSlot",
+				"skill",
+				"collection",
+				"store",
+				"retrieve",
+				"experience",
+				"upgradeMinion",
+				"mobTypes"
+			]
+		},
+		"Step": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"$ref": "#/definitions/StepTypes"
+				},
+				"instruction": {
+					"type": "string"
+				},
+				"command": {
+					"type": "string"
+				},
+				"waypoint": {
+					"$ref": "#/definitions/WaypointProperty"
+				},
+				"outlineEntities": {
+					"$ref": "#/definitions/OutlineEntitiesProperty"
+				},
+				"highlightSlots": {
+					"$ref": "#/definitions/HighlightSlotsProperty"
+				},
+				"bingoRanks": {
+					"type": "array",
+					"items": {
+						"type": "integer"
+					},
+					"minItems": 1
+				},
+				"async": {
+					"$ref": "#/definitions/AsyncProperty"
+				}
+			}
+		},
+		"WaypointProperty": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"const": "list"
+				},
+				"beam": {
+					"type": "boolean"
+				},
+				"list": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"text": {
+								"type": "string"
+							},
+							"position": {
+								"type": "array",
+								"items": {
+									"type": "number"
+								},
+								"minItems": 3,
+								"maxItems": 3
+							},
+							"radius": {
+								"type": "integer"
+							}
+						},
 						"additionalProperties": false,
-                        "required": [
-                            "text",
-                            "position",
-                            "radius"
-                        ]
-                    }
-                },
-                "index": { "type": "integer" }
-            },
+						"required": [
+							"text",
+							"position",
+							"radius"
+						]
+					}
+				},
+				"index": {
+					"type": "integer"
+				}
+			},
 			"additionalProperties": false,
-            "required": [
-                "type",
-                "beam",
-                "list",
-                "index"
-            ]
-        },
-        "OutlineEntitiesProperty": { "type": "array",
-            "items": {
-                "$ref": "#/definitions/EntityPredicate"
-            },
-            "minItems": 1
-        },
-        "HighlightSlotsProperty": { "type": "array",
-            "items": {
-                "$ref": "#/definitions/SlotPredicate"
-            },
-            "minItems": 1
-        },
-		"AsyncProperty": { "type": "object",
-            "properties": {
-                "effectiveIndex": { "type": "integer" },
-				"requirements": { "type": "object",
+			"required": [
+				"type",
+				"beam",
+				"list",
+				"index"
+			]
+		},
+		"OutlineEntitiesProperty": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/EntityPredicate"
+			},
+			"minItems": 1
+		},
+		"HighlightSlotsProperty": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/SlotPredicate"
+			},
+			"minItems": 1
+		},
+		"AsyncProperty": {
+			"type": "object",
+			"properties": {
+				"effectiveIndex": {
+					"type": "integer"
+				},
+				"requirements": {
+					"type": "object",
 					"properties": {
-						"entity": { "$ref": "#/definitions/EntityPredicate" }
+						"entity": {
+							"$ref": "#/definitions/EntityPredicate"
+						}
 					},
 					"additionalProperties": false,
 					"minProperties": 1
 				}
-            },
+			},
 			"additionalProperties": false
-        },
-		"EntityPredicate": { "type": "object",
+		},
+		"EntityPredicate": {
+			"type": "object",
 			"properties": {
-                "type": { "type": "string" },
-                "position": { "type": "array",
-                    "items": { "type": "number" },
-                    "minItems": 3,
-                    "maxItems": 3
-                },
-				"skin": { "type": "string" }
-            },
+				"type": {
+					"type": "string"
+				},
+				"position": {
+					"type": "array",
+					"items": {
+						"type": "number"
+					},
+					"minItems": 3,
+					"maxItems": 3
+				},
+				"skin": {
+					"type": "string"
+				}
+			},
 			"additionalProperties": false,
 			"minProperties": 1
 		},
-        "SlotPredicate": { "type": "object",
+		"SlotPredicate": {
+			"type": "object",
 			"properties": {
-                "guiName": { "type": "string" },
-                "slotIndex": { "type": "integer" },
-                "skyblockId": { "$ref": "#/definitions/ItemIds" },
-                "has": { "type": "array",
-                    "items": { "type": "string" },
-                    "minItems": 1
-                },
-                "doesntHave": { "type": "array",
-                    "items": { "type": "string" },
-                    "minItems": 1
-                },
-                "playerInv": { "type": "boolean" },
-                "highlightColor": { "type": "string",
-                    "format": "color",
-                    "pattern": "^#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?$"
-                }
-            },
+				"guiName": {
+					"type": "string"
+				},
+				"slotIndex": {
+					"type": "integer"
+				},
+				"skyblockId": {
+					"$ref": "#/definitions/ItemIds"
+				},
+				"has": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 1
+				},
+				"doesntHave": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 1
+				},
+				"playerInv": {
+					"type": "boolean"
+				},
+				"highlightColor": {
+					"type": "string",
+					"format": "color",
+					"pattern": "^#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?$"
+				}
+			},
 			"additionalProperties": false,
 			"minProperties": 1
 		},
-        "StepTypes": {
-            "enum": [
-                "message",
-                "cake",
-                "sell",
-                "buy",
-                "has",
-                "area",
-                "subArea",
-                "enchant",
-                "reforge",
-                "guiItem",
-                "clickSlot",
-                "skill",
-                "collection",
-                "store",
-                "retrieve",
-                "experience",
-                "upgradeMinion",
+		"MessageStep": {
+			"properties": {
+				"type": {
+					"const": "message"
+				},
+				"criteria": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"criteria"
+			]
+		},
+		"CakeStep": {
+			"properties": {
+				"type": {
+					"const": "cake"
+				},
+				"eaten": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			},
+			"required": [
+				"eaten"
+			]
+		},
+		"SellStep": {
+			"properties": {
+				"type": {
+					"const": "sell"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ItemIds"
+					}
+				}
+			},
+			"required": [
+				"items"
+			]
+		},
+		"BuyStep": {
+			"properties": {
+				"type": {
+					"const": "buy"
+				},
+				"items": {
+					"type": "object",
+					"propertyNames": {
+						"$ref": "#/definitions/ItemIds"
+					},
+					"additionalProperties": {
+						"type": "object",
+						"properties": {
+							"count": {
+								"type": "integer"
+							},
+							"target": {
+								"type": "integer"
+							},
+							"done": {
+								"type": "boolean"
+							}
+						},
+						"required": [
+							"count",
+							"target",
+							"done"
+						]
+					}
+				}
+			},
+			"required": [
+				"items"
+			]
+		},
+		"HasStep": {
+			"properties": {
+				"type": {
+					"const": "has"
+				},
+				"items": {
+					"type": "object",
+					"propertyNames": {
+						"$ref": "#/definitions/ItemIds"
+					},
+					"additionalProperties": {
+						"type": "object",
+						"properties": {
+							"count": {
+								"type": "integer"
+							},
+							"target": {
+								"type": "integer"
+							},
+							"done": {
+								"type": "boolean"
+							}
+						},
+						"required": [
+							"count",
+							"target",
+							"done"
+						]
+					}
+				}
+			},
+			"required": [
+				"items"
+			]
+		},
+		"AreaStep": {
+			"properties": {
+				"type": {
+					"const": "area"
+				},
+				"area": {
+					"$ref": "#/definitions/Area"
+				}
+			},
+			"required": [
+				"area"
+			]
+		},
+		"SubAreaStep": {
+			"properties": {
+				"type": {
+					"const": "subArea"
+				},
+				"subArea": {
+					"$ref": "#/definitions/SubArea"
+				}
+			},
+			"required": [
+				"subArea"
+			]
+		},
+		"EnchantStep": {
+			"properties": {
+				"type": {
+					"const": "enchant"
+				},
+				"items": {
+					"type": "object",
+					"propertyNames": {
+						"$ref": "#/definitions/ItemIds"
+					},
+					"additionalProperties": {
+						"type": "object",
+						"properties": {
+							"enchants": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/Enchants"
+								}
+							},
+							"done": {
+								"type": "boolean"
+							}
+						},
+						"additionalProperties": false,
+						"required": [
+							"enchants",
+							"done"
+						]
+					}
+				}
+			},
+			"required": [
+				"items"
+			]
+		},
+		"ReforgeStep": {
+			"properties": {
+				"type": {
+					"const": "reforge"
+				},
+				"items": {
+					"type": "object",
+					"propertyNames": {
+						"$ref": "#/definitions/ItemIds"
+					},
+					"additionalProperties": {
+						"type": "object",
+						"properties": {
+							"reforges": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/Reforges"
+								}
+							},
+							"done": {
+								"type": "boolean"
+							}
+						},
+						"additionalProperties": false,
+						"required": [
+							"reforges",
+							"done"
+						]
+					}
+				}
+			},
+			"required": [
+				"items"
+			]
+		},
+		"GuiItemStep": {
+			"properties": {
+				"type": {
+					"const": "guiItem"
+				},
+				"guiName": {
+					"type": "string"
+				},
+				"slotIndex": {
+					"type": "integer"
+				},
+				"skyblockId": {
+					"$ref": "#/definitions/ItemIds"
+				},
+				"has": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 1
+				},
+				"doesntHave": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 1
+				},
+				"playerInv": {
+					"type": "boolean"
+				}
+			}
+		},
+		"ClickSlotStep": {
+			"properties": {
+				"type": {
+					"const": "clickSlot"
+				},
+				"guiName": {
+					"type": "string"
+				},
+				"slotIndex": {
+					"type": "integer"
+				},
+				"skyblockId": {
+					"$ref": "#/definitions/ItemIds"
+				},
+				"has": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 1
+				},
+				"doesntHave": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 1
+				},
+				"playerInv": {
+					"type": "boolean"
+				}
+			}
+		},
+		"SkillStep": {
+			"properties": {
+				"type": {
+					"const": "skill"
+				},
+				"skill": {
+					"$ref": "#/definitions/Skills"
+				},
+				"level": {
+					"type": "number"
+				}
+			},
+			"required": [
+				"skill",
+				"level"
+			]
+		},
+		"CollectionStep": {
+			"properties": {
+				"type": {
+					"const": "collection"
+				},
+				"collection": {
+					"$ref": "#/definitions/Collections"
+				},
+				"level": {
+					"type": "integer"
+				}
+			},
+			"required": [
+				"collection",
+				"level"
+			]
+		},
+		"StoreStep": {
+			"properties": {
+				"type": {
+					"const": "store"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ItemIds"
+					}
+				}
+			},
+			"required": [
+				"items"
+			]
+		},
+		"RetrieveStep": {
+			"properties": {
+				"type": {
+					"const": "retrieve"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ItemIds"
+					}
+				}
+			},
+			"required": [
+				"items"
+			]
+		},
+		"ExperienceStep": {
+			"properties": {
+				"type": {
+					"const": "experience"
+				},
+				"level": {
+					"type": "integer"
+				}
+			},
+			"required": [
+				"level"
+			]
+		},
+		"UpgradeMinionStep": {
+			"properties": {
+				"type": {
+					"const": "upgradeMinion"
+				},
+				"minionId": {
+					"$ref": "#/definitions/MinionIds"
+				},
+				"fromLevel": {
+					"type": "integer"
+				},
+				"toLevel": {
+					"type": "integer"
+				}
+			},
+			"required": [
+				"minionId",
+				"fromLevel",
+				"toLevel"
+			]
+		},
+		"MobTypesStep": {
+			"properties": {
+				"type": {
+					"const": "mobTypes"
+				},
+				"mobTypes": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/MobTypes"
+					}
+				}
+			},
+			"required": [
 				"mobTypes"
-            ]
-        },
-        "MessageStep": { "type": "object",
-            "properties": {
-                "type": { "const": "message" },
-                "criteria": { "type": "string" }
-            },
-            "required": [
-                "criteria"
-            ]
-        },
-        "CakeStep": { "type": "object",
-            "properties": {
-                "type": { "const": "cake" },
-                "eaten": {
-                    "type": "array",
-                    "items": { "type": "string" }
-                }
-            },
-            "required": [
-                "eaten"
-            ]
-        },
-        "SellStep": { "type": "object",
-            "properties": {
-                "type": { "const": "sell" },
-                "items": {
-                    "type": "array",
-                    "items": { "$ref": "#/definitions/ItemIds" }
-                }
-            },
-            "required": [
-                "items"
-            ]
-        },
-        "BuyStep": { "type": "object",
-            "properties": {
-                "type": { "const": "buy" },
-                "items": { "type": "object",
-                    "propertyNames": {
-                        "$ref": "#/definitions/ItemIds"
-                    },
-					"additionalProperties": {
-                        "type": "object",
-                        "properties": {
-                            "count": { "type": "integer" },
-                            "target": { "type": "integer" },
-                            "done": { "type": "boolean" }
-                        },
-                        "required": [
-                            "count",
-                            "target",
-                            "done"
-                        ]
-                    }
-                }
-            },
-            "required": [
-                "items"
-            ]
-        },
-        "HasStep": { "type": "object",
-            "properties": {
-                "type": { "const": "has" },
-                "items": { "type": "object",
-                "propertyNames": {
-                        "$ref": "#/definitions/ItemIds"
-                    },
-					"additionalProperties": {
-                        "type": "object",
-                        "properties": {
-                            "count": { "type": "integer" },
-                            "target": { "type": "integer" },
-                            "done": { "type": "boolean" }
-                        },
-                        "required": [
-                            "count",
-                            "target",
-                            "done"
-                        ]
-                    }
-                }
-            },
-            "required": [
-                "items"
-            ]
-        },
-        "AreaStep": { "type": "object",
-            "properties": {
-                "type": { "const": "area" },
-                "area": { "$ref": "#/definitions/Area" }
-            },
-            "required": [
-                "area"
-            ]
-        },
-        "SubAreaStep": { "type": "object",
-            "properties": {
-                "type": { "const": "subArea" },
-                "subArea": { "$ref": "#/definitions/SubArea" }
-            },
-            "required": [
-                "subArea"
-            ]
-        },
-        "EnchantStep": { "type": "object",
-            "properties": {
-                "type": { "const": "enchant" },
-                "items": { "type": "object",
-                    "propertyNames": {
-                        "$ref": "#/definitions/ItemIds"
-                    },
-					"additionalProperties": { "type": "object",
-                        "properties": {
-                            "enchants": { "type": "array",
-                                "items": { "$ref": "#/definitions/Enchants" }
-                            },
-                            "done": { "type": "boolean" }
-                        },
-						"additionalProperties": false,
-                        "required": [
-                            "enchants",
-                            "done"
-                        ]
-                    }
-                }
-            },
-            "required": [
-                "items"
-            ]
-        },
-        "ReforgeStep": { "type": "object",
-            "properties": {
-                "type": { "const": "reforge" },
-                "items": { "type": "object",
-                    "propertyNames": {
-                        "$ref": "#/definitions/ItemIds"
-                    },
-					"additionalProperties": { "type": "object",
-                        "properties": {
-                            "reforges": { "type": "array",
-                                "items": { "$ref": "#/definitions/Reforges" }
-                            },
-                            "done": { "type": "boolean" }
-                        },
-						"additionalProperties": false,
-                        "required": [
-                            "reforges",
-                            "done"
-                        ]
-                    }
-                }
-            },
-            "required": [
-                "items"
-            ]
-        },
-        "GuiItemStep": {
-            "properties": {
-                "type": { "const": "guiItem" },
-                "guiName": { "type": "string" },
-                "slotIndex": { "type": "integer" },
-                "skyblockId": { "$ref": "#/definitions/ItemIds" },
-                "has": { "type": "array",
-                    "items": { "type": "string" },
-                    "minItems": 1
-                },
-                "doesntHave": { "type": "array",
-                    "items": { "type": "string" },
-                    "minItems": 1
-                },
-                "playerInv": { "type": "boolean" }
-            }
-        },
-        "ClickSlotStep": { "type": "object",
-            "properties": {
-                "type": { "const": "clickSlot" },
-                "guiName": { "type": "string" },
-                "slotIndex": { "type": "integer" },
-                "skyblockId": { "$ref": "#/definitions/ItemIds" },
-                "has": { "type": "array",
-                    "items": { "type": "string" },
-                    "minItems": 1
-                },
-                "doesntHave": { "type": "array",
-                    "items": { "type": "string" },
-                    "minItems": 1
-                },
-                "playerInv": { "type": "boolean" }
-            }
-        },
-        "SkillStep": { "type": "object",
-            "properties": {
-                "type": { "const": "skill" },
-                "skill": { "$ref": "#/definitions/Skills" },
-                "level": { "type": "number" }
-            },
-            "required": [
-                "skill",
-                "level"
-            ]
-        },
-        "CollectionStep": { "type": "object",
-            "properties": {
-                "type": { "const": "collection" },
-                "collection": { "$ref": "#/definitions/Collections" },
-                "level": { "type": "integer" }
-            },
-            "required": [
-                "collection",
-                "level"
-            ]
-        },
-        "StoreStep": { "type": "object",
-            "properties": {
-                "type": { "const": "store" },
-                "items": {
-                    "type": "array",
-                    "items": { "$ref": "#/definitions/ItemIds" }
-                }
-            },
-            "required": [
-                "items"
-            ]
-        },
-        "RetrieveStep": { "type": "object",
-            "properties": {
-                "type": { "const": "retrieve" },
-                "items": {
-                    "type": "array",
-                    "items": { "$ref": "#/definitions/ItemIds" }
-                }
-            },
-            "required": [
-                "items"
-            ]
-        },
-        "ExperienceStep": { "type": "object",
-            "properties": {
-                "type": { "const": "experience" },
-                "level": { "type": "integer" }
-            },
-            "required": [
-                "level"
-            ]
-        },
-        "UpgradeMinionStep": { "type": "object",
-            "properties": {
-                "type": { "const": "upgradeMinion" },
-                "minionId": { "$ref": "#/definitions/MinionIds" },
-                "fromLevel": { "type": "integer" },
-                "toLevel": { "type": "integer" }
-            },
-            "required": [
-                "minionId",
-                "fromLevel",
-                "toLevel"
-            ]
-        },
-		"MobTypesStep": { "type": "object",
-            "properties": {
-                "type": { "const": "mobTypes" },
-                "mobTypes": {
-                    "type": "array",
-                    "items": { "$ref": "#/definitions/MobTypes" }
-                }
-            },
-            "required": [
-                "mobTypes"
-            ]
-        },
+			]
+		},
 		"MobTypes": {
-            "type": "string"
-        },
-        "MinionIds": {
-            "type": "string"
-        },
-        "ItemIds": {
-            "type": "string"
-        },
-        "Skills": {
-            "type": "string"
-        },
-        "Collections": {
-            "type": "string"
-        },
-        "Enchants": {
-            "type": "string"
-        },
-        "Reforges": {
-            "type": "string"
-        },
-        "Area": {
-            "type": "string"
-        },
-        "SubArea": {
-            "type": "string"
-        }
-    },
+			"type": "string"
+		},
+		"MinionIds": {
+			"type": "string"
+		},
+		"ItemIds": {
+			"type": "string"
+		},
+		"Skills": {
+			"type": "string"
+		},
+		"Collections": {
+			"type": "string"
+		},
+		"Enchants": {
+			"type": "string"
+		},
+		"Reforges": {
+			"type": "string"
+		},
+		"Area": {
+			"type": "string"
+		},
+		"SubArea": {
+			"type": "string"
+		}
+	},
 	"additionalProperties": false
 }
