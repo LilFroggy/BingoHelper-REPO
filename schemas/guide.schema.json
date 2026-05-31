@@ -132,6 +132,9 @@
 				"command": {
 					"type": "string"
 				},
+				"navTo": {
+					"type": "string"
+				},
 				"waypoint": {
 					"$ref": "#/definitions/WaypointProperty"
 				},
@@ -238,6 +241,13 @@
 		"EntityPredicate": {
 			"type": "object",
 			"properties": {
+				"line": {
+					"enum": [
+						"NONE",
+						"NEAREST",
+						"ALL"
+					]
+				},
 				"type": {
 					"type": "string"
 				},
