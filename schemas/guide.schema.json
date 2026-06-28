@@ -74,6 +74,9 @@
 							},
 							{
 								"$ref": "#/definitions/MobTypesStep"
+							},
+                            {
+								"$ref": "#/definitions/SupercraftStep"
 							}
 						],
 						"required": [
@@ -117,7 +120,8 @@
 				"retrieve",
 				"experience",
 				"upgradeMinion",
-				"mobTypes"
+				"mobTypes",
+                "supercraft"
 			]
 		},
 		"Step": {
@@ -342,7 +346,8 @@
 					"type": "array",
 					"items": {
 						"$ref": "#/definitions/ItemIds"
-					}
+					},
+                    "minItems": 1
 				}
 			},
 			"required": [
@@ -360,24 +365,9 @@
 						"$ref": "#/definitions/ItemIds"
 					},
 					"additionalProperties": {
-						"type": "object",
-						"properties": {
-							"count": {
-								"type": "integer"
-							},
-							"target": {
-								"type": "integer"
-							},
-							"done": {
-								"type": "boolean"
-							}
-						},
-						"required": [
-							"count",
-							"target",
-							"done"
-						]
-					}
+						"type": "integer"
+                    },
+                    "minProperties": 1
 				}
 			},
 			"required": [
@@ -395,24 +385,9 @@
 						"$ref": "#/definitions/ItemIds"
 					},
 					"additionalProperties": {
-						"type": "object",
-						"properties": {
-							"count": {
-								"type": "integer"
-							},
-							"target": {
-								"type": "integer"
-							},
-							"done": {
-								"type": "boolean"
-							}
-						},
-						"required": [
-							"count",
-							"target",
-							"done"
-						]
-					}
+						"type": "integer"
+					},
+                    "minProperties": 1
 				}
 			},
 			"required": [
@@ -456,24 +431,13 @@
 						"$ref": "#/definitions/ItemIds"
 					},
 					"additionalProperties": {
-						"type": "object",
-						"properties": {
-							"enchants": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/Enchants"
-								}
-							},
-							"done": {
-								"type": "boolean"
-							}
-						},
-						"additionalProperties": false,
-						"required": [
-							"enchants",
-							"done"
-						]
-					}
+						"type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Enchants"
+                        },
+                        "minItems": 1
+					},
+                    "minProperties": 1
 				}
 			},
 			"required": [
@@ -491,24 +455,13 @@
 						"$ref": "#/definitions/ItemIds"
 					},
 					"additionalProperties": {
-						"type": "object",
-						"properties": {
-							"reforges": {
-								"type": "array",
-								"items": {
-									"$ref": "#/definitions/Reforges"
-								}
-							},
-							"done": {
-								"type": "boolean"
-							}
-						},
-						"additionalProperties": false,
-						"required": [
-							"reforges",
-							"done"
-						]
-					}
+						"type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Reforges"
+                        },
+                        "minItems": 1
+					},
+                    "minProperties": 1
 				}
 			},
 			"required": [
@@ -624,7 +577,8 @@
 					"type": "array",
 					"items": {
 						"$ref": "#/definitions/ItemIds"
-					}
+					},
+                    "minItems": 1
 				}
 			},
 			"required": [
@@ -640,7 +594,8 @@
 					"type": "array",
 					"items": {
 						"$ref": "#/definitions/ItemIds"
-					}
+					},
+                    "minItems": 1
 				}
 			},
 			"required": [
@@ -690,11 +645,32 @@
 					"type": "array",
 					"items": {
 						"$ref": "#/definitions/MobTypes"
-					}
+					},
+                    "minItems": 1
 				}
 			},
 			"required": [
 				"mobTypes"
+			]
+		},
+        "SupercraftStep": {
+			"properties": {
+				"type": {
+					"const": "supercraft"
+				},
+				"items": {
+					"type": "object",
+					"propertyNames": {
+						"$ref": "#/definitions/ItemIds"
+					},
+					"additionalProperties": {
+						"type": "integer"
+					},
+                    "minProperties": 1
+				}
+			},
+			"required": [
+				"items"
 			]
 		},
 		"MobTypes": {
