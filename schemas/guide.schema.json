@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft/2019-09/schema#",
 	"title": "Guide Schema",
-	"description": "The schema that is used to validate guides.",
+	"description": "The schema used to validate guides.",
 	"type": "object",
 	"properties": {
 		"name": {
