@@ -325,17 +325,8 @@
 			"properties": {
 				"type": {
 					"const": "cake"
-				},
-				"eaten": {
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
 				}
-			},
-			"required": [
-				"eaten"
-			]
+			}
 		},
 		"SellStep": {
 			"properties": {
