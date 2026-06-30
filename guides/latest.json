@@ -1,9 +1,24 @@
 {
     "name": "July 2026",
-    "version": 1,
+    "version": 2,
     "data": {
         "stepIndex": 0,
         "steps": [
+            {
+                "type": "message",
+                "instruction": "/visit %visitIsland%",
+                "criteria": "Sending a visit request...",
+                "command": "/visit %visitIsland%",
+                "highlightSlots": [
+                    {
+                        "guiName": "Visit",
+                        "has": [
+                            "Visit player island"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ]
+            },
             {
                 "type": "store",
                 "instruction": "Store Personal Deletor",
@@ -29,21 +44,6 @@
                 ],
                 "bingoRanks": [
                     4
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "/visit %visitIsland%",
-                "criteria": "Sending a visit request...",
-                "command": "/visit %visitIsland%",
-                "highlightSlots": [
-                    {
-                        "guiName": "Visit",
-                        "has": [
-                            "Visit player island"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
                 ]
             },
             {
