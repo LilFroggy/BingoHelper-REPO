@@ -1,0 +1,295 @@
+{
+    "name": "Security Quest",
+    "version": 1,
+    "data": {
+        "stepIndex": 0,
+        "steps": [
+            {
+                "type": "message",
+                "instruction": "Talk to Susan",
+                "criteria": "[NPC] Susan: Hey, are you here to volunteer for the Safety Squad?",
+                "navTo": "Susan",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -1.5,
+                            79.0,
+                            25.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Absolutely!]&r in chat",
+                "criteria": "[NPC] Susan: Good heavens, that's great news!"
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Sounds good with me!]&r in chat",
+                "criteria": "[NPC] Susan: Processing your registration..."
+            },
+            {
+                "type": "message",
+                "instruction": "Enter Security Hall",
+                "criteria": "Warped to Security Hall!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "",
+                            "position": [
+                                -11.0,
+                                79.00750001192094,
+                                25.0
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Brigette",
+                "criteria": "[NPC] Brigette: Hey, recruit!",
+                "navTo": "Brigette",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -17.5,
+                            46.0,
+                            -118.6
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Who, me?]&r in chat",
+                "criteria": "[NPC] Brigette: Yes, you!"
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[What is a safety-related incident anyway?]&r in chat",
+                "criteria": "[NPC] Brigette: I'm glad you asked."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[What's the point of Account Safety?]&r in chat",
+                "criteria": "[NPC] Brigette: Imagine logging in to SkyBlock and finding that all your belongings have disappeared."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &9[I don't want to lose my account!]&r in chat",
+                "criteria": "[NPC] Brigette: And that's why you should pay close attention to today's briefing."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &c[That doesn't sound good.]&r in chat",
+                "criteria": "[NPC] Brigette: Of course it doesn't."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &c[Stranger danger, understood.]&r in chat",
+                "criteria": "[NPC] Brigette: If someone approaches you, they very likely want something from you."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &c[I'm not stupid enough to open a random link!]&r in chat",
+                "criteria": "[NPC] Brigette: I'm sure you're not!"
+            },
+            {
+                "type": "message",
+                "instruction": "Click &c[C'mon, I'm sure it's not &othaaat&r&c complicated.]&r in chat",
+                "criteria": "[NPC] Brigette: A way hackers can gain your trust is by messaging you from an account they've already hacked."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &d[Brigette, you're quite scary.]&r in chat",
+                "criteria": "[NPC] Brigette: Scary I am indeed."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[The /report command. Noted.]&r in chat",
+                "criteria": "[NPC] Brigette: The dangers of clicking unverified links is not limited to within SkyBlock."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &b[Links for SkyBlock outside SkyBlock? Like what?]&r in chat",
+                "criteria": "[NPC] Brigette: For example, you may be trying to download a mod for SkyBlock."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &b[I will be careful when clicking on links, I promise!]&r in chat",
+                "criteria": "[NPC] Brigette: That's the spirit!"
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[I'm good, thanks.]&r in chat",
+                "criteria": "[NPC] Brigette: Sorry"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Jimmy",
+                "criteria": "[NPC] Jimmy: Hi, the name's Jimmy.",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -17.0,
+                            45.0,
+                            -97.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Hello, Jimmy.]&r in chat",
+                "criteria": "[NPC] Jimmy: This place looks awesome. I'm all about security."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Security is indeed very important.]&r in chat",
+                "criteria": "[NPC] Jimmy: I got these really cool gauntlets. It lets me fight against baddies."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Cool.]&r in chat",
+                "criteria": "[NPC] Jimmy: You don't look quite ready for a security job. Where's your gear, bro?"
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Deal.]&r in chat",
+                "criteria": "[NPC] Jimmy: Great, we're now besties!"
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[I volunteered to be part of the Safety Squad.]&r in chat",
+                "criteria": "[NPC] Jimmy: That's cool. I got here because I got into a scuffle with the Security Sloth."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &c[Wait, what?]&r in chat",
+                "criteria": "[NPC] Brigette: STOP RIGHT THERE!"
+            },
+            {
+                "type": "message",
+                "instruction": "Click &c[What just happened?]&r in chat",
+                "criteria": "[NPC] Brigette: Jimmy is currently wanted for twelve counts of scamming and five more counts of assault."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[Yeah.]&r in chat",
+                "criteria": "[NPC] Brigette: Lucky for you, he couldn't pull off his scam within the Security Hall."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &a[How does this scam work?]&r in chat",
+                "criteria": "[NPC] Brigette: Jimmy would show you his \"very cool gauntlets\" in the trading menu."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &c[Yikes.]&r in chat",
+                "criteria": "[NPC] Brigette: There are many other forms of these scams"
+            },
+            {
+                "type": "message",
+                "instruction": "Click any of the following in chat:\n&e@ &aIt can lead you to lose a lot of items and money.&r\n&e@ &aIt can lead you to lose access to your Minecraft account.&r\n&e@ &aIt can lead you to lose your Hypixel SkyBlock profile.&r",
+                "criteria": "[NPC] Brigette: Correct! In fact, all of the listed statements are true - losing your account can mean lost items, money, profiles, or even your whole Microsoft account."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &e@ &aLeave the party and report the player.&r in chat",
+                "criteria": "[NPC] Brigette: YOU GOT IT! You can report the player with the /report command, followed by the player's username."
+            },
+            {
+                "type": "message",
+                "instruction": "Click &e@ &aLook for signs of your friend getting hacked, and don't click on that website any further.&r in chat",
+                "criteria": "[NPC] Brigette: That's right! You can try to reach out to your friend through other methods of contact to verify if it's really them. Even so, you should try and verify that the link is from a reputable website - google the domain name to make sure you're landing at the right website."
+            },
+            {
+                "type": "message",
+                "instruction": "Claim Membership Card",
+                "criteria": "Talk to the Security Clerk",
+                "highlightSlots": [
+                    {
+                        "guiName": "Membership Card",
+                        "has": [
+                            "Leave it blank"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Security Clerk",
+                "criteria": "[NPC] Security Clerk: Your Safety Badge is ready! Your information has been digitally registered.",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3MzA3NzQxMDc2MSwKICAicHJvZmlsZUlkIiA6ICI2YTlkNTAzZWI5NTU0MDZlYTFmZjg0OTI0NTZhMDljOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHZW5lcmFsUERHIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIyMzNjNmEwZDBiMDU3Zjk3NTJjZTNhZGViMjI2OWFkYzM2ODZmMzMzMmIwYzU0NmVkN2U4MDk3MGRjYmM5MGIiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ\u003d\u003d"
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Claim Safety Badge",
+                "guiName": "Claim Safety Badge",
+                "skyblockId": "SAFETY_BADGE"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Elizabeth",
+                "criteria": "[NPC] Elizabeth: Hey",
+                "navTo": "Elizabeth",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -6.25,
+                            79.0,
+                            19.25
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Click &6[It was quite a hectic day.]&r in chat",
+                "criteria": "You tell Elizabeth about what happened today."
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Claim Booster Cookie",
+                "guiName": "Claim Booster Cookie",
+                "has": [
+                    "Safety Squad Booster Cookie"
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Eat Booster Cookie",
+                "criteria": "You consumed a Booster Cookie! Yummy!",
+                "highlightSlots": [
+                    {
+                        "skyblockId": "BOOSTER_COOKIE",
+                        "playerInv": true,
+                        "highlightColor": "#FFAA00"
+                    }
+                ]
+            }
+        ]
+    }
+}
