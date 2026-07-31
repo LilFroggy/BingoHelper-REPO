@@ -9,6 +9,11 @@
             "highlightColor": "#FFAA00"
         }
     ],
+    "async": {
+        "requirements": {
+            "skyblockLevel": 10
+        }
+    },
     "prerequisites": [
         {
             "type": "message",
