@@ -55,6 +55,11 @@
 },
 {
     "type": "message",
+    "instruction": "Collect Oak Logs",
+    "criteria": "Select an option: [Sure] [Nah, I'm good]"
+},
+{
+    "type": "message",
     "instruction": "Click &a[Sure]&r in chat",
     "criteria": "[NPC] Lumber Jack: Cheers! Let me tell ya a little about what we're going to be doing."
 },
@@ -88,6 +93,12 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "LEAVES",
+        "LEAVES:1",
+        "LEAVES:2",
+        "LEAVES:3",
+        "LEAVES_2",
+        "LEAVES_2:1",
         "ENCHANTED_OAK_LOG",
         "LOG",
         "PROMISING_AXE"
@@ -186,6 +197,12 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "LEAVES",
+        "LEAVES:1",
+        "LEAVES:2",
+        "LEAVES:3",
+        "LEAVES_2",
+        "LEAVES_2:1",
         "ENCHANTED_OAK_LOG",
         "ENCHANTED_BIRCH_LOG",
         "LOG",
@@ -297,6 +314,12 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "LEAVES",
+        "LEAVES:1",
+        "LEAVES:2",
+        "LEAVES:3",
+        "LEAVES_2",
+        "LEAVES_2:1",
         "ENCHANTED_OAK_LOG",
         "ENCHANTED_BIRCH_LOG",
         "ENCHANTED_SPRUCE_LOG",
@@ -474,6 +497,12 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "LEAVES",
+        "LEAVES:1",
+        "LEAVES:2",
+        "LEAVES:3",
+        "LEAVES_2",
+        "LEAVES_2:1",
         "ENCHANTED_OAK_LOG",
         "ENCHANTED_BIRCH_LOG",
         "ENCHANTED_SPRUCE_LOG",
@@ -571,6 +600,12 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "LEAVES",
+        "LEAVES:1",
+        "LEAVES:2",
+        "LEAVES:3",
+        "LEAVES_2",
+        "LEAVES_2:1",
         "ENCHANTED_OAK_LOG",
         "ENCHANTED_BIRCH_LOG",
         "ENCHANTED_SPRUCE_LOG",
@@ -885,11 +920,6 @@
 },
 {
     "type": "message",
-    "instruction": "Get Enchanted Jungle Logs",
-    "criteria": "[HELP MOLBERT]"
-},
-{
-    "type": "message",
     "instruction": "Click &a&l[HELP MOLBERT]&r in chat",
     "criteria": "Talk to Molbert"
 },
@@ -1040,6 +1070,12 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "LEAVES",
+        "LEAVES:1",
+        "LEAVES:2",
+        "LEAVES:3",
+        "LEAVES_2",
+        "LEAVES_2:1",
         "ENCHANTED_OAK_LOG",
         "ENCHANTED_BIRCH_LOG",
         "ENCHANTED_SPRUCE_LOG",
