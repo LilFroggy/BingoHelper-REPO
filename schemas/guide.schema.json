@@ -157,6 +157,9 @@
 				},
 				"async": {
 					"$ref": "#/definitions/AsyncProperty"
+				},
+				"prerequisites": {
+					"$ref": "#/definitions/PrerequisitesProperty"
 				}
 			}
 		},
@@ -226,7 +229,10 @@
 		"AsyncProperty": {
 			"type": "object",
 			"properties": {
-				"effectiveIndex": {
+				"effectiveIn": {
+					"type": "integer"
+				},
+				"effectiveAt": {
 					"type": "integer"
 				},
 				"requirements": {
@@ -237,11 +243,85 @@
 						},
 						"dwarvenEvent": {
 							"$ref": "#/definitions/DwarvenEvents"
+						},
+						"skyblockLevel": {
+							"type": "integer"
 						}
 					},
 					"additionalProperties": false,
 					"minProperties": 1
 				}
+			},
+			"additionalProperties": false
+		},
+		"PrerequisitesProperty": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/Step",
+				"oneOf": [
+					{
+						"$ref": "#/definitions/MessageStep"
+					},
+					{
+						"$ref": "#/definitions/CakeStep"
+					},
+					{
+						"$ref": "#/definitions/SellStep"
+					},
+					{
+						"$ref": "#/definitions/BuyStep"
+					},
+					{
+						"$ref": "#/definitions/HasStep"
+					},
+					{
+						"$ref": "#/definitions/AreaStep"
+					},
+					{
+						"$ref": "#/definitions/SubAreaStep"
+					},
+					{
+						"$ref": "#/definitions/EnchantStep"
+					},
+					{
+						"$ref": "#/definitions/ReforgeStep"
+					},
+					{
+						"$ref": "#/definitions/GuiItemStep"
+					},
+					{
+						"$ref": "#/definitions/ClickSlotStep"
+					},
+					{
+						"$ref": "#/definitions/SkillStep"
+					},
+					{
+						"$ref": "#/definitions/CollectionStep"
+					},
+					{
+						"$ref": "#/definitions/StoreStep"
+					},
+					{
+						"$ref": "#/definitions/RetrieveStep"
+					},
+					{
+						"$ref": "#/definitions/ExperienceStep"
+					},
+					{
+						"$ref": "#/definitions/UpgradeMinionStep"
+					},
+					{
+						"$ref": "#/definitions/MobTypesStep"
+					},
+					{
+						"$ref": "#/definitions/SupercraftStep"
+					}
+				],
+				"required": [
+					"type",
+					"instruction"
+				],
+				"unevaluatedProperties": false
 			},
 			"additionalProperties": false
 		},
