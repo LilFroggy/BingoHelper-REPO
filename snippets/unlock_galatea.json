@@ -12,7 +12,7 @@
         "LOG:1": 128,
         "LOG_2:1": 256,
         "LOG_2": 512,
-        "LOG:3": 512
+        "LOG:3": 640
     },
     "navTo": "Lumber Merchant",
     "outlineEntities": [
@@ -65,7 +65,7 @@
 },
 {
     "type": "message",
-    "instruction": "Talk to Lumber Jack",
+    "instruction": "Give Oak Logs to Lumber Jack",
     "criteria": "[NPC] Lumber Jack: Nice job! In return for those logs, I'll give ya this Promising Axe.",
     "navTo": "Lumber Jack",
     "outlineEntities": [
@@ -78,6 +78,21 @@
             ]
         }
     ]
+},
+{
+    "type": "message",
+    "instruction": "Level Foraging",
+    "criteria": "[NPC] Lumber Jack: My friend Charlie can be found there. I'm sure he'll have some work for you!"
+},
+{
+    "type": "sell",
+    "instruction": "Sell items",
+    "items": [
+        "ENCHANTED_OAK_LOG",
+        "LOG",
+        "PROMISING_AXE"
+    ],
+    "command": "/trades"
 },
 {
     "type": "area",
@@ -557,14 +572,6 @@
     "command": "/trades"
 },
 {
-    "type": "retrieve",
-    "instruction": "Retrieve Jungle Logs",
-    "items": [
-        "LOG:3"
-    ],
-    "command": "/ec 1"
-},
-{
     "type": "message",
     "instruction": "/warp jungle",
     "criteria": "Warping...",
@@ -615,6 +622,65 @@
                 -42.5
             ]
         }
+    ]
+},
+{
+    "type": "collection",
+    "instruction": "Unlock Jungle Log Collection 3",
+    "collection": "jungle_log",
+    "level": 3,
+    "bingoRanks": [
+        3,
+        4
+    ]
+},
+{
+    "type": "has",
+    "instruction": "Get Jungle Logs &b%1%&r",
+    "items": {
+        "LOG:3": 160
+    },
+    "bingoRanks": [
+        3,
+        4
+    ]
+},
+{
+    "type": "supercraft",
+    "instruction": "Craft Enchanted Jungle Log &b%1%&r",
+    "items": {
+        "ENCHANTED_JUNGLE_LOG": 1
+    },
+    "bingoRanks": [
+        3,
+        4
+    ]
+},
+{
+    "type": "guiItem",
+    "instruction": "Personal Compact Enchanted Jungle Log",
+    "has": [
+        "Auto-Craft Slot",
+        "Item: Enchanted Jungle Log"
+    ],
+    "highlightSlots": [
+        {
+            "guiName": "Crafting",
+            "has": [
+                "Personal Compactor"
+            ],
+            "highlightColor": "#FFAA00",
+            "playerInv": true
+        },
+        {
+            "guiName": "Personal Compactor",
+            "skyblockId": "ENCHANTED_JUNGLE_LOG",
+            "playerInv": true
+        }
+    ],
+    "bingoRanks": [
+        3,
+        4
     ]
 },
 {
@@ -803,7 +869,7 @@
 },
 {
     "type": "message",
-    "instruction": "Collect Jungle Logs",
+    "instruction": "Get Enchanted Jungle Logs",
     "criteria": "[HELP MOLBERT]"
 },
 {
@@ -824,7 +890,7 @@
 },
 {
     "type": "message",
-    "instruction": "Collect Jungle Logs",
+    "instruction": "Get Enchanted Jungle Logs",
     "criteria": "Select an option: [I know that you are a mole]"
 },
 {
@@ -834,7 +900,7 @@
 },
 {
     "type": "message",
-    "instruction": "Collect Jungle Logs",
+    "instruction": "Get Enchanted Jungle Logs",
     "criteria": "[NPC] Molbert: I hope you forgive me after this and we can still be friends."
 },
 {
@@ -853,57 +919,6 @@
     "outlineEntities": [
         {
             "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQ1OTI1MTYwOCwKICAicHJvZmlsZUlkIiA6ICI3M2ZkNzU2NWJkZTY0MGQzYWE4MGUxMWUwMTMwMjc3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYUJySWVMVnR6IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyMDc4M2UyNzQzYjg5NzZiMDBmODI3ZWUyODM2NzVkNzkxMTE0MGM5ODI4NDIzOWY2YmMxYzhkZDFkMjdjODEiCiAgICB9CiAgfQp9"
-        }
-    ]
-},
-{
-    "type": "collection",
-    "instruction": "Unlock Jungle Log Collection 3",
-    "collection": "jungle_log",
-    "level": 3
-},
-{
-    "type": "has",
-    "instruction": "Get Jungle Logs &b%1%&r",
-    "items": {
-        "LOG:3": 160
-    }
-},
-{
-    "type": "supercraft",
-    "instruction": "Craft Enchanted Jungle Log",
-    "items": {
-        "ENCHANTED_JUNGLE_LOG": 1
-    },
-    "bingoRanks": [
-        3,
-        4
-    ]
-},
-{
-    "type": "guiItem",
-    "instruction": "Personal Compact Enchanted Jungle Log",
-    "has": [
-        "Auto-Craft Slot",
-        "Item: Enchanted Jungle Log"
-    ],
-    "bingoRanks": [
-        3,
-        4
-    ],
-    "highlightSlots": [
-        {
-            "guiName": "Crafting",
-            "has": [
-                "Personal Compactor"
-            ],
-            "highlightColor": "#FFAA00",
-            "playerInv": true
-        },
-        {
-            "guiName": "Personal Compactor",
-            "skyblockId": "ENCHANTED_JUNGLE_LOG",
-            "playerInv": true
         }
     ]
 },
@@ -965,6 +980,14 @@
     "instruction": "/warp jungle",
     "area": "The Park",
     "command": "/warp jungle"
+},
+{
+    "type": "retrieve",
+    "instruction": "Retrieve Jungle Logs",
+    "items": [
+        "LOG:3"
+    ],
+    "command": "/ec 1"
 },
 {
     "type": "has",
