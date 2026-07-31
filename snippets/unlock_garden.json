@@ -54,7 +54,31 @@
     "type": "message",
     "instruction": "Talk to Sam",
     "criteria": "[NPC] Sam: Head over to the desk, there you can browse SkyMart to order some fuel.",
-    "navTo": "-15 72 -28",
+    "waypoint": {
+        "type": "list",
+        "beam": true,
+        "list": [
+            {
+                "text": "",
+                "position": [
+                    -5.0,
+                    72.0,
+                    -18.0
+                ],
+                "radius": 5
+            },
+            {
+                "text": "",
+                "position": [
+                    -15.0,
+                    72.0,
+                    -28.0
+                ],
+                "radius": 0
+            }
+        ],
+        "index": 0
+    },
     "outlineEntities": [
         {
             "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTI0NzcyMjk1MiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJvRml3aSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85NWRjZmM4YjMyMDAzMjZiOGY2MWQ4MDYxNWM1YjUzNjk5N2ExMTg1NzBhNDdmMWQzNTMwNjMyOTY5MjFmZTEzIgogICAgfQogIH0KfQ\u003d\u003d"
@@ -62,7 +86,7 @@
     ]
 },
 {
-    "type": "buy",
+    "type": "has",
     "instruction": "Buy Biofuel &b%1%&r",
     "items": {
         "BIOFUEL": 1
@@ -80,6 +104,10 @@
             "has": [
                 "Farming Essentials"
             ],
+            "highlightColor": "#55FF55"
+        },
+        {
+            "skyblockId": "BIOFUEL",
             "highlightColor": "#55FF55"
         }
     ],
@@ -109,10 +137,17 @@
     }
 },
 {
-    "type": "clickSlot",
+    "type": "has",
     "instruction": "Collect Compost",
-    "guiName": "Composter",
-    "skyblockId": "COMPOST"
+    "items": {
+        "COMPOST": 1
+    },
+    "highlightSlots": [
+        {
+            "guiName": "Composter",
+            "skyblockId": "COMPOST"
+        }
+    ]
 },
 {
     "type": "clickSlot",
@@ -144,6 +179,24 @@
     "instruction": "/plottp 3",
     "criteria": "Teleported you to Plot - 3!",
     "command": "/plottp 3"
+},
+{
+    "type": "guiItem",
+    "instruction": "Clean Plot",
+    "guiName": "Sam's Scythe"
+},
+{
+    "type": "has",
+    "instruction": "Claim Sam's Scythe",
+    "items": {
+        "SAM_SCYTHE": 1
+    },
+    "highlightSlots": [
+        {
+            "guiName": "Sam's Scythe",
+            "skyblockId": "SAM_SCYTHE"
+        }
+    ]
 },
 {
     "type": "message",
