@@ -261,6 +261,30 @@
             "skyblockId": "SAFETY_BADGE"
         },
         {
+            "type": "store",
+            "instruction": "Store Talisman",
+            "items": [
+                "SAFETY_BADGE"
+            ],
+            "command": "/sbmenu",
+            "highlightSlots": [
+                {
+                    "guiName": "SkyBlock Menu",
+                    "has": [
+                        "Your Bags"
+                    ],
+                    "highlightColor": "#55FF55"
+                },
+                {
+                    "guiName": "Your Bags",
+                    "has": [
+                        "Accessory Bag"
+                    ],
+                    "highlightColor": "#55FF55"
+                }
+            ]
+        },
+        {
             "type": "message",
             "instruction": "/warp hub",
             "criteria": "Warping...",
