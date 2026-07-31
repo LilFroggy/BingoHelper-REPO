@@ -222,6 +222,11 @@
 },
 {
     "type": "message",
+    "instruction": "Collect Spruce Logs",
+    "criteria": "Select an option: [Yeah] [Never heard of him]"
+},
+{
+    "type": "message",
     "instruction": "Click &c[Never heard of him] &fin chat",
     "criteria": "[NPC] Kelly:"
 },
@@ -330,8 +335,18 @@
 },
 {
     "type": "message",
+    "instruction": "Collect Dark Oak Logs",
+    "criteria": "Select an option: [Sure, I guess?]"
+},
+{
+    "type": "message",
     "instruction": "Click &a[Sure, I guess?] &fin chat",
     "criteria": "[NPC] Ryan: Cool! Anyways, there's just one thing you have to do before you can join."
+},
+{
+    "type": "message",
+    "instruction": "Collect Dark Oak Logs",
+    "criteria": "Select an option: [WHAT?]"
 },
 {
     "type": "message",
@@ -340,8 +355,9 @@
 },
 {
     "type": "message",
-    "instruction": "Wait",
-    "criteria": "[NPC] Ryan: If you can last for 10 seconds while standing in the campfire, I'll give you a reward!"
+    "instruction": "Stand near campfire",
+    "criteria": "[NPC] Ryan: If you can last for 10 seconds while standing in the campfire, I'll give you a reward!",
+    "navTo": "-361 103 -92"
 },
 {
     "type": "message",
@@ -976,18 +992,18 @@
     "command": "/hotf"
 },
 {
-    "type": "area",
-    "instruction": "/warp jungle",
-    "area": "The Park",
-    "command": "/warp jungle"
-},
-{
     "type": "retrieve",
     "instruction": "Retrieve Jungle Logs",
     "items": [
         "LOG:3"
     ],
     "command": "/ec 1"
+},
+{
+    "type": "area",
+    "instruction": "/warp jungle",
+    "area": "The Park",
+    "command": "/warp jungle"
 },
 {
     "type": "has",
