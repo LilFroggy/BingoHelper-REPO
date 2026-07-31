@@ -61,18 +61,6 @@
 {
     "type": "message",
     "instruction": "Collect Oak Logs",
-    "criteria": "[NPC] Lumber Jack: Use your fists for now - I'll give you my previous assistant's axe if you can prove your worth!"
-},
-{
-    "type": "has",
-    "instruction": "Get Oak Logs &b%1%&r",
-    "items": {
-        "LOG": 20
-    }
-},
-{
-    "type": "message",
-    "instruction": "Drop & pickup 1 Oak Log",
     "criteria": "Give Lumber Jack Oak Logs"
 },
 {
@@ -115,20 +103,7 @@
 },
 {
     "type": "message",
-    "instruction": "Wait near Charlie",
-    "criteria": "[NPC] Charlie: Do that, and then we can talk!",
-    "navTo": "Charlie"
-},
-{
-    "type": "has",
-    "instruction": "Get Birch Logs &b%1%&r",
-    "items": {
-        "LOG:2": 64
-    }
-},
-{
-    "type": "message",
-    "instruction": "Drop & pickup 1 Birch Log",
+    "instruction": "Collect Birch Logs",
     "criteria": "Give Charlie Birch Logs"
 },
 {
@@ -219,18 +194,6 @@
 {
     "type": "message",
     "instruction": "Collect Spruce Logs",
-    "criteria": "[NPC] Kelly: If you can bring me 128 Spruce Logs, I'll give you a reward!"
-},
-{
-    "type": "has",
-    "instruction": "Get Spruce Logs &b%1%&r",
-    "items": {
-        "LOG:1": 128
-    }
-},
-{
-    "type": "message",
-    "instruction": "Drop & pickup 1 Spruce Log",
     "criteria": "Give Kelly Spruce Logs"
 },
 {
@@ -378,20 +341,7 @@
 },
 {
     "type": "message",
-    "instruction": "Wait near Ryan",
-    "criteria": "[NPC] Ryan: I need to keep watch and make sure nobody blows out the Campfire, but if you can grab me 256 Dark Oak Logs, I'll make one for ya!",
-    "navTo": "Ryan"
-},
-{
-    "type": "has",
-    "instruction": "Get Dark Oak Logs &b%1%&r",
-    "items": {
-        "LOG_2:1": 256
-    }
-},
-{
-    "type": "message",
-    "instruction": "Drop & pickup 1 Dark Oak",
+    "instruction": "Collect Dark Oak Logs",
     "criteria": "Give Ryan Dark Oak Logs"
 },
 {
@@ -476,7 +426,7 @@
     "type": "message",
     "instruction": "Talk to Melody",
     "criteria": "[NPC] Melody ♫: Hello! ♪",
-    "navTo": "Melody",
+    "navTo": "-411 111 72",
     "outlineEntities": [
         {
             "type": "Player",
@@ -495,27 +445,14 @@
 },
 {
     "type": "message",
-    "instruction": "Wait near Melody",
-    "criteria": "[NPC] Melody ♫: If you'd be so kind as to bring me 512 Acacia Logs, I'll be able to do the rest.",
-    "navTo": "Melody"
-},
-{
-    "type": "has",
-    "instruction": "Get Acacia Logs &b%1%&r",
-    "items": {
-        "LOG_2": 512
-    }
-},
-{
-    "type": "message",
-    "instruction": "Drop & pickup 1 Acacia Log",
+    "instruction": "Collect Acacia Logs",
     "criteria": "Give Melody Acacia Logs"
 },
 {
     "type": "message",
     "instruction": "Talk to Melody",
     "criteria": "[NPC] Melody ♫: Thank you so much! ❤",
-    "navTo": "Melody",
+    "navTo": "-411 111 72",
     "outlineEntities": [
         {
             "type": "Player",
@@ -529,7 +466,7 @@
 },
 {
     "type": "message",
-    "instruction": "Wait",
+    "instruction": "Collect Acacia Logs",
     "criteria": "[NPC] Melody ♫: Talk to me again if you ever want to give my Harp a try!"
 },
 {
@@ -544,7 +481,7 @@
             "skyblockId": "MELODY_SHOES"
         }
     ],
-    "navTo": "Melody",
+    "navTo": "-411 111 72",
     "outlineEntities": [
         {
             "type": "Player",
@@ -599,18 +536,6 @@
 {
     "type": "message",
     "instruction": "Collect Jungle Logs",
-    "criteria": "[NPC] Molbert: Just thinking about them makes me... Uhm, I mean makes them come out of their hiding space."
-},
-{
-    "type": "has",
-    "instruction": "Get Jungle Logs &b%1%&r",
-    "items": {
-        "LOG:3": 512
-    }
-},
-{
-    "type": "message",
-    "instruction": "Drop & pickup 1 Jungle Log",
     "criteria": "Give Molbert Jungle Logs"
 },
 {
@@ -659,8 +584,8 @@
 },
 {
     "type": "message",
-    "instruction": "Place Traps",
-    "criteria": "Talk to Molbert",
+    "instruction": "Place Trap",
+    "criteria": "Placed trap (1/3)",
     "waypoint": {
         "type": "list",
         "beam": true,
@@ -672,8 +597,20 @@
                     119,
                     -54
                 ],
-                "radius": 5
-            },
+                "radius": 0
+            }
+        ],
+        "index": 0
+    }
+},
+{
+    "type": "message",
+    "instruction": "Place Trap",
+    "criteria": "Placed trap (2/3)",
+    "waypoint": {
+        "type": "list",
+        "beam": true,
+        "list": [
             {
                 "text": "",
                 "position": [
@@ -681,8 +618,20 @@
                     120,
                     -65.0
                 ],
-                "radius": 5
-            },
+                "radius": 0
+            }
+        ],
+        "index": 0
+    }
+},
+{
+    "type": "message",
+    "instruction": "Place Trap",
+    "criteria": "Placed trap (3/3)",
+    "waypoint": {
+        "type": "list",
+        "beam": true,
+        "list": [
             {
                 "text": "",
                 "position": [
@@ -877,7 +826,7 @@
 },
 {
     "type": "message",
-    "instruction": "Get Lushlilacs",
+    "instruction": "Collect Lushlilacs",
     "criteria": "HEART OF THE FOREST has been unlocked! Open your SkyBlock Menu to find it. [CLICK HERE TO OPEN]"
 },
 {
@@ -927,7 +876,7 @@
     }
 },
 {
-    "type": "sell",
+    "type": "store",
     "instruction": "Store Park Armor",
     "items": [
         "MOLE_HAT",
@@ -941,6 +890,7 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "LUSHLILAC",
         "LOG",
         "LOG:2",
         "LOG:1",
