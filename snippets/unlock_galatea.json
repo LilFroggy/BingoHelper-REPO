@@ -163,6 +163,25 @@
     ]
 },
 {
+    "type": "message",
+    "instruction": "Level Foraging",
+    "criteria": "[NPC] Charlie: I wanted Kelly to get some Spruce Logs for us today, but I've not seen her in a while... Can you maybe look for her in the Spruce Woods?"
+},
+{
+    "type": "sell",
+    "instruction": "Sell items",
+    "items": [
+        "ENCHANTED_OAK_LOG",
+        "ENCHANTED_BIRCH_LOG",
+        "LOG",
+        "LOG:2",
+        "PROMISING_AXE",
+        "BROWN_MUSHROOM",
+        "RED_MUSHROOM"
+    ],
+    "command": "/trades"
+},
+{
     "type": "retrieve",
     "instruction": "Retrieve Spruce Logs",
     "items": [
@@ -214,22 +233,8 @@
 },
 {
     "type": "message",
-    "instruction": "Wait at launch pad",
-    "criteria": "[NPC] Kelly: I've heard some people are holding a Cult Meeting there RIGHT NOW!",
-    "prerequisites": [
-        {
-            "type": "collection",
-            "instruction": "Unlock Spruce Collection 2",
-            "collection": "spruce_log",
-            "level": 2
-        },
-        {
-            "type": "message",
-            "instruction": "Wait at launch pad",
-            "criteria": "[NPC] Kelly: I've heard some people are holding a Cult Meeting there RIGHT NOW!",
-            "navTo": "-364 91 -18"
-        }
-    ]
+    "instruction": "Level Foraging",
+    "criteria": "[NPC] Kelly: I've heard some people are holding a Cult Meeting there RIGHT NOW!"
 },
 {
     "type": "has",
@@ -269,6 +274,22 @@
     }
 },
 {
+    "type": "sell",
+    "instruction": "Sell items",
+    "items": [
+        "ENCHANTED_OAK_LOG",
+        "ENCHANTED_BIRCH_LOG",
+        "ENCHANTED_SPRUCE_LOG",
+        "LOG",
+        "LOG:2",
+        "LOG:1",
+        "PROMISING_AXE",
+        "BROWN_MUSHROOM",
+        "RED_MUSHROOM"
+    ],
+    "command": "/trades"
+},
+{
     "type": "retrieve",
     "instruction": "Retrieve Dark Oak Logs",
     "items": [
@@ -301,6 +322,11 @@
     "type": "message",
     "instruction": "Click &c[WHAT?] &fin chat",
     "criteria": "[NPC] Ryan: Yeah don't worry, it's not as hot as it looks."
+},
+{
+    "type": "message",
+    "instruction": "Wait",
+    "criteria": "[NPC] Ryan: If you can last for 10 seconds while standing in the campfire, I'll give you a reward!"
 },
 {
     "type": "message",
@@ -362,9 +388,8 @@
 },
 {
     "type": "message",
-    "instruction": "Wait at launch pad",
-    "criteria": "[NPC] Ryan: But be careful, though, as each trial burns a little hotter than the last!",
-    "navTo": "-400 99 -33"
+    "instruction": "Level Foraging",
+    "criteria": "[NPC] Ryan: But be careful, though, as each trial burns a little hotter than the last!"
 },
 {
     "type": "has",
@@ -413,6 +438,24 @@
             "highlightColor": "#55FF55"
         }
     ]
+},
+{
+    "type": "sell",
+    "instruction": "Sell items",
+    "items": [
+        "ENCHANTED_OAK_LOG",
+        "ENCHANTED_BIRCH_LOG",
+        "ENCHANTED_SPRUCE_LOG",
+        "ENCHANTED_DARK_OAK_LOG",
+        "LOG",
+        "LOG:2",
+        "LOG:1",
+        "LOG_2:1",
+        "PROMISING_AXE",
+        "BROWN_MUSHROOM",
+        "RED_MUSHROOM"
+    ],
+    "command": "/trades"
 },
 {
     "type": "retrieve",
@@ -466,7 +509,7 @@
 },
 {
     "type": "message",
-    "instruction": "Collect Acacia Logs",
+    "instruction": "Level Foraging",
     "criteria": "[NPC] Melody ♫: Talk to me again if you ever want to give my Harp a try!"
 },
 {
@@ -492,6 +535,26 @@
             ]
         }
     ]
+},
+{
+    "type": "sell",
+    "instruction": "Sell items",
+    "items": [
+        "ENCHANTED_OAK_LOG",
+        "ENCHANTED_BIRCH_LOG",
+        "ENCHANTED_SPRUCE_LOG",
+        "ENCHANTED_DARK_OAK_LOG",
+        "ENCHANTED_ACACIA_LOG",
+        "LOG",
+        "LOG:2",
+        "LOG:1",
+        "LOG_2:1",
+        "LOG_2",
+        "PROMISING_AXE",
+        "BROWN_MUSHROOM",
+        "RED_MUSHROOM"
+    ],
+    "command": "/trades"
 },
 {
     "type": "retrieve",
@@ -556,9 +619,33 @@
 },
 {
     "type": "subArea",
-    "instruction": "Go on launch pad",
+    "instruction": "Leave Area",
     "subArea": "Savanna Woodland",
-    "navTo": "-461 122 -28"
+    "waypoint": {
+        "type": "list",
+        "beam": true,
+        "list": [
+            {
+                "text": "",
+                "position": [
+                    -462,
+                    121,
+                    -29
+                ],
+                "radius": 5
+            },
+            {
+                "text": "",
+                "position": [
+                    -462,
+                    121,
+                    -29
+                ],
+                "radius": 100
+            }
+        ],
+        "index": 0
+    }
 },
 {
     "type": "message",
@@ -669,9 +756,33 @@
 },
 {
     "type": "subArea",
-    "instruction": "Go on launch pad",
+    "instruction": "Leave Area",
     "subArea": "Savanna Woodland",
-    "navTo": "-461 122 -28"
+    "waypoint": {
+        "type": "list",
+        "beam": true,
+        "list": [
+            {
+                "text": "",
+                "position": [
+                    -462,
+                    121,
+                    -29
+                ],
+                "radius": 5
+            },
+            {
+                "text": "",
+                "position": [
+                    -462,
+                    121,
+                    -29
+                ],
+                "radius": 100
+            }
+        ],
+        "index": 0
+    }
 },
 {
     "type": "message",
@@ -827,7 +938,7 @@
 {
     "type": "message",
     "instruction": "Collect Lushlilacs",
-    "criteria": "HEART OF THE FOREST has been unlocked! Open your SkyBlock Menu to find it. [CLICK HERE TO OPEN]"
+    "criteria": "[NPC] Hina: For each task I will reward you handsomely!"
 },
 {
     "type": "guiItem",
@@ -890,6 +1001,11 @@
     "type": "sell",
     "instruction": "Sell items",
     "items": [
+        "ENCHANTED_OAK_LOG",
+        "ENCHANTED_BIRCH_LOG",
+        "ENCHANTED_SPRUCE_LOG",
+        "ENCHANTED_DARK_OAK_LOG",
+        "ENCHANTED_JUNGLE_LOG",
         "LUSHLILAC",
         "LOG",
         "LOG:2",
