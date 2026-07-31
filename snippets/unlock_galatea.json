@@ -1,0 +1,955 @@
+{
+    "type": "message",
+    "instruction": "/warp stonks",
+    "criteria": "Warping...",
+    "command": "/warp stonks"
+},
+{
+    "type": "buy",
+    "instruction": "Buy Birch &b%1%&r\nBuy Spruce &b%2%&r\nBuy Dark Oak &b%3%&r\nBuy Acacia &b%4%&r\nBuy Jungle &b%5%&r",
+    "items": {
+        "LOG:2": 64,
+        "LOG:1": 128,
+        "LOG_2:1": 256,
+        "LOG_2": 512,
+        "LOG:3": 512
+    },
+    "navTo": "Lumber Merchant",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -125.0,
+                73.0,
+                -42.5
+            ]
+        }
+    ]
+},
+{
+    "type": "store",
+    "instruction": "Store items",
+    "items": [
+        "LOG:1",
+        "LOG_2:1",
+        "LOG_2",
+        "LOG:3"
+    ],
+    "command": "/ec 1"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Lumber Jack",
+    "criteria": "[NPC] Lumber Jack:",
+    "navTo": "Lumber Jack",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -123.5,
+                73.0,
+                -29.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Click &a[Sure]&r in chat",
+    "criteria": "[NPC] Lumber Jack: Cheers! Let me tell ya a little about what we're going to be doing."
+},
+{
+    "type": "message",
+    "instruction": "Collect Oak Logs",
+    "criteria": "[NPC] Lumber Jack: Use your fists for now - I'll give you my previous assistant's axe if you can prove your worth!"
+},
+{
+    "type": "has",
+    "instruction": "Get Oak Logs &b%1%&r",
+    "items": {
+        "LOG": 20
+    }
+},
+{
+    "type": "message",
+    "instruction": "Drop & pickup 1 Oak Log",
+    "criteria": "Give Lumber Jack Oak Logs"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Lumber Jack",
+    "criteria": "[NPC] Lumber Jack: Nice job! In return for those logs, I'll give ya this Promising Axe.",
+    "navTo": "Lumber Jack",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -123.5,
+                73.0,
+                -29.5
+            ]
+        }
+    ]
+},
+{
+    "type": "area",
+    "instruction": "Go to The Park",
+    "area": "The Park",
+    "navTo": "-223 74 -15"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Charlie",
+    "criteria": "[NPC] Charlie: Howdy! Yer a friend of Lumber Jack, are ya?",
+    "navTo": "Charlie",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -277.5,
+                80,
+                -17.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Wait near Charlie",
+    "criteria": "[NPC] Charlie: Do that, and then we can talk!",
+    "navTo": "Charlie"
+},
+{
+    "type": "has",
+    "instruction": "Get Birch Logs &b%1%&r",
+    "items": {
+        "LOG:2": 64
+    }
+},
+{
+    "type": "message",
+    "instruction": "Drop & pickup 1 Birch Log",
+    "criteria": "Give Charlie Birch Logs"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Charlie",
+    "criteria": "[NPC] Charlie: Cheers! Here, take these trousers for payment!",
+    "navTo": "Charlie",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -277.5,
+                80,
+                -17.5
+            ]
+        }
+    ]
+},
+{
+    "type": "has",
+    "instruction": "Claim Charlie's Trousers",
+    "items": {
+        "CHARLIE_TROUSERS": 1
+    },
+    "highlightSlots": [
+        {
+            "guiName": "Claim Reward",
+            "skyblockId": "CHARLIE_TROUSERS"
+        }
+    ],
+    "navTo": "Charlie",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -277.5,
+                80,
+                -17.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Talk to Charlie",
+    "criteria": "[NPC] Charlie: The Park is home to many different kinds of wood. Each kind has its own collection.",
+    "navTo": "Charlie",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -277.5,
+                80,
+                -17.5
+            ]
+        }
+    ]
+},
+{
+    "type": "retrieve",
+    "instruction": "Retrieve Spruce Logs",
+    "items": [
+        "LOG:1"
+    ],
+    "command": "/ec 1"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Kelly",
+    "criteria": "[NPC] Kelly: Hey hey! Did Charlie send you?",
+    "navTo": "Kelly",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -350.5,
+                94,
+                33.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Click &c[Never heard of him] &fin chat",
+    "criteria": "[NPC] Kelly:"
+},
+{
+    "type": "message",
+    "instruction": "Collect Spruce Logs",
+    "criteria": "[NPC] Kelly: If you can bring me 128 Spruce Logs, I'll give you a reward!"
+},
+{
+    "type": "has",
+    "instruction": "Get Spruce Logs &b%1%&r",
+    "items": {
+        "LOG:1": 128
+    }
+},
+{
+    "type": "message",
+    "instruction": "Drop & pickup 1 Spruce Log",
+    "criteria": "Give Kelly Spruce Logs"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Kelly",
+    "criteria": "[NPC] Kelly: Oh, that's amazing! Thank you so much!",
+    "navTo": "Kelly",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -350.5,
+                94,
+                33.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Wait at launch pad",
+    "criteria": "[NPC] Kelly: I've heard some people are holding a Cult Meeting there RIGHT NOW!",
+    "prerequisites": [
+        {
+            "type": "collection",
+            "instruction": "Unlock Spruce Collection 2",
+            "collection": "spruce_log",
+            "level": 2
+        },
+        {
+            "type": "message",
+            "instruction": "Wait at launch pad",
+            "criteria": "[NPC] Kelly: I've heard some people are holding a Cult Meeting there RIGHT NOW!",
+            "navTo": "-364 91 -18"
+        }
+    ]
+},
+{
+    "type": "has",
+    "instruction": "Claim Kelly's T-Shirt",
+    "items": {
+        "KELLY_TSHIRT": 1
+    },
+    "highlightSlots": [
+        {
+            "guiName": "Claim Reward",
+            "skyblockId": "KELLY_TSHIRT"
+        }
+    ],
+    "navTo": "Kelly",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -350.5,
+                94,
+                33.5
+            ]
+        }
+    ]
+},
+{
+    "type": "collection",
+    "instruction": "Unlock Spruce Collection 2",
+    "collection": "spruce_log",
+    "level": 2
+},
+{
+    "type": "supercraft",
+    "instruction": "Craft Spruce Axe &b%1%&r",
+    "items": {
+        "JUNGLE_AXE": 1
+    }
+},
+{
+    "type": "retrieve",
+    "instruction": "Retrieve Dark Oak Logs",
+    "items": [
+        "LOG_2:1"
+    ],
+    "command": "/ec 1"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Ryan\n&7&oSneak from behind",
+    "criteria": "[NPC] Ryan: AAAHHHHH! Don't startle me like that bro!",
+    "navTo": "Ryan",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -364.5,
+                102.5,
+                -90.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Click &a[Sure, I guess?] &fin chat",
+    "criteria": "[NPC] Ryan: Cool! Anyways, there's just one thing you have to do before you can join."
+},
+{
+    "type": "message",
+    "instruction": "Click &c[WHAT?] &fin chat",
+    "criteria": "[NPC] Ryan: Yeah don't worry, it's not as hot as it looks."
+},
+{
+    "type": "message",
+    "instruction": "Complete Trial of Fire I",
+    "criteria": "TRIAL OF FIRE! Completed Trial of Fire I!",
+    "waypoint": {
+        "type": "list",
+        "beam": true,
+        "list": [
+            {
+                "text": "",
+                "position": [
+                    -363,
+                    101.5,
+                    -94
+                ],
+                "radius": 2
+            }
+        ],
+        "index": 0
+    }
+},
+{
+    "type": "message",
+    "instruction": "Talk to Ryan",
+    "criteria": "[NPC] Ryan: Wow, you did it!",
+    "navTo": "Ryan",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -364.5,
+                102.5,
+                -90.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Wait near Ryan",
+    "criteria": "[NPC] Ryan: I need to keep watch and make sure nobody blows out the Campfire, but if you can grab me 256 Dark Oak Logs, I'll make one for ya!",
+    "navTo": "Ryan"
+},
+{
+    "type": "has",
+    "instruction": "Get Dark Oak Logs &b%1%&r",
+    "items": {
+        "LOG_2:1": 256
+    }
+},
+{
+    "type": "message",
+    "instruction": "Drop & pickup 1 Dark Oak",
+    "criteria": "Give Ryan Dark Oak Logs"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Ryan",
+    "criteria": "[NPC] Ryan: Thanks for the wood! Here's your badge, as promised!",
+    "navTo": "Ryan",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -364.5,
+                102.5,
+                -90.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Wait at launch pad",
+    "criteria": "[NPC] Ryan: But be careful, though, as each trial burns a little hotter than the last!",
+    "navTo": "-400 99 -33"
+},
+{
+    "type": "has",
+    "instruction": "Claim Campfire Badge",
+    "items": {
+        "CAMPFIRE_TALISMAN_1": 1
+    },
+    "highlightSlots": [
+        {
+            "guiName": "Claim Reward",
+            "skyblockId": "CAMPFIRE_TALISMAN_1"
+        }
+    ],
+    "navTo": "Ryan",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -364.5,
+                102.5,
+                -90.5
+            ]
+        }
+    ]
+},
+{
+    "type": "store",
+    "instruction": "Store Talisman",
+    "items": [
+        "CAMPFIRE_TALISMAN_1"
+    ],
+    "command": "/sbmenu",
+    "highlightSlots": [
+        {
+            "guiName": "SkyBlock Menu",
+            "has": [
+                "Your Bags"
+            ],
+            "highlightColor": "#55FF55"
+        },
+        {
+            "guiName": "Your Bags",
+            "has": [
+                "Accessory Bag"
+            ],
+            "highlightColor": "#55FF55"
+        }
+    ]
+},
+{
+    "type": "retrieve",
+    "instruction": "Retrieve Acacia Logs",
+    "items": [
+        "LOG_2"
+    ],
+    "command": "/ec 1"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Melody",
+    "criteria": "[NPC] Melody ♫: Hello! ♪",
+    "navTo": "Melody",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -411.5,
+                109,
+                71.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Click &a[Are you okay?] &fin chat",
+    "criteria": "[NPC] Melody ♫: Yes, I'm fine, though my beloved Harp was broken to pieces by the storm."
+},
+{
+    "type": "message",
+    "instruction": "Wait near Melody",
+    "criteria": "[NPC] Melody ♫: If you'd be so kind as to bring me 512 Acacia Logs, I'll be able to do the rest.",
+    "navTo": "Melody"
+},
+{
+    "type": "has",
+    "instruction": "Get Acacia Logs &b%1%&r",
+    "items": {
+        "LOG_2": 512
+    }
+},
+{
+    "type": "message",
+    "instruction": "Drop & pickup 1 Acacia Log",
+    "criteria": "Give Melody Acacia Logs"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Melody",
+    "criteria": "[NPC] Melody ♫: Thank you so much! ❤",
+    "navTo": "Melody",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -411.5,
+                109,
+                71.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Wait",
+    "criteria": "[NPC] Melody ♫: Talk to me again if you ever want to give my Harp a try!"
+},
+{
+    "type": "has",
+    "instruction": "Claim Melody's Shoes",
+    "items": {
+        "MELODY_SHOES": 1
+    },
+    "highlightSlots": [
+        {
+            "guiName": "Claim Reward",
+            "skyblockId": "MELODY_SHOES"
+        }
+    ],
+    "navTo": "Melody",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -411.5,
+                109,
+                71.5
+            ]
+        }
+    ]
+},
+{
+    "type": "retrieve",
+    "instruction": "Retrieve Jungle Logs",
+    "items": [
+        "LOG:3"
+    ],
+    "command": "/ec 1"
+},
+{
+    "type": "message",
+    "instruction": "/warp jungle",
+    "criteria": "Warping...",
+    "command": "/warp jungle"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Molbert",
+    "criteria": "[NPC] Molbert: I watched the comings and goings in this park and it occurred to me that a very common problem plagues these areas.",
+    "navTo": "Molbert",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -465.5,
+                120,
+                -42.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Collect Jungle Logs",
+    "criteria": "Select an option: [Sure...] [You look like a mole yourself]"
+},
+{
+    "type": "message",
+    "instruction": "Click &a[Sure...] &fin chat",
+    "criteria": "[NPC] Molbert: Great. First thing we need is to build some traps."
+},
+{
+    "type": "message",
+    "instruction": "Collect Jungle Logs",
+    "criteria": "[NPC] Molbert: Just thinking about them makes me... Uhm, I mean makes them come out of their hiding space."
+},
+{
+    "type": "has",
+    "instruction": "Get Jungle Logs &b%1%&r",
+    "items": {
+        "LOG:3": 512
+    }
+},
+{
+    "type": "message",
+    "instruction": "Drop & pickup 1 Jungle Log",
+    "criteria": "Give Molbert Jungle Logs"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Molbert",
+    "criteria": "[NPC] Molbert: It will take me some time to assemble them, so you should come back later.",
+    "navTo": "Molbert",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -465.5,
+                120,
+                -42.5
+            ]
+        }
+    ]
+},
+{
+    "type": "subArea",
+    "instruction": "Go on launch pad",
+    "subArea": "Savanna Woodland",
+    "navTo": "-461 122 -28"
+},
+{
+    "type": "message",
+    "instruction": "/warp jungle",
+    "criteria": "Warping...",
+    "command": "/warp jungle"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Molbert",
+    "criteria": "[NPC] Molbert: The traps are ready for use; All that remains is to set them up in the right place. Once you find the ideal spots, go ahead and deploy them.",
+    "navTo": "Molbert",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -465.5,
+                120,
+                -42.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Place Traps",
+    "criteria": "Talk to Molbert",
+    "waypoint": {
+        "type": "list",
+        "beam": true,
+        "list": [
+            {
+                "text": "",
+                "position": [
+                    -466,
+                    119,
+                    -54
+                ],
+                "radius": 5
+            },
+            {
+                "text": "",
+                "position": [
+                    -449.0,
+                    120,
+                    -65.0
+                ],
+                "radius": 5
+            },
+            {
+                "text": "",
+                "position": [
+                    -440.0,
+                    122,
+                    -92.0
+                ],
+                "radius": 0
+            }
+        ],
+        "index": 0
+    }
+},
+{
+    "type": "message",
+    "instruction": "/warp jungle",
+    "criteria": "Warping...",
+    "command": "/warp jungle"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Molbert",
+    "criteria": "[NPC] Molbert: This might take some time, so you should come back later.",
+    "navTo": "Molbert",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -465.5,
+                120,
+                -42.5
+            ]
+        }
+    ]
+},
+{
+    "type": "subArea",
+    "instruction": "Go on launch pad",
+    "subArea": "Savanna Woodland",
+    "navTo": "-461 122 -28"
+},
+{
+    "type": "message",
+    "instruction": "/warp jungle",
+    "criteria": "Warping...",
+    "command": "/warp jungle"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Molbert",
+    "criteria": "[NPC] Molbert: Hey.. uhm partner! I swear it's not what you think!",
+    "navTo": "-447 122 -63",
+    "outlineEntities": [
+        {
+            "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQ1OTI1MTYwOCwKICAicHJvZmlsZUlkIiA6ICI3M2ZkNzU2NWJkZTY0MGQzYWE4MGUxMWUwMTMwMjc3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYUJySWVMVnR6IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyMDc4M2UyNzQzYjg5NzZiMDBmODI3ZWUyODM2NzVkNzkxMTE0MGM5ODI4NDIzOWY2YmMxYzhkZDFkMjdjODEiCiAgICB9CiAgfQp9"
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Collect Jungle Logs",
+    "criteria": "[HELP MOLBERT]"
+},
+{
+    "type": "message",
+    "instruction": "Click &a&l[HELP MOLBERT]&r in chat",
+    "criteria": "Talk to Molbert"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Molbert",
+    "criteria": "[NPC] Molbert: Thank you so much, I was stuck there for at least 3 minutes, I was almost gone for good.",
+    "navTo": "-447 122 -63",
+    "outlineEntities": [
+        {
+            "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQ1OTI1MTYwOCwKICAicHJvZmlsZUlkIiA6ICI3M2ZkNzU2NWJkZTY0MGQzYWE4MGUxMWUwMTMwMjc3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYUJySWVMVnR6IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyMDc4M2UyNzQzYjg5NzZiMDBmODI3ZWUyODM2NzVkNzkxMTE0MGM5ODI4NDIzOWY2YmMxYzhkZDFkMjdjODEiCiAgICB9CiAgfQp9"
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Collect Jungle Logs",
+    "criteria": "Select an option: [I know that you are a mole]"
+},
+{
+    "type": "message",
+    "instruction": "Click &a[I know that you are a mole]&r in chat",
+    "criteria": "[NPC] Molbert: Ok, fine you caught me. But please don't tell the others, they wouldn't want to be my friends anymore if they knew the truth."
+},
+{
+    "type": "message",
+    "instruction": "Collect Jungle Logs",
+    "criteria": "[NPC] Molbert: I hope you forgive me after this and we can still be friends."
+},
+{
+    "type": "has",
+    "instruction": "Claim Mole Hat",
+    "items": {
+        "MOLE_HAT": 1
+    },
+    "highlightSlots": [
+        {
+            "guiName": "Claim Reward",
+            "skyblockId": "MOLE_HAT"
+        }
+    ],
+    "navTo": "Molbert",
+    "outlineEntities": [
+        {
+            "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQ1OTI1MTYwOCwKICAicHJvZmlsZUlkIiA6ICI3M2ZkNzU2NWJkZTY0MGQzYWE4MGUxMWUwMTMwMjc3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYUJySWVMVnR6IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyMDc4M2UyNzQzYjg5NzZiMDBmODI3ZWUyODM2NzVkNzkxMTE0MGM5ODI4NDIzOWY2YmMxYzhkZDFkMjdjODEiCiAgICB9CiAgfQp9"
+        }
+    ]
+},
+{
+    "type": "collection",
+    "instruction": "Unlock Jungle Log Collection 3",
+    "collection": "jungle_log",
+    "level": 3
+},
+{
+    "type": "has",
+    "instruction": "Get Jungle Logs &b%1%&r",
+    "items": {
+        "LOG:3": 160
+    }
+},
+{
+    "type": "supercraft",
+    "instruction": "Craft Enchanted Jungle Log",
+    "items": {
+        "ENCHANTED_JUNGLE_LOG": 1
+    },
+    "bingoRanks": [
+        3,
+        4
+    ]
+},
+{
+    "type": "guiItem",
+    "instruction": "Personal Compact Enchanted Jungle Log",
+    "has": [
+        "Auto-Craft Slot",
+        "Item: Enchanted Jungle Log"
+    ],
+    "bingoRanks": [
+        3,
+        4
+    ],
+    "highlightSlots": [
+        {
+            "guiName": "Crafting",
+            "has": [
+                "Personal Compactor"
+            ],
+            "highlightColor": "#FFAA00",
+            "playerInv": true
+        },
+        {
+            "guiName": "Personal Compactor",
+            "skyblockId": "ENCHANTED_JUNGLE_LOG",
+            "playerInv": true
+        }
+    ]
+},
+{
+    "type": "skill",
+    "instruction": "Get Enchanted Jungle Logs",
+    "skill": "foraging",
+    "level": 12
+},
+{
+    "type": "area",
+    "instruction": "/warp galatea",
+    "area": "Galatea",
+    "command": "/warp galatea"
+},
+{
+    "type": "message",
+    "instruction": "Talk to Hina",
+    "criteria": "[NPC] Hina: Hola!",
+    "navTo": "Hina",
+    "outlineEntities": [
+        {
+            "type": "Player",
+            "position": [
+                -553.5,
+                110,
+                -16.5
+            ]
+        }
+    ]
+},
+{
+    "type": "message",
+    "instruction": "Get Lushlilacs",
+    "criteria": "HEART OF THE FOREST has been unlocked! Open your SkyBlock Menu to find it. [CLICK HERE TO OPEN]"
+},
+{
+    "type": "guiItem",
+    "instruction": "Upgrade Sweep Perk",
+    "guiName": "Heart of the Forest",
+    "slotIndex": 40,
+    "has": [
+        "You don't have enough Forest Whispers!"
+    ],
+    "highlightSlots": [
+        {
+            "guiName": "Heart of the Forest",
+            "slotIndex": 40,
+            "has": [
+                "Sweep"
+            ],
+            "highlightColor": "#55FF55"
+        }
+    ],
+    "command": "/hotf"
+},
+{
+    "type": "area",
+    "instruction": "/warp jungle",
+    "area": "The Park",
+    "command": "/warp jungle"
+},
+{
+    "type": "has",
+    "instruction": "Get Enchanted Jungle Logs &b%1%",
+    "items": {
+        "ENCHANTED_JUNGLE_LOG": 32
+    }
+},
+{
+    "type": "collection",
+    "instruction": "Unlock Jungle Log Collection 7",
+    "collection": "jungle_log",
+    "level": 7
+},
+{
+    "type": "supercraft",
+    "instruction": "Craft Treecapitator",
+    "items": {
+        "TREECAPITATOR_AXE": 1
+    }
+},
+{
+    "type": "sell",
+    "instruction": "Store Park Armor",
+    "items": [
+        "MOLE_HAT",
+        "KELLY_TSHIRT",
+        "CHARLIE_TROUSERS",
+        "MELODY_SHOES"
+    ],
+    "command": "/wardrobe"
+},
+{
+    "type": "sell",
+    "instruction": "Sell items",
+    "items": [
+        "LOG",
+        "LOG:2",
+        "LOG:1",
+        "LOG_2:1",
+        "LOG_2",
+        "LOG:3",
+        "PROMISING_AXE",
+        "BROWN_MUSHROOM",
+        "RED_MUSHROOM"
+    ],
+    "command": "/trades"
+}
