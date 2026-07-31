@@ -255,10 +255,18 @@
             ]
         },
         {
-            "type": "clickSlot",
+            "type": "has",
             "instruction": "Claim Safety Badge",
-            "guiName": "Claim Safety Badge",
-            "skyblockId": "SAFETY_BADGE"
+            "items": {
+                "SAFETY_BADGE": 1
+            },
+            "highlightSlots": [
+                {
+                    "guiName": "Claim Safety Badge",
+                    "skyblockId": "SAFETY_BADGE",
+                    "highlightColor": "#55FF55"
+                }
+            ]
         },
         {
             "type": "store",
