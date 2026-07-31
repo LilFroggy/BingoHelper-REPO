@@ -1,7 +1,7 @@
 {
     "type": "message",
     "instruction": "Eat Booster Cookie",
-    "criteria": "You consumed a Booster Cookie! Yummy!",
+    "criteria": "You consumed a Booster Cookie!",
     "highlightSlots": [
         {
             "skyblockId": "BOOSTER_COOKIE",
