@@ -1,14 +1,9 @@
 {
-    "name": "September 2026 (Scuffed)",
+    "name": "October 2026",
     "version": 1,
     "data": {
         "stepIndex": 0,
         "steps": [
-            {
-                "type": "message",
-                "instruction": "This is a last minute guide\nso some steps might not work.\nUse &b/bhskip&r to skip any\nsteps that do not complete.\n\nRun &c/bhskip&r to begin",
-                "criteria": "lskajdlkajsdkas;d"
-            },
             {
                 "type": "message",
                 "instruction": "Eat Booster Cookie",
@@ -388,32 +383,8 @@
             },
             {
                 "type": "area",
-                "instruction": "/warp hub",
+                "instruction": "/warp taylor",
                 "area": "Hub",
-                "command": "/warp hub"
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "19 69 -2"
-            },
-            {
-                "type": "message",
-                "instruction": "/warp taylor",
-                "criteria": "Warping...",
-                "command": "/warp taylor"
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "37 67 -34"
-            },
-            {
-                "type": "message",
-                "instruction": "/warp taylor",
-                "criteria": "Warping...",
                 "command": "/warp taylor"
             },
             {
@@ -431,18 +402,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "39 68 -35"
-            },
-            {
-                "type": "message",
-                "instruction": "/warp taylor",
-                "criteria": "Warping...",
-                "command": "/warp taylor"
             },
             {
                 "type": "message",
@@ -487,12 +446,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "99 77 -28"
             },
             {
                 "type": "buy",
@@ -547,6 +500,12 @@
                 ]
             },
             {
+                "type": "guiItem",
+                "instruction": "Farm Wheat",
+                "guiName": "Claim Reward",
+                "navTo": "85 72 -76"
+            },
+            {
                 "type": "clickSlot",
                 "instruction": "Claim Bait",
                 "guiName": "Claim Reward",
@@ -568,7 +527,7 @@
                 "instruction": "Unlock Wheat Collection 2",
                 "collection": "wheat",
                 "level": 2,
-                "navTo": "85 74 -75"
+                "navTo": "85 72 -76"
             },
             {
                 "type": "has",
@@ -612,12 +571,6 @@
                 "instruction": "Unlock Farming 5",
                 "skill": "farming",
                 "level": 5
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "71 74 -105"
             },
             {
                 "type": "sell",
@@ -694,23 +647,12 @@
                 ]
             },
             {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "-105 86 -21"
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "-115 74 -19"
-            },
-            {
                 "type": "buy",
-                "instruction": "Buy Oak Logs &b%1%&r\nBuy Sticks &b%2%&r\nBuy Wooden Pickaxe &b%3%&r\nBuy Wooden Shovel &b%4%&r\nBuy Wooden Hoe &b%5%&r",
+                "instruction": "Buy Oak Logs &b%1%&r\nBuy Sticks &b%2%&r\nBuy Wooden Sword &b%3%&r\nBuy Wooden Pickaxe &b%4%&r\nBuy Wooden Shovel &b%5%&r\nBuy Wooden Hoe &b%6%&r",
                 "items": {
                     "LOG": 8,
                     "STICK": 32,
+                    "WOOD_SWORD": 2,
                     "WOOD_PICKAXE": 1,
                     "WOOD_SPADE": 1,
                     "WOOD_HOE": 1
@@ -743,22 +685,6 @@
             {
                 "type": "message",
                 "instruction": "Talk to Farmhand",
-                "criteria": "[NPC] Farmhand: Did you craft a Wheat Minion yet? Here's the recipe!",
-                "navTo": "Farmhand",
-                "outlineEntities": [
-                    {
-                        "type": "Villager",
-                        "position": [
-                            144.5,
-                            73.0,
-                            -240.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Farmhand (again)",
                 "criteria": "[NPC] Farmhand: Take this Chicken Pet, it'll help you gather more crops!",
                 "navTo": "Farmhand",
                 "outlineEntities": [
@@ -816,18 +742,6 @@
                 "instruction": "/warp hub",
                 "area": "Hub",
                 "command": "/warp hub"
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "88 69 -153"
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "62 81 -138"
             },
             {
                 "type": "buy",
@@ -941,12 +855,6 @@
                     "WOOD_HOE"
                 ],
                 "command": "/ec 1"
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Fairy Soul",
-                "criteria": "SOUL! You found a Fairy Soul!",
-                "navTo": "9 65 -136"
             },
             {
                 "type": "message",
@@ -1404,6 +1312,22 @@
                         "line": "NONE",
                         "type": "chicken"
                     }
+                ],
+                "async": {
+                    "effectiveIn": 1
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Kill Cows",
+                "items": {
+                    "RAW_BEEF": 64
+                },
+                "outlineEntities": [
+                    {
+                        "line": "NONE",
+                        "type": "cow"
+                    }
                 ]
             },
             {
@@ -1413,6 +1337,13 @@
                     "EGG"
                 ],
                 "command": "/ec 1"
+            },
+            {
+                "type": "supercraft",
+                "instruction": "Craft Cow Minion I",
+                "items": {
+                    "COW_GENERATOR_1": 1
+                }
             },
             {
                 "type": "sell",
@@ -1492,6 +1423,18 @@
                 "command": "/warp island"
             },
             {
+                "type": "message",
+                "instruction": "Place Cow Minion\n&cDon't forget a storage!",
+                "criteria": "You placed a minion",
+                "highlightSlots": [
+                    {
+                        "skyblockId": "COW_GENERATOR_1",
+                        "playerInv": true,
+                        "highlightColor": "#FFAA00"
+                    }
+                ]
+            },
+            {
                 "type": "store",
                 "instruction": "Store items",
                 "items": [
@@ -1516,17 +1459,17 @@
             },
             {
                 "type": "message",
-                "instruction": "Do 1st superpairs\n&7&oTry for Grand Experience Bottle",
+                "instruction": "Do 1st superpairs\n&7&oTry for 5 pairs",
                 "criteria": "You claimed the Superpairs rewards!"
             },
             {
                 "type": "message",
-                "instruction": "Do 2nd superpairs\n&7&oTry for Grand Experience Bottle",
+                "instruction": "Do 2nd superpairs\n&7&oTry for 5 pairs",
                 "criteria": "You claimed the Superpairs rewards!"
             },
             {
                 "type": "message",
-                "instruction": "Do 3rd superpairs\n&7&oTry for Grand Experience Bottle",
+                "instruction": "Do 3rd superpairs\n&7&oTry for 5 pairs",
                 "criteria": "You claimed the Superpairs rewards!"
             },
             {
@@ -1841,7 +1784,7 @@
                 "instruction": "Reforge items",
                 "items": {
                     "GOLD_AXE": [
-                        "Double-Bit",
+                        "Double Bit",
                         "Lush"
                     ],
                     "ANGLER_HELMET": [
@@ -2065,13 +2008,12 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Birch &b%1%&r\nBuy Spruce &b%2%&r\nBuy Dark Oak &b%3%&r\nBuy Acacia &b%4%&r\nBuy Jungle &b%5%&r",
+                "instruction": "Buy Birch &b%1%&r\nBuy Spruce &b%2%&r\nBuy Dark Oak &b%3%&r\nBuy Acacia &b%4%&r",
                 "items": {
                     "LOG:2": 64,
                     "LOG:1": 128,
                     "LOG_2:1": 256,
-                    "LOG_2": 512,
-                    "LOG:3": 640
+                    "LOG_2": 512
                 },
                 "navTo": "Lumber Merchant",
                 "outlineEntities": [
@@ -2131,7 +2073,7 @@
                 "type": "buy",
                 "instruction": "Buy Oak Log &b%1%&r",
                 "items": {
-                    "LOG": 631
+                    "LOG": 632
                 },
                 "navTo": "Lumber Merchant",
                 "outlineEntities": [
@@ -2393,19 +2335,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "type": "collection",
-                "instruction": "Unlock Spruce Collection 2",
-                "collection": "spruce_log",
-                "level": 2
-            },
-            {
-                "type": "supercraft",
-                "instruction": "Craft Spruce Axe &b%1%&r",
-                "items": {
-                    "JUNGLE_AXE": 1
-                }
             },
             {
                 "type": "sell",
@@ -2694,465 +2623,6 @@
                 ]
             },
             {
-                "type": "sell",
-                "instruction": "Sell items",
-                "items": [
-                    "LEAVES",
-                    "LEAVES:1",
-                    "LEAVES:2",
-                    "LEAVES:3",
-                    "LEAVES_2",
-                    "LEAVES_2:1",
-                    "ENCHANTED_OAK_LOG",
-                    "ENCHANTED_BIRCH_LOG",
-                    "ENCHANTED_SPRUCE_LOG",
-                    "ENCHANTED_DARK_OAK_LOG",
-                    "ENCHANTED_ACACIA_LOG",
-                    "LOG",
-                    "LOG:2",
-                    "LOG:1",
-                    "LOG_2:1",
-                    "LOG_2",
-                    "PROMISING_AXE",
-                    "BROWN_MUSHROOM",
-                    "RED_MUSHROOM"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "message",
-                "instruction": "/warp jungle",
-                "criteria": "Warping...",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Molbert",
-                "criteria": "[NPC] Molbert: I watched the comings and goings in this park and it occurred to me that a very common problem plagues these areas.",
-                "navTo": "Molbert",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -465.5,
-                            120,
-                            -42.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Jungle Logs",
-                "criteria": "Select an option: [Sure...] [You look like a mole yourself]"
-            },
-            {
-                "type": "message",
-                "instruction": "Click &a[Sure...] &fin chat",
-                "criteria": "[NPC] Molbert: Great. First thing we need is to build some traps."
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Jungle Logs",
-                "criteria": "Give Molbert Jungle Logs"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Molbert",
-                "criteria": "[NPC] Molbert: It will take me some time to assemble them, so you should come back later.",
-                "navTo": "Molbert",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -465.5,
-                            120,
-                            -42.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "collection",
-                "instruction": "Unlock Jungle Log Collection 3",
-                "collection": "jungle_log",
-                "level": 3,
-                "bingoRanks": [
-                    3,
-                    4
-                ]
-            },
-            {
-                "type": "has",
-                "instruction": "Get Jungle Logs &b%1%&r",
-                "items": {
-                    "LOG:3": 160
-                },
-                "bingoRanks": [
-                    3,
-                    4
-                ]
-            },
-            {
-                "type": "supercraft",
-                "instruction": "Craft Enchanted Jungle Log &b%1%&r",
-                "items": {
-                    "ENCHANTED_JUNGLE_LOG": 1
-                },
-                "bingoRanks": [
-                    3,
-                    4
-                ]
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Personal Compact Enchanted Jungle Log",
-                "has": [
-                    "Auto-Craft Slot",
-                    "Item: Enchanted Jungle Log"
-                ],
-                "highlightSlots": [
-                    {
-                        "guiName": "Crafting",
-                        "has": [
-                            "Personal Compactor"
-                        ],
-                        "highlightColor": "#FFAA00",
-                        "playerInv": true
-                    },
-                    {
-                        "guiName": "Personal Compactor",
-                        "skyblockId": "ENCHANTED_JUNGLE_LOG",
-                        "playerInv": true
-                    }
-                ],
-                "bingoRanks": [
-                    3,
-                    4
-                ]
-            },
-            {
-                "type": "subArea",
-                "instruction": "Leave Area",
-                "subArea": "Savanna Woodland",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -462,
-                                121,
-                                -29
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -462,
-                                121,
-                                -29
-                            ],
-                            "radius": 100
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "/warp jungle",
-                "criteria": "Warping...",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Molbert",
-                "criteria": "[NPC] Molbert: The traps are ready for use; All that remains is to set them up in the right place. Once you find the ideal spots, go ahead and deploy them.",
-                "navTo": "Molbert",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -465.5,
-                            120,
-                            -42.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Place Trap",
-                "criteria": "Placed trap (1/3)",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -466,
-                                119,
-                                -54
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Place Trap",
-                "criteria": "Placed trap (2/3)",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -449.0,
-                                120,
-                                -65.0
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Place Trap",
-                "criteria": "Placed trap (3/3)",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -440.0,
-                                122,
-                                -92.0
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "/warp jungle",
-                "criteria": "Warping...",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Molbert",
-                "criteria": "[NPC] Molbert: This might take some time, so you should come back later.",
-                "navTo": "Molbert",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -465.5,
-                            120,
-                            -42.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "subArea",
-                "instruction": "Leave Area",
-                "subArea": "Savanna Woodland",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -462,
-                                121,
-                                -29
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -462,
-                                121,
-                                -29
-                            ],
-                            "radius": 100
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "/warp jungle",
-                "criteria": "Warping...",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Molbert",
-                "criteria": "[NPC] Molbert: Hey.. uhm partner! I swear it's not what you think!",
-                "navTo": "-447 122 -63",
-                "outlineEntities": [
-                    {
-                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQ1OTI1MTYwOCwKICAicHJvZmlsZUlkIiA6ICI3M2ZkNzU2NWJkZTY0MGQzYWE4MGUxMWUwMTMwMjc3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYUJySWVMVnR6IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyMDc4M2UyNzQzYjg5NzZiMDBmODI3ZWUyODM2NzVkNzkxMTE0MGM5ODI4NDIzOWY2YmMxYzhkZDFkMjdjODEiCiAgICB9CiAgfQp9"
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Click &a&l[HELP MOLBERT]&r in chat",
-                "criteria": "Talk to Molbert"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Molbert",
-                "criteria": "[NPC] Molbert: Thank you so much, I was stuck there for at least 3 minutes, I was almost gone for good.",
-                "navTo": "-447 122 -63",
-                "outlineEntities": [
-                    {
-                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQ1OTI1MTYwOCwKICAicHJvZmlsZUlkIiA6ICI3M2ZkNzU2NWJkZTY0MGQzYWE4MGUxMWUwMTMwMjc3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYUJySWVMVnR6IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyMDc4M2UyNzQzYjg5NzZiMDBmODI3ZWUyODM2NzVkNzkxMTE0MGM5ODI4NDIzOWY2YmMxYzhkZDFkMjdjODEiCiAgICB9CiAgfQp9"
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Get Enchanted Jungle Logs",
-                "criteria": "Select an option: [I know that you are a mole]"
-            },
-            {
-                "type": "message",
-                "instruction": "Click &a[I know that you are a mole]&r in chat",
-                "criteria": "[NPC] Molbert: Ok, fine you caught me. But please don't tell the others, they wouldn't want to be my friends anymore if they knew the truth."
-            },
-            {
-                "type": "message",
-                "instruction": "Get Enchanted Jungle Logs",
-                "criteria": "[NPC] Molbert: I hope you forgive me after this and we can still be friends."
-            },
-            {
-                "type": "has",
-                "instruction": "Claim Mole Hat",
-                "items": {
-                    "MOLE_HAT": 1
-                },
-                "highlightSlots": [
-                    {
-                        "guiName": "Claim Reward",
-                        "skyblockId": "MOLE_HAT"
-                    }
-                ],
-                "navTo": "Molbert",
-                "outlineEntities": [
-                    {
-                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQ1OTI1MTYwOCwKICAicHJvZmlsZUlkIiA6ICI3M2ZkNzU2NWJkZTY0MGQzYWE4MGUxMWUwMTMwMjc3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYUJySWVMVnR6IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YyMDc4M2UyNzQzYjg5NzZiMDBmODI3ZWUyODM2NzVkNzkxMTE0MGM5ODI4NDIzOWY2YmMxYzhkZDFkMjdjODEiCiAgICB9CiAgfQp9"
-                    }
-                ]
-            },
-            {
-                "type": "skill",
-                "instruction": "Get Enchanted Jungle Logs",
-                "skill": "foraging",
-                "level": 12
-            },
-            {
-                "type": "area",
-                "instruction": "/warp galatea",
-                "area": "Galatea",
-                "command": "/warp galatea"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Hina",
-                "criteria": "[NPC] Hina: Hola!",
-                "navTo": "Hina",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -553.5,
-                            110,
-                            -16.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Collect Lushlilacs",
-                "criteria": "[NPC] Hina: For each task I will reward you handsomely!"
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Upgrade Sweep Perk",
-                "guiName": "Heart of the Forest",
-                "slotIndex": 40,
-                "has": [
-                    "You don't have enough Forest Whispers!"
-                ],
-                "highlightSlots": [
-                    {
-                        "guiName": "Heart of the Forest",
-                        "slotIndex": 40,
-                        "has": [
-                            "Sweep"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
-                ],
-                "command": "/hotf"
-            },
-            {
-                "type": "retrieve",
-                "instruction": "Retrieve Jungle Logs",
-                "items": [
-                    "LOG:3"
-                ],
-                "command": "/ec 1"
-            },
-            {
-                "type": "area",
-                "instruction": "/warp jungle",
-                "area": "The Park",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "has",
-                "instruction": "Get Enchanted Jungle Logs &b%1%",
-                "items": {
-                    "ENCHANTED_JUNGLE_LOG": 32
-                }
-            },
-            {
-                "type": "collection",
-                "instruction": "Unlock Jungle Log Collection 7",
-                "collection": "jungle_log",
-                "level": 7
-            },
-            {
-                "type": "supercraft",
-                "instruction": "Craft Treecapitator",
-                "items": {
-                    "TREECAPITATOR_AXE": 1
-                }
-            },
-            {
                 "type": "store",
                 "instruction": "Store Park Armor",
                 "items": [
@@ -3167,7 +2637,6 @@
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
-                    "GOLD_AXE",
                     "LEAVES",
                     "LEAVES:1",
                     "LEAVES:2",
@@ -3287,11 +2756,31 @@
                     }
                 ],
                 "async": {
-                    "effectiveAt": 273,
+                    "effectiveIn": 45,
                     "requirements": {
                         "entity": {
                             "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYwNzk3MTY3MTQ1MCwKICAicHJvZmlsZUlkIiA6ICJhMmY4MzQ1OTVjODk0YTI3YWRkMzA0OTcxNmNhOTEwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiUHVuY2giLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg3YjhmM2NmMWMxMDE0ODgzMjc2ZjIzMDUwMWQ1YWYxMzk3Njk5MDcxYmZhYjFlZTI5NGM4NjE3MjJjYzJmIgogICAgfQogIH0KfQ\u003d\u003d"
                         }
+                    }
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Do Goblin Raid",
+                "criteria": "BINGO GOAL COMPLETE! Powder Collector",
+                "async": {
+                    "requirements": {
+                        "dwarvenEvent": "GOBLIN_RAID"
+                    }
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Do Raffle",
+                "criteria": "BINGO GOAL COMPLETE! Powder Collector",
+                "async": {
+                    "requirements": {
+                        "dwarvenEvent": "RAFFLE"
                     }
                 }
             },
@@ -3411,7 +2900,7 @@
                 "items": [
                     "FISH_BAIT"
                 ],
-                "command": "/ec 1"
+                "command": "/ec 2"
             },
             {
                 "type": "area",
@@ -3492,8 +2981,16 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Starlight Armor",
+                "instruction": "Buy Iron Armor\nBuy Rosetta Armor\nBuy Starlight Armor",
                 "items": {
+                    "IRON_HELMET": 1,
+                    "IRON_CHESTPLATE": 1,
+                    "IRON_LEGGINGS": 1,
+                    "IRON_BOOTS": 1,
+                    "ROSETTA_HELMET": 1,
+                    "ROSETTA_CHESTPLATE": 1,
+                    "ROSETTA_LEGGINGS": 1,
+                    "ROSETTA_BOOTS": 1,
                     "STARLIGHT_HELMET": 1,
                     "STARLIGHT_CHESTPLATE": 1,
                     "STARLIGHT_LEGGINGS": 1,
@@ -3510,6 +3007,43 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "store",
+                "instruction": "Store Armor Sets",
+                "items": [
+                    "IRON_HELMET",
+                    "IRON_CHESTPLATE",
+                    "IRON_LEGGINGS",
+                    "IRON_BOOTS",
+                    "ROSETTA_HELMET",
+                    "ROSETTA_CHESTPLATE",
+                    "ROSETTA_LEGGINGS",
+                    "ROSETTA_BOOTS"
+                ],
+                "command": "/wardrobe"
+            },
+            {
+                "type": "retrieve",
+                "instruction": "Retrieve Farmhand Armor",
+                "items": [
+                    "FARM_SUIT_HELMET",
+                    "FARM_SUIT_CHESTPLATE",
+                    "FARM_SUIT_LEGGINGS",
+                    "FARM_SUIT_BOOTS"
+                ],
+                "command": "/ec 2"
+            },
+            {
+                "type": "store",
+                "instruction": "Store Farmhand Armor",
+                "items": [
+                    "FARM_SUIT_HELMET",
+                    "FARM_SUIT_CHESTPLATE",
+                    "FARM_SUIT_LEGGINGS",
+                    "FARM_SUIT_BOOTS"
+                ],
+                "command": "/wardrobe"
             },
             {
                 "type": "enchant",
@@ -3794,6 +3328,14 @@
             },
             {
                 "type": "store",
+                "instruction": "Store items",
+                "items": [
+                    "EMERALD"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "store",
                 "instruction": "Store Talismans",
                 "items": [
                     "COIN_TALISMAN",
@@ -3870,6 +3412,22 @@
                 "command": "/warp gold"
             },
             {
+                "type": "message",
+                "instruction": "Talk to Iron Forger",
+                "criteria": "[NPC] Iron Forger:",
+                "navTo": "Iron Forger",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -1.5,
+                            75.0,
+                            -307.5
+                        ]
+                    }
+                ]
+            },
+            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
@@ -3889,6 +3447,27 @@
                     "DIAMOND"
                 ],
                 "command": "/trades"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Chainmail Armor",
+                "items": {
+                    "CHAINMAIL_HELMET": 1,
+                    "CHAINMAIL_CHESTPLATE": 1,
+                    "CHAINMAIL_LEGGINGS": 1,
+                    "CHAINMAIL_BOOTS": 1
+                },
+                "navTo": "Iron Forger",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -1.5,
+                            75.0,
+                            -307.5
+                        ]
+                    }
+                ]
             },
             {
                 "type": "message",
@@ -3959,6 +3538,42 @@
                 "command": "/mobtypes"
             },
             {
+                "type": "buy",
+                "instruction": "Buy Gold Armor",
+                "items": {
+                    "GOLD_HELMET": 1,
+                    "GOLD_CHESTPLATE": 1,
+                    "GOLD_LEGGINGS": 1,
+                    "GOLD_BOOTS": 1
+                },
+                "navTo": "Gold Forger",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -27.5,
+                            74.0,
+                            -294.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "store",
+                "instruction": "Store Armor Sets",
+                "items": [
+                    "CHAINMAIL_HELMET",
+                    "CHAINMAIL_CHESTPLATE",
+                    "CHAINMAIL_LEGGINGS",
+                    "CHAINMAIL_BOOTS",
+                    "GOLD_HELMET",
+                    "GOLD_CHESTPLATE",
+                    "GOLD_LEGGINGS",
+                    "GOLD_BOOTS"
+                ],
+                "command": "/wardrobe"
+            },
+            {
                 "type": "area",
                 "instruction": "/hub",
                 "area": "Hub",
@@ -3968,9 +3583,6 @@
                 "type": "reforge",
                 "instruction": "Reforge items",
                 "items": {
-                    "TREECAPITATOR_AXE": [
-                        "Double Bit"
-                    ],
                     "CLEAVER": [
                         "Sharp",
                         "Odd Sword"
@@ -3998,9 +3610,6 @@
                 "type": "enchant",
                 "instruction": "Enchant items",
                 "items": {
-                    "TREECAPITATOR_AXE": [
-                        "Efficiency V"
-                    ],
                     "CLEAVER": [
                         "Sharpness V",
                         "Smite V",
@@ -4214,14 +3823,182 @@
                 ]
             },
             {
+                "type": "message",
+                "instruction": "Start a T1 Spider",
+                "criteria": "SLAYER QUEST STARTED!",
+                "highlightSlots": [
+                    {
+                        "guiName": "Crafting",
+                        "skyblockId": "ABINGOPHONE",
+                        "playerInv": true,
+                        "highlightColor": "#FFAA00"
+                    },
+                    {
+                        "guiName": "AⒷiphone",
+                        "has": [
+                            "Maddox the Slayer"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Slayer",
+                        "has": [
+                            "Slayer Quest Complete!"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Slayer",
+                        "has": [
+                            "☠ Tarantula Broodfather"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Tarantula Broodfather",
+                        "has": [
+                            "Beginner"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Confirm",
+                        "has": [
+                            "Click to start quest!"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ]
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "FOUL_FLESH",
+                    "ANCIENT_CLAW",
+                    "RUNE",
+                    "REVENANT_FLESH",
+                    "TARANTULA_WEB",
+                    "STRING",
+                    "ENCHANTED_STRING",
+                    "SPIDER_EYE",
+                    "ENCHANTED_SPIDER_EYE",
+                    "ARACHNE_KEEPER_FRAGMENT",
+                    "ROTTEN_FLESH",
+                    "BONE",
+                    "GOLD_INGOT",
+                    "GOLD_BLOCK"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "area",
+                "instruction": "/warp arachne",
+                "area": "Spider's Den",
+                "command": "/warp arachne"
+            },
+            {
+                "type": "message",
+                "instruction": "Spawn and kill boss",
+                "criteria": "NICE! SLAYER BOSS SLAIN!",
+                "outlineEntities": [
+                    {
+                        "line": "NONE",
+                        "type": "spider"
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Start a T2 Spider",
+                "criteria": "SLAYER QUEST STARTED!",
+                "highlightSlots": [
+                    {
+                        "guiName": "Crafting",
+                        "skyblockId": "ABINGOPHONE",
+                        "playerInv": true,
+                        "highlightColor": "#FFAA00"
+                    },
+                    {
+                        "guiName": "AⒷiphone",
+                        "has": [
+                            "Maddox the Slayer"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Slayer",
+                        "has": [
+                            "Slayer Quest Complete!"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Slayer",
+                        "has": [
+                            "☠ Tarantula Broodfather"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Tarantula Broodfather",
+                        "has": [
+                            "Strong"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Confirm",
+                        "has": [
+                            "Click to start quest!"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Spawn and kill boss",
+                "criteria": "NICE! SLAYER BOSS SLAIN!",
+                "outlineEntities": [
+                    {
+                        "line": "NONE",
+                        "type": "spider"
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Claim Slayer XP",
+                "guiName": "Slayer",
+                "has": [
+                    "Slayer Quest Complete!"
+                ],
+                "highlightSlots": [
+                    {
+                        "guiName": "Crafting",
+                        "skyblockId": "ABINGOPHONE",
+                        "playerInv": true,
+                        "highlightColor": "#FFAA00"
+                    },
+                    {
+                        "guiName": "AⒷiphone",
+                        "has": [
+                            "Maddox the Slayer"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ]
+            },
+            {
                 "type": "skill",
-                "instruction": "Kill Crypt Ghouls\n&7&oDo T3s if you have carry",
+                "instruction": "Keep doing T2 Spiders",
                 "skill": "combat",
                 "level": 12,
                 "outlineEntities": [
                     {
                         "line": "NONE",
-                        "type": "zombie"
+                        "type": "spider"
                     }
                 ],
                 "highlightSlots": [
@@ -4248,12 +4025,12 @@
                     {
                         "guiName": "Slayer",
                         "has": [
-                            "☠ Revenant Horror"
+                            "☠ Tarantula Broodfather"
                         ],
                         "highlightColor": "#55FF55"
                     },
                     {
-                        "guiName": "Revenant Horror",
+                        "guiName": "Tarantula Broodfather",
                         "has": [
                             "Strong"
                         ],
@@ -4331,6 +4108,660 @@
                     "RUNE"
                 ],
                 "command": "/trades"
+            },
+            {
+                "type": "area",
+                "instruction": "/warp jungle",
+                "area": "The Park",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Juliette",
+                "criteria": "[NPC] Juliette: Nice to meet you!",
+                "navTo": "-416 131 -122",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -415.5,
+                            130,
+                            -121.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "/warp jungle",
+                "criteria": "Warping...",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: I'm.. trying to find gold...",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "",
+                            "position": [
+                                -462,
+                                121,
+                                -29
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "",
+                            "position": [
+                                -434,
+                                110,
+                                -12
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "",
+                            "position": [
+                                -464,
+                                111,
+                                22
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "",
+                            "position": [
+                                -465,
+                                103,
+                                30
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Romero",
+                            "position": [
+                                -457,
+                                100,
+                                30
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -456.5,
+                            100,
+                            30.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "has",
+                "instruction": "Mine for Yellow Rock",
+                "items": {
+                    "YELLOW_ROCK": 1
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "",
+                            "position": [
+                                -466,
+                                100,
+                                32
+                            ],
+                            "radius": 3
+                        },
+                        {
+                            "text": "Jump + Grappling Hook",
+                            "position": [
+                                -463,
+                                110,
+                                32
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "",
+                            "position": [
+                                -446,
+                                112,
+                                45
+                            ],
+                            "radius": 10
+                        },
+                        {
+                            "text": "Mine Gold",
+                            "position": [
+                                -437,
+                                109,
+                                45
+                            ],
+                            "radius": 10
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Talk to Romero\n&7(While holding Yellow Rock)",
+                "items": {
+                    "POORLY_WRAPPED_ROCK": 1
+                },
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "",
+                            "position": [
+                                -463,
+                                112,
+                                34
+                            ],
+                            "radius": 7
+                        },
+                        {
+                            "text": "",
+                            "position": [
+                                -465,
+                                100,
+                                34
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "Romero",
+                            "position": [
+                                -457,
+                                100,
+                                30
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -456.5,
+                            100,
+                            30.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "/warp jungle",
+                "criteria": "Warping...",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "has",
+                "instruction": "Talk to Juliette\n&7(While holding Poorly Wrapped Gift)",
+                "items": {
+                    "WEDDING_RING_0": 1
+                },
+                "navTo": "-416 131 -122",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -415.5,
+                            130,
+                            -121.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "area",
+                "instruction": "/warp museum",
+                "area": "Hub",
+                "command": "/warp museum"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: Groceries?",
+                "navTo": "89.5 76 15.5",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            89.5,
+                            75.0,
+                            15.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "has",
+                "instruction": "Collect Poppies &b%1%&r\n&7(Lobby-hop if necessary)",
+                "items": {
+                    "RED_ROSE": 15
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Talk to Romero\n&7(While holding Poppies)",
+                "items": {
+                    "ROSE_BOUQUET": 1
+                },
+                "navTo": "89.5 76 15.5",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            89.5,
+                            75.0,
+                            15.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "area",
+                "instruction": "/warp jungle",
+                "area": "The Park",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "has",
+                "instruction": "Talk to Juliette\n&7(While holding Rose Bouquet)",
+                "items": {
+                    "WEDDING_RING_1": 1
+                },
+                "navTo": "-416 131 -122",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -415.5,
+                            130,
+                            -121.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "retrieve",
+                "instruction": "Retrieve items",
+                "items": [
+                    "EMERALD",
+                    "REDSTONE",
+                    "LOG"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "area",
+                "instruction": "/warp spider",
+                "area": "Spider's Den",
+                "command": "/warp spider"
+            },
+            {
+                "type": "area",
+                "instruction": "/hub",
+                "area": "Hub",
+                "command": "/hub"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Romero",
+                "criteria": "[NPC] Romero: I love emeralds!",
+                "navTo": "-119 75 -171",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -119.0,
+                            74.0,
+                            -171.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "has",
+                "instruction": "Talk to Romero\n&7(While holding 64 Emeralds)",
+                "items": {
+                    "FAKE_EMERALD_ALTAR": 1
+                },
+                "navTo": "-119 75 -171",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -119.0,
+                            74.0,
+                            -171.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "GOLD_ORE",
+                    "RED_ROSE",
+                    "RED_ROSE:1",
+                    "RED_ROSE:2",
+                    "RED_ROSE:3",
+                    "RED_ROSE:5",
+                    "RED_ROSE:6",
+                    "RED_ROSE:7",
+                    "RED_ROSE:8",
+                    "YELLOW_FLOWER",
+                    "EMERALD",
+                    "REDSTONE",
+                    "LOG",
+                    "ROTTEN_FLESH",
+                    "CARROT_ITEM",
+                    "POTATO_ITEM",
+                    "RUNE"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "area",
+                "instruction": "/warp jungle",
+                "area": "The Park",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "has",
+                "instruction": "Talk to Juliette\n&7(While holding Fake Emerald Altar)",
+                "items": {
+                    "WEDDING_RING_2": 1
+                },
+                "navTo": "-416 131 -122",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -415.5,
+                            130,
+                            -121.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "area",
+                "instruction": "/hub",
+                "area": "Hub",
+                "command": "/hub"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp hub",
+                "criteria": "Warping...",
+                "command": "/warp hub"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Enchanted Seeds &b%1%&r",
+                "items": {
+                    "ENCHANTED_SEEDS": 50
+                },
+                "navTo": "51 72 -74"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Wheat &b%1%&r",
+                "items": {
+                    "WHEAT": 25
+                }
+            },
+            {
+                "type": "area",
+                "instruction": "/is",
+                "area": "Private Island",
+                "command": "/is"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Sam",
+                "criteria": "[NPC] Stranger: What a pleasant surprise! I see you have quite an impressive island.",
+                "outlineEntities": [
+                    {
+                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTI0NzcyMjk1MiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJvRml3aSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85NWRjZmM4YjMyMDAzMjZiOGY2MWQ4MDYxNWM1YjUzNjk5N2ExMTg1NzBhNDdmMWQzNTMwNjMyOTY5MjFmZTEzIgogICAgfQogIH0KfQ\u003d\u003d"
+                    }
+                ]
+            },
+            {
+                "type": "area",
+                "instruction": "Click &a&l[YES]&r in chat",
+                "area": "Garden"
+            },
+            {
+                "type": "message",
+                "instruction": "Give Wheat to Sam",
+                "criteria": "[NPC] Sam: Wow, you did it!",
+                "outlineEntities": [
+                    {
+                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTI0NzcyMjk1MiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJvRml3aSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85NWRjZmM4YjMyMDAzMjZiOGY2MWQ4MDYxNWM1YjUzNjk5N2ExMTg1NzBhNDdmMWQzNTMwNjMyOTY5MjFmZTEzIgogICAgfQogIH0KfQ\u003d\u003d"
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Sam",
+                "criteria": "[NPC] Sam: Head over to the desk, there you can browse SkyMart to order some fuel.",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "",
+                            "position": [
+                                -5.0,
+                                72.0,
+                                -18.0
+                            ],
+                            "radius": 5
+                        },
+                        {
+                            "text": "",
+                            "position": [
+                                -15.0,
+                                72.0,
+                                -28.0
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                "outlineEntities": [
+                    {
+                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTI0NzcyMjk1MiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJvRml3aSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85NWRjZmM4YjMyMDAzMjZiOGY2MWQ4MDYxNWM1YjUzNjk5N2ExMTg1NzBhNDdmMWQzNTMwNjMyOTY5MjFmZTEzIgogICAgfQogIH0KfQ\u003d\u003d"
+                    }
+                ]
+            },
+            {
+                "type": "has",
+                "instruction": "Buy Biofuel &b%1%&r",
+                "items": {
+                    "BIOFUEL": 1
+                },
+                "highlightSlots": [
+                    {
+                        "guiName": "Desk",
+                        "has": [
+                            "SkyMart"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "SkyMart",
+                        "has": [
+                            "Farming Essentials"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "skyblockId": "BIOFUEL",
+                        "highlightColor": "#55FF55"
+                    }
+                ],
+                "command": "/desk"
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Insert fuel",
+                "guiName": "Composter",
+                "skyblockId": "BIOFUEL",
+                "playerInv": true,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Composter",
+                            "position": [
+                                -11.5,
+                                72,
+                                -27.5
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Collect Compost",
+                "items": {
+                    "COMPOST": 1
+                },
+                "highlightSlots": [
+                    {
+                        "guiName": "Composter",
+                        "skyblockId": "COMPOST"
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Unlock Plot 3",
+                "guiName": "Confirm Plot Unlock",
+                "has": [
+                    "Confirm"
+                ],
+                "highlightSlots": [
+                    {
+                        "guiName": "Desk",
+                        "has": [
+                            "Configure Plots"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Configure Plots",
+                        "has": [
+                            "Plot - 3"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ],
+                "command": "/desk"
+            },
+            {
+                "type": "message",
+                "instruction": "/plottp 3",
+                "criteria": "Teleported you to Plot - 3!",
+                "command": "/plottp 3"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Clean Plot",
+                "guiName": "Sam's Scythe"
+            },
+            {
+                "type": "has",
+                "instruction": "Claim Sam's Scythe",
+                "items": {
+                    "SAM_SCYTHE": 1
+                },
+                "highlightSlots": [
+                    {
+                        "guiName": "Sam's Scythe",
+                        "skyblockId": "SAM_SCYTHE"
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Clean Plot",
+                "criteria": "Plot - 3 is now clean!"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "LOG",
+                    "SAPLING",
+                    "APPLE",
+                    "RED_ROSE",
+                    "YELLOW_FLOWER",
+                    "RED_ROSE:3",
+                    "DIRT",
+                    "GRASS",
+                    "LEAVES"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Paste Wheat Preset",
+                "guiName": "Confirm Paste",
+                "has": [
+                    "Confirm Paste"
+                ],
+                "highlightSlots": [
+                    {
+                        "guiName": "Desk",
+                        "has": [
+                            "Configure Plots"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Configure Plots",
+                        "has": [
+                            "Plot - 3"
+                        ],
+                        "highlightColor": "#55FF55"
+                    },
+                    {
+                        "guiName": "Plot Modification: 3",
+                        "has": [
+                            "Wheat"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ],
+                "command": "/desk"
             }
         ]
     }
