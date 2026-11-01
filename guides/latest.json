@@ -1,5 +1,5 @@
 {
-    "name": "October 2026",
+    "name": "November 2026",
     "version": 1,
     "data": {
         "stepIndex": 0,
@@ -382,9 +382,54 @@
                 "instruction": "Eat cakes &b%cakes%"
             },
             {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "",
+                            "position": [
+                                -54.0,
+                                40.0,
+                                0.0
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
                 "type": "area",
-                "instruction": "/warp taylor",
+                "instruction": "/warp hub",
                 "area": "Hub",
+                "command": "/warp hub"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "18 68 -3"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp taylor",
+                "criteria": "Warping...",
+                "command": "/warp taylor"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "36 66 -35"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp taylor",
+                "criteria": "Warping...",
                 "command": "/warp taylor"
             },
             {
@@ -402,6 +447,18 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "38 67 -36"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp taylor",
+                "criteria": "Warping...",
+                "command": "/warp taylor"
             },
             {
                 "type": "message",
@@ -448,6 +505,12 @@
                 ]
             },
             {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "98 76 -29"
+            },
+            {
                 "type": "buy",
                 "instruction": "Buy Angler Armor",
                 "items": {
@@ -482,6 +545,12 @@
                     "ANGLER_BRACELET"
                 ],
                 "command": "/stats"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "106 64 -62"
             },
             {
                 "type": "message",
@@ -573,6 +642,34 @@
                 "level": 5
             },
             {
+                "type": "collection",
+                "instruction": "Unlock Nether Wart Collection 1",
+                "collection": "nether_wart",
+                "level": 1,
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "Nether Wart",
+                            "position": [
+                                73.0,
+                                72.0,
+                                -101.0
+                            ],
+                            "radius": 7
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "70 73 -106"
+            },
+            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
@@ -647,15 +744,33 @@
                 ]
             },
             {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-64 77 -72"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-106 85 -22"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-116 73 -20"
+            },
+            {
                 "type": "buy",
                 "instruction": "Buy Oak Logs &b%1%&r\nBuy Sticks &b%2%&r\nBuy Wooden Sword &b%3%&r\nBuy Wooden Pickaxe &b%4%&r\nBuy Wooden Shovel &b%5%&r\nBuy Wooden Hoe &b%6%&r",
                 "items": {
                     "LOG": 8,
                     "STICK": 32,
-                    "WOOD_SWORD": 2,
-                    "WOOD_PICKAXE": 1,
+                    "WOOD_SWORD": 10,
+                    "WOOD_PICKAXE": 8,
                     "WOOD_SPADE": 1,
-                    "WOOD_HOE": 1
+                    "WOOD_HOE": 3
                 },
                 "navTo": "Lumber Merchant",
                 "outlineEntities": [
@@ -742,6 +857,18 @@
                 "instruction": "/warp hub",
                 "area": "Hub",
                 "command": "/warp hub"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "87 68 -154"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "61 80 -139"
             },
             {
                 "type": "buy",
@@ -858,6 +985,12 @@
             },
             {
                 "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "8 64 -137"
+            },
+            {
+                "type": "message",
                 "instruction": "/warp stonks",
                 "criteria": "Warping...",
                 "command": "/warp stonks"
@@ -883,7 +1016,8 @@
                 "instruction": "Enchant items\n&eHave a friend splash you\n&e            OR\n&e1. Swap to main profile\n&e2. Join a hub-selector hub\n&e3. Throw a titanic in a corner\n&e4. Collect xp on bingo profile",
                 "items": {
                     "GOLD_AXE": [
-                        "Efficiency V"
+                        "Efficiency V",
+                        "Silk Touch I"
                     ],
                     "GOLD_PICKAXE": [
                         "Efficiency V",
@@ -923,7 +1057,7 @@
                         "First Strike IV"
                     ]
                 },
-                "navTo": "-66 71 -80"
+                "navTo": "-67 70 -81"
             },
             {
                 "type": "skill",
@@ -986,6 +1120,32 @@
                             -8.5,
                             71.0,
                             -55.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Glowstone &b%1%",
+                "items": {
+                    "GLOWSTONE": 1
+                },
+                "navTo": "Builder",
+                "highlightSlots": [
+                    {
+                        "guiName": "Builder",
+                        "has": [
+                            "Variety"
+                        ]
+                    }
+                ],
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -8.5,
+                            71.0,
+                            -61.5
                         ]
                     }
                 ]
@@ -1094,6 +1254,24 @@
             },
             {
                 "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-11 73 -164"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp castle",
+                "criteria": "Warping...",
+                "command": "/warp castle"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-252 132 51"
+            },
+            {
+                "type": "message",
                 "instruction": "/warp castle",
                 "criteria": "Warping...",
                 "command": "/warp castle"
@@ -1118,7 +1296,28 @@
             },
             {
                 "type": "message",
-                "instruction": "Talk to Bramass",
+                "instruction": "Collect Fairy Soul\n&7&oUse Grappling Hook",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "waypoint": {
+                    "type": "list",
+                    "beam": true,
+                    "list": [
+                        {
+                            "text": "",
+                            "position": [
+                                -204.0,
+                                94.0,
+                                -241.0
+                            ],
+                            "radius": 0
+                        }
+                    ],
+                    "index": 0
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Bramass\n&7&oUse Grappling Hook",
                 "criteria": "[NPC] Bramass Beastslayer:",
                 "waypoint": {
                     "type": "list",
@@ -1165,7 +1364,7 @@
             },
             {
                 "type": "message",
-                "instruction": "Talk to Michael",
+                "instruction": "Talk to Michael\n&7&oUse Grappling Hook",
                 "criteria": "[NPC] Michael:",
                 "waypoint": {
                     "type": "list",
@@ -1296,59 +1495,123 @@
                 ]
             },
             {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-203 169 -320"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp nest",
+                "criteria": "Warping...",
+                "command": "/warp nest"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-198 160 -331"
+            },
+            {
                 "type": "area",
                 "instruction": "/warp barn",
                 "area": "The Farming Islands",
                 "command": "/warp barn"
             },
             {
-                "type": "has",
-                "instruction": "Kill Chickens",
-                "items": {
-                    "EGG": 1
-                },
+                "type": "collection",
+                "instruction": "Kill Pigs",
+                "collection": "raw_porkchop",
+                "level": 1,
                 "outlineEntities": [
                     {
                         "line": "NONE",
-                        "type": "chicken"
-                    }
-                ],
-                "async": {
-                    "effectiveIn": 1
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Kill Cows",
-                "items": {
-                    "RAW_BEEF": 64
-                },
-                "outlineEntities": [
-                    {
-                        "line": "NONE",
-                        "type": "cow"
+                        "type": "pig"
                     }
                 ]
-            },
-            {
-                "type": "store",
-                "instruction": "Store items",
-                "items": [
-                    "EGG"
-                ],
-                "command": "/ec 1"
-            },
-            {
-                "type": "supercraft",
-                "instruction": "Craft Cow Minion I",
-                "items": {
-                    "COW_GENERATOR_1": 1
-                }
             },
             {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
+                    "EGG",
+                    "ANCIENT_CLAW",
+                    "COAL",
+                    "STONE",
+                    "BONE",
+                    "STRING",
+                    "SPIDER_EYE",
+                    "ENCHANTED_SPIDER_EYE",
+                    "ENCHANTED_STRING",
+                    "GOLD_INGOT",
+                    "FEATHER",
+                    "LEATHER",
+                    "RAW_BEEF",
+                    "POTATO_ITEM",
+                    "WHEAT",
+                    "SEEDS",
+                    "CARROT_ITEM",
+                    "PUMPKIN",
+                    "MELON_BLOCK",
+                    "MELON",
+                    "PORK",
+                    "RAW_CHICKEN",
+                    "RED_MUSHROOM",
+                    "BROWN_MUSHROOM",
+                    "HUGE_MUSHROOM_1",
+                    "HUGE_MUSHROOM_2"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Raw Porkchop &b%1%&r\nBuy Egg &b%2%&r",
+                "items": {
+                    "PORK": 640,
+                    "EGG": 1
+                },
+                "navTo": "Husbandry Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            116.5,
+                            73.0,
+                            -255.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Pig Minion I &b%1%&r",
+                "items": {
+                    "PIG_GENERATOR_1": 6
+                },
+                "command": "/viewrecipe PIG_GENERATOR_1"
+            },
+            {
+                "type": "has",
+                "instruction": "Craft Pig Minion II &b%1%&r",
+                "items": {
+                    "PIG_GENERATOR_2": 2
+                },
+                "command": "/viewrecipe PIG_GENERATOR_2"
+            },
+            {
+                "type": "store",
+                "instruction": "Store items",
+                "items": [
+                    "PORK",
+                    "EGG"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "EGG",
                     "ANCIENT_CLAW",
                     "COAL",
                     "STONE",
@@ -1424,11 +1687,11 @@
             },
             {
                 "type": "message",
-                "instruction": "Place Cow Minion\n&cDon't forget a storage!",
-                "criteria": "You placed a minion",
+                "instruction": "Place Pig Minion x5\n&cDon't forget storages!",
+                "criteria": "You placed a minion (5/",
                 "highlightSlots": [
                     {
-                        "skyblockId": "COW_GENERATOR_1",
+                        "skyblockId": "PIG_GENERATOR_1",
                         "playerInv": true,
                         "highlightColor": "#FFAA00"
                     }
@@ -1438,6 +1701,8 @@
                 "type": "store",
                 "instruction": "Store items",
                 "items": [
+                    "PIG_GENERATOR_1",
+                    "PIG_GENERATOR_2",
                     "COBBLESTONE",
                     "REDSTONE",
                     "GLOWSTONE_DUST",
@@ -1459,17 +1724,17 @@
             },
             {
                 "type": "message",
-                "instruction": "Do 1st superpairs\n&7&oTry for 5 pairs",
+                "instruction": "Do 1st superpairs\n&7&oTry for 3 pairs",
                 "criteria": "You claimed the Superpairs rewards!"
             },
             {
                 "type": "message",
-                "instruction": "Do 2nd superpairs\n&7&oTry for 5 pairs",
+                "instruction": "Do 2nd superpairs\n&7&oTry for 3 pairs",
                 "criteria": "You claimed the Superpairs rewards!"
             },
             {
                 "type": "message",
-                "instruction": "Do 3rd superpairs\n&7&oTry for 5 pairs",
+                "instruction": "Do 3rd superpairs\n&7&oTry for 3 pairs",
                 "criteria": "You claimed the Superpairs rewards!"
             },
             {
@@ -1532,6 +1797,12 @@
                 "instruction": "/warp desert",
                 "area": "The Farming Islands",
                 "command": "/warp desert"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "145 77 -374"
             },
             {
                 "type": "has",
@@ -1713,6 +1984,18 @@
                 "command": "/ec 1"
             },
             {
+                "type": "message",
+                "instruction": "/warp glowing",
+                "criteria": "Warping...",
+                "command": "/warp glowing"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Mushroom Collection 1\n&7&oUse Gold Axe on Big Mushrooms",
+                "collection": "mushroom",
+                "level": 1
+            },
+            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
@@ -1760,7 +2043,7 @@
                 "items": [
                     "GOLD_PICKAXE"
                 ],
-                "navTo": "9 64 -126"
+                "navTo": "8 63 -127"
             },
             {
                 "type": "store",
@@ -1768,7 +2051,7 @@
                 "items": [
                     "ONYX"
                 ],
-                "navTo": "9 64 -126"
+                "navTo": "8 63 -127"
             },
             {
                 "type": "clickSlot",
@@ -1777,7 +2060,7 @@
                 "has": [
                     "Click to combine!"
                 ],
-                "navTo": "9 64 -126"
+                "navTo": "8 63 -127"
             },
             {
                 "type": "reforge",
@@ -2008,12 +2291,10 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Birch &b%1%&r\nBuy Spruce &b%2%&r\nBuy Dark Oak &b%3%&r\nBuy Acacia &b%4%&r",
+                "instruction": "Buy Beginner Foraging Sack &b%1%&r\nBuy Wooden Axe &b%2%&r",
                 "items": {
-                    "LOG:2": 64,
-                    "LOG:1": 128,
-                    "LOG_2:1": 256,
-                    "LOG_2": 512
+                    "BEGINNER_FORAGING_SACK": 1,
+                    "WOOD_AXE": 6
                 },
                 "navTo": "Lumber Merchant",
                 "outlineEntities": [
@@ -2029,14 +2310,154 @@
             },
             {
                 "type": "store",
-                "instruction": "Store items",
+                "instruction": "Store Axes",
                 "items": [
-                    "LOG:1",
-                    "LOG_2:1",
-                    "LOG_2",
-                    "LOG:3"
+                    "WOOD_AXE"
                 ],
                 "command": "/ec 1"
+            },
+            {
+                "type": "store",
+                "instruction": "Store Foraging Sack",
+                "items": [
+                    "BEGINNER_FORAGING_SACK"
+                ],
+                "command": "/sax"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Birch &b%1%&r",
+                "items": {
+                    "LOG:2": 640
+                },
+                "navTo": "Lumber Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -125.0,
+                            73.0,
+                            -42.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Insert items into sack",
+                "guiName": "Sack of Sacks",
+                "has": [
+                    "Insert inventory"
+                ],
+                "command": "/sax"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Spruce &b%1%&r",
+                "items": {
+                    "LOG:1": 640
+                },
+                "navTo": "Lumber Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -125.0,
+                            73.0,
+                            -42.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Insert items into sack",
+                "guiName": "Sack of Sacks",
+                "has": [
+                    "Insert inventory"
+                ],
+                "command": "/sax"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Dark Oak &b%1%&r",
+                "items": {
+                    "LOG_2:1": 640
+                },
+                "navTo": "Lumber Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -125.0,
+                            73.0,
+                            -42.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Insert items into sack",
+                "guiName": "Sack of Sacks",
+                "has": [
+                    "Insert inventory"
+                ],
+                "command": "/sax"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Acacia &b%1%&r",
+                "items": {
+                    "LOG_2": 640
+                },
+                "navTo": "Lumber Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -125.0,
+                            73.0,
+                            -42.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Insert items into sack",
+                "guiName": "Sack of Sacks",
+                "has": [
+                    "Insert inventory"
+                ],
+                "command": "/sax"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Jungle &b%1%&r",
+                "items": {
+                    "LOG:3": 640
+                },
+                "navTo": "Lumber Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -125.0,
+                            73.0,
+                            -42.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "clickSlot",
+                "instruction": "Insert items into sack",
+                "guiName": "Sack of Sacks",
+                "has": [
+                    "Insert inventory"
+                ],
+                "command": "/sax"
             },
             {
                 "type": "message",
@@ -2067,25 +2488,15 @@
             {
                 "type": "message",
                 "instruction": "Collect Oak Logs",
-                "criteria": "[NPC] Lumber Jack: To get you started, please bring me 20 Oak Logs! You can break the trees just off the trail to get 'em."
+                "criteria": "Give Lumber Jack Oak Logs"
             },
             {
-                "type": "buy",
-                "instruction": "Buy Oak Log &b%1%&r",
+                "type": "has",
+                "instruction": "Get Oak Logs &b%1%&r",
                 "items": {
-                    "LOG": 632
+                    "LOG": 20
                 },
-                "navTo": "Lumber Merchant",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -125.0,
-                            73.0,
-                            -42.5
-                        ]
-                    }
-                ]
+                "command": "/gfs Oak Log 20"
             },
             {
                 "type": "message",
@@ -2104,43 +2515,23 @@
                 ]
             },
             {
-                "type": "has",
-                "instruction": "Get Oak Logs &b%1%&r",
-                "items": {
-                    "LOG": 760
-                }
-            },
-            {
-                "type": "buy",
-                "instruction": "Trade Logs for Coal &b%1%&r",
-                "items": {
-                    "COAL": 1520
-                },
-                "command": "/trades"
-            },
-            {
-                "type": "supercraft",
-                "instruction": "Craft Enchanted Coal &b%1%&r",
-                "items": {
-                    "ENCHANTED_COAL": 15
-                }
+                "type": "message",
+                "instruction": "Level Foraging",
+                "criteria": "[NPC] Lumber Jack: My friend Charlie can be found there. I'm sure he'll have some work for you!"
             },
             {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
-                    "PROMISING_AXE",
                     "LEAVES",
                     "LEAVES:1",
                     "LEAVES:2",
                     "LEAVES:3",
                     "LEAVES_2",
                     "LEAVES_2:1",
+                    "ENCHANTED_OAK_LOG",
                     "LOG",
-                    "COAL",
-                    "COAL_BLOCK",
-                    "COBBLESTONE",
-                    "STONE"
+                    "PROMISING_AXE"
                 ],
                 "command": "/trades"
             },
@@ -2148,7 +2539,7 @@
                 "type": "area",
                 "instruction": "Go to The Park",
                 "area": "The Park",
-                "navTo": "-223 74 -15"
+                "navTo": "-224 73 -16"
             },
             {
                 "type": "message",
@@ -2233,6 +2624,13 @@
                 "criteria": "[NPC] Charlie: I wanted Kelly to get some Spruce Logs for us today, but I've not seen her in a while... Can you maybe look for her in the Spruce Woods?"
             },
             {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Birch Minion III",
+                "minionId": "BIRCH",
+                "fromLevel": 0,
+                "toLevel": 3
+            },
+            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
@@ -2251,14 +2649,6 @@
                     "RED_MUSHROOM"
                 ],
                 "command": "/trades"
-            },
-            {
-                "type": "retrieve",
-                "instruction": "Retrieve Spruce Logs",
-                "items": [
-                    "LOG:1"
-                ],
-                "command": "/ec 1"
             },
             {
                 "type": "message",
@@ -2337,6 +2727,26 @@
                 ]
             },
             {
+                "type": "collection",
+                "instruction": "Unlock Spruce Collection 2",
+                "collection": "spruce_log",
+                "level": 2
+            },
+            {
+                "type": "supercraft",
+                "instruction": "Craft Spruce Axe &b%1%&r",
+                "items": {
+                    "JUNGLE_AXE": 1
+                }
+            },
+            {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Spruce Minion III",
+                "minionId": "SPRUCE",
+                "fromLevel": 0,
+                "toLevel": 3
+            },
+            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
@@ -2357,14 +2767,6 @@
                     "RED_MUSHROOM"
                 ],
                 "command": "/trades"
-            },
-            {
-                "type": "retrieve",
-                "instruction": "Retrieve Dark Oak Logs",
-                "items": [
-                    "LOG_2:1"
-                ],
-                "command": "/ec 1"
             },
             {
                 "type": "message",
@@ -2520,6 +2922,13 @@
                 ]
             },
             {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Dark Oak Minion IV",
+                "minionId": "DARK_OAK",
+                "fromLevel": 0,
+                "toLevel": 4
+            },
+            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
@@ -2542,14 +2951,6 @@
                     "RED_MUSHROOM"
                 ],
                 "command": "/trades"
-            },
-            {
-                "type": "retrieve",
-                "instruction": "Retrieve Acacia Logs",
-                "items": [
-                    "LOG_2"
-                ],
-                "command": "/ec 1"
             },
             {
                 "type": "message",
@@ -2623,6 +3024,209 @@
                 ]
             },
             {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Acacia Minion III",
+                "minionId": "ACACIA",
+                "fromLevel": 0,
+                "toLevel": 3
+            },
+            {
+                "type": "store",
+                "instruction": "Store minions",
+                "items": [
+                    "BIRCH_GENERATOR_3",
+                    "SPRUCE_GENERATOR_3",
+                    "DARK_OAK_GENERATOR_4",
+                    "ACACIA_GENERATOR_3"
+                ],
+                "command": "/wardrobe"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "LEAVES",
+                    "LEAVES:1",
+                    "LEAVES:2",
+                    "LEAVES:3",
+                    "LEAVES_2",
+                    "LEAVES_2:1",
+                    "ENCHANTED_OAK_LOG",
+                    "ENCHANTED_BIRCH_LOG",
+                    "ENCHANTED_SPRUCE_LOG",
+                    "ENCHANTED_DARK_OAK_LOG",
+                    "ENCHANTED_ACACIA_LOG",
+                    "LOG",
+                    "LOG:2",
+                    "LOG:1",
+                    "LOG_2:1",
+                    "LOG_2",
+                    "PROMISING_AXE",
+                    "BROWN_MUSHROOM",
+                    "RED_MUSHROOM"
+                ],
+                "command": "/trades"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp jungle",
+                "criteria": "Warping...",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Jungle Log Collection 3",
+                "collection": "jungle_log",
+                "level": 3,
+                "bingoRanks": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "type": "supercraft",
+                "instruction": "Craft Enchanted Jungle Log &b%1%&r",
+                "items": {
+                    "ENCHANTED_JUNGLE_LOG": 1
+                },
+                "bingoRanks": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Personal Compact Enchanted Jungle Log",
+                "has": [
+                    "Auto-Craft Slot",
+                    "Item: Enchanted Jungle Log"
+                ],
+                "highlightSlots": [
+                    {
+                        "guiName": "Crafting",
+                        "has": [
+                            "Personal Compactor"
+                        ],
+                        "highlightColor": "#FFAA00",
+                        "playerInv": true
+                    },
+                    {
+                        "guiName": "Personal Compactor",
+                        "skyblockId": "ENCHANTED_JUNGLE_LOG",
+                        "playerInv": true
+                    }
+                ],
+                "bingoRanks": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "type": "skill",
+                "instruction": "Get Enchanted Jungle Logs",
+                "skill": "foraging",
+                "level": 12
+            },
+            {
+                "type": "area",
+                "instruction": "/warp galatea",
+                "area": "Moonglade Marsh",
+                "command": "/warp galatea"
+            },
+            {
+                "type": "message",
+                "instruction": "Talk to Hina",
+                "criteria": "[NPC] Hina: Hola!",
+                "navTo": "Hina",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -553.5,
+                            110,
+                            -16.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Lushlilacs",
+                "criteria": "[NPC] Hina: For each task I will reward you handsomely!"
+            },
+            {
+                "type": "guiItem",
+                "instruction": "Upgrade Sweep Perk",
+                "guiName": "Heart of the Forest",
+                "slotIndex": 40,
+                "has": [
+                    "You don't have enough Forest Whispers!"
+                ],
+                "highlightSlots": [
+                    {
+                        "guiName": "Heart of the Forest",
+                        "slotIndex": 40,
+                        "has": [
+                            "Sweep"
+                        ],
+                        "highlightColor": "#55FF55"
+                    }
+                ],
+                "command": "/hotf"
+            },
+            {
+                "type": "area",
+                "instruction": "/warp park",
+                "area": "The Park",
+                "command": "/warp park"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-482 118 -33"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp jungle",
+                "criteria": "Warping...",
+                "command": "/warp jungle"
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-458 118 -85"
+            },
+            {
+                "type": "has",
+                "instruction": "Get Enchanted Jungle Logs &b%1%",
+                "items": {
+                    "ENCHANTED_JUNGLE_LOG": 28
+                }
+            },
+            {
+                "type": "has",
+                "instruction": "Get Enchanted Jungle Logs &b%1%",
+                "items": {
+                    "ENCHANTED_JUNGLE_LOG": 32
+                },
+                "command": "/gfs Jungle Log 640"
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Jungle Log Collection 7",
+                "collection": "jungle_log",
+                "level": 7
+            },
+            {
+                "type": "supercraft",
+                "instruction": "Craft Treecapitator",
+                "items": {
+                    "TREECAPITATOR_AXE": 1
+                }
+            },
+            {
                 "type": "store",
                 "instruction": "Store Park Armor",
                 "items": [
@@ -2637,6 +3241,7 @@
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
+                    "GOLD_AXE",
                     "LEAVES",
                     "LEAVES:1",
                     "LEAVES:2",
@@ -2668,6 +3273,18 @@
                 "command": "/warp deep"
             },
             {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "3 152 85"
+            },
+            {
+                "type": "message",
+                "instruction": "/warp deep",
+                "criteria": "Warping...",
+                "command": "/warp deep"
+            },
+            {
                 "type": "mobTypes",
                 "instruction": "Kill Lapis Zombie",
                 "mobTypes": [
@@ -2681,12 +3298,17 @@
                 ]
             },
             {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "18 74 74"
+            },
+            {
                 "type": "mobTypes",
                 "instruction": "Kill Emerald Slime",
                 "mobTypes": [
                     "cubic"
                 ],
-                "navTo": "-27 56 -7",
                 "outlineEntities": [
                     {
                         "type": "slime"
@@ -2694,17 +3316,31 @@
                 ]
             },
             {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "0 65 57"
+            },
+            {
                 "type": "mobTypes",
                 "instruction": "Kill Miner Skeleton",
                 "mobTypes": [
                     "skeletal"
                 ],
-                "navTo": "Rhys",
                 "outlineEntities": [
                     {
                         "type": "skeleton"
                     }
-                ]
+                ],
+                "async": {
+                    "effectiveIn": 1
+                }
+            },
+            {
+                "type": "message",
+                "instruction": "Collect Fairy Soul",
+                "criteria": "SOUL! You found a Fairy Soul!",
+                "navTo": "-21 25 72"
             },
             {
                 "type": "store",
@@ -2756,31 +3392,11 @@
                     }
                 ],
                 "async": {
-                    "effectiveIn": 45,
+                    "effectiveIn": 51,
                     "requirements": {
                         "entity": {
                             "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYwNzk3MTY3MTQ1MCwKICAicHJvZmlsZUlkIiA6ICJhMmY4MzQ1OTVjODk0YTI3YWRkMzA0OTcxNmNhOTEwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiUHVuY2giLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg3YjhmM2NmMWMxMDE0ODgzMjc2ZjIzMDUwMWQ1YWYxMzk3Njk5MDcxYmZhYjFlZTI5NGM4NjE3MjJjYzJmIgogICAgfQogIH0KfQ\u003d\u003d"
                         }
-                    }
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Do Goblin Raid",
-                "criteria": "BINGO GOAL COMPLETE! Powder Collector",
-                "async": {
-                    "requirements": {
-                        "dwarvenEvent": "GOBLIN_RAID"
-                    }
-                }
-            },
-            {
-                "type": "message",
-                "instruction": "Do Raffle",
-                "criteria": "BINGO GOAL COMPLETE! Powder Collector",
-                "async": {
-                    "requirements": {
-                        "dwarvenEvent": "RAFFLE"
                     }
                 }
             },
@@ -2914,7 +3530,7 @@
                 "mobTypes": [
                     "aquatic"
                 ],
-                "navTo": "-33 72 -67"
+                "navTo": "-32 71 -67"
             },
             {
                 "type": "store",
@@ -2981,20 +3597,12 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Iron Armor\nBuy Rosetta Armor\nBuy Starlight Armor",
+                "instruction": "Buy Mercenary Armor",
                 "items": {
-                    "IRON_HELMET": 1,
-                    "IRON_CHESTPLATE": 1,
-                    "IRON_LEGGINGS": 1,
-                    "IRON_BOOTS": 1,
-                    "ROSETTA_HELMET": 1,
-                    "ROSETTA_CHESTPLATE": 1,
-                    "ROSETTA_LEGGINGS": 1,
-                    "ROSETTA_BOOTS": 1,
-                    "STARLIGHT_HELMET": 1,
-                    "STARLIGHT_CHESTPLATE": 1,
-                    "STARLIGHT_LEGGINGS": 1,
-                    "STARLIGHT_BOOTS": 1
+                    "MERCENARY_HELMET": 1,
+                    "MERCENARY_CHESTPLATE": 1,
+                    "MERCENARY_LEGGINGS": 1,
+                    "MERCENARY_BOOTS": 1
                 },
                 "navTo": "Rosetta",
                 "outlineEntities": [
@@ -3007,21 +3615,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "type": "store",
-                "instruction": "Store Armor Sets",
-                "items": [
-                    "IRON_HELMET",
-                    "IRON_CHESTPLATE",
-                    "IRON_LEGGINGS",
-                    "IRON_BOOTS",
-                    "ROSETTA_HELMET",
-                    "ROSETTA_CHESTPLATE",
-                    "ROSETTA_LEGGINGS",
-                    "ROSETTA_BOOTS"
-                ],
-                "command": "/wardrobe"
             },
             {
                 "type": "retrieve",
@@ -3049,48 +3642,54 @@
                 "type": "enchant",
                 "instruction": "Enchant items",
                 "items": {
+                    "TREECAPITATOR_AXE": [
+                        "Efficiency V"
+                    ],
                     "FRACTURED_MITHRIL_PICKAXE": [
                         "Efficiency V",
                         "Fortune III"
                     ],
-                    "STARLIGHT_HELMET": [
+                    "MERCENARY_HELMET": [
                         "Protection V",
                         "Growth V"
                     ],
-                    "STARLIGHT_CHESTPLATE": [
+                    "MERCENARY_CHESTPLATE": [
                         "Protection V",
                         "Growth V"
                     ],
-                    "STARLIGHT_LEGGINGS": [
+                    "MERCENARY_LEGGINGS": [
                         "Protection V",
                         "Growth V"
                     ],
-                    "STARLIGHT_BOOTS": [
+                    "MERCENARY_BOOTS": [
                         "Protection V",
                         "Growth V",
                         "Depth Strider III",
                         "Feather Falling V"
                     ]
                 },
-                "navTo": "-66 71 -80"
+                "navTo": "-67 70 -81"
             },
             {
                 "type": "reforge",
                 "instruction": "Reforge items",
                 "items": {
-                    "STARLIGHT_HELMET": [
+                    "TREECAPITATOR_AXE": [
+                        "Double Bit"
+                    ],
+                    "MERCENARY_HELMET": [
                         "Pure",
                         "Clean"
                     ],
-                    "STARLIGHT_CHESTPLATE": [
+                    "MERCENARY_CHESTPLATE": [
                         "Pure",
                         "Clean"
                     ],
-                    "STARLIGHT_LEGGINGS": [
+                    "MERCENARY_LEGGINGS": [
                         "Pure",
                         "Clean"
                     ],
-                    "STARLIGHT_BOOTS": [
+                    "MERCENARY_BOOTS": [
                         "Fierce",
                         "Pure",
                         "Clean"
@@ -3110,12 +3709,12 @@
             },
             {
                 "type": "store",
-                "instruction": "Equip Starlight Armor",
+                "instruction": "Equip Mercenary Armor",
                 "items": [
-                    "STARLIGHT_HELMET",
-                    "STARLIGHT_CHESTPLATE",
-                    "STARLIGHT_LEGGINGS",
-                    "STARLIGHT_BOOTS"
+                    "MERCENARY_HELMET",
+                    "MERCENARY_CHESTPLATE",
+                    "MERCENARY_LEGGINGS",
+                    "MERCENARY_BOOTS"
                 ],
                 "command": "/stats"
             },
@@ -3158,7 +3757,7 @@
                 "items": [
                     "FRACTURED_MITHRIL_PICKAXE"
                 ],
-                "navTo": "9 64 -126"
+                "navTo": "8 63 -127"
             },
             {
                 "type": "store",
@@ -3166,7 +3765,7 @@
                 "items": [
                     "ONYX"
                 ],
-                "navTo": "9 64 -126"
+                "navTo": "8 63 -127"
             },
             {
                 "type": "clickSlot",
@@ -3175,7 +3774,7 @@
                 "has": [
                     "Click to combine!"
                 ],
-                "navTo": "9 64 -126"
+                "navTo": "8 63 -127"
             },
             {
                 "type": "message",
@@ -3190,6 +3789,104 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "retrieve",
+                "instruction": "Retrieve Cobblestone Minion",
+                "items": [
+                    "COBBLESTONE_GENERATOR_1"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Cobblestone &b%1%&r",
+                "items": {
+                    "COBBLESTONE": 480
+                },
+                "navTo": "Mining Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            14.5,
+                            63.0,
+                            -114.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Cobblestone Minion III",
+                "minionId": "COBBLESTONE",
+                "fromLevel": 1,
+                "toLevel": 3
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Wheat &b%1%&r",
+                "items": {
+                    "WHEAT": 504
+                },
+                "navTo": "Farm Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            63.5,
+                            72.0,
+                            -113.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Wheat Minion III",
+                "minionId": "WHEAT",
+                "fromLevel": 1,
+                "toLevel": 3
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Nether Wart &b%1%&r\nBuy Brewing Stand &b%2%&r\nBuy Water Bottles &b%3%&r",
+                "items": {
+                    "NETHER_STALK": 576,
+                    "BREWING_STAND_ITEM": 1,
+                    "POTION": 6
+                },
+                "navTo": "Alchemist",
+                "outlineEntities": [
+                    {
+                        "type": "Witch",
+                        "position": [
+                            80.5,
+                            72.0,
+                            -90.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Nether Wart Minion III",
+                "minionId": "NETHER_WARTS",
+                "fromLevel": 0,
+                "toLevel": 3
+            },
+            {
+                "type": "store",
+                "instruction": "Store items",
+                "items": [
+                    "COBBLESTONE_GENERATOR_3",
+                    "WHEAT_GENERATOR_3",
+                    "NETHER_WARTS_GENERATOR_3",
+                    "NETHER_STALK",
+                    "BREWING_STAND_ITEM",
+                    "POTION"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "area",
@@ -3259,7 +3956,7 @@
                 "instruction": "Unlock Gold Ingot Collection 2",
                 "collection": "gold_ingot",
                 "level": 2,
-                "navTo": "78 163 124"
+                "navTo": "77 162 123"
             },
             {
                 "type": "supercraft",
@@ -3327,10 +4024,17 @@
                 }
             },
             {
+                "type": "upgradeMinion",
+                "instruction": "Craft Emerald Minion I",
+                "minionId": "EMERALD",
+                "fromLevel": 0,
+                "toLevel": 1
+            },
+            {
                 "type": "store",
                 "instruction": "Store items",
                 "items": [
-                    "EMERALD"
+                    "EMERALD_GENERATOR_1"
                 ],
                 "command": "/ec 1"
             },
@@ -3370,7 +4074,7 @@
                 "outlineEntities": [
                     {
                         "line": "ALL",
-                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDE1NjYzNDYzOCwKICAicHJvZmlsZUlkIiA6ICI5MWZlMTk2ODdjOTA0NjU2YWExZmMwNTk4NmRkM2ZlNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJoaGphYnJpcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iMmIxMmE4MTRjZWQ4YWYwMmNkZGYyOWEzN2U3ZjMwMTFlNDMwZThhMThiMzhiNzA2ZjI3YzZiZDMxNjUwYjY1IgogICAgfQogIH0KfQ\u003d\u003d"
+                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc4MzYzNjQzOTcwOSwKICAicHJvZmlsZUlkIiA6ICI1ZjU5NmViY2JlOTQ0NmQxYmI0M2JlNGYzZjRiOGJlNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJUZWlsMHNzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM3NGM2YjkwY2VlZGJhM2Q4YmIxZDFhODRkZmY0MDIxMTU5NjRlZjMzM2RlNTYzYmNkNjc5OWYzNzM4YmVkMDYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ\u003d\u003d"
                     }
                 ]
             },
@@ -3412,22 +4116,6 @@
                 "command": "/warp gold"
             },
             {
-                "type": "message",
-                "instruction": "Talk to Iron Forger",
-                "criteria": "[NPC] Iron Forger:",
-                "navTo": "Iron Forger",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -1.5,
-                            75.0,
-                            -307.5
-                        ]
-                    }
-                ]
-            },
-            {
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
@@ -3447,27 +4135,6 @@
                     "DIAMOND"
                 ],
                 "command": "/trades"
-            },
-            {
-                "type": "buy",
-                "instruction": "Buy Chainmail Armor",
-                "items": {
-                    "CHAINMAIL_HELMET": 1,
-                    "CHAINMAIL_CHESTPLATE": 1,
-                    "CHAINMAIL_LEGGINGS": 1,
-                    "CHAINMAIL_BOOTS": 1
-                },
-                "navTo": "Iron Forger",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -1.5,
-                            75.0,
-                            -307.5
-                        ]
-                    }
-                ]
             },
             {
                 "type": "message",
@@ -3538,42 +4205,6 @@
                 "command": "/mobtypes"
             },
             {
-                "type": "buy",
-                "instruction": "Buy Gold Armor",
-                "items": {
-                    "GOLD_HELMET": 1,
-                    "GOLD_CHESTPLATE": 1,
-                    "GOLD_LEGGINGS": 1,
-                    "GOLD_BOOTS": 1
-                },
-                "navTo": "Gold Forger",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -27.5,
-                            74.0,
-                            -294.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "store",
-                "instruction": "Store Armor Sets",
-                "items": [
-                    "CHAINMAIL_HELMET",
-                    "CHAINMAIL_CHESTPLATE",
-                    "CHAINMAIL_LEGGINGS",
-                    "CHAINMAIL_BOOTS",
-                    "GOLD_HELMET",
-                    "GOLD_CHESTPLATE",
-                    "GOLD_LEGGINGS",
-                    "GOLD_BOOTS"
-                ],
-                "command": "/wardrobe"
-            },
-            {
                 "type": "area",
                 "instruction": "/hub",
                 "area": "Hub",
@@ -3635,7 +4266,7 @@
                         "Venomous V"
                     ]
                 },
-                "navTo": "-66 71 -80"
+                "navTo": "-67 70 -81"
             },
             {
                 "type": "message",
@@ -3647,7 +4278,7 @@
                 "type": "area",
                 "instruction": "Travel to Dungeon Hub",
                 "area": "Dungeon Hub",
-                "navTo": "-33 74 29"
+                "navTo": "-34 73 28"
             },
             {
                 "type": "buy",
@@ -3800,205 +4431,14 @@
                 ]
             },
             {
-                "type": "clickSlot",
-                "instruction": "Claim Slayer XP",
-                "guiName": "Slayer",
-                "has": [
-                    "Slayer Quest Complete!"
-                ],
-                "highlightSlots": [
-                    {
-                        "guiName": "Crafting",
-                        "skyblockId": "ABINGOPHONE",
-                        "playerInv": true,
-                        "highlightColor": "#FFAA00"
-                    },
-                    {
-                        "guiName": "AⒷiphone",
-                        "has": [
-                            "Maddox the Slayer"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Start a T1 Spider",
-                "criteria": "SLAYER QUEST STARTED!",
-                "highlightSlots": [
-                    {
-                        "guiName": "Crafting",
-                        "skyblockId": "ABINGOPHONE",
-                        "playerInv": true,
-                        "highlightColor": "#FFAA00"
-                    },
-                    {
-                        "guiName": "AⒷiphone",
-                        "has": [
-                            "Maddox the Slayer"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Slayer",
-                        "has": [
-                            "Slayer Quest Complete!"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Slayer",
-                        "has": [
-                            "☠ Tarantula Broodfather"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Tarantula Broodfather",
-                        "has": [
-                            "Beginner"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Confirm",
-                        "has": [
-                            "Click to start quest!"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
-                ]
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell items",
-                "items": [
-                    "FOUL_FLESH",
-                    "ANCIENT_CLAW",
-                    "RUNE",
-                    "REVENANT_FLESH",
-                    "TARANTULA_WEB",
-                    "STRING",
-                    "ENCHANTED_STRING",
-                    "SPIDER_EYE",
-                    "ENCHANTED_SPIDER_EYE",
-                    "ARACHNE_KEEPER_FRAGMENT",
-                    "ROTTEN_FLESH",
-                    "BONE",
-                    "GOLD_INGOT",
-                    "GOLD_BLOCK"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "area",
-                "instruction": "/warp arachne",
-                "area": "Spider's Den",
-                "command": "/warp arachne"
-            },
-            {
-                "type": "message",
-                "instruction": "Spawn and kill boss",
-                "criteria": "NICE! SLAYER BOSS SLAIN!",
-                "outlineEntities": [
-                    {
-                        "line": "NONE",
-                        "type": "spider"
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Start a T2 Spider",
-                "criteria": "SLAYER QUEST STARTED!",
-                "highlightSlots": [
-                    {
-                        "guiName": "Crafting",
-                        "skyblockId": "ABINGOPHONE",
-                        "playerInv": true,
-                        "highlightColor": "#FFAA00"
-                    },
-                    {
-                        "guiName": "AⒷiphone",
-                        "has": [
-                            "Maddox the Slayer"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Slayer",
-                        "has": [
-                            "Slayer Quest Complete!"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Slayer",
-                        "has": [
-                            "☠ Tarantula Broodfather"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Tarantula Broodfather",
-                        "has": [
-                            "Strong"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Confirm",
-                        "has": [
-                            "Click to start quest!"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Spawn and kill boss",
-                "criteria": "NICE! SLAYER BOSS SLAIN!",
-                "outlineEntities": [
-                    {
-                        "line": "NONE",
-                        "type": "spider"
-                    }
-                ]
-            },
-            {
-                "type": "clickSlot",
-                "instruction": "Claim Slayer XP",
-                "guiName": "Slayer",
-                "has": [
-                    "Slayer Quest Complete!"
-                ],
-                "highlightSlots": [
-                    {
-                        "guiName": "Crafting",
-                        "skyblockId": "ABINGOPHONE",
-                        "playerInv": true,
-                        "highlightColor": "#FFAA00"
-                    },
-                    {
-                        "guiName": "AⒷiphone",
-                        "has": [
-                            "Maddox the Slayer"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
-                ]
-            },
-            {
                 "type": "skill",
-                "instruction": "Keep doing T2 Spiders",
+                "instruction": "Keep doing T2 Revs",
                 "skill": "combat",
                 "level": 12,
                 "outlineEntities": [
                     {
                         "line": "NONE",
-                        "type": "spider"
+                        "type": "zombie"
                     }
                 ],
                 "highlightSlots": [
@@ -4025,12 +4465,12 @@
                     {
                         "guiName": "Slayer",
                         "has": [
-                            "☠ Tarantula Broodfather"
+                            "☠ Revenant Horror"
                         ],
                         "highlightColor": "#55FF55"
                     },
                     {
-                        "guiName": "Tarantula Broodfather",
+                        "guiName": "Revenant Horror",
                         "has": [
                             "Strong"
                         ],
@@ -4044,6 +4484,24 @@
                         "highlightColor": "#55FF55"
                     }
                 ]
+            },
+            {
+                "type": "collection",
+                "instruction": "Unlock Rotten Flesh Collection 1",
+                "collection": "rotten_flesh",
+                "level": 1,
+                "outlineEntities": [
+                    {
+                        "line": "NONE",
+                        "type": "zombie"
+                    }
+                ]
+            },
+            {
+                "type": "message",
+                "instruction": "/warp stonks",
+                "criteria": "Warping...",
+                "command": "/warp stonks"
             },
             {
                 "type": "sell",
@@ -4065,6 +4523,39 @@
                     "GOLD_BLOCK"
                 ],
                 "command": "/trades"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Rotten Flesh &b%1%&r",
+                "items": {
+                    "ROTTEN_FLESH": 576
+                },
+                "navTo": "Combat Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            63.5,
+                            72.0,
+                            -113.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgradeMinion",
+                "instruction": "Craft up to Zombie Minion III",
+                "minionId": "ZOMBIE",
+                "fromLevel": 0,
+                "toLevel": 3
+            },
+            {
+                "type": "store",
+                "instruction": "Store items",
+                "items": [
+                    "ZOMBIE_GENERATOR_3"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "area",
@@ -4110,658 +4601,531 @@
                 "command": "/trades"
             },
             {
-                "type": "area",
-                "instruction": "/warp jungle",
-                "area": "The Park",
-                "command": "/warp jungle"
-            },
-            {
                 "type": "message",
-                "instruction": "Talk to Juliette",
-                "criteria": "[NPC] Juliette: Nice to meet you!",
-                "navTo": "-416 131 -122",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -415.5,
-                            130,
-                            -121.5
-                        ]
+                "instruction": "Reach 72,500 Gold Ingot Collection",
+                "criteria": "BINGO GOAL COMPLETE! Gold Ingot Collector",
+                "async": {
+                    "requirements": {
+                        "dwarvenEvent": "BETTER_TOGETHER"
                     }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "/warp jungle",
-                "criteria": "Warping...",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Romero",
-                "criteria": "[NPC] Romero: I'm.. trying to find gold...",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -462,
-                                121,
-                                -29
-                            ],
-                            "radius": 3
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -434,
-                                110,
-                                -12
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -464,
-                                111,
-                                22
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -465,
-                                103,
-                                30
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "Romero",
-                            "position": [
-                                -457,
-                                100,
-                                30
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
                 },
-                "outlineEntities": [
+                "prerequisites": [
                     {
-                        "type": "Player",
-                        "position": [
-                            -456.5,
-                            100,
-                            30.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "has",
-                "instruction": "Mine for Yellow Rock",
-                "items": {
-                    "YELLOW_ROCK": 1
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -466,
-                                100,
-                                32
-                            ],
-                            "radius": 3
-                        },
-                        {
-                            "text": "Jump + Grappling Hook",
-                            "position": [
-                                -463,
-                                110,
-                                32
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -446,
-                                112,
-                                45
-                            ],
-                            "radius": 10
-                        },
-                        {
-                            "text": "Mine Gold",
-                            "position": [
-                                -437,
-                                109,
-                                45
-                            ],
-                            "radius": 10
-                        }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Talk to Romero\n&7(While holding Yellow Rock)",
-                "items": {
-                    "POORLY_WRAPPED_ROCK": 1
-                },
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -463,
-                                112,
-                                34
-                            ],
-                            "radius": 7
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -465,
-                                100,
-                                34
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "Romero",
-                            "position": [
-                                -457,
-                                100,
-                                30
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                },
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -456.5,
-                            100,
-                            30.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "/warp jungle",
-                "criteria": "Warping...",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "has",
-                "instruction": "Talk to Juliette\n&7(While holding Poorly Wrapped Gift)",
-                "items": {
-                    "WEDDING_RING_0": 1
-                },
-                "navTo": "-416 131 -122",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -415.5,
-                            130,
-                            -121.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "area",
-                "instruction": "/warp museum",
-                "area": "Hub",
-                "command": "/warp museum"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Romero",
-                "criteria": "[NPC] Romero: Groceries?",
-                "navTo": "89.5 76 15.5",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            89.5,
-                            75.0,
-                            15.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "has",
-                "instruction": "Collect Poppies &b%1%&r\n&7(Lobby-hop if necessary)",
-                "items": {
-                    "RED_ROSE": 15
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Talk to Romero\n&7(While holding Poppies)",
-                "items": {
-                    "ROSE_BOUQUET": 1
-                },
-                "navTo": "89.5 76 15.5",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            89.5,
-                            75.0,
-                            15.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "area",
-                "instruction": "/warp jungle",
-                "area": "The Park",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "has",
-                "instruction": "Talk to Juliette\n&7(While holding Rose Bouquet)",
-                "items": {
-                    "WEDDING_RING_1": 1
-                },
-                "navTo": "-416 131 -122",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -415.5,
-                            130,
-                            -121.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "retrieve",
-                "instruction": "Retrieve items",
-                "items": [
-                    "EMERALD",
-                    "REDSTONE",
-                    "LOG"
-                ],
-                "command": "/ec 1"
-            },
-            {
-                "type": "area",
-                "instruction": "/warp spider",
-                "area": "Spider's Den",
-                "command": "/warp spider"
-            },
-            {
-                "type": "area",
-                "instruction": "/hub",
-                "area": "Hub",
-                "command": "/hub"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Romero",
-                "criteria": "[NPC] Romero: I love emeralds!",
-                "navTo": "-119 75 -171",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -119.0,
-                            74.0,
-                            -171.0
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "has",
-                "instruction": "Talk to Romero\n&7(While holding 64 Emeralds)",
-                "items": {
-                    "FAKE_EMERALD_ALTAR": 1
-                },
-                "navTo": "-119 75 -171",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -119.0,
-                            74.0,
-                            -171.0
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell items",
-                "items": [
-                    "GOLD_ORE",
-                    "RED_ROSE",
-                    "RED_ROSE:1",
-                    "RED_ROSE:2",
-                    "RED_ROSE:3",
-                    "RED_ROSE:5",
-                    "RED_ROSE:6",
-                    "RED_ROSE:7",
-                    "RED_ROSE:8",
-                    "YELLOW_FLOWER",
-                    "EMERALD",
-                    "REDSTONE",
-                    "LOG",
-                    "ROTTEN_FLESH",
-                    "CARROT_ITEM",
-                    "POTATO_ITEM",
-                    "RUNE"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "area",
-                "instruction": "/warp jungle",
-                "area": "The Park",
-                "command": "/warp jungle"
-            },
-            {
-                "type": "has",
-                "instruction": "Talk to Juliette\n&7(While holding Fake Emerald Altar)",
-                "items": {
-                    "WEDDING_RING_2": 1
-                },
-                "navTo": "-416 131 -122",
-                "outlineEntities": [
-                    {
-                        "type": "Player",
-                        "position": [
-                            -415.5,
-                            130,
-                            -121.5
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "area",
-                "instruction": "/hub",
-                "area": "Hub",
-                "command": "/hub"
-            },
-            {
-                "type": "message",
-                "instruction": "/warp hub",
-                "criteria": "Warping...",
-                "command": "/warp hub"
-            },
-            {
-                "type": "has",
-                "instruction": "Get Enchanted Seeds &b%1%&r",
-                "items": {
-                    "ENCHANTED_SEEDS": 50
-                },
-                "navTo": "51 72 -74"
-            },
-            {
-                "type": "has",
-                "instruction": "Get Wheat &b%1%&r",
-                "items": {
-                    "WHEAT": 25
-                }
-            },
-            {
-                "type": "area",
-                "instruction": "/is",
-                "area": "Private Island",
-                "command": "/is"
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Sam",
-                "criteria": "[NPC] Stranger: What a pleasant surprise! I see you have quite an impressive island.",
-                "outlineEntities": [
-                    {
-                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTI0NzcyMjk1MiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJvRml3aSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85NWRjZmM4YjMyMDAzMjZiOGY2MWQ4MDYxNWM1YjUzNjk5N2ExMTg1NzBhNDdmMWQzNTMwNjMyOTY5MjFmZTEzIgogICAgfQogIH0KfQ\u003d\u003d"
-                    }
-                ]
-            },
-            {
-                "type": "area",
-                "instruction": "Click &a&l[YES]&r in chat",
-                "area": "Garden"
-            },
-            {
-                "type": "message",
-                "instruction": "Give Wheat to Sam",
-                "criteria": "[NPC] Sam: Wow, you did it!",
-                "outlineEntities": [
-                    {
-                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTI0NzcyMjk1MiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJvRml3aSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85NWRjZmM4YjMyMDAzMjZiOGY2MWQ4MDYxNWM1YjUzNjk5N2ExMTg1NzBhNDdmMWQzNTMwNjMyOTY5MjFmZTEzIgogICAgfQogIH0KfQ\u003d\u003d"
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Talk to Sam",
-                "criteria": "[NPC] Sam: Head over to the desk, there you can browse SkyMart to order some fuel.",
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "",
-                            "position": [
-                                -5.0,
-                                72.0,
-                                -18.0
-                            ],
-                            "radius": 5
-                        },
-                        {
-                            "text": "",
-                            "position": [
-                                -15.0,
-                                72.0,
-                                -28.0
-                            ],
-                            "radius": 0
-                        }
-                    ],
-                    "index": 0
-                },
-                "outlineEntities": [
-                    {
-                        "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTI0NzcyMjk1MiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJvRml3aSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85NWRjZmM4YjMyMDAzMjZiOGY2MWQ4MDYxNWM1YjUzNjk5N2ExMTg1NzBhNDdmMWQzNTMwNjMyOTY5MjFmZTEzIgogICAgfQogIH0KfQ\u003d\u003d"
-                    }
-                ]
-            },
-            {
-                "type": "has",
-                "instruction": "Buy Biofuel &b%1%&r",
-                "items": {
-                    "BIOFUEL": 1
-                },
-                "highlightSlots": [
-                    {
-                        "guiName": "Desk",
-                        "has": [
-                            "SkyMart"
-                        ],
-                        "highlightColor": "#55FF55"
+                        "type": "area",
+                        "instruction": "/warp forge",
+                        "area": "Dwarven Mines",
+                        "command": "/warp forge"
                     },
                     {
-                        "guiName": "SkyMart",
-                        "has": [
-                            "Farming Essentials"
-                        ],
-                        "highlightColor": "#55FF55"
+                        "type": "message",
+                        "instruction": "Reach HOTM 2\n&7&oDo Commissions",
+                        "criteria": "HEART OF THE MOUNTAIN TIER 2"
                     },
                     {
-                        "skyblockId": "BIOFUEL",
-                        "highlightColor": "#55FF55"
-                    }
-                ],
-                "command": "/desk"
-            },
-            {
-                "type": "clickSlot",
-                "instruction": "Insert fuel",
-                "guiName": "Composter",
-                "skyblockId": "BIOFUEL",
-                "playerInv": true,
-                "waypoint": {
-                    "type": "list",
-                    "beam": true,
-                    "list": [
-                        {
-                            "text": "Composter",
-                            "position": [
-                                -11.5,
-                                72,
-                                -27.5
-                            ],
-                            "radius": 0
+                        "type": "clickSlot",
+                        "instruction": "Unlock Mining Fortune",
+                        "guiName": "Heart of the Mountain",
+                        "slotIndex": 31,
+                        "command": "/hotm"
+                    },
+                    {
+                        "type": "clickSlot",
+                        "instruction": "Unlock Titanium Insanium",
+                        "guiName": "Heart of the Mountain",
+                        "slotIndex": 32,
+                        "command": "/hotm"
+                    },
+                    {
+                        "type": "message",
+                        "instruction": "Reach HOTM 3\n&7&oDo Commissions",
+                        "criteria": "HEART OF THE MOUNTAIN TIER 3"
+                    },
+                    {
+                        "type": "clickSlot",
+                        "instruction": "Unlock Efficient Miner",
+                        "guiName": "Heart of the Mountain",
+                        "slotIndex": 22,
+                        "command": "/hotm"
+                    },
+                    {
+                        "type": "clickSlot",
+                        "instruction": "Unlock Pickobulus",
+                        "guiName": "Heart of the Mountain",
+                        "slotIndex": 33,
+                        "command": "/hotm"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Emeralds &b%1%&r",
+                        "items": {
+                            "EMERALD": 160
+                        },
+                        "navTo": "60 149 174"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Emerald Minion II",
+                        "minionId": "EMERALD",
+                        "fromLevel": 1,
+                        "toLevel": 2
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Emeralds &b%1%&r",
+                        "items": {
+                            "EMERALD": 320
+                        },
+                        "navTo": "60 149 174"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Emerald Minion III",
+                        "minionId": "EMERALD",
+                        "fromLevel": 2,
+                        "toLevel": 3
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Emeralds &b%1%&r",
+                        "items": {
+                            "EMERALD": 512
+                        },
+                        "navTo": "60 149 174"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Emerald Minion IV",
+                        "minionId": "EMERALD",
+                        "fromLevel": 3,
+                        "toLevel": 4
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Coal &b%1%&r",
+                        "items": {
+                            "COAL": 80
+                        },
+                        "navTo": "156 157 96"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Coal Minion I",
+                        "minionId": "COAL",
+                        "fromLevel": 0,
+                        "toLevel": 1
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Coal &b%1%&r",
+                        "items": {
+                            "COAL": 160
+                        },
+                        "navTo": "156 157 96"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Coal Minion II",
+                        "minionId": "COAL",
+                        "fromLevel": 1,
+                        "toLevel": 2
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Coal &b%1%&r",
+                        "items": {
+                            "COAL": 320
+                        },
+                        "navTo": "156 157 96"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Coal Minion III",
+                        "minionId": "COAL",
+                        "fromLevel": 2,
+                        "toLevel": 3
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Coal &b%1%&r",
+                        "items": {
+                            "COAL": 512
+                        },
+                        "navTo": "156 157 96"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Coal Minion IV",
+                        "minionId": "COAL",
+                        "fromLevel": 3,
+                        "toLevel": 4
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Iron &b%1%&r",
+                        "items": {
+                            "IRON_INGOT": 80
+                        },
+                        "navTo": "161 131 63"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Iron Minion I",
+                        "minionId": "IRON",
+                        "fromLevel": 0,
+                        "toLevel": 1
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Iron &b%1%&r",
+                        "items": {
+                            "IRON_INGOT": 160
+                        },
+                        "navTo": "161 131 63"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Iron Minion II",
+                        "minionId": "IRON",
+                        "fromLevel": 1,
+                        "toLevel": 2
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Iron &b%1%&r",
+                        "items": {
+                            "IRON_INGOT": 320
+                        },
+                        "navTo": "161 131 63"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Iron Minion III",
+                        "minionId": "IRON",
+                        "fromLevel": 2,
+                        "toLevel": 3
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Iron &b%1%&r",
+                        "items": {
+                            "IRON_INGOT": 512
+                        },
+                        "navTo": "161 131 63"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Iron Minion IV",
+                        "minionId": "IRON",
+                        "fromLevel": 3,
+                        "toLevel": 4
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Diamonds &b%1%&r",
+                        "items": {
+                            "DIAMOND": 80
+                        },
+                        "navTo": "150 130 43"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Diamond Minion I",
+                        "minionId": "DIAMOND",
+                        "fromLevel": 0,
+                        "toLevel": 1
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Diamonds &b%1%&r",
+                        "items": {
+                            "DIAMOND": 160
+                        },
+                        "navTo": "150 130 43"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Diamond Minion II",
+                        "minionId": "DIAMOND",
+                        "fromLevel": 1,
+                        "toLevel": 2
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Diamonds &b%1%&r",
+                        "items": {
+                            "DIAMOND": 320
+                        },
+                        "navTo": "150 130 43"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Diamond Minion III",
+                        "minionId": "DIAMOND",
+                        "fromLevel": 2,
+                        "toLevel": 3
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Diamonds &b%1%&r",
+                        "items": {
+                            "DIAMOND": 512
+                        },
+                        "navTo": "150 130 43"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Diamond Minion IV",
+                        "minionId": "DIAMOND",
+                        "fromLevel": 3,
+                        "toLevel": 4
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Redstone &b%1%&r",
+                        "items": {
+                            "REDSTONE": 128
+                        },
+                        "navTo": "140 161 20"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Redstone Minion I",
+                        "minionId": "REDSTONE",
+                        "fromLevel": 0,
+                        "toLevel": 1
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Redstone &b%1%&r",
+                        "items": {
+                            "REDSTONE": 256
+                        },
+                        "navTo": "140 161 20"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Redstone Minion II",
+                        "minionId": "REDSTONE",
+                        "fromLevel": 1,
+                        "toLevel": 2
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Redstone &b%1%&r",
+                        "items": {
+                            "REDSTONE": 512
+                        },
+                        "navTo": "140 161 20"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Redstone Minion III",
+                        "minionId": "REDSTONE",
+                        "fromLevel": 2,
+                        "toLevel": 3
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Enchanted Redstone &b%1%&r",
+                        "items": {
+                            "ENCHANTED_REDSTONE": 8
+                        },
+                        "navTo": "140 161 20"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Redstone Minion IV",
+                        "minionId": "REDSTONE",
+                        "fromLevel": 3,
+                        "toLevel": 4
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Lapis &b%1%&r",
+                        "items": {
+                            "INK_SACK:4": 256
+                        },
+                        "navTo": "178 163 22"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Lapis Minion I",
+                        "minionId": "LAPIS",
+                        "fromLevel": 0,
+                        "toLevel": 1
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Lapis &b%1%&r",
+                        "items": {
+                            "INK_SACK:4": 512
+                        },
+                        "navTo": "178 163 22"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Lapis Minion II",
+                        "minionId": "LAPIS",
+                        "fromLevel": 1,
+                        "toLevel": 2
+                    },
+                    {
+                        "type": "store",
+                        "instruction": "Store items",
+                        "items": [
+                            "REDSTONE_GENERATOR_4",
+                            "LAPIS_GENERATOR_2",
+                            "DIAMOND_GENERATOR_4",
+                            "COAL_GENERATOR_4",
+                            "IRON_GENERATOR_4",
+                            "EMERALD_GENERATOR_4"
+                        ],
+                        "command": "/ec 1"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Gold &b%1%&r",
+                        "items": {
+                            "GOLD_INGOT": 80
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Gold Minion I",
+                        "minionId": "GOLD",
+                        "fromLevel": 0,
+                        "toLevel": 1
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Gold &b%1%&r",
+                        "items": {
+                            "GOLD_INGOT": 160
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Gold Minion II",
+                        "minionId": "GOLD",
+                        "fromLevel": 1,
+                        "toLevel": 2
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Gold &b%1%&r",
+                        "items": {
+                            "GOLD_INGOT": 320
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Gold Minion III",
+                        "minionId": "GOLD",
+                        "fromLevel": 2,
+                        "toLevel": 3
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Gold &b%1%&r",
+                        "items": {
+                            "GOLD_INGOT": 512
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Gold Minion IV",
+                        "minionId": "GOLD",
+                        "fromLevel": 3,
+                        "toLevel": 4
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Enchanted Gold &b%1%&r",
+                        "items": {
+                            "ENCHANTED_GOLD": 8
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Gold Minion V",
+                        "minionId": "GOLD",
+                        "fromLevel": 4,
+                        "toLevel": 5
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Enchanted Gold &b%1%&r",
+                        "items": {
+                            "ENCHANTED_GOLD": 24
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Gold Minion VI",
+                        "minionId": "GOLD",
+                        "fromLevel": 5,
+                        "toLevel": 6
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Enchanted Gold &b%1%&r",
+                        "items": {
+                            "ENCHANTED_GOLD": 64
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "upgradeMinion",
+                        "instruction": "Craft Gold Minion VII",
+                        "minionId": "GOLD",
+                        "fromLevel": 6,
+                        "toLevel": 7
+                    },
+                    {
+                        "type": "store",
+                        "instruction": "Store items",
+                        "items": [
+                            "GOLD_GENERATOR_7"
+                        ],
+                        "command": "/ec 1"
+                    },
+                    {
+                        "type": "has",
+                        "instruction": "Get Enchanted Gold &b%1%&r",
+                        "items": {
+                            "ENCHANTED_GOLD": 160
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "supercraft",
+                        "instruction": "Craft Enchanted Gold Block",
+                        "items": {
+                            "ENCHANTED_GOLD_BLOCK": 1
                         }
-                    ],
-                    "index": 0
-                }
-            },
-            {
-                "type": "has",
-                "instruction": "Collect Compost",
-                "items": {
-                    "COMPOST": 1
-                },
-                "highlightSlots": [
+                    },
                     {
-                        "guiName": "Composter",
-                        "skyblockId": "COMPOST"
+                        "type": "has",
+                        "instruction": "Get Enchanted Gold &b%1%&r",
+                        "items": {
+                            "ENCHANTED_GOLD": 160
+                        },
+                        "navTo": "179 156 38"
+                    },
+                    {
+                        "type": "supercraft",
+                        "instruction": "Craft Enchanted Gold Block",
+                        "items": {
+                            "ENCHANTED_GOLD_BLOCK": 1
+                        }
                     }
                 ]
-            },
-            {
-                "type": "clickSlot",
-                "instruction": "Unlock Plot 3",
-                "guiName": "Confirm Plot Unlock",
-                "has": [
-                    "Confirm"
-                ],
-                "highlightSlots": [
-                    {
-                        "guiName": "Desk",
-                        "has": [
-                            "Configure Plots"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Configure Plots",
-                        "has": [
-                            "Plot - 3"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
-                ],
-                "command": "/desk"
-            },
-            {
-                "type": "message",
-                "instruction": "/plottp 3",
-                "criteria": "Teleported you to Plot - 3!",
-                "command": "/plottp 3"
-            },
-            {
-                "type": "guiItem",
-                "instruction": "Clean Plot",
-                "guiName": "Sam's Scythe"
-            },
-            {
-                "type": "has",
-                "instruction": "Claim Sam's Scythe",
-                "items": {
-                    "SAM_SCYTHE": 1
-                },
-                "highlightSlots": [
-                    {
-                        "guiName": "Sam's Scythe",
-                        "skyblockId": "SAM_SCYTHE"
-                    }
-                ]
-            },
-            {
-                "type": "message",
-                "instruction": "Clean Plot",
-                "criteria": "Plot - 3 is now clean!"
-            },
-            {
-                "type": "sell",
-                "instruction": "Sell items",
-                "items": [
-                    "LOG",
-                    "SAPLING",
-                    "APPLE",
-                    "RED_ROSE",
-                    "YELLOW_FLOWER",
-                    "RED_ROSE:3",
-                    "DIRT",
-                    "GRASS",
-                    "LEAVES"
-                ],
-                "command": "/trades"
-            },
-            {
-                "type": "clickSlot",
-                "instruction": "Paste Wheat Preset",
-                "guiName": "Confirm Paste",
-                "has": [
-                    "Confirm Paste"
-                ],
-                "highlightSlots": [
-                    {
-                        "guiName": "Desk",
-                        "has": [
-                            "Configure Plots"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Configure Plots",
-                        "has": [
-                            "Plot - 3"
-                        ],
-                        "highlightColor": "#55FF55"
-                    },
-                    {
-                        "guiName": "Plot Modification: 3",
-                        "has": [
-                            "Wheat"
-                        ],
-                        "highlightColor": "#55FF55"
-                    }
-                ],
-                "command": "/desk"
             }
         ]
     }
