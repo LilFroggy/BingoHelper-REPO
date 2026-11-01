@@ -1,6 +1,6 @@
 {
     "name": "November 2026",
-    "version": 1,
+    "version": 2,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -763,11 +763,47 @@
             },
             {
                 "type": "buy",
-                "instruction": "Buy Oak Logs &b%1%&r\nBuy Sticks &b%2%&r\nBuy Wooden Sword &b%3%&r\nBuy Wooden Pickaxe &b%4%&r\nBuy Wooden Shovel &b%5%&r\nBuy Wooden Hoe &b%6%&r",
+                "instruction": "Buy Oak Logs &b%1%&r\nBuy Sticks &b%2%&r\nBuy Wooden Sword &b%3%&r",
                 "items": {
                     "LOG": 8,
                     "STICK": 32,
-                    "WOOD_SWORD": 10,
+                    "WOOD_SWORD": 9
+                },
+                "navTo": "Lumber Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -125.0,
+                            73.0,
+                            -42.5
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "store",
+                "instruction": "Store items",
+                "items": [
+                    "RED_MUSHROOM",
+                    "BROWN_MUSHROOM",
+                    "MINNOW_BAIT",
+                    "FISH_BAIT",
+                    "ABINGOPHONE",
+                    "BOWL",
+                    "CHEST",
+                    "LOG",
+                    "WOOD_SWORD",
+                    "WOOD_PICKAXE",
+                    "WOOD_SPADE",
+                    "WOOD_HOE"
+                ],
+                "command": "/ec 1"
+            },
+            {
+                "type": "buy",
+                "instruction": "Buy Wooden Pickaxe &b%1%&r\nBuy Wooden Shovel &b%2%&r\nBuy Wooden Hoe &b%3%&r",
+                "items": {
                     "WOOD_PICKAXE": 8,
                     "WOOD_SPADE": 1,
                     "WOOD_HOE": 3
@@ -783,6 +819,25 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "store",
+                "instruction": "Store items",
+                "items": [
+                    "RED_MUSHROOM",
+                    "BROWN_MUSHROOM",
+                    "MINNOW_BAIT",
+                    "FISH_BAIT",
+                    "ABINGOPHONE",
+                    "BOWL",
+                    "CHEST",
+                    "LOG",
+                    "WOOD_SWORD",
+                    "WOOD_PICKAXE",
+                    "WOOD_SPADE",
+                    "WOOD_HOE"
+                ],
+                "command": "/ec 1"
             },
             {
                 "type": "area",
@@ -1534,7 +1589,6 @@
                 "type": "sell",
                 "instruction": "Sell items",
                 "items": [
-                    "EGG",
                     "ANCIENT_CLAW",
                     "COAL",
                     "STONE",
@@ -1554,7 +1608,6 @@
                     "PUMPKIN",
                     "MELON_BLOCK",
                     "MELON",
-                    "PORK",
                     "RAW_CHICKEN",
                     "RED_MUSHROOM",
                     "BROWN_MUSHROOM",
@@ -1567,7 +1620,7 @@
                 "type": "buy",
                 "instruction": "Buy Raw Porkchop &b%1%&r\nBuy Egg &b%2%&r",
                 "items": {
-                    "PORK": 640,
+                    "PORK": 384,
                     "EGG": 1
                 },
                 "navTo": "Husbandry Merchant",
@@ -1589,14 +1642,6 @@
                     "PIG_GENERATOR_1": 6
                 },
                 "command": "/viewrecipe PIG_GENERATOR_1"
-            },
-            {
-                "type": "has",
-                "instruction": "Craft Pig Minion II &b%1%&r",
-                "items": {
-                    "PIG_GENERATOR_2": 2
-                },
-                "command": "/viewrecipe PIG_GENERATOR_2"
             },
             {
                 "type": "store",
@@ -1688,7 +1733,7 @@
             {
                 "type": "message",
                 "instruction": "Place Pig Minion x5\n&cDon't forget storages!",
-                "criteria": "You placed a minion (5/",
+                "criteria": "You placed a minion! (5/",
                 "highlightSlots": [
                     {
                         "skyblockId": "PIG_GENERATOR_1",
@@ -2488,15 +2533,25 @@
             {
                 "type": "message",
                 "instruction": "Collect Oak Logs",
-                "criteria": "Give Lumber Jack Oak Logs"
+                "criteria": "[NPC] Lumber Jack: Use your fists for now - I'll give you my previous assistant's axe if you can prove your worth!"
             },
             {
-                "type": "has",
-                "instruction": "Get Oak Logs &b%1%&r",
+                "type": "buy",
+                "instruction": "Buy Oak Log &b%1%&r",
                 "items": {
-                    "LOG": 20
+                    "LOG": 632
                 },
-                "command": "/gfs Oak Log 20"
+                "navTo": "Lumber Merchant",
+                "outlineEntities": [
+                    {
+                        "type": "Player",
+                        "position": [
+                            -125.0,
+                            73.0,
+                            -42.5
+                        ]
+                    }
+                ]
             },
             {
                 "type": "message",
@@ -2513,6 +2568,29 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "has",
+                "instruction": "Get Oak Logs &b%1%&r",
+                "items": {
+                    "LOG": 760
+                },
+                "command": "/gfs Oak Log 148"
+            },
+            {
+                "type": "buy",
+                "instruction": "Trade Logs for Coal &b%1%&r",
+                "items": {
+                    "COAL": 1520
+                },
+                "command": "/trades"
+            },
+            {
+                "type": "supercraft",
+                "instruction": "Craft Enchanted Coal &b%1%&r",
+                "items": {
+                    "ENCHANTED_COAL": 15
+                }
             },
             {
                 "type": "message",
@@ -3039,7 +3117,7 @@
                     "DARK_OAK_GENERATOR_4",
                     "ACACIA_GENERATOR_3"
                 ],
-                "command": "/wardrobe"
+                "command": "/ec 1"
             },
             {
                 "type": "sell",
