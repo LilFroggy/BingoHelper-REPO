@@ -1,6 +1,6 @@
 {
     "name": "November 2026",
-    "version": 3,
+    "version": 4,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -3968,6 +3968,15 @@
                 "command": "/ec 1"
             },
             {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "COBBLESTONE",
+                    "WHEAT"
+                ],
+                "command": "/trades"
+            },
+            {
                 "type": "area",
                 "instruction": "/warp forge",
                 "area": "Dwarven Mines",
@@ -4635,6 +4644,14 @@
                     "ZOMBIE_GENERATOR_3"
                 ],
                 "command": "/ec 1"
+            },
+            {
+                "type": "sell",
+                "instruction": "Sell items",
+                "items": [
+                    "ROTTEN_FLESH"
+                ],
+                "command": "/trades"
             },
             {
                 "type": "area",
