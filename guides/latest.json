@@ -1,6 +1,6 @@
 {
     "name": "November 2026",
-    "version": 2,
+    "version": 3,
     "data": {
         "stepIndex": 0,
         "steps": [
@@ -2608,6 +2608,7 @@
                     "LEAVES_2",
                     "LEAVES_2:1",
                     "ENCHANTED_OAK_LOG",
+                    "COAL",
                     "LOG",
                     "PROMISING_AXE"
                 ],
